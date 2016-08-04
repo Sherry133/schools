@@ -166,8 +166,8 @@
 @media(max-width: 767px)  {
     .bg-img-1
     {background-image:  url(../img/slider/Aviatortall.jpg);}
-    {background-size: cover;}
-    {width: 100%;}
+    {background-size: 100% 100%;}
+    {width: 767px;}
     {height: 100%;}
   
 }
@@ -181,8 +181,8 @@
 @media(max-width: 767px)  {
     .bg-img-2
     {background-image:  url(../img/slider/firefighterstall1.jpg);}
-    {background-size: cover;}
-    {width: 1005;}
+    {background-size: 100% 100%;}
+    {width: 767px;}
     {height: 100%;}
   
 }
