@@ -161,13 +161,13 @@
 
 
 .bg-img-1 {
-     background-image: url(../img/slider/Aviator1.jpg); 
+     background-image: url(../img/slider/Aviator21.jpg); 
 }
 @media(max-width: 767px)  {
     .bg-img-1
-    {background-image:  url(../img/slider/Aviatortall1.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
+    {background-image:  url(../img/slider/Aviatortall.jpg);}
+    {background-size: cover;}
+    {width: 100%;}
     {height: 100%;}
   
 }
@@ -181,8 +181,8 @@
 @media(max-width: 767px)  {
     .bg-img-2
     {background-image:  url(../img/slider/firefighterstall1.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
+    {background-size: cover;}
+    {width: 1005;}
     {height: 100%;}
   
 }
