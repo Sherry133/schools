@@ -158,21 +158,29 @@
 	background: rgba(255,255,255,0.8);
 }
 
-
-
 .bg-img-1 {
      background-image: url(../img/slider/Aviator21.jpg); 
 }
 @media(max-width: 767px)  {
     .bg-img-1
     {background-image:  url(../img/slider/Aviatortall.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
+    {background-size: cover;}
+    {width:767px;}
     {height: 100%;}
   
 }
-
-
+@media(min-width:768px and max-width: 1024px){
+    .bg-img-overlay
+    {background-size: cover;}
+    {width: 1024px;}
+    {height: 100%;}
+}
+@media(min-width:414px and max-width:736px) {
+    .bg-img-overlay
+    {background-size: cover;}
+    {width:736px;}
+    {height: 100%;}
+}
 
 .bg-img-2 {
 	background-image: url(../img/slider/firefighters.jpg);
@@ -181,8 +189,8 @@
 @media(max-width: 767px)  {
     .bg-img-2
     {background-image:  url(../img/slider/firefighterstall1.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
+    {background-size: cover;}
+    {width: 100%;}
     {height: 100%;}
   
 }
