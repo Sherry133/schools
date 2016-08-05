@@ -76,24 +76,11 @@ h3  {
 }
 
 @media(max-width: 767px)
-{ h3{font-size: 120%;}
+{ h3{font-size: 130%;}
     {line-height: 1.5em;}
     
 }
-/*
-@media(max-width: 320px)
-{ h3{font-size: 80%;}
-    {line-height: 50%;}
-    {display: block;}
-}
 
-
-h3 span  {
-    color:  #00a347;
-    font-size: 200%;
-    font-family: 'Roboto', sans-serif;
-}
-*/
 h4  {
     font-size: 90%; 
     font-family: 'Open-Sans', sans-serif; 
@@ -141,6 +128,8 @@ color:  #818181;
 }
  #price  h3  {
     color: #00a347;
+    font-weight: 500;
+    font-variant: small-caps;
 } 
 
  #testimonials  h3  {
@@ -304,7 +293,7 @@ main > section {
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-size: 250%;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     margin:70px 0 30px;
     padding-bottom: 10px;
     position: relative;
@@ -437,6 +426,7 @@ main > section {
     border-radius: 8px;
     border-color: cornflowerblue;
     border-width: 2px;
+    margin-right: 30px;
 }
 
 .navbar-default .navbar-toggle:hover  {
@@ -460,21 +450,14 @@ display:flex;
    display: inline-flex;
    align-items: center; 
    } 
+/* @media(max-width: 767px) {
+    h1.navbar-brand  url(../img/slider/School_Saving_Logo_Websitesm.jpg);  
+} */
 
 .nav-dots{
-    margin-bottom: 1%;   
-   
+    margin-bottom: 1%;     
 }
-/*
-.nav-dots:hover, , .nav-dots:active {
-	color: #005da3;  
-}
-.nav-dots:focus  {
-    color: #005da3;
-}
-*/
 .navbar-default  {
- 
   background-color: #fff;
 }
     
@@ -558,7 +541,7 @@ nav ul li:nth-last-child(1)  {
 .caption-content h2 {
     font-family: 'Roboto',sans-serif;
     font-size: 300%;
-    color: #e3e3e4;
+    color: #fff;
     letter-spacing: 15px;
     font-weight: 200;
     margin-top: 45px;
@@ -569,7 +552,8 @@ nav ul li:nth-last-child(1)  {
 @media(max-width: 767px) 
 {.caption-content h2  
     {font-size: 175%;}
-    {font-weight: 300;}
+    {font-weight: 700;}
+   
  
 }
 
@@ -588,6 +572,7 @@ nav ul li:nth-last-child(1)  {
     {font-size: 110%;}
     {line-height: 1.5em;}
     {letter-spacing: 5px;}
+    {font-weight: 300;}
 }
 
 .caption-content h4  {
@@ -826,12 +811,13 @@ color: white;
     color: #D2B48C;
 }
 @media(max-width: 767px)
-{.sec-title h2 {font-size:150%;}}
+{.sec-title h2 
+    {font-size:150%;}}
 .service-icon {
     border: 3px solid;
     display: inline-block;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     line-height: 101px;
     color: #D2B48C;
 
@@ -858,6 +844,8 @@ color: white;
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
+  
+    
    
     -webkit-transform: rotate(-48deg)
        -moz-transform: rotate(-48deg);
@@ -874,7 +862,9 @@ color: white;
 
 .service-item p  {
     color: #818181;
+    line-height: .8em;
 }
+
 
 /*=================================================================
 	Portfolio
@@ -1013,7 +1003,8 @@ ul.external li a:hover {
 .testimonial-item > div {
     line-height: 30px;
     position: relative;
-}
+ }
+
 .testimonial-item > div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
@@ -1038,7 +1029,7 @@ ul.external li a:hover {
 }
 
 @media(max-width: 676px)
-{.testimonial-item > div:after {background-image: none;}}
+{.testimonial-item > div:after {background-image: none;}} 
 
 .testimonial-item > div > span {
     display: inline-block;
@@ -1046,23 +1037,23 @@ ul.external li a:hover {
     margin: 40px 0 30px;
     text-transform: uppercase;
 }
-#testimonials .owl-controls.clickable {
+  #testimonials .owl-controls.clickable {
     margin-top: 20px;
     text-align: center;
-}
-#testimonials .owl-buttons {
+ }
+ #testimonials .owl-buttons {
     border: 2px solid #fff;
     float: inherit;
-}
-#testimonials .owl-prev:hover,
-#testimonials .owl-next:hover {
+ }
+ #testimonials .owl-prev:hover,
+ #testimonials .owl-next:hover {
     color: #fff;
-}
+ }  
 
 /*PRICING/NOW PLANS SECTION*/
 
 .price-table {
-    border: 1px solid #e3e3e3;
+    border: 2px solid #005da3;
 }
 .price-table.featured {
     -webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.19);
@@ -1070,6 +1061,7 @@ ul.external li a:hover {
             box-shadow: 0 4px 5px rgba(0,0,0,0.19);
 }
 .price-table > span {
+   
     color: #00a347;
     display: block;
     padding: 30px 0;
@@ -1088,8 +1080,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #005da3;
-    color: #fff;
+    color: #000;
 }
 .price-table .value span {
     display: inline-block;
@@ -1104,6 +1095,7 @@ ul.external li a:hover {
     margin-bottom: 25px;
 }
 .price-table .value span:last-child {
+    color:#005da3;
 }
 .price-table ul {
     margin: 0;
@@ -1127,17 +1119,21 @@ ul.external li a:hover {
 
 .price-table ul li a {
     display: block;
-    text-transform: uppercase;
+    text-transform: normal;
 }
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #005da3;
+   color:#005da3;
 }
 
 .price-table.featured ul li:last-child a,
 .price-table ul li:last-child:hover a {
-    color: #fff;
+    color: red;
+}
+.price-table.featured ul li:nth-child(2) a,
+.price-table ul li:last-child:hover a {
+    color: red;
 }
 
 
