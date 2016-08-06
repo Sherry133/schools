@@ -164,7 +164,6 @@ main > section {
 }
 
 .btn-blue {
-    background-color: #0058a3;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 50px;
     color: #fff;
@@ -237,7 +236,7 @@ main > section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #00a347;
+	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #536c8d;
     border-radius: 8px;
 	
 	-webkit-transform: scaleX(0);
@@ -293,7 +292,7 @@ main > section {
     font-size: 250%;
     letter-spacing: 10px;
     margin:70px 0 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     position: relative;
     text-transform: uppercase;
     color: #D2B48C;
@@ -448,9 +447,9 @@ display:flex;
    display: inline-flex;
    align-items: center; 
    } 
-/* @media(max-width: 767px) {
+@media(max-width: 767px) {
     h1.navbar-brand  url(../img/slider/School_Saving_Logo_Websitesm.jpg);  
-} */
+} 
 
 .nav-dots{
     margin-bottom: 1%;     
