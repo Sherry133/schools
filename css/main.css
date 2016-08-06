@@ -38,9 +38,7 @@ p {
    font-family: 'Open Sans', serif;
 }
 @media(max-width: 767px)
-{ p {font-size: 80%;}
-   
-    
+{ p {font-size: 100%;}    
 }
 
 
@@ -1464,7 +1462,7 @@ Tablet Design for logo of a width of 980x1280*/
 @media  (max-width: 767px) {
 
     body {
-        font-size: 80%;
+        font-size: 100%;
     }
 
     .parallax {
@@ -1479,10 +1477,10 @@ Tablet Design for logo of a width of 980x1280*/
     }
 
    /*  nav-dots*/ 
-   .nav-dots    {
+   /*.nav-dots    {
        bottom:2%;
        padding: 3px;
-    } 
+    } */
      
 /* slider */
     body  {
@@ -1599,7 +1597,7 @@ Tablet Design for logo of a width of 980x1280*/
 	Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
-@media(min-width: 480px) and (max-width: 767px) {
+@media(min-device-width: 375px) and (max-device-width: 667px) {
     .caption-content h2  {
         font-size: 80%;
     }
@@ -1608,13 +1606,17 @@ Tablet Design for logo of a width of 980x1280*/
     }
     
     /*  nav-dots */
-   .nav-dots    {
-       bottom: 1%;
-    } 
+    /* .nav-dots    {
+       bottom: 10%;
+       height: 30px;   
+    } */
    
 /* home slider */
     body p {
-        font-size: 80%;
+        font-size: 100%;
+        margin-bottom: 50px;
+        margin-top: -50px;
+
     }
 
 /*about*/
