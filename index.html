@@ -547,7 +547,7 @@
                                 </div>
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-						 <form id="contact-form" action="mail.php" method="post">
+						 <form id="contact-form" action="http://formspree.io/support@schoolsavings.com" method="post">
 							<!-- <form action="mail.php" method="post"> -->
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
@@ -675,7 +675,7 @@
     					name: {
     						required: "Please enter a name.",
     						minlength: "Your name must consist of at least 2 characters"
-    					},
+    		 			},
     		            email: {
     		                required: "Please enter a complete email address."
     		            },
@@ -692,7 +692,7 @@
     					$(form).ajaxSubmit({
     						type:"POST",
     						data: $(form).serialize(),
-    						url:"mail.php",
+    						url:"http://formspree.io/support@schoolsavings.com",
     						success: function() {
     							$("#contact-form").fadeTo( "slow", 1, function() {
     		                        $("#contact-form").resetForm();
