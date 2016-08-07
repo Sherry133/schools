@@ -547,7 +547,8 @@
                                 </div>
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-						 <form id="contact-form" action="http://formspree.io/support@schoolsavings.com" method="post">
+						 <form id="contact-form"> 
+						 <form action="https://formspree.io/support@schoolsavings.com" method="POST">
 							<!-- <form action="mail.php" method="post"> -->
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
@@ -561,7 +562,7 @@
 								<div class="input-field">
 									<textarea name="message" class="form-control" placeholder="Message"></textarea>
 								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button> 
+						       	<button input-type="submit"  id="submit" class="btn btn-blue btn-effect">Send</button> 
 						       		 <div class="msg-success">Thank You! your Message was sent successfully.</div>
 						       		  <div class=" msg-error">Something went wrong, please try again or contact us toll free at 888-787-7728.</div>    	
 							</form>
@@ -692,7 +693,7 @@
     					$(form).ajaxSubmit({
     						type:"POST",
     						data: $(form).serialize(),
-    						url:"http://formspree.io/support@schoolsavings.com",
+    						url:"https://formspree.io/support@schoolsavings.com",
     						success: function() {
     							$("#contact-form").fadeTo( "slow", 1, function() {
     		                        $("#contact-form").resetForm();
