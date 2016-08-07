@@ -161,34 +161,34 @@
 .bg-img-1 {      background-image: url(../img/slider/Aviator21.jpg); }
 
 @media(min-device-width:375px) and (max-device-height:667px) and
-(orientation:portrait) and (-webkit-device-pixel-ratio: 2)  {     
+(orientation:portrait)   {     
 	.bg-img-1     
 	{background-image:url(../img/slider/Aviatorsm.jpg);}    
     {background-size: cover;}
     {width:375px;}     {height: 667px;} }
 
-@media(min-device-width:414px) and (max-device-height:736px) and
-(orientation:portrait) and (-webkit-device-pixel-ratio: 2){    
+ @media(min-device-width:414px) and (max-device-height:736px) and (-webkit-device-pixel-ratio:2) and
+(orientation:portrait) {    
  .bg-img-overlay    
  {background-size: cover;} 
  {width: 414px;}
  {height: 736px;} 
 }
 
-@media(min-device-width:375px) and (max-device-height:667px) and
-(orientation:portrait) and (-webkit-device-pixel-ration: 2){ 
+@media(min-device-width:375px) and (max-device-height:667px) and (-webkit-device-pixel-ratio:2) and
+(orientation:portrait) { 
 
-	.bg-img-overlay     
-	{background-size:cover;}    
-	{width:375px;} {height: 667px;}
+    .bg-img-overlay     
+    {background-size:cover;}    
+    {width:375px;} {height: 667px;}
 }
 
 @media(min-device-width:768px) and (max-device-height:1024px) and
 (orientation:portrait) {
-	.bg-img-overlay    
-	{background-size:cover;}    
-	{width:768px;} {height: 100%;}
-}
+    .bg-img-overlay    
+    {background-size:cover;}    
+    {width:768px;} {height: 1024px;}
+} 
 .bg-img-2 {
 	background-image: url(../img/slider/firefighters.jpg);   
 }
