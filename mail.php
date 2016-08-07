@@ -11,7 +11,7 @@
     $fields["subject"] = $_REQUEST['subject'];
     $fields["message"] = $_REQUEST['message'];
 
-    $body = "Message From ".$_SERVER['SERVER_NAME']."\n\n <br><br>";
+    $body = "Message From ".$_SERVER['www.schoolsavings.com']."\n\n <br><br>";
     $body .= '<strong>Name</strong> : '.$fields['name']. '<br><br>';
     $body .= '<strong>Email</strong> : '.$fields['email']. '<br><br>';
     $body .= '<strong>Subject</strong> : '.$fields['subject']. '<br><br>';
