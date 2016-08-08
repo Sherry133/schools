@@ -424,7 +424,7 @@
 							  <div class="testimonial-item text-center">
 									<img src="img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
-										Joe </br><h3>  Martha's Vineyard Savings Bank </h3><br>
+										Joe </br><h3>  First National Bank </h3><br>
 										<p>We have been using School Savings' cloud-based school banking system for almost ten (10) years. It is secure and is approved by Federal Reserve Bank regulators for electronic deposit processing. School Savings is also approved by the U.S. Department of Education. Our schools love the program! </p>
 									</div>
 								</div>
@@ -438,7 +438,7 @@
 								<div class="testimonial-item text-center">
 									<img src="img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
-                                        Kyle </br><h3> First Bank of Dalton</h3><br>
+                                        Kyle </br><h3> First Security Bank</h3><br>
 										<p>We are new to School Savings. We had been implementing a "manual posting" school banking system. Things were getting out of hand but School Savings' online management system and electronic deposit system restored order!</p>
 									</div>
 								</div>
@@ -549,7 +549,6 @@
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
 						<form id="contactform"
 							action="https://formspree.io/support@schoolsavings.com"  
-
 							 method="POST"> 
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
@@ -572,10 +571,22 @@
 									<input type="hidden" name="_next" value="https://sherry133.github.io/schools/Thanks.html"/>
 									</div>
 
+									<div class="form-reset">
+									 <input type="button" class="btn-gray btn-border btn-effect" onclick="myFunction()" value="Reset Form"></div>
+
 								
-						       	<button type="submit" class="btn btn-blue btn-effect">Send</button>     	
-							</form>
+						       	<button type="submit" class="btn btn-blue btn-effect">Send</button> 
+
+						       		</form>
 						</div>
+						       		<script>
+function myFunction() {
+    document.getElementById("contactform").reset();
+}
+</script>
+
+
+						
 						
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
@@ -603,14 +614,7 @@
 							<h2>STAY IN TOUCH</h2>
 							<p>We're Available 24/7!</p>
 						      </div>
-					<!-- 	<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div Priceclass="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-            							</button>
-							             </div>
-						</form> -->
+				
 						<!-- Footer Social -->
 						<div class="footer-social">
 							<ul>
@@ -663,35 +667,3 @@
     </body>
 </html>
 
- <script type= "text/javascript">
-$(function() {
- $("#contactform").validator().on("submit", function (event) {
-    if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-    } else {
-        // everything looks good!
-        event.preventDefault();
-        submitForm();
-    }
-});
-$(function() {
-	$("#contactform")[0].resetForm();
-// submitMSG(true, "Message Submitted!")});
-
-
-$.fn.clearForm = function(includeHidden) {
-    return this.each(function() {
-        $('input,select,textarea', this).clearFields(includeHidden);
-    });
-};
-
-// //$(function() {
-// 	$("#contactform").validate({
-// 			submitHandler: function(form) {
-//     					$(form).ajaxSubmit({
-//     						type:"POST",
-//     						data: $(form).serialize(),
-//     						url:"mail.php",
-//     						success: function() {
-//     		                        $("#contact-form").resetForm();
-</script>
