@@ -1232,14 +1232,16 @@ textarea.form-control {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 THANK YOU MESSAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++=*/
-#body #thankyou  {
-    background-color: darkgray;
-}
-  
+.thank-you-block h2  {
+    margin-top: 60px;
+    margin-left: 30px;
+}  
 .thanks-body p {
     color: #5584DD;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 30px;
+    line-height: 100%;
+
    
 
 }
