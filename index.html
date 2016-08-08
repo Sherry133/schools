@@ -547,9 +547,8 @@
                                 </div>
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-						 <form id="contact-form"> 
-						 <form action="https://formspree.io/support@schoolsavings.com" method="POST">
-							<!-- <form action="mail.php" method="post"> -->
+						<form id="contactform"
+							action="https://formspree.io/support@schoolsavings.com" method="POST">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -561,10 +560,12 @@
 								</div>
 								<div class="input-field">
 									<textarea name="message" class="form-control" placeholder="Message"></textarea>
-								</div>
-						       	<button input-type="submit"  id="submit" class="btn btn-blue btn-effect">Send</button> 
-						       		 <div class="msg-success">Thank You! your Message was sent successfully.</div>
-						       		  <div class=" msg-error">Something went wrong, please try again or contact us toll free at 888-787-7728.</div>    	
+									</div>
+									<div class="input-field">
+									<input type="text" name="_gotcha" style="display:none"> 
+									</div>
+								
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>     	
 							</form>
 						</div>
 						
@@ -651,68 +652,5 @@
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
-         <script>
-        	$(function() {
-    			$("#contact-form").validate({
-    				rules: {
-    					name: {
-    						required: true,
-    						minlength: 2
-    					},
-    		            email: {
-    		                required: true,
-    		                email: true
-    		            },
-    					subject: {
-    						required: true,
-    		                minlength: 2
-    					},
-    					message: {
-    						required: true,
-    		                minlength: 2
-    					}
-    				},
-    				messages: {
-    					name: {
-    						required: "Please enter a name.",
-    						minlength: "Your name must consist of at least 2 characters"
-    		 			},
-    		            email: {
-    		                required: "Please enter a complete email address."
-    		            },
-    					subject: {
-    						required: "Please enter the subject of your email.",
-    		                minlength: "Did you complete your entry?"
-    					},
-    					message: {
-    						required: "Please let us know how we can assist you. ",
-    						minlength: "Are you finshed?"
-    					}
-    				},
-    				submitHandler: function(form) {
-    					$(form).ajaxSubmit({
-    						type:"POST",
-    						data: $(form).serialize(),
-    						url:"https://formspree.io/support@schoolsavings.com",
-    						success: function() {
-    							$("#contact-form").fadeTo( "slow", 1, function() {
-    		                        $("#contact-form").resetForm();
-    								$(".msg-success").slideDown("slow");
-    							});
-    						},
-    						error: function() {
-    							$("#contact-form").fadeTo( "slow", 1, function() {
-    								$(".msg-error").slideDown("slow");
-    							});
-    						}
-    					});
-    				},
-    		        errorPlacement: function(error, element) {
-    		            element.after(error);
-    		            error.hide().slideDown();
-    		        }
-    			});
-        	});
-        </script>
     </body>
 </html>
