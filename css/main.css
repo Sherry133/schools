@@ -35,7 +35,7 @@ figure, p, address {
 p {
   font-size: 100%;
   line-height: 1.5em;
-   font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', serif;
 }
 @media(max-width: 767px)
 { p {font-size: 100%;}    
@@ -719,6 +719,7 @@ nav ul li:nth-last-child(1)  {
     margin-left: 15px;
     margin-top: 5px;
     line-height: 1.5em;
+    color: #fff
 }
 #about .welcome-block h3 {
     margin: 50px 10px 65px;
@@ -1208,6 +1209,21 @@ textarea.form-control {
 }
 #submit.btn-effect:after {
   background: #fff;
+}
+.btn-gray  {
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+    padding:5px 10px; 
+    border-radius: 8px;
+    color: #5584DD;
+}
+
+.form-reset .btn-effect:after {
+  background: #fff;
+}
+.form-reset   {
+  padding-bottom: 0px; 
+  font-size: .8em;    
+
 }
 .contact-details h3 {
     border-bottom: 1px solid #008ecc;
