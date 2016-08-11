@@ -171,6 +171,14 @@
 .bg-img-3 {
 	background-image: url(../img/slider/Banner2.jpg);
 }
+.bg-img-overlay  {
+    height: 100%; 
+    width: 100%; 
+    top: 0; 
+    left:0; position: absolute; 
+    background-color: #8b86a3;
+    opacity: 0.6;
+}
 
 /* Animations for content elements */
 
