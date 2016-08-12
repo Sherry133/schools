@@ -79,7 +79,9 @@ h3  {
     {line-height:130%;}
     
 }
-
+.testimonial-item h3 {
+    color:#fff;
+}
 h4  {
     font-size: 90%; 
      font-family: 'Open-Sans', sans-serif; 
@@ -131,7 +133,7 @@ color:  #818181;
     } 
 } 
 
- #testimonials  h3  {
+ #testimonials testimonial-item h3  {
     color: #fff;
 } 
 
@@ -547,10 +549,10 @@ nav ul li:nth-last-child(1)  {
 .caption-content h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 300%;
-    color: #fff;
-    line-height: 2.5em;
+    color: #ecece4;
+    line-height: 130%;
     letter-spacing: 15px;
-    font-weight: 200;
+    font-weight: 500;
     margin-top: 45px;
     margin-bottom: 35px;
     text-transform: uppercase;
@@ -559,16 +561,16 @@ nav ul li:nth-last-child(1)  {
 {.caption-content h2  
   {font-size:175%;}
   {font-weight: 700;}
-   
+
 }
 
 .caption-content h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 170%;
-    color: #e3e3e4;
+    color: #ecece4;
     text-transform: normal;
     letter-spacing: 5px;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 1.2em;
     
     }
@@ -583,8 +585,8 @@ nav ul li:nth-last-child(1)  {
  .caption-content h4  {
     font-family: 'Open Sans', sans-serif;
     font-size: 90%;
-    color:#e3e3e4;
-    font-weight: 100;
+    color:#ecece4;
+    font-weight: 300;
     letter-spacing: 3px;
     line-height: 1.2em;
 } 
@@ -1139,9 +1141,11 @@ color:#fff;
 .price-table ul li:last-child:hover a {
     color: #fff;
 }
-.price-table.featured ul li:nth-child(2) a,
+.price-table.featured ul li:nth-child(2) a
+
 .price-table ul li:last-child:hover a {
     color: red;
+    font-weight: 100;
 }
 
 /*=================================================================
@@ -1202,7 +1206,7 @@ color:#fff;
     box-shadow: none;
     font-size: 120%;
     height: 50px;
-    background-color: #0f9be0;
+    background-color: #00cdff;
 }
 textarea.form-control {
     width: 100%;
@@ -1229,7 +1233,7 @@ textarea.form-control {
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #008ecc;
+    border-bottom: 1px solid #33ccFF;
     font-weight: 900;
     margin-bottom: 15px;
     padding-bottom: 15px;
