@@ -133,7 +133,7 @@ $(document).ready(function(){
          /* ==========================================
        For small screens to scroll to # properly.
        =========================================*/
-    jQuery(document).ready(function($) {
+   /* jQuery(document).ready(function($) {
    function belowMastheadArrow() {
       var $body           = $('body');
       var $bodyHeight     = $body.outerHeight();
@@ -160,13 +160,14 @@ $(document).ready(function(){
             }, 850, 'easeInOutExpo');
          });
       }
-   }
+       
+   
 
    belowMastheadArrow();
 
    $(window).resize(belowMastheadArrow);
 });
-                                                 	
+*/                                                 	
 	$("#works, #testimonial").owlCarousel({	 
 		navigation : true,
 		pagination : false,
