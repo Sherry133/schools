@@ -137,10 +137,10 @@ $(document).ready(function(){
    function belowMastheadArrow() {
       var $body           = $('body');
       var $bodyHeight     = $body.outerHeight();
-      var $adminbarHeight = $('#wpadminbar').outerHeight();
-      var $navbarHeight   = $('.x-navbar').outerHeight();
+      var $adminbarHeight = $('#navigation).outerHeight();
+      var $navbarHeight   = $('.navbar').outerHeight();
 
-      var scrollSpyLinks = $('.x-nav-scrollspy > li > a[href^="#"]');
+      var scrollSpyLinks = $('.nav-navbar-nav> li > a[href^="#"]');
       if ($(window).width() <= 979) {
          scrollSpyLinks.off('click'); 
          scrollSpyLinks.click(function(e) {
