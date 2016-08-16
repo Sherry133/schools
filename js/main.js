@@ -128,7 +128,44 @@ $(document).ready(function(){
 
     $(window).resize(function(){'use strict',
         $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-    });     
+    });  
+    
+         /* ==========================================
+       For small screens to scroll to # properly.
+       =========================================*/
+    jQuery(document).ready(function($) {
+   function belowMastheadArrow() {
+      var $body           = $('body');
+      var $bodyHeight     = $body.outerHeight();
+      var $adminbarHeight = $('#wpadminbar').outerHeight();
+      var $navbarHeight   = $('.x-navbar').outerHeight();
+
+      var scrollSpyLinks = $('.x-nav-scrollspy > li > a[href^="#"]');
+      if ($(window).width() <= 979) {
+         scrollSpyLinks.off('click'); 
+         scrollSpyLinks.click(function(e) {
+            e.preventDefault();
+            var $contentBand = $(this).attr('href');
+            $('html, body').animate({
+               scrollTop: $($contentBand).offset().top + 1
+            }, 850, 'easeInOutExpo');
+         });
+      } else {
+         scrollSpyLinks.off('click'); 
+         scrollSpyLinks.click(function(e) {
+            e.preventDefault();
+            var $contentBand = $(this).attr('href');
+            $('html, body').animate({
+               scrollTop: $($contentBand).offset().top - $adminbarHeight - $navbarHeight + 1
+            }, 850, 'easeInOutExpo');
+         });
+      }
+   }
+
+   belowMastheadArrow();
+
+   $(window).resize(belowMastheadArrow);
+});
                                                  	
 	$("#works, #testimonial").owlCarousel({	 
 		navigation : true,
