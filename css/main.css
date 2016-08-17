@@ -412,6 +412,7 @@ main > section {
             transition: all 0.8s ease 0s;
 }
 
+
 #navigation a:hover  {
     color: red;
 }
@@ -542,22 +543,25 @@ nav ul li:nth-last-child(1)  {
    
     vertical-align: middle;
     display: table-cell;
+    background: rgba(0,0,0,.3)
     
 }
 .caption-content h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 300%;
-    color: #fff;
+    font-size: 350%;
+    font-style: italic;
+    color: #e3e3e4;
     line-height: 130%;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     font-weight: 700;
     margin-top: 45px;
     margin-bottom: 35px;
     text-transform: uppercase;
+    /*background: rgba(255,255,255,.3)*/
 }
 @media(max-width: 767px) 
 {.caption-content h2  
-  {font-size:175%;}
+  {font-size:200%;}
   {font-weight: 700;}
    
 }
