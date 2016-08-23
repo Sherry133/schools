@@ -1,5 +1,5 @@
 <?php
-    $to = "sherry@idebit.com"; // replace this email with yours
+    $to = "support@schoolsavings.com"; // replace this email with yours
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "Content-type: text/html;From: $from";
@@ -11,7 +11,7 @@
     $fields["subject"] = $_REQUEST['subject'];
     $fields["message"] = $_REQUEST['message'];
 
-    $body = "Message From ".$_SERVER['sherry133.github.io']."\n\n <br><br>";
+    $body = "Message From ".$_SERVER['SERVER_NAME']."\n\n <br><br>";
     $body .= '<strong>Name</strong> : '.$fields['name']. '<br><br>';
     $body .= '<strong>Email</strong> : '.$fields['email']. '<br><br>';
     $body .= '<strong>Subject</strong> : '.$fields['subject']. '<br><br>';
