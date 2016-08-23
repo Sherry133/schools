@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -58,7 +56,7 @@
         <!--
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-default navbar-fixed-top">
+        <header id="navigation" class="navbar-default navbar-fixed-top animated-header">
             <div class="container">
                 <div class="navbar-header">
                    
@@ -415,35 +413,39 @@
 				<div class="overlay">
 					<div class="container">
 						<div class="row">
-							<div class="owlcontrols" class=clickable></div>
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>TESTIMONIALS</h2>
-							   </div>
-							
 
-								<div class="testimonial-item text-center">
-									<img src="img/member_2.jpg" alt="Our Clients">
-									<div class="clearfix">
-										Sally </br><h3>  Martha's Vineyard Savings Bank </h3><br>
-										<p>We have been using School Savings' cloud-based school banking system since 2008. It is secure and is approved by Federal Reserve Bank regulators for  electronic deposit processing. School Savings is also approved by the U.S. Department of Education. Our schools love the program! </p>
-									</div>
+							<div class="col-xs-12">
+								
+								
+								<div class="sec-title text-center white wow animated fadeInDown">
+									<h2>TESTIMONIALS</h2>
 								</div>
-				             <div class="testimonial-item text-center">
-									<img src="img/member_4.jpg" alt="Our Clients">
-									<div class="clearfix">
-                                    Ann </br> <h3>Washington Mutual</h3><br>
-										<p>We used School Savings' school banking technology for twenty-four (24) years  beginning with their disk-based program. In 2002 we moved to their cloud-based system and tripled our number of schools to 2500.  Their technology reduced our school banking Operations staff from 31 to 2 before we were bought.</p>
+								
+								<div id="testimonial" class=" wow animated fadeInUp">
+									<div class="testimonial-item text-center">
+										<img src="img/member_2.jpg" alt="Our Clients">
+										<div class="clearfix">
+											Sally </br><h3>  Martha's Vineyard Savings Bank </h3><br>
+											<p>We have been using School Savings' cloud-based school banking system since 2008. It is secure and is approved by Federal Reserve Bank regulators for  electronic deposit processing. School Savings is also approved by the U.S. Department of Education. Our schools love the program! </p>
+										</div>
 									</div>
-								</div>
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-                                        Kyle </br><h3> First National Bank</h3><br>
-										<p>We are new to School Savings. We had been implementing a "manual posting" school banking system. Things were getting out of hand but School Savings' online management system and electronic deposit system restored order!</p>
+									<div class="testimonial-item text-center">
+										<img src="img/member_4.jpg" alt="Our Clients">
+										<div class="clearfix">
+	                                    Ann </br> <h3>Washington Mutual</h3><br>
+											<p>We used School Savings' school banking technology for twenty-four (24) years  beginning with their disk-based program. In 2002 we moved to their cloud-based system and tripled our number of schools to 2500.  Their technology reduced our school banking Operations staff from 31 to 2 before we were bought.</p>
+										</div>
+									</div>
+									<div class="testimonial-item text-center">
+										<img src="img/member-1.jpg" alt="Our Clients">
+										<div class="clearfix">
+	                                        Kyle </br><h3> First National Bank</h3><br>
+											<p>We are new to School Savings. We had been implementing a "manual posting" school banking system. Things were getting out of hand but School Savings' online management system and electronic deposit system restored order!</p>
+										</div>
 									</div>
 								</div>
 							</div>
+						
 						</div>
 					</div>
 				</div>
@@ -544,12 +546,10 @@
 							<h2>Contact</h2>
 							<p><h3>Send Us a Message
 							</h3></p>
-		
-                                </div>
+                        </div>
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form id="contactform"
-action="https://formspree.io/support@schoolsavings.com" method="POST">
+							<form id="contact-form" action="https://formspree.io/support@schoolsavings.com" method="POST">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -560,23 +560,18 @@ action="https://formspree.io/support@schoolsavings.com" method="POST">
 									<input type="text" name="subject" class="form-control" placeholder="Subject...">
 								</div>
 								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Message"></textarea>
+									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
 								</div>
-								<div class="input-field">
-									<input type="text" name="_gotcha" style="display:none"> 
-									</div>
-									<div class="input-field">
-										<input type="hidden" name="_next" value="https://sherry133.github.io/schools/Thanks.html"/>
-										</div>
-							<div class="form-reset">
-										 <input type="button" class="btn-gray btn-border btn-effect" onclick="myFunction()" value="Reset Form"></div>			
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>     	
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+						       	<div class="msg-success">
+						       		Your Message was sent successfully!
+						       	</div>
+						       	<div class="msg-error">
+						       		Something went wrong. Please call 888-787-7728.
+						       	</div>
 							</form>
 						</div>
-						<script>function myFunction() {
-							document.getElementById("contactform").reset();
-						}
-						</script>
+
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Us </h3>						
@@ -659,6 +654,71 @@ action="https://formspree.io/support@schoolsavings.com" method="POST">
 		<!-- onscroll animation -->
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
+        <script src="js/jquery.form.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        	$(function() {
+    			$("#contact-form").validate({
+    				rules: {
+    					name: {
+    						required: true,
+    						minlength: 2
+    					},
+    		            email: {
+    		                required: true,
+    		                email: true
+    		            },
+    					subject: {
+    						required: true,
+    		                minlength: 2
+    					},
+    					message: {
+    						required: true,
+    		                minlength: 2
+    					}
+    				},
+    				messages: {
+    					name: {
+    						required: "come on, you have a name don't you?",
+    						minlength: "your name must consist of at least 2 characters"
+    					},
+    		            email: {
+    		                required: "no email, no support"
+    		            },
+    					subject: {
+    						required: "you have a reason to contact, write it here",
+    		                minlength: "thats all? really?"
+    					},
+    					message: {
+    						required: "um...yea, you have to write something to send this form.",
+    						minlength: "thats all? really?"
+    					}
+    				},
+    				submitHandler: function(form) {
+    					$(form).ajaxSubmit({
+    						type:"POST",
+    						data: $(form).serialize(),
+    						url:"mail.php",
+    						success: function() {
+    							$(".contact-form").fadeTo( "slow", 1, function() {
+    		                        $("#contact-form").resetForm();
+    								$(".msg-success").slideDown("slow");
+    							});
+    						},
+    						error: function() {
+    							$(".contact-form").fadeTo( "slow", 1, function() {
+    								$(".msg-error").slideDown("slow");
+    							});
+    						}
+    					});
+    				},
+    		        errorPlacement: function(error, element) {
+    		            element.after(error);
+    		            error.hide().slideDown();
+    		        }
+    			});
+        	});
+        </script>
     </body>
 </html>
