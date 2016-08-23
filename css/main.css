@@ -423,7 +423,7 @@ main > section {
 #navigation.animated-header {
     padding: 20px 0; 
       
-   } 
+}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: red;
    
@@ -433,6 +433,9 @@ main > section {
     border-color: cornflowerblue;
     border-width: 2px;
 }
+.navbar-default:not(.animated-header)  {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
 
 .navbar-default .navbar-toggle:hover  {
     background-color: lightblue;
@@ -440,21 +443,14 @@ main > section {
     
     
 .navbar-default .navbar-toggle:focus {
-        background-color: darkblue;
-    }
+    background-color: darkblue;
+}
 
-.brand-centered {
-display:flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%:
-        left:0;
-        top: 0;
-    }
- h1.navbar-brand  {
-   display: inline-flex;
-   align-items: center; 
-   } 
+.navbar-default .navbar-brand {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 
 .nav-dots{
     margin-bottom: 1%;   
@@ -488,7 +484,7 @@ nav ul li:nth-last-child(1)  {
   
 }
 
- =========================================
+ /*=========================================
 	Home Slider
 ==================================================================*/
 
@@ -559,9 +555,8 @@ nav ul li:nth-last-child(1)  {
     text-transform: uppercase;
   
 }
-@media(max-width: 767px) 
-{.caption-content h2  
-  {font-size:200%;}
+@media(max-width: 767px) {
+    .caption-content h2  {font-size:200%;}
   {font-weight: 700;}
    
 }
@@ -825,8 +820,14 @@ color: white;
     text-transform: uppercase;
     color: #D2B48C;
 }
-@media(max-width: 767px)
-{.sec-title h2 {font-size:150%;}}
+@media(max-width: 767px) {
+    .sec-title h2 {font-size:150%;}
+
+
+    .navbar-default .navbar-brand {
+        margin: 0 0 0 15px;
+    }
+}
 .service-icon {
     border: 3px solid;
     display: inline-block;
@@ -1263,6 +1264,42 @@ textarea.form-control {
     margin-left: 24px;
     color: #D2B48C;
 }
+
+.input-field label.error {
+  color: red;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+.form-control::-webkit-input-placeholder,
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+.form-control:-moz-placeholder,
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+    color: inherit;
+}
+
+.form-control::-moz-placeholder,
+::-moz-placeholder {  /* Firefox 19+ */
+    opacity: 1;
+    color: inherit;
+}
+
+.form-control:-ms-input-placeholder,
+:-ms-input-placeholder {  
+    opacity: 1;
+    color: inherit;
+}
+
+.msg-success,
+.msg-error {
+    color: #777;
+    display: none;
+}
 /*
 THANK YOU MESSAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++=*/
@@ -1296,8 +1333,10 @@ THANK YOU MESSAGE
     text-transform: uppercase;
 
 }
-@media(max-width: 767px)
-{.footer-content h2 {font-size:150%;}}
+@media(max-width: 767px){
+    .footer-content h2 {font-size:150%;}
+
+}
 
 
 .footer-content {
@@ -1320,15 +1359,20 @@ THANK YOU MESSAGE
     display: block;
 
 }
- @media screen (max-width:767px){
-     .subscribe-form
-     {margin-right: 120px;}   
+@media screen (max-width:767px) {
+    .subscribe-form{
+        margin-right: 120px;
+    }
 }
 
 @media (max-width:767px) 
 {.footer-content
  {font-size: 70%;}
  {margin-right: 80px;}   
+
+    .footer-content {
+       width: auto;
+    }
 }
 
 @media(max-width: 767px)
@@ -1563,17 +1607,17 @@ Tablet Design for logo of a width of 980x1280*/
         width: 100%;
     }
     .service-icon i {
-   
-    display: inline-block;
-    vertical-align: middle;
-    
-   
-    -webkit-transform: rotate(-48deg)
-       -moz-transform: rotate(-48deg);
-        -ms-transform: rotate(-48deg);
-         -o-transform: rotate(-48deg);
-            transform: rotate(-48deg);
-}
+       
+        display: inline-block;
+        vertical-align: middle;
+        
+       
+        -webkit-transform: rotate(-48deg)
+           -moz-transform: rotate(-48deg);
+            -ms-transform: rotate(-48deg);
+             -o-transform: rotate(-48deg);
+                transform: rotate(-48deg);
+    }
 
 /*portfolio*/
     .portfolio-item {
@@ -1582,10 +1626,10 @@ Tablet Design for logo of a width of 980x1280*/
     }
     
     figcaption.mask h4 {
-    margin: 0;
-    color: #fff;
-    font-size: 40%;
-}
+        margin: 0;
+        color: #fff;
+        font-size: 40%;
+    }
 
 /* lightbox */
     .fancybox-title h3 {
