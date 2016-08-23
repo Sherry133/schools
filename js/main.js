@@ -88,34 +88,24 @@ $(document).ready(function(){
 	/* ========================================================================= */
 
 	jQuery('#nav').singlePageNav({
-		offset: jQuery('#nav').outerHeight(),
+		offset: jQuery('.navbar-default .container').outerHeight(),
 		filter: ':not(.external)',
 		speed: 2000,
 		currentClass: 'current',
-		easing: 'easeInOutExpo',
-		updateHash: true,
-		beforeStart: function() {
-			console.log('begin scrolling');
-		},
-		onComplete: function() {
-			console.log('done scrolling');
-		}
+		easing: 'easeInOutExpo'
 	});
 	 
-	    $(window).scroll(function () {
-	        if ($(window).scrollTop()  >400) {
-	            $(".navbar-brand a").css("color","#fff");
-	            $("#navigation").add
-                Class("animated-header");
-	                        } 
-	                        else 
-	                     {
-	            $(".navbar-brand a").css("color","#fff"); 
-	            $("#navigation").addClass("animated-header");
-	        } 
+    $(window).scroll(function () {
+        if ($(window).scrollTop()  > 400) {
+            $("#navigation").removeClass("animated-header");
+        } else  {
+            $("#navigation").addClass("animated-header");
+        }
     });
  $('.navbar-collapse a').click(function(){
  $(".navbar-collapse").collapse('hide');
+
+ slideFix();
 });
 	/* ========================================================================= */
 	/*	Fix Slider Height
@@ -123,11 +113,16 @@ $(document).ready(function(){
 
     // Slider Height
     var slideHeight = $(window).height();
+    var headerHeight = $("#navigation").innerHeight();
+    var fixHeight = slideHeight - headerHeight;
     
     $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 
+    $(".site-content").css('padding-top', headerHeight);
+
     $(window).resize(function(){'use strict',
         $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+        $(".site-content").css('padding-top', headerHeight);
     });  
     
          /* ==========================================
@@ -209,8 +204,6 @@ $(document).ready(function(){
 	});
 	
 });
-
-
 
 var wow = new WOW ({
 	offset:       75,          // distance to the element when triggering the animation (default is 0)
