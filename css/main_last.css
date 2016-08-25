@@ -1230,13 +1230,13 @@ textarea.form-control {
 #submit.btn-effect:after {
   background: #fff;
 }
- .btn-gray  {
+/* .btn-gray  {
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding:5px 10px; 
     border-radius: 8px;
     color: #5584DD;
     font-size: .8em;
-} 
+} */
 
 .contact-details h3 {
     border-bottom: 1px solid #fff;
@@ -1259,12 +1259,12 @@ textarea.form-control {
     color: #D2B48C;
 }
 /* =====by M========= */
-/* .input-field label.error {
+.input-field label.error {
   color: red;
   display: block;
   font-size: 13px;
   font-weight: 400;
-} */
+}
 .form-control::-webkit-input-placeholder,
 ::-webkit-input-placeholder {
     opacity: .5;
@@ -1289,11 +1289,11 @@ textarea.form-control {
     color: inherit;
 }
 
-/* .msg-success,
+.msg-success,
 .msg-error {
     color: #777;
     display: none;
-} */
+}
 /*
 THANK YOU MESSAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++=*/
