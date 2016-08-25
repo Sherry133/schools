@@ -537,6 +537,7 @@
 			</section>
 			<!-- end Social section -->
 			
+			
 			<!-- Contact section -->
 			<section id="contact" >
 				<div class="container">
@@ -546,10 +547,12 @@
 							<h2>Contact</h2>
 							<p><h3>Send Us a Message
 							</h3></p>
-                        </div>
+		
+                                </div>
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form id="contact-form" action="#" method="post">
+							<form id="contactform"
+action="https://formspree.io/support@schoolsavings.com" method="POST">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -560,17 +563,23 @@
 									<input type="text" name="subject" class="form-control" placeholder="Subject...">
 								</div>
 								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Message..."></textarea>
+									<textarea name="message" class="form-control" placeholder="Message"></textarea>
 								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-						       	<div class="msg-success">
-						       		We received your Message! Thank you!
-						       	</div>
-						       	<div class="msg-error">
-						       		Something went wrong. Please call 888-787-7728 for assistance.
-						       	</div>
+								<div class="input-field">
+									<input type="text" name="_gotcha" style="display:none"> 
+									</div>
+									<div class="input-field">
+										<input type="hidden" name="_next" value="https://sherry133.github.io/schools/Thanks.html"/>
+										</div>
+							<div class="form-reset">
+										 <input type="button" class="btn-gray btn-border btn-effect" onclick="myFunction()" value="Reset Form"></div>			
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>     	
 							</form>
 						</div>
+						<script>function myFunction() {
+							document.getElementById("contactform").reset();
+						}
+						</script>
 
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
@@ -657,68 +666,6 @@
         <script src="js/jquery.form.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-        	$(function() {
-    			$("#contact-form").validate({
-    				rules: {
-    					name: {
-    						required: true,
-    						minlength: 2
-    					},
-    		            email: {
-    		                required: true,
-    		                email: true
-    		            },
-    					subject: {
-    						required: false,
-    		                minlength: 2
-    					},
-    					message: {
-    						required: true,
-    		                minlength: 2
-    					}
-    				},
-    				messages: {
-    					name: {
-    						required: "Did you want to send us a message?",
-    						minlength: "Your Name must consist of at least 2 characters."
-    					},
-    		            email: {
-    		                required: "Please enter a correct email address."
-    		            },
-    					subject: {
-    						required: "What is the subject of your message?",
-    		                minlength: "Your Subject must consist of at least 2 characters."
-    					},
-    					message: {
-    						required: "Is there a message?",
-    						minlength: "Your Message must consist of at least 2 characters."
-    					}
-    				},
-    				submitHandler: function(form) {
-    					$(form).ajaxSubmit({
-    						type:"POST",
-    						data: $(form).serialize(),
-    						url:"mail.php",
-    						success: function() {
-    							$(".contact-form").fadeTo( "slow", 1, function() {
-    		                        $("#contact-form").resetForm();
-    								$(".msg-success").slideDown("slow");
-    							});
-    						},
-    						error: function() {
-    							$(".contact-form").fadeTo( "slow", 1, function() {
-    								$(".msg-error").slideDown("slow");
-    							});
-    						}
-    					});
-    				},
-    		        errorPlacement: function(error, element) {
-    		            element.after(error);
-    		            error.hide().slideDown();
-    		        }
-    			});
-        	});
-        </script>
+    
     </body>
 </html>
