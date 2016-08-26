@@ -714,7 +714,7 @@ nav ul li:nth-last-child(1)  {
 #about h3 {
     color: #fff;
     font-weight: 300;
-    margin: 75px 10px 35px;
+    margin: 75px 10px 25px;
     text-transform: uppercase;
     font-family: 'Roboto',sans-serif;
 }
@@ -723,7 +723,7 @@ nav ul li:nth-last-child(1)  {
 }
 
 #about .recent-works h3  {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 #about .work-item  {
     margin: 40px;
@@ -732,7 +732,7 @@ nav ul li:nth-last-child(1)  {
     line-height: 1.5em;
 }
 #about .welcome-block h3 {
-    margin: 50px 10px 65px;
+    margin: 0px 10px 65px;
 }
 #about .welcome-block img {
     border: 1px solid #fff;
@@ -1200,9 +1200,6 @@ color:#fff;
 .input-field {
     margin-bottom: 10px; 
 }
-/* .input-field .placeholder  {
-    color: #fff;
-} */
 .form-control {
     position: relative;
     border: 2px solid #fff;
@@ -1267,25 +1264,25 @@ textarea.form-control {
 } */
 .form-control::-webkit-input-placeholder,
 ::-webkit-input-placeholder {
-    opacity: .5;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control:-moz-placeholder,
 :-moz-placeholder { /* Firefox 18- */
-    opacity: .5;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control::-moz-placeholder,
 ::-moz-placeholder {  /* Firefox 19+ */
-    opacity: .5;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control:-ms-input-placeholder,
 :-ms-input-placeholder {  
-    opacity: .5;
+    opacity: .65;
     color: inherit;
 }
 
