@@ -714,7 +714,7 @@ nav ul li:nth-last-child(1)  {
 #about h3 {
     color: #fff;
     font-weight: 300;
-    margin: 75px 10px 25px;
+    margin: 55px 10px 25px;
     text-transform: uppercase;
     font-family: 'Roboto',sans-serif;
 }
@@ -723,16 +723,16 @@ nav ul li:nth-last-child(1)  {
 }
 
 #about .recent-works h3  {
-    margin-top: 0px;
+    margin-top: 35px;
 }
 #about .work-item  {
-    margin: 40px;
+    margin: 0px;
     margin-left: 15px;
     margin-top: 5px;
     line-height: 1.5em;
 }
 #about .welcome-block h3 {
-    margin: 0px 10px 65px;
+    margin: 35px 10px 65px;
 }
 #about .welcome-block img {
     border: 1px solid #fff;
