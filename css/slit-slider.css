@@ -136,7 +136,7 @@
 	box-shadow: 
 		0 1px 1px rgba(255,0,0,0.4), 
 		inset 0 1px 1px rgba(255,255,255,0.1),
-		0 0 0 4px #005da3;
+		0 0 0 4px rgba(0,163,71,0.8);
 }
 
 .nav-dots span.nav-dot-current,
@@ -161,37 +161,15 @@
 
 
 .bg-img-1 {
-     background-image: url(../img/slider/Aviator1.jpg); 
+     background-image: url(../img/slider/Banner2.jpg);   
 }
-@media(max-width: 767px)  {
-    .bg-img-1
-    {background-image:  url(../img/slider/Aviatortall1.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
-    {height: 100%;}
-  
-}
-
-
-
 .bg-img-2 {
 	background-image: url(../img/slider/firefighters.jpg);
    
 }
-@media(max-width: 767px)  {
-    .bg-img-2
-    {background-image:  url(../img/slider/firefighterstall1.jpg);}
-    {background-size: 100% 100%;}
-    {width: 767px;}
-    {height: 100%;}
-  
-}
 .bg-img-3 {
 	background-image: url(../img/slider/Banner2.jpg);
 }
-
-
-
 
 
 /* Animations for content elements */
@@ -219,7 +197,7 @@
 	-ms-animation: fadeOut 1s ease-in-out both;
 	animation: fadeOut 1s ease-in-out both;
 }
-.sl-trans-back-elems .caption-content span,,
+.sl-trans-back-elems .caption-content span,
 .sl-trans-back-elems .caption-content a {
 	-webkit-animation: fadeOut 1s linear both;
 	-moz-animation: fadeOut 1s linear both;
