@@ -142,11 +142,11 @@ color:  #818181;
 .footer-content h2  {
     text-transform: uppercase;
 }
-
 #facts h3 {
     color: darkred;
       
 }
+
 #gettingstarted h2 {
    color: darkred;
    text-align: left;
@@ -433,6 +433,7 @@ main > section {
     border-color: cornflowerblue;
     border-width: 2px;
 }
+/* =====added by M======= */
 .navbar-default:not(.animated-header)  {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -445,10 +446,10 @@ main > section {
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
-
+/* ====Added by M===== */
 .navbar-default .navbar-brand {
     height: auto;
-    margin: 0;
+    margin: 0 0 0 15px;
     padding: 0;
 }
 
@@ -713,7 +714,7 @@ nav ul li:nth-last-child(1)  {
 #about h3 {
     color: #fff;
     font-weight: 300;
-    margin: 75px 10px 35px;
+    margin: 55px 10px 25px;
     text-transform: uppercase;
     font-family: 'Roboto',sans-serif;
 }
@@ -722,23 +723,23 @@ nav ul li:nth-last-child(1)  {
 }
 
 #about .recent-works h3  {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 #about .work-item  {
-    margin: 40px;
+    margin: 0px;
     margin-left: 15px;
     margin-top: 5px;
     line-height: 1.5em;
 }
 #about .welcome-block h3 {
-    margin: 50px 10px 65px;
+    margin: 35px 10px 65px;
 }
 #about .welcome-block img {
-    border: 3px solid #fff;
-    border-radius: 50%;
+    border: 1px solid #fff;
+    border-radius: none;
     margin-right: 35px;
-    max-width: 120px;
-    margin-top: 5px;
+    max-width: 125px;
+    margin-top: 7px;
 }
 #about .message-body {
     margin-top: -25px;
@@ -786,21 +787,18 @@ nav ul li:nth-last-child(1)  {
 /*Facts*/
 
 #facts .fa-ul li i {
-    color: red;
+    color: red;  
 }
 .even {
     background: red;
     color: white;
     margin: 0 4.5454%;
-
     
 }
 .odd  {background: darkred;
 color: white;
  margin: 0 4.5454%;
  margin: 0 4.5454%;
-    
-
 }
 
 .row {
@@ -812,27 +810,11 @@ color: white;
 	Services
 ==================================================================*/
 
-#portfolio .sec-title h2 {
-    font-size: 250%;
-    margin:0px 0 30px;
-    padding-bottom: 10px;
-    position: relative;
-    text-transform: uppercase;
-    color: #D2B48C;
-}
-@media(max-width: 767px) {
-    .sec-title h2 {font-size:150%;}
-
-
-    .navbar-default .navbar-brand {
-        margin: 0 0 0 15px;
-    }
-}
 .service-icon {
     border: 3px solid;
     display: inline-block;
-    height: 80px;
-    width: 80px;
+    height: 85px;
+    width: 85px;
     line-height: 101px;
     color: #D2B48C;
 
@@ -890,6 +872,17 @@ color: white;
 }
 .project-wrapper li {
     display: inline-block;
+}
+#portfolio .sec-title h2 {
+    font-size: 250%;
+    margin:0px 0 30px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    color: #D2B48C;
+}
+@media(max-width: 767px) {
+    .sec-title h2 {font-size:150%;}
 }
 .portfolio-item {
     cursor: pointer;
@@ -1206,9 +1199,6 @@ color:#fff;
 .input-field {
     margin-bottom: 10px; 
 }
-.input-field .placeholder  {
-    color: #fff;
-}
 .form-control {
     position: relative;
     border: 2px solid #fff;
@@ -1236,13 +1226,13 @@ textarea.form-control {
 #submit.btn-effect:after {
   background: #fff;
 }
-.btn-gray  {
+ .btn-gray  {
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding:5px 10px; 
     border-radius: 8px;
     color: #5584DD;
     font-size: .8em;
-}
+} 
 
 .contact-details h3 {
     border-bottom: 1px solid #fff;
@@ -1264,42 +1254,42 @@ textarea.form-control {
     margin-left: 24px;
     color: #D2B48C;
 }
-
-.input-field label.error {
+/* =====by M========= */
+/* .input-field label.error {
   color: red;
   display: block;
   font-size: 13px;
   font-weight: 400;
-}
+} */
 .form-control::-webkit-input-placeholder,
 ::-webkit-input-placeholder {
-    opacity: 1;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control:-moz-placeholder,
 :-moz-placeholder { /* Firefox 18- */
-    opacity: 1;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control::-moz-placeholder,
 ::-moz-placeholder {  /* Firefox 19+ */
-    opacity: 1;
+    opacity: .65;
     color: inherit;
 }
 
 .form-control:-ms-input-placeholder,
 :-ms-input-placeholder {  
-    opacity: 1;
+    opacity: .65;
     color: inherit;
 }
 
-.msg-success,
+/* .msg-success,
 .msg-error {
     color: #777;
     display: none;
-}
+} */
 /*
 THANK YOU MESSAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++=*/
