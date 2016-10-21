@@ -1,4 +1,4 @@
-/*
+ /*
 *---------------------------------------------------------------------------
 *====== */
 /*  Basic Style 
@@ -540,14 +540,14 @@ nav ul li:nth-last-child(1)  {
    
     vertical-align: middle;
     display: table-cell;
-    background: rgba(0,0,0,.3)
+    background-color: rgba(0, 0, 0, 0.3); 
     
 }
 .caption-content h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 350%;
     font-style: italic;
-    color: #e3e3e4;
+    color: #ff9900;
     line-height: 130%;
     letter-spacing: 5px;
     font-weight: 700;
@@ -563,9 +563,10 @@ nav ul li:nth-last-child(1)  {
 }
 
 .caption-content h3 {
-    font-family: 'Open Sans', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 170%;
-    color: #fff;
+    font-style: italic;
+    color: #000;
     text-transform: normal;
     letter-spacing: 5px;
     font-weight: 700;
@@ -583,8 +584,8 @@ nav ul li:nth-last-child(1)  {
  .caption-content h4  {
     font-family: 'Open Sans', sans-serif;
     font-size: 90%;
-    color:#fff;
-    font-weight: bolder;
+    color:#000;
+    font-weight: bold;
     letter-spacing: 1px;
     line-height: 1.5em;
      font-weight: 700;
