@@ -538,34 +538,35 @@ nav ul li:nth-last-child(1)  {
 
 .slide-caption .caption-content {
    
-    vertical-align: middle;
+    vertical-align: text-top;
     display: table-cell;
     background: rgba(0,0,0,.3)
+
     
 }
 .caption-content h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 350%;
+    font-size: 550%;
     font-style: italic;
-    color: #e3e3e4;
+    color: #000;
     line-height: 130%;
     letter-spacing: 5px;
-    font-weight: 700;
+    font-weight: 900;
     margin-top: 45px;
     margin-bottom: 35px;
     text-transform: uppercase;
   
 }
 @media(max-width: 767px) {
-    .caption-content h2  {font-size:200%;}
-  {font-weight: 700;}
+    .caption-content h2  {font-size:400%;}
+  {font-weight: 900;}
    
 }
 
 .caption-content h3 {
     font-family: 'Open Sans', serif;
-    font-size: 170%;
-    color: #fff;
+    font-size: 370%;
+    color:gold;
     text-transform: normal;
     letter-spacing: 5px;
     font-weight: 700;
@@ -574,7 +575,7 @@ nav ul li:nth-last-child(1)  {
     }
 @media(max-width: 767px) 
 {.caption-content h3
-  {font-size: 110%;}  
+  {font-size: 210%;}  
   {line-height:1.5em;}
   {letter-spacing: 5px;}
   {font-weight: 300;}
