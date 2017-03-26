@@ -541,17 +541,20 @@ nav ul li:nth-last-child(1)  {
     vertical-align: text-top;
     display: table-cell;
     background: rgba(0,0,0,.3)
-
     
 }
+.spring  {
+    color: #fff;
+    font-style: boldest;
+}
 .caption-content h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 550%;
     font-style: italic;
-    color: #000;
+    color: #efefef;
     line-height: 130%;
-    letter-spacing: 5px;
-    font-weight: 900;
+    letter-spacing: 15px;
+    font-weight: 700;
     margin-top: 45px;
     margin-bottom: 35px;
     text-transform: uppercase;
@@ -566,7 +569,7 @@ nav ul li:nth-last-child(1)  {
 .caption-content h3 {
     font-family: 'Open Sans', serif;
     font-size: 370%;
-    color:gold;
+    color:#efefef;
     text-transform: normal;
     letter-spacing: 5px;
     font-weight: 700;
