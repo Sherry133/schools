@@ -12,15 +12,38 @@
 	overflow: hidden;
 	position: relative;
 }
+/*.bg-img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.bg-img .inner {
+    padding-top: 63.35%; /* height/width of image 
+    display: block;
+    height: 0;
+}
+*/
 
-.bg-img {
-    
+.bg-img{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
-	width: 100%;
+	width: 100%;  
+} 
     
+	 
+
+.bg-img .inner {
+    padding-top: 63.35%;  /* height/width of image */
+    display: block;
+    height: 0;
 }
 
 /* Custom navigation arrows */
@@ -161,10 +184,30 @@
 
 
 .bg-img-1 {
-     background-image: url(../img/slider/Girlmoneyjar.jpg);   
+     background-image: url("../img/slider/2017Thanksgiving.jpg");   
 }
-.bg-img-2 {
-	background-image: url(../img/slider/firefighters.jpg);
+@media only screen and (max-width: 320px) {
+    /* Small screen, non-retina */
+    .bg-img-1 { background-image: url("../img/slider/2017Thanksgiving_sm.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+    /* Small screen, retina */
+    .bg-img-1 { background-image: url("../img/slider//2017Thanksgiving_sm.jpg"); }
+}
+
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, retina */
+    .bg-img-1 { background-image: url("../img/slider//2017Thanksgiving_sm.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, non-retina */
+    .bg-img-1 { background-image: url("../img/slider//2017Thanksgiving_sm.jpg"); }
+}
+
+/*.bg-img-2 {
+	background-image: url(../img/slider/firefighters.jpg);//
    
 }
 .bg-img-3 {
