@@ -164,7 +164,7 @@ font-weight: bold;
     }
 
 main > section { 
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 70px 0;
     padding-bottom: 180px;
 }
