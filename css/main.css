@@ -5,6 +5,7 @@
  ============================
 */
 #body {
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #fff;
@@ -163,36 +164,39 @@ font-weight: bold;
     }
 
 main > section { 
+    overflow: auto;
     padding: 70px 0;
+    padding-bottom: 180px;
 }
 }
 .btn {
     border-radius: 0;
     border: 0;
-    /*position: relative;*/
+    position: relative;
     text-transform: uppercase;
 
 }
 
 .btn-blue {
+    position: absolute;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 50px;
     color: #fff;
-    margin-left: 30px;
-    /*margin-top: 230px;*/
-    font-size: .8em;
+    letter-spacing: 1.5px;
+    margin-top: 75px;
+    font-size: .9em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
 }
 @media only screen and (min-width: 320px) and (max-width: 538px) {
     /* Small screen, non-retina */
     .btn-blue
-    {margin-top: 200px;}
+    /*{margin-top: 200px;}*/
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
     /* Medium screen, retina */
     .btn-blue
-    {margin-top: 200px;}
+    /*{margin-top: 200px;}*/
 }
 
 .btn-border {
@@ -556,7 +560,7 @@ nav ul li:nth-last-child(1)  {
 
 .slide-caption .caption-content {
    
-    vertical-align: top;
+    vertical-align: center;
     display: table-cell;
     background:
     rgba(0,0,0,.3);
@@ -571,9 +575,9 @@ nav ul li:nth-last-child(1)  {
     font-style: italic;
     color: #ececec;
     line-height: 100%;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: 700;
-    margin-top: 275px;
+    margin-top: 6cm;
     margin-left: 20px;
     margin-bottom: 35px;
     text-transform: uppercase;
@@ -582,6 +586,7 @@ nav ul li:nth-last-child(1)  {
 @media only screen and (min-width: 320px) and (max-width: 538px) {
     /* Small screen, non-retina */
     .caption-content h2 
+   
     {font-size:200%;}
     {font-weight: 900;}
     {line-height: 1em;}
@@ -591,12 +596,15 @@ nav ul li:nth-last-child(1)  {
 @media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
     /* Medium screen, retina */
     .caption-content h2 
+    /*{height: 400px}
+    {width: 300px;}*/
     {font-size: 200%;}
-    {margin-top: 60px;}
+    {margin-top: 6vh;}
     {line-height: 1em;}
     {font-weight: 900;}
     {letter-spacing: .25px;}
-    {margin-left: 50px;} 
+    /*{margin-left: 50px;} */
+
 
 
 }
@@ -653,12 +661,15 @@ nav ul li:nth-last-child(1)  {
 }
 
  .caption-content h4  {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     color: #ececec;
     display: block;
     margin-bottom: -4px;
-    /*margin-left: 50px;*/
+    margin-top: -180px
+    height: 180px;
+    clear: both;
     text-align: center;
     font-weight: bolder;
     letter-spacing: 1px;
