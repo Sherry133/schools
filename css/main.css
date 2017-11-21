@@ -5,7 +5,7 @@
  ============================
 */
 #body {
-    height: 100%;
+    height: 100%;  /*to keep footer at bottom*/
     padding: 0;
     margin: 0;
     background-color: #fff;
@@ -14,6 +14,8 @@
     font-size: 16px;
     letter-spacing: normal;
     color: #fff;
+    display: flex;  /*to keep footer at bottom*/
+    flex-direction: column;  /*to keep footer at bottom*/
 }
 
 #body #facts {
@@ -65,15 +67,8 @@ h1,  h5, h6,
 .h1, .h3, .h4, .h5, .h6 {
    
     color: #252525;
-}
-   
-h2 {
-    display: block;
-    color: #252525;
-    top: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
+}   
+
 h3  {
     display: block;
     color: #0088cc;
@@ -131,23 +126,20 @@ color:  #818181;
 #portfolio .sec-title h3  {
     color: #D2B48C;
 }
- #price  h3  {
+#price  h3  {
     color: #0f96e0;
     font-weight: 500;
     font-variant: small-caps;
     } 
 
- #testimonials  h3  {
+#testimonials  h3  {
     color: #fff;
 } 
 
- #contact h3  {
+ .contact h3  {
   color: #005da3;    
 } 
 
-.footer-content h2  {
-    text-transform: uppercase;
-}
 #facts h3 {
     color: darkred;
       
@@ -164,10 +156,8 @@ font-weight: bold;
     }
 
 main > section { 
-    /*overflow: auto;*/
     padding: 70px 0;
-    padding-bottom: 180px;
-}
+    padding-bottom: 180px;  /*to keep footer at bottom*/
 }
 .btn {
     border-radius: 0;
@@ -178,27 +168,37 @@ main > section {
 }
 
 .btn-blue {
-    position: absolute;
+    
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    padding: 15px 50px;
+    padding: 10px 25px;
     color: #fff;
     letter-spacing: 1.5px;
-    margin-top: 75px;
-    font-size: .9em;
+    margin-left: 30px;
+    margin-top: 12em;
+    font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
 }
 @media only screen and (min-width: 320px) and (max-width: 538px) {
-    /* Small screen, non-retina */
+    
     .btn-blue
-    /*{margin-top: 200px;}*/
+   {margin-top: 15em;}
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
-    /* Medium screen, retina */
+   
     .btn-blue
-    /*{margin-top: 200px;}*/
+   {margin-top: 15em;}
 }
-
+@media only screen and (min-width: 320px) and (max-width: 538px) {
+  
+    .btn-blue
+   {margin-top: 15em;}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
+    
+    .btn-blue
+   {margin-top: 15em;}
+}
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
@@ -242,11 +242,6 @@ main > section {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*@media(max-width: 767px) 
-{.btn
-    {font-size: 80%; }  
-}*/ 
-
 #facts .btn-effect:before  {
    background:  url(../img/slider/arrowsleft.png) no-repeat left bottom, darkred;
 }
@@ -263,7 +258,7 @@ main > section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, darkgreen; /*#0f96e0*/
+	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #0f96e0;
     border-radius: 8px;
 	
 	-webkit-transform: scaleX(0);
@@ -552,7 +547,7 @@ nav ul li:nth-last-child(1)  {
     left: 0;
     min-height: 100%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 0;
     width: 100%;
     z-index: 11;
@@ -560,7 +555,7 @@ nav ul li:nth-last-child(1)  {
 
 .slide-caption .caption-content {
    
-    vertical-align: center;
+    vertical-align: top;
     display: table-cell;
     background:
     rgba(0,0,0,.3);
@@ -570,76 +565,66 @@ nav ul li:nth-last-child(1)  {
 .caption-content h2 {
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Creepster', cursive;*/
-    text-align: center;
-    font-size: 550%;
+    font-size: 500%;
     font-style: italic;
     color: #ececec;
     line-height: 100%;
-    letter-spacing: 5px;
+    letter-spacing: .09em;
     font-weight: 700;
-    margin-top: 6cm;
-    margin-left: 20px;
-    margin-bottom: 35px;
+    margin-top: 4vh;
+    margin-left: 30px;
     text-transform: uppercase;
   
 }
-@media only screen and (min-width: 320px) and (max-width: 538px) {
-    /* Small screen, non-retina */
+@media only screen and (min-width: 640px) {
+     Small screen, non-retina 
     .caption-content h2 
-   
-    {font-size:200%;}
+    {font-size:225%;}
     {font-weight: 900;}
-    {line-height: 1em;}
-    {letter-spacing: 1px;} 
-    {margin-left: 50px;} 
+    {line-height: 50%;}
+    {letter-spacing: -4px;} 
+  
 }
-@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
+@media only screen and (min-resolution: 2dppx) and (max-width: 640px) {
     /* Medium screen, retina */
     .caption-content h2 
-    /*{height: 400px}
-    {width: 300px;}*/
-    {font-size: 200%;}
-    {margin-top: 6vh;}
-    {line-height: 1em;}
+    {font-size: 225%;}
+    {line-height: 50%;}
     {font-weight: 900;}
-    {letter-spacing: .25px;}
-    /*{margin-left: 50px;} */
-
-
-
+    {letter-spacing: -4px;} 
+  
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     /* Small screen, non-retina */
     .caption-content h2 
-    {font-size:375%;}
+    {font-size: 225%;}
     {font-weight: 900;}
-    {line-height: 1em;}
-    {letter-spacing: -4px;}  
+    {line-height: 50%;}
+    {letter-spacing: -4px;} 
 }
-@media only screen and (min-resolution: 2dppx) (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-resolution: 2dppx) (max-width: 768px)  {
     /* Small screen, non-retina */
     .caption-content h2 
-    {font-size:375%;}
+    {font-size:225%;}
     {font-weight: 900;}
-    {line-height: 1em;}
-    {letter-spacing: -4px;}  
+    {line-height: 50%;}
+   {letter-spacing: -4px;}  
 }
-@media only screen and (min-resolution: 2dppx) and (min-width: 1025px) and (max-width: 1366px) {
+@media only screen and (min-resolution: 2dppx) and (max-width: 1080px) {
     /* Medium screen, retina */
     .caption-content h2
-    {font-size: 425%;}
-    {line-height: 1em;}
+    {font-size: 225%;}
+    {line-height: 50%;}
     {font-weight: 900;}
     {letter-spacing: -4px;} 
 }
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    /* Medium screen, retina */
+@media only screen and (min-resolution: 2dppx) and (min-width: 995px) and (max-width: 2281px) {
+    
     .caption-content h2 
-    {font-size: 425%;}
-    {line-height: 1em;}
+    {font-size: 550%;}
     {font-weight: 900;}
-    {letter-spacing: -4px;} 
+    {letter-spacing: -4px;}
 }
 
 .caption-content h3 {
@@ -660,63 +645,43 @@ nav ul li:nth-last-child(1)  {
   {font-weight: 300;}
 }
 
- .caption-content h4  {
+ .caption-content  h4  {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
-    color: #ececec;
-    display: block;
-    margin-bottom: -4px;
-    margin-top: -180px
-    height: 180px;
-    clear: both;
-    text-align: center;
-    font-weight: bolder;
-    letter-spacing: 1px;
+    color:#ececec;
+    flex: 0 1 auto; /*to keep footer at bottom*/
+    padding: 20px;   /*to keep footer at bottom*/
+    text-align: left;
+    letter-spacing: 1.5px;
     line-height: 1.5em;
     font-weight: 700;
-    
-} 
+    white-space: nowrap;
+    overflow: hidden;
 
-@media only screen and (min-width: 320px) and (max-width: 538px) {
-    /* Small screen, non-retina */
-    .caption-content h4
-    /*{font-size:90%;}*/
-    {margin-top: 30px;}
-     
+} 
+.flex-container {
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 0;
+    padding: 20px;
 }
-@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
-    /* Small screen, retina */
-    .caption-content h4 
-    /*{font-size: 90%;}*/
-    {margin-top: 30px;}
-   
-}
-@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px) 
-{ .caption-content h4 
-   /* {font-size: 70%;}
-    {font-weight: 500;}*/
-    {margin-top: 200px;}     
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) 
-{ .caption-content h4 
-    /*{font-size: 70%;}
-    {font-weight: 500;}*/
-    {margin-top: 200px;}     
+  
+.footer-usdoe h4 {    to keep footer at bottom
+    
 }
 .caption-content h5 {
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    /*display: block;*/
+    display: block;
     font-size: 350%;
     font-style: italic;
-    color: #800020;
+    color: #ffa500;
     line-height: 100%;
     letter-spacing: 5px;
     font-weight: 700;
-    margin-top: 125px;
+    margin-top: 65px;
     margin-left: 50px;
-    /*margin-bottom: 5px;*/
+    margin-bottom: 25px;
     text-transform: uppercase;
    
 }
@@ -1485,7 +1450,6 @@ THANK YOU MESSAGE
 
 }
 
-
 .footer-content {
     width: 390px;
     margin: 0 auto;
@@ -1839,7 +1803,7 @@ Tablet Design for logo of a width of 980x1280*/
 
 @media(min-width: 480px) and (max-width: 767px) {
     .caption-content h2  {
-        font-size: 80%;
+        font-size: 225%;
     }
     .sec-title h2:after {
         left: 38%;
