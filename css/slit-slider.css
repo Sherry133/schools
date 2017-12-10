@@ -254,7 +254,7 @@
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-  	 .bg-img-1 { background-image: url("../img/slider///Christmas2017.jpg"); }
+  	 .bg-img-1 { background-image: url("../img/slider///Happyholidays_sm.jpg"); }
     {background-size: contain;}
 }
 
@@ -271,14 +271,14 @@
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
   	 .bg-img-1 { background-image: url("../img/slider//Happyholidays_x.jpg"); }
     {background-size: contain;}
 
-}
+}*/
 /* Animations for content elements */
 
 .sl-trans-elems .caption-content h2 {
