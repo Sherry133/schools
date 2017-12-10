@@ -254,7 +254,7 @@
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-  	 .bg-img-1 { background-image: url("../img/slider///Happyholidays_sm.jpg"); }
+  	 .bg-img-1 { background-image: url("../img/slider///Happyholidays2.jpg"); }
     {background-size: contain;}
 }
 
