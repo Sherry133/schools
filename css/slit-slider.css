@@ -176,51 +176,6 @@
      background-size: cover; 
 
 }
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;}
-
-}
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;}
-
-}
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;}
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;}
-
-}
-
 @media only screen and (max-width: 640px) {
     /* Small screen, non-retina */
     .bg-img-1 { background-image: url("../img/slider/Happyholidays2.jpg"); }
@@ -230,43 +185,25 @@
 @media only screen and (min-resolution: 2dppx) and (max-width: 640) {
     /* Small screen, retina */
     .bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;} 
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
     {background-size: contain;}
-
-}
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
-    {background-size: contain;}
-
+    
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-  	 .bg-img-1 { background-image: url("../img/slider///Happyholidays2.jpg"); }
+@media only screen and (min-resolution: 2dppx) and (max-width: 768px)  {
+    
+    .bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
     {background-size: contain;}
 }
 
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-  	 .bg-img-1 { background-image: url("../img/slider//Christmas2017.jpg"); }
+@media only screen and (min-resolution: 2dppx) and (min-width: 769px) and (max-width: 1024px)  {
+    
+    .bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
     {background-size: contain;}
-
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 2299px)  {
+    
+    .bg-img-1 { background-image: url("../img/slider//Christmas2017.jpg"); }
+    {background-size: contain;}
 }
 /* ----------- iPhone X ----------- */
 

@@ -174,7 +174,7 @@ main > section {
     color: #fff;
     letter-spacing: 1.5px;
     margin-left: 30px;
-    margin-top: 15em;
+    margin-top: 12em;
     font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
@@ -182,21 +182,19 @@ main > section {
 @media only screen and (min-width: 320px) and (max-width: 538px) {
     
     .btn-blue
-   {margin-top: 8em;}
+   {margin-top: 15em;}
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
    
     .btn-blue
-   {margin-top: 8em;}
+   {margin-top: 15em;}
 }
-
-@media only screen and (min-resolution: 2dppx) and (min-width: 539px) and (max-width: 1039px) {
-    
+@media only screen and (min-width: 320px) and (max-width: 538px) {
+  
     .btn-blue
    {margin-top: 15em;}
 }
-
-@media only screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
     
     .btn-blue
    {margin-top: 15em;}
@@ -575,70 +573,58 @@ nav ul li:nth-last-child(1)  {
     font-weight: 700;
     margin-top: 4vh;
     margin-left: 30px;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+  
 }
 @media only screen and (min-width: 640px) {
-     /*Small screen, non-retina */
-    .caption-content h2
+     Small screen, non-retina 
+    .caption-content h2 
     {font-size:225%;}
     {font-weight: 900;}
     {line-height: 50%;}
     {letter-spacing: -4px;} 
+  
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 640px) {
     /* Medium screen, retina */
-    .caption-content h2
+    .caption-content h2 
     {font-size: 225%;}
     {line-height: 50%;}
     {font-weight: 900;}
-    {letter-spacing: -4px;}  
+    {letter-spacing: -4px;} 
   
 }
 
 @media only screen and (max-width: 768px) {
     /* Small screen, non-retina */
-    .caption-content h2
+    .caption-content h2 
     {font-size: 225%;}
     {font-weight: 900;}
     {line-height: 50%;}
-    {letter-spacing: -4px;}
-     
+    {letter-spacing: -4px;} 
 }
 @media only screen and (min-resolution: 2dppx) (max-width: 768px)  {
     /* Small screen, non-retina */
-    .caption-content h2  
+    .caption-content h2 
     {font-size:225%;}
     {font-weight: 900;}
     {line-height: 50%;}
-    {letter-spacing: -4px;}
- 
+   {letter-spacing: -4px;}  
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 1080px) {
     /* Medium screen, retina */
-    .caption-content h2  
-    {font-size: 225%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;}
-    
-}
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
     .caption-content h2
     {font-size: 225%;}
     {line-height: 50%;}
     {font-weight: 900;}
-    {letter-spacing: -4px;}
+    {letter-spacing: -4px;} 
 }
-
 @media only screen and (min-resolution: 2dppx) and (min-width: 995px) and (max-width: 2281px) {
+    
     .caption-content h2 
     {font-size: 550%;}
     {font-weight: 900;}
     {letter-spacing: -4px;}
-   
 }
 .caption-content h3 {
     font-family: 'Open Sans', serif;
