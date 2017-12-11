@@ -174,12 +174,12 @@ main > section {
     color: #fff;
     letter-spacing: 1.5px;
     margin-left: 30px;
-    margin-top: 12em;
+    margin-top: 8em;
     font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
 }
-@media only screen and (min-width: 320px) and (max-width: 538px) {
+/*@media only screen and (min-width: 320px) and (max-width: 538px) {
     
     .btn-blue
    {margin-top: 15em;}
@@ -198,7 +198,7 @@ main > section {
     
     .btn-blue
    {margin-top: 15em;}
-}
+}*/
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
