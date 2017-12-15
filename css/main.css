@@ -8,14 +8,17 @@
     height: 100%;  /*to keep footer at bottom*/
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #fff;
     font-family: 'Open Sans', serif;
     line-height: normal;
     font-size: 16px;
     letter-spacing: normal;
     color: #fff;
-    display: flex;  /*to keep footer at bottom*/
-    flex-direction: column;  /*to keep footer at bottom*/
+    /*display: flex;*/  /*to keep footer at bottom*/
+    /*flex-direction: column;*/  /*to keep footer at bottom*/
 }
 
 #body #facts {
@@ -44,8 +47,14 @@ p {
 { p {font-size: 100%;}    
 }
 
+
 iframe {
     border: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -165,7 +174,7 @@ main > section {
 .btn {
     border-radius: 0;
     border: 0;
-    position: relative;
+    position: absolute;
     text-transform: uppercase;
 }
 
@@ -173,37 +182,37 @@ main > section {
     
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     position: absolute;
-    bottom: -38vh;
-    left: 3%;
+    top:  25vh;
+    left: 3.4vw;
     padding: 10px 25px;
     color: #fff;
     letter-spacing: 1.5px;
     font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
-    border-radius: 8px;
+    border-radius: 8px;  
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
 }
 @media only screen and (min-width: 320px) 
 and (max-width: 640px) {   
     .btn-blue
-  {bottom: -50vh;}
-  {left: 3vw;}
+  {top: 20vh;}
 }
 
 @media only screen and (min-resolution: 2dppx) 
 and (min-width: 320px) 
 and (max-width: 640px) {
     .btn-blue
-   {bottom: -50vh;}
-   {left: 3vw;}
-   
-   
+   {top: 50vh;}  
 }
 /*non-retina device*/
 @media only screen and (min-resolution: 2dppx) 
 and (min-width: 768px) 
 and (max-width: 1024px) {
     .btn-blue
-   {bottom: -60vh;}
+   {top: 60vh;}
 }
 /*retina device*/
 @media only screen 
@@ -211,22 +220,15 @@ and (min-width : 768px)
 and (max-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .btn-blue
-    {bottom: -60vh;}
+    {top: 60vh;}
 }
-/*@media only screen 
-and (min-width : 1024px) 
-and (max-height : 1366px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    .btn-blue
-    {bottom: -60vh;}
-}*/
 /*non-retina laptops*/
  @media only screen 
   and (min-width: 1200px) 
   and (max-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
    .btn.blue
-   {bottom: -60vh;}   
+   {top: 60vh;}   
 }
 /*Retina laptop*/
 @media only screen 
@@ -235,14 +237,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
      .btn.blue
-   {bottom: -60vh;} 
+   {top: 60vh;} 
 }
 
 @media only screen and (min-resolution: 2dppx) 
 and (min-width: 1920px) 
   {
     .btn.blue
-    {bottom: -60vh;}
+    {top: 60vh;}
 }
 .btn-border {
     border: 2px solid #fff;
@@ -303,7 +305,7 @@ and (min-width: 1920px)
 	left: 0;
 	right: 0;
 	bottom: 0;
-	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #0f96e0;
+	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, darkgreen;
     border-radius: 8px;
 	
 	-webkit-transform: scaleX(0);
@@ -334,7 +336,7 @@ and (min-width: 1920px)
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
 	color: #fff;
-    background-color: #005da3;
+    background-color: #0058A3;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -691,13 +693,12 @@ nav ul li:nth-last-child(1)  {
 }
 
  .caption-content  h4  {
-    position: relative;
+    /*position: relative;*/
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     color:#ececec;
-    padding: 20px;
-    margin-top: 12em;
-    left: 0;
+    margin-top: 18rem;
+    /*height: 80px;*/
     letter-spacing: 1.5px;
     line-height: 1.5em;
     font-weight: 700;
@@ -705,81 +706,104 @@ nav ul li:nth-last-child(1)  {
     overflow: hidden;   /*to keep footer at bottom*/
 
 } 
-.flex-container h4 {   /*To keep footer at bottom on mobiles*/
-    position: absolute;
-    flex-direction: column;
+.flex-container {   /*To keep footer at bottom on mobiles*/
+ /*   position: absolute;*/
+    
+    margin-left: 5vw;
     display: flex;
-    flex-shrink: 0;
-    padding: 20px;
-    flex: 0 1 auto;
-    min-height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     min-height: 100vh;
+    flex: 0 1 auto;
+  /*  max-width: 36rem;*/
+  
+    /*flex-shrink: 0;*/
+  /* padding: -20rem;*/
+    /*left: -5.5rem;*/
+    /*flex: 0 1 auto;*/
+    /*max-height: 100%;*/
+   /*max-height: 100vh*/
+   
+     
 }
   
 /*.footer-usdoe h4 {    to keep footer at bottom
     
 }*/
 @media only screen 
-and (min-width: 375px) and (max-height: 667px)   {
-    .flex-container
-    {margin-top: 10em;}
-}
-/*@media only screen 
-   and (min-width : 375px) 
-   and (max-width: 812px)
-   and (min-resolution: 2dppx)  {
+and (min-width: 320px) and (max-width: 1024px)   {
     .flex-container 
-    {margin-top: 11em;}
-}*/
+    {margin-top: 30vh;} 
+   
+    
+} 
+
+/*@media only screen 
+   and (min-width : 480px) 
+   and (max-width: 854px)  {
+    .caption-content h4*/
+   /* {visibility: hidden;}*/
+/*}*/
+/*@media only screen 
+and (min-width: 360px) and (max-height: 640px)   {
+    .caption-content h4*/
+    /*{visibility: hidden;}*/
+   
+/*}
 @media only screen  
 and (min-width: 414px)
-and (max-height: 736px)  {
+and (max-width: 736px)  {
     .flex-container
-    {margin-top: 10em;}
-}
-
-@media only screen  
+    {margin-top: 15rem;}   
+}*/
+/*@media only screen  
 and (min-width: 768px)
 and (max-height: 1024px)  {
     .flex-container
     {margin-top: 30em;}
-}
-
-@media only screen  
+}*/
+/*@media only screen  
 and (min-width: 1024px)
-and (max-height: 768px)  {
+and (max-height: 768px) and (orientation: landscape) {
     .flex-container
-    {margin-top: 13em;}
-}
+    {margin-top: 8rem;}
+}*/
 /*Mac laptop--for sure*/
-@media only screen  
+/*@media only screen  
 and (min-width: 1024px)
-and (max-width: 1366px)  {
+and (max-height: 1366px) and (min-resolution: 2dppx) {
+    .caption-content h4
+    {margin-top: 15rem;}  
+}*/
+/*@media only screen  
+and (min-width: 1024px)
+and (max-height: 1366px)  {
     .flex-container
-    {margin-top: 3em;}
+    {margin-top: 15rem;}  
 }
 /*Mac laptop???*/
-@media only screen 
+/*@media only screen 
    and (min-width : 1280px) 
    and (max-height: 800px)
    and (min-resolution: 2dppx)  {
     .flex-container 
-    {margin-top: 13em;}
-}
+    {margin-top: 13rem;}
+}*/
 
 @media only screen 
    and (min-width : 1280px) 
-   and (max-height: 950px) {
+   and (max-width: 2200px) {
     .flex-container 
-    {margin-top: 13em;}
+    {margin-top: 25em;}
 }
-@media only screen 
+/*@media only screen 
    and (min-width : 880px) 
-   and (max-height: 1280px)
-   and (min-resolution: 2dppx)  {
+   and (max-height: 1280px) and (min-resolution: 2dppx)
+     {
     .flex-container 
-    {margin-top: 3em;}
-}
+    {margin-top: 5em;}
+}*/
 .caption-content h5 {
     font-family: 'Roboto', sans-serif;
     display: block;
