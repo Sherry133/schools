@@ -62,9 +62,6 @@ a, a:hover, a:focus, .btn:focus {
     color: #0088cc;   
 
 }
-img  {
-    max-width: 100%;
-}
 
 h1,  h5, h6,
 .h1, .h3, .h4, .h5, .h6 {
@@ -167,82 +164,41 @@ main > section {
     border: 0;
     position: relative;
     text-transform: uppercase;
+
 }
 
 .btn-blue {
     
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    position: absolute;
-    bottom: -38vh;
-    left: 3%;
     padding: 10px 25px;
     color: #fff;
     letter-spacing: 1.5px;
+    margin-left: 30px;
+    margin-top: 47rem;
     font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
 }
-@media only screen and (min-width: 320px) 
-and (max-width: 640px) {   
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    
     .btn-blue
-  {bottom: -50vh;}
-  {left: 3vw;}
+   {margin-top: 40em;}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
+   
+    .btn-blue
+   {margin-top: 47rem;}
 }
 
-@media only screen and (min-resolution: 2dppx) 
-and (min-width: 320px) 
-and (max-width: 640px) {
+@media only screen and (min-width: 480px) and (max-height: 854px) {
+  
     .btn-blue
-   {bottom: -50vh;}
-   {left: 3vw;}
-   
-   
+   {margin-top: 55rem;}
 }
-/*non-retina device*/
-@media only screen and (min-resolution: 2dppx) 
-and (min-width: 768px) 
-and (max-width: 1024px) {
+@media only screen and (min-resolution: 2dppx) and (min-width: 412px) and (max-height: 736px) {
+    
     .btn-blue
-   {bottom: -60vh;}
-}
-/*retina device*/
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    .btn-blue
-    {bottom: -60vh;}
-}
-/*@media only screen 
-and (min-width : 1024px) 
-and (max-height : 1366px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    .btn-blue
-    {bottom: -60vh;}
-}*/
-/*non-retina laptops*/
- @media only screen 
-  and (min-width: 1200px) 
-  and (max-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-   .btn.blue
-   {bottom: -60vh;}   
-}
-/*Retina laptop*/
-@media only screen 
-  and (min-width: 1200px) 
-  and (max-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-     .btn.blue
-   {bottom: -60vh;} 
-}
-
-@media only screen and (min-resolution: 2dppx) 
-and (min-width: 1920px) 
-  {
-    .btn.blue
-    {bottom: -60vh;}
+   {margin-top: 50rem;}
 }
 .btn-border {
     border: 2px solid #fff;
@@ -303,7 +259,7 @@ and (min-width: 1920px)
 	left: 0;
 	right: 0;
 	bottom: 0;
-	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #0f96e0;
+	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, darkgreen;
     border-radius: 8px;
 	
 	-webkit-transform: scaleX(0);
@@ -640,7 +596,7 @@ nav ul li:nth-last-child(1)  {
   
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Small screen, non-retina */
     .caption-content h2 
     {font-size: 225%;}
@@ -648,29 +604,23 @@ nav ul li:nth-last-child(1)  {
     {line-height: 50%;}
     {letter-spacing: -4px;} 
 }
-@media only screen and (min-resolution: 2dppx) (max-width: 768px)  {
+@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px)  {
     /* Small screen, non-retina */
     .caption-content h2 
-    {font-size:225%;}
+    {font-size:500%;}
     {font-weight: 900;}
     {line-height: 50%;}
    {letter-spacing: -4px;}  
 }
-@media only screen and (min-resolution: 2dppx) and (max-width: 1080px) {
-    /* Medium screen, retina */
-    .caption-content h2
-    {font-size: 225%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;} 
-}
-@media only screen and (min-resolution: 2dppx) and (min-width: 995px) and (max-width: 2281px) {
+
+@media only screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 2281px) {
     
     .caption-content h2 
-    {font-size: 550%;}
+    {font-size: 500%;}
     {font-weight: 900;}
     {letter-spacing: -4px;}
 }
+
 .caption-content h3 {
     font-family: 'Open Sans', serif;
     font-size: 370%;
@@ -679,9 +629,8 @@ nav ul li:nth-last-child(1)  {
     letter-spacing: 5px;
     font-weight: 700;
     line-height: 1.2em;
-   
- }
-
+    
+    }
 @media(max-width: 767px) 
 {.caption-content h3
   {font-size: 210%;}  
@@ -695,17 +644,17 @@ nav ul li:nth-last-child(1)  {
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     color:#ececec;
-    padding: 20px;
-    margin-top: 12em;
-    left: 0;
+  /*  flex: 0 1 auto;*/ /*to keep footer at bottom*/
+    /*padding: 20px;*/   /*to keep footer at bottom*/
+    text-align: left;
     letter-spacing: 1.5px;
     line-height: 1.5em;
     font-weight: 700;
-    white-space: nowrap;  /*to keep footer from wrapping*/
-    overflow: hidden;   /*to keep footer at bottom*/
+    white-space: nowrap;
+    overflow: hidden;
 
 } 
-.flex-container h4 {   /*To keep footer at bottom on mobiles*/
+/*.flex-container {
     position: absolute;
     flex-direction: column;
     display: flex;
@@ -713,73 +662,31 @@ nav ul li:nth-last-child(1)  {
     padding: 20px;
     flex: 0 1 auto;
     min-height: 100%;
-    min-height: 100vh;
+    min-height: 100vh;*/
+/*
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 0;
+    padding: 20px;
+*/
 }
   
-/*.footer-usdoe h4 {    to keep footer at bottom
+/*
+.footer-usdoe h4 {    to keep footer at bottom
     
-}*/
-@media only screen 
-and (min-width: 375px) and (max-height: 667px)   {
-    .flex-container
-    {margin-top: 10em;}
 }
-/*@media only screen 
-   and (min-width : 375px) 
-   and (max-width: 812px)
-   and (min-resolution: 2dppx)  {
-    .flex-container 
-    {margin-top: 11em;}
-}*/
-@media only screen  
-and (min-width: 414px)
-and (max-height: 736px)  {
-    .flex-container
-    {margin-top: 10em;}
-}
+*/
 
-@media only screen  
-and (min-width: 768px)
-and (max-height: 1024px)  {
-    .flex-container
-    {margin-top: 30em;}
-}
-
-@media only screen  
-and (min-width: 1024px)
-and (max-height: 768px)  {
-    .flex-container
-    {margin-top: 13em;}
-}
-/*Mac laptop--for sure*/
-@media only screen  
-and (min-width: 1024px)
-and (max-width: 1366px)  {
-    .flex-container
+/*@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px)  {
+    .caption-content h4
     {margin-top: 3em;}
-}
-/*Mac laptop???*/
-@media only screen 
-   and (min-width : 1280px) 
-   and (max-height: 800px)
-   and (min-resolution: 2dppx)  {
-    .flex-container 
-    {margin-top: 13em;}
-}
 
-@media only screen 
-   and (min-width : 1280px) 
-   and (max-height: 950px) {
-    .flex-container 
-    {margin-top: 13em;}
 }
-@media only screen 
-   and (min-width : 880px) 
-   and (max-height: 1280px)
-   and (min-resolution: 2dppx)  {
-    .flex-container 
-    {margin-top: 3em;}
-}
+@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px)  {
+    .caption-content h4
+    {margin-top: 10em;}
+
+}*/
 .caption-content h5 {
     font-family: 'Roboto', sans-serif;
     display: block;
@@ -1912,7 +1819,7 @@ Tablet Design for logo of a width of 980x1280*/
 ==============================================================*/
 
 @media(min-width: 480px) and (max-width: 767px) {
-   .caption-content h2  {
+    .caption-content h2  {
         font-size: 225%;
     }
     .sec-title h2:after {
