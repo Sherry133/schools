@@ -4,7 +4,6 @@
 /*  Basic Style 
  ============================
 */
-
 #body {
     height: 100%;  /*to keep footer at bottom*/
     padding: 0;
@@ -12,11 +11,11 @@
     background-color: #fff;
     font-family: 'Open Sans', serif;
     line-height: normal;
-    font-size: calc(0.6em + 1vw);
+    font-size: 16px;
     letter-spacing: normal;
     color: #fff;
-    /*display: flex; */ /*to keep footer at bottom*/
-    /*flex-direction: column;*/  /*to keep footer at bottom*/
+    display: flex;  /*to keep footer at bottom*/
+    flex-direction: column;  /*to keep footer at bottom*/
 }
 
 #body #facts {
@@ -158,7 +157,7 @@ font-weight: bold;
 
 main > section { 
     padding: 70px 0;
-    /*padding-bottom: 180px; */ /*to keep footer at bottom*/
+    padding-bottom: 180px;  /*to keep footer at bottom*/
 }
 .btn {
     border-radius: 0;
@@ -169,54 +168,37 @@ main > section {
 }
 
 .btn-blue {
-    position: absolute;
+    
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 10px 25px;
     color: #fff;
     letter-spacing: 1.5px;
-    top: 37vw;
-    left: 5vw;
-    /*margin-left: 30px;
-    margin-top: 57em;*/
+    margin-left: 30px;
+    margin-top: 32em;
     font-size: .8em;
     background: url(../img/slider/arrowsright.png) no-repeat right top, darkred;
     border-radius: 8px;
 }
-
-@media only screen  and (max-width: 414) {
-     Small screen, retina 
-    .btn-blue 
-    {top: 130vw;}   
-}
-@media only screen  and (min-width: 375px)  {
+@media only screen and (min-width: 320px) and (max-width: 538px) {
     
     .btn-blue
-    {top: 35vw;}
+   {margin-top: 15em;}
 }
-/*@media only screen  and (min-width: 800px)  {
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
+   
+    .btn-blue
+   {margin-top: 15em;}
+}
+@media only screen and (min-width: 320px) and (max-width: 538px) {
+  
+    .btn-blue
+   {margin-top: 15em;}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px) {
     
     .btn-blue
-    {top: 130vw;}
-}*/
-/*@media only screen and (min-width: 768px) and (max-height: 1024px) {
-    
-    .btn-blue
-    {top: 100vw;}
-}*/
-/*@media only screen and (max-width: 1275px)  {
-    
-    .btn-blue
-    {top: 100vw;}
+   {margin-top: 15em;}
 }
-@media only screen and (min-width: 1366px) and (max-height: 728px) {
-     .btn-blue
-    {bottom: 100vw;}
-}
-@media only screen and (min-width: 1280px) and (max-height: 950px) {
-     .btn-blue
-    {top: 50vw;}
-} 
-*/
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
@@ -276,7 +258,7 @@ main > section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, darkgreen;
+	 background: url(../img/slider/arrowsleft.png) no-repeat left bottom, #0f96e0;
     border-radius: 8px;
 	
 	-webkit-transform: scaleX(0);
@@ -580,9 +562,9 @@ nav ul li:nth-last-child(1)  {
     
 }
 
-.caption-content h2 {
+/.caption-content h2 {
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Creepster', cursive;*/
+   
     font-size: 500%;
     font-style: italic;
     color: #ececec;
@@ -592,9 +574,9 @@ nav ul li:nth-last-child(1)  {
     margin-top: 4vh;
     margin-left: 30px;
     text-transform: uppercase;
-  
+    display: none;
 }
-@media only screen and (min-width: 640px) {
+/*@media only screen and (min-width: 640px) {
      Small screen, non-retina 
     .caption-content h2 
     {font-size:225%;}
@@ -602,27 +584,27 @@ nav ul li:nth-last-child(1)  {
     {line-height: 50%;}
     {letter-spacing: -4px;} 
   
-}
-@media only screen and (min-resolution: 2dppx) and (max-width: 640px) {
-    /* Medium screen, retina */
+}*/
+/*@media only screen and (min-resolution: 2dppx) and (max-width: 640px) {
+    Medium screen, retina 
     .caption-content h2 
     {font-size: 225%;}
     {line-height: 50%;}
     {font-weight: 900;}
     {letter-spacing: -4px;} 
   
-}
+}*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Small screen, non-retina */
+/*@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    Small screen, non-retina 
     .caption-content h2 
     {font-size: 225%;}
     {font-weight: 900;}
     {line-height: 50%;}
     {letter-spacing: -4px;} 
-}
-@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px)  {
-    /* Small screen, non-retina */
+}*/
+/*@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px)  {
+    Small screen, non-retina 
     .caption-content h2 
     {font-size:500%;}
     {font-weight: 900;}
@@ -636,8 +618,8 @@ nav ul li:nth-last-child(1)  {
     {font-size: 500%;}
     {font-weight: 900;}
     {letter-spacing: -4px;}
-}
-
+}*/
+/*
 .caption-content h3 {
     font-family: 'Open Sans', serif;
     font-size: 370%;
@@ -654,15 +636,15 @@ nav ul li:nth-last-child(1)  {
   {line-height:1.5em;}
   {letter-spacing: 5px;}
   {font-weight: 300;}
-}
+}*/
 
  .caption-content  h4  {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     color:#ececec;
-  /*  flex: 0 1 auto;*/ /*to keep footer at bottom*/
-    /*padding: 20px;*/   /*to keep footer at bottom*/
+    flex: 0 1 auto; /*to keep footer at bottom*/
+    padding: 20px;   /*to keep footer at bottom*/
     text-align: left;
     letter-spacing: 1.5px;
     line-height: 1.5em;
@@ -671,7 +653,7 @@ nav ul li:nth-last-child(1)  {
     overflow: hidden;
 
 } 
-/*.flex-container {
+.flex-container {
     position: absolute;
     flex-direction: column;
     display: flex;
@@ -679,7 +661,7 @@ nav ul li:nth-last-child(1)  {
     padding: 20px;
     flex: 0 1 auto;
     min-height: 100%;
-    min-height: 100vh;*/
+    min-height: 100vh;
 /*
     flex-direction: column;
     display: flex;
@@ -694,16 +676,16 @@ nav ul li:nth-last-child(1)  {
 }
 */
 
-/*@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px)  {
-    .caption-content h4
+@media only screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 538px)  {
+    .flex-container
     {margin-top: 3em;}
 
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1024px)  {
-    .caption-content h4
+    .flex-container
     {margin-top: 10em;}
 
-}*/
+}
 .caption-content h5 {
     font-family: 'Roboto', sans-serif;
     display: block;
