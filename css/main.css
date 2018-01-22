@@ -91,17 +91,27 @@ h4  {
 h4  {font-size:70%; }
     {line-height: 1.7em;}
 }
-/*Terms of Use*/
+/*Terms of Use and Privacy*/
 .title {
     font-size: 120%;
     color: #5584DD;
     text-align: center;
 }
 .docs  {
-margin: 40px 40px;
-font-size: 100%;
-color:  #818181;
+  margin: 40px 40px;
+  font: calibri, sans-serif;
+  font-size: 100%;
+  color:  #818181;
+  line-height: normal;
 }
+.msonormal  p {
+   margin: 40px 40px;
+   font: calibri, sans-serif;
+   font-size: 100%;
+   color:  #818181;
+   line-height: normal;
+}
+
 #accordion  h3  {
     color: #5584dd;
     padding: 0;
@@ -116,9 +126,15 @@ color:  #818181;
     color: #818181;
     padding-left: 40px;
 }
+#msonormally ul li {
+    color: #141414;
+    line-height: normal;
+    font-size: 80%;
+
+}
 
 
-/*End of Terms of Use*/
+/*End of Terms of Use and Privacy*/
 
 #service  h3  {
     color: #0f96e0;     
