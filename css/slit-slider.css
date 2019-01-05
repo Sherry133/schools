@@ -165,11 +165,11 @@
 }
 
 
-/*laptop with touch*/
+
 .bg-img-1 {
-	 width: 100vw;
-     height: 100vh; 
-     background-image: url("../img/slider/Christmas2017big.jpg");
+	 width: 100%;
+     height: 100%; 
+     background-image: url("../img/slider/Girlmoneyjar.jpg");
      -webkit-background-size: contain;
      -o-background-size: contain;
      -moz-background-size: contain;
@@ -178,14 +178,14 @@
 }
 
 @media only screen and (max-width: 640px) {
-    /* Nokia N9 */
-   .bg-img-1 { background-image: url("../img/slider/Happyholidays2.jpg"); }
+    /* Small screen, non-retina */
+    .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
     {background-size: contain;}
     
 }
-/*@media only screen and (max-width: 375) {*/
+@media only screen and (min-resolution: 2dppx) and (max-width: 640) {
     /* Small screen, retina */
-/*    .bg-img-1 { background-image: url("../img/slider//Happyholidays2.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider//Girlwithmoneyjar_sm1.jpg"); }
     {background-size: contain;}
     
 }
@@ -199,55 +199,15 @@
 @media only screen and (min-resolution: 2dppx) and (min-width: 769px) and (max-width: 995px)  {
     
     .bg-img-1 { background-image: url("../img/slider//Girlmoneyjar.jpg"); }
-    {background-size: cover;}
+    {background-size: contain;}
 }
 @media only screen and (min-resolution: 2dppx) and (max-width: 2299px)  {
     
-    .bg-img-1 { background-image: url("../img/slider/snowfall1.jpg"); }
-    {background-size: cover;}*/
-/*}*/
+    .bg-img-1 { background-image: url("../img/slider//Girlmoneyjar.jpg"); }
+    {background-size: contain;}
+}
 
-@media only screen  and (max-width: 414) {
-    /* Small screen, retina */
-    .bg-img-1 { background-image: url("../img/slider/Happyholidays2.jpg"); }
-    {background-size: contain;}   
-}
-@media only screen  and (max-width: 800px)  {
-    
-    .bg-img-1 { background-image: url("../img/slider/Happyholidays2.jpg"); }
-    {background-size: contain;}
-}
-@media only screen and (min-width: 1024px) and (max-height: 768px) {
-    
-    .bg-img-1 { background-image: url("../img/slider/snowfall1.jpg"); }
-   
-    {background-size: contain;}
-}
-@media only screen and (min-resolution: 2dppx) (min-width: 800px) and (max-height: 1280px) {
-    
-    .bg-img-1 { background-image: url("../img/slider/Happyholidays2"); }
-    {background-size: contain;}  
-}
-@media only screen and  (max-width: 1024)  {
-	.bg-img-1 { background-image: url("../img/slider/Happyholidays2.jpg"); }
-    {background-size: contain;}
-}
-/*most desktops*/
-@media only screen and (min-width: 1366px) and (max-height: 728px) {
-    .bg-img-1
-   {background-image: url("../img/slider/Christmas2017big.jpg");}
-   {background-size: contain;}
-}
-@media only screen and (min-width: 1024px) and (max-height: 1366px) {
-    .bg-img-1
-   {background-image: url("../img/slider/Happyholidays2.jpg");}
-   {background-size: contain;}
-}
-@media only screen and (min-width: 1280px) and (max-height: 950px) {
-    .bg-img-1
-   {background-image: url("../img/slider/Christmas2017big.jpg");}
-   {background-size: contain;}
-}
+
 /* Animations for content elements */
 
 .sl-trans-elems .caption-content h2 {
