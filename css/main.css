@@ -172,7 +172,7 @@ main > section {
 }
 @media (max-width: 767px) {
     
-    .btn-blue
+    .btn .btn-blue
    {margin-top: 11em;}
 }
 /*@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
