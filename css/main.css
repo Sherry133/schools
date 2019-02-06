@@ -170,17 +170,17 @@ main > section {
     background: url(../img/slider/arrowsright.png) no-repeat right top, #aa1406;
     border-radius: 8px;
 }
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     
     .btn-blue
-   {margin-top: 13em;}
+   {margin-top: 11em;}
 }
-@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
+/*@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
    
     .btn-blue
    {margin-top: 13em;}
-  /* {margin-left: -21em;}*/
-}
+  
+}*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   
     .btn-blue
@@ -678,7 +678,7 @@ span.sherry1  {
     /*float: left;*/
     margin-top: .75em;
     margin-left: .5em;
-    position: relative;
+   /* position: relative;*/
     font-family: 'Roboto', sans-serif;
     font-size: 200%;
     color: #d1cfcf;
@@ -783,16 +783,16 @@ span.sherry1  {
     overflow: hidden;
   
 }
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     /* Small screen, non-retina */
     .slide-caption .caption-content h5
     {font-size: 70%;}
     {line-height: .1em;}
     {font-weight: 500;}
     {letter-spacing: -4px;} 
-    {margin-top: -5em;}
+   /* {margin-top: -5em;}*/
     {margin-left: 1em;}
-    {margin-bottom: -5em;} 
+   /* {margin-bottom: -5em;}*/ 
     {flex: 0 1 auto;} /*to keep footer at bottom*/
     {padding: 0px;}   /*to keep footer at bottom*/
 }
@@ -1371,16 +1371,16 @@ color:#fff;
 
 @media (max-width: 767px) {
     #price
-    {background-color: #000}
+    {background-color: #252525;}
 }
 
 @media  (min-width: 768px) and (max-width: 991px){
     #price
-    {background-color: #000;}
+    {background-color: #252525;}
 }
 @media (min-width: 992px) and (max-width: 1199px){
     #price
-    {background-color: #000;}
+    {background-color: #252525;}
 }
 
 
