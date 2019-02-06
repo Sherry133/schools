@@ -198,7 +198,7 @@ main > section {
 @media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 992px) and (max-width: 1199px) {
     
     .btn-blue
-   {margin-top: 15em;}
+   {margin-top: 13em;}
    
 }
 
@@ -608,32 +608,11 @@ span.sherry1  {
     font-weight: 700;
     margin-top: .25em;
     margin-left: .25em;
-    /*margin-bottom: 1.25em;*/
     text-transform: uppercase;
   
 }
-/*h4 :first-child: {
-    color: red;
-}
 
-:first-child::first-letter {
-    color: blue;
-    font-size: 2.2em;
-    font-weight: bold;
-    /*float: left;*/
-  /*  margin: -3px 3px 0 0;
-    padding: 0;
-}*/
-/*@media only screen and (max-width: 767px) {
-     Small screen, non-retina 
-    .slide-caption .caption-content h2 
-    {font-size:225%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;} 
-  
-}*/
-@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media /*(min-resolution: 2dppx) and*/ (max-width: 767px) {
     /* Medium screen, retina */
     .slide-caption .caption-content h2 
     {font-size: 250%;}
@@ -642,21 +621,11 @@ span.sherry1  {
     {letter-spacing: -4px;} 
   
 }
-/*@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)  {
-     .slide-caption .caption-content h2 
-    {font-size: 225%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;}
-}*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
     /* Small screen, non-retina */
     .slide-caption .caption-content h2 
-    {font-size: 400%;}
+    {font-size: 450%;}
     {font-weight: 900;}
     {line-height: 50%;}
     {letter-spacing: -4px;} 
@@ -664,7 +633,7 @@ and (-webkit-device-pixel-ratio : 3)  {
 @media only screen and (min-resolution: 2dppx) (min-width: 768px) and (max-width: 991px)  {
     /* Small screen, non-retina */
     .slide-caption .caption-content h2 
-    {font-size:400%;}
+    {font-size:450%;}
     {font-weight: 900;}
     {line-height: 50%;}
    {letter-spacing: -4px;}  
@@ -672,7 +641,7 @@ and (-webkit-device-pixel-ratio : 3)  {
 @media only screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px) {
     /* Medium screen, retina */
     .slide-caption .caption-content h2
-    {font-size: 400%;}
+    {font-size: 450%;}
     {line-height: 50%;}
     {font-weight: 900;}
     {letter-spacing: -4px;} 
@@ -680,7 +649,7 @@ and (-webkit-device-pixel-ratio : 3)  {
 @media only screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
     
     .slide-caption .caption-content h2 
-    {font-size: 400%;}
+    {font-size: 450%;}
     {font-weight: 900;}
     {line-height: 50%;}
     {letter-spacing: -4px;}
@@ -791,7 +760,7 @@ and (-webkit-device-pixel-ratio : 3)  {
     padding: 0px;
 }*/
   
-.footer-usdoe h4 {    to keep footer at bottom
+.footer-usdoe h4 {    /*t/to keep footer at bottom*/
     
 }
 .slide-caption .caption-content h5 { 
@@ -829,20 +798,20 @@ and (-webkit-device-pixel-ratio : 3)  {
 }
 
 
-/*@media only screen /*and (min-resolution: 2dppx)*/ and (max-width: 767px) {
-    /* Medium screen, retina */
-   /*  .slide-caption .caption-content h5
+/*@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
+     Medium screen, retina 
+    .slide-caption .caption-content h5
     {font-size: 70%;}
     {margin-top: 15em;}
     {margin-left: -10em;}
-    {margin-bottom: -50em;} */
-   /* {flex: 0 1 auto;} /*to keep footer at bottom*/
-    /*{padding: 0px;} */  /*to keep footer at bottom*/ */
-}
+    {margin-bottom: -50em;} 
+    {flex: 0 1 auto;} to keep footer at bottom
+    {padding: 0px;}   to keep footer at bottom 
+}*/
 .slide-caption .caption-content  h6  {
     display: block;
     /*float: left;*/
-    margin-top: 3.0em;
+    margin-top: 3.25em;
     margin-left: .5em;
     margin-bottom: .5em;
     position: relative;
@@ -861,6 +830,7 @@ and (-webkit-device-pixel-ratio : 3)  {
    @media only screen /*(min-resolution: 2dppx)*/ and (max-width: 767px) {
     .slide-caption .caption-content h6
     {font-size: 125%;}
+
   
    }
    @media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 768px) and (max-width: 991px)  {
@@ -998,7 +968,18 @@ and (-webkit-device-pixel-ratio : 3)  {
     background-image: url(../img/slider/banner.jpg);
     padding: 0;
 }
-
+@media screen and (max-width: 767px) {
+    #about
+    {background-color: #000;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #about
+    {background-color: #000;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #about
+    {background-color: #000;}
+}
 #about .overlay {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
@@ -1128,7 +1109,18 @@ color: white;
 =================================================================
 	Services
 ==================================================================*/
-
+@media (max-width: 767px) {
+    #service
+    {background-color: #252525;}
+}
+@media  (min-width: 768px) and (max-width: 991px){
+    #service
+    {background-color: #252525;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #service
+    {background-color: #252525;}
+}
 .service-icon {
     border: 3px solid;
     display: inline-block;
@@ -1375,7 +1367,22 @@ color:#fff;
     color: #fff;
 }
 
-/*PRICING/NOW PLANS SECTION*/
+/*PRICING SECTION*/
+
+@media (max-width: 767px) {
+    #price
+    {background-color: #000}
+}
+
+@media  (min-width: 768px) and (max-width: 991px){
+    #price
+    {background-color: #000;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #price
+    {background-color: #000;}
+}
+
 
 .price-table {
     border: 2px solid #005DA3;
@@ -1469,12 +1476,16 @@ color:#fff;
 }
 
 /*=================================================================
-	Price is now PLANS
+	Price end
 ==================================================================*/
 
 #social {
     background-image: url(../img/slider/banner.jpg);
     padding: 0;
+}
+@media (max-width: 767px)  {
+    #social
+    {background-color: #252525}
 }
 #social .overlay {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
@@ -1515,6 +1526,22 @@ color:#fff;
 /*=================================================================
 	Contact
 ==================================================================*/
+
+@media (max-width: 767px)  {
+   #contact
+    {background-color: #002366;} 
+}
+
+@media  (min-width: 768px) and (max-width: 991px){
+    #contact
+    {background-color: #002366;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #contact
+    {background-color: #002366;}
+}
+    
+
 
 .input-field {
     margin-bottom: 10px; 
@@ -2010,12 +2037,10 @@ Tablet Design for logo of a width of 980x1280*/
 ==============================================================*/
 
 @media(min-width: 480px) and (max-width: 767px) {
-    .caption-content h2  {
-        font-size: 225%;
-    }
-    .sec-title h2:after {
-        left: 38%;
-    }
+   /* .caption-content h2  
+    {font-size: 225%;}*/
+    .sec-title h2:after 
+    {left: 38%;}
     
     /*  nav-dots */
    .nav-dots    {
@@ -2123,4 +2148,3 @@ Tablet Design for logo of a width of 980x1280*/
   grid-column: 2;
   grid-row: 1;
 }
-.clearfix();
