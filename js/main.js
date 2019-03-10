@@ -2,12 +2,16 @@
 /*	Preloader
 /* ========================================================================= */
 
-jQuery(window).load(function(){
+// jQuery(window).load(function(){
 
-	$("#preloader").fadeOut("slow");
+// 	$("#preloader").fadeOut("slow");
 
+// });
+$( window ).on("load", function() {
+        // Handler for .load() called.
+        
+  $("#preloader").fadeOut("slow");
 });
-
 /* ========================================================================= */
 /*  Welcome Section Slider
 /* ========================================================================= */

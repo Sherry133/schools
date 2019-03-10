@@ -107,27 +107,6 @@ color:  #818181;
 #service  h3  {
     color: #0f96e0;     
 }
-/*#portfolio .sec-title h3  {
-    color: #D2B48C;
-}
-#price  h3  {
-    color: #0f96e0;
-    font-weight: 500;
-    font-variant: small-caps;
-    } 
-
-#testimonials  h3  {
-    color: #fff;
-} 
-
-.contact h3  {
-  color: #005da3;    
-} 
-
-#facts h3 {
-    color: darkred;*/
-      
-/*}*/
 
 .getting-started h2 {
 color: darkred;
@@ -167,7 +146,7 @@ main > section {
     margin-left: 1em;
     margin-top: 2em;
     font-size: .8em;
-    background: url(../img/slider/arrowsright.png) no-repeat right top, #aa1406;
+    background: url(../img/slider/arrowsright.png) no-repeat right top, #89315E;
     border-radius: 8px;
 }
 @media (max-width: 767px) {
@@ -193,14 +172,14 @@ main > section {
 @media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 992px) and (max-width: 1199px) {
     
     .btn-blue
-   {margin-top: 13em;}
+   {margin-top: 9em;}
    
 }
 
-@media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 1200px) {
+@media only screen /*and (min-resolution: 2dppx) and*/ (min-width: 1200px) {
     
     .btn-blue
-   {margin-top: .25em;}
+   {margin-top: 13em;}
    /*{margin-left: 1.25em;}*/
 
 }
@@ -332,16 +311,7 @@ main > section {
     width: 100%;
     top:0;
 }
-/*.sec-title h2 {
-    color: #fff;
-    display: inline;
-    height: 100%;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 11;
-}*/
+
 @media(max-width: 767px)
 {.sec-title h2 {font-size:150%;}
 {text-align: center;}}
@@ -519,7 +489,7 @@ main > section {
 nav ul li:nth-last-child(1)  {
     display: inline-block;
     background-color: 
-      lightgray;
+      pink;
     font-weight: bolder;
     font-size: 100%;
     border-radius: 8px;
@@ -582,9 +552,10 @@ nav ul li:nth-last-child(1)  {
    
     vertical-align: top;
     display: table-cell;
-    background:
-    rgba(0,0,0,.3);
-    
+    background: rgba(42,70,104,.5);
+   /* z-index: 999;*/
+  
+   /* #2A4668;*/
 }
 span.sherry  {
     color: #d2b48c;
@@ -607,101 +578,69 @@ span.sherry1  {
   
 }
 
-@media /*(min-resolution: 2dppx) and*/ (max-width: 767px) {
+@media (max-width: 767px) {
     /* Medium screen, retina */
     .slide-caption .caption-content h2 
     {font-size: 250%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;} 
-  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
     /* Small screen, non-retina */
     .slide-caption .caption-content h2 
     {font-size: 450%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;} 
+    
 }
-@media only screen and (min-resolution: 2dppx) (min-width: 768px) and (max-width: 991px)  {
-    /* Small screen, non-retina */
-    .slide-caption .caption-content h2 
-    {font-size:450%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-   {letter-spacing: -4px;}  
-}
-@media only screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px) {
+
+@media only screen (min-width: 992px) and (max-width: 1199px) {
     /* Medium screen, retina */
     .slide-caption .caption-content h2
-    {font-size: 450%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;} 
+    {font-size: 350%;}
+   
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
     
     .slide-caption .caption-content h2 
-    {font-size: 450%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;}
+    {font-size: 400%;}
+    
 }
 
-/*.caption-content h3 {
+.caption-content h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 300%;
-    color:darkred;
+    font-size: 250%;
+    color:rgb(275,105,180);
     text-transform: normal;
-    letter-spacing: 5px;
-    font-weight: 900;
-    line-height: 1.2em;
-    margin-top: 1.75em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1em;
+    margin-top: .02em;
+    margin-left: .35em;
+
     
-    }*/
-/*@media(max-width: 767px) 
+ }
+@media(max-width: 767px) 
 {.caption-content h3
-  {font-size: 210%;}  
+  {font-size: 200%;}  
   {line-height:1.5em;}
   {letter-spacing: 5px;}
   {font-weight: 300;}
-}*/
+}
 .slide-caption .caption-content  h4  {
     display: block;
-    /*float: left;*/
     margin-top: .75em;
     margin-left: .5em;
-   /* position: relative;*/
     font-family: 'Roboto', sans-serif;
-    font-size: 200%;
+    font-size: 125%;
     color: #d1cfcf;
-    /*flex: 0 1 auto; to keep footer at bottom
-    padding: 0px;   to keep footer at bottom*/
     text-align: left;
     letter-spacing: 1.5px;
     line-height: 1.25em;
     font-weight: 700;
-    /*white-space: nowrap;
-    overflow: hidden;*/
+   
 } 
 
-@media only screen /*and (min-resolution: 2dppx)*/ and (max-width: 767px) {
-    /* Medium screen, retina */
-    .slide-caption .caption-content h4 
-    {font-size: 125%;}
-    {line-height: 50%;}
-    {font-weight: 900;}
-    {letter-spacing: -4px;}
-    {margin-top: 2em;}
-
-   
-  
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    /* Small screen, non-retina */
+@media (min-width: 768px) and (max-width: 991px){
+    /* Medium screen, non-retina */
     .slide-caption .caption-content h4 
     {font-size: 225%;}
     {font-weight: 900;}
@@ -709,68 +648,39 @@ span.sherry1  {
     {letter-spacing: -4px;} 
 
 }
-/*@media only screen and (min-resolution: 2dppx) (min-width: 768px) and (max-width: 991px)  {
-    /* Small screen, non-retina */
-  /*  .slide-caption .caption-content h4 
-    {font-size: 250%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-   {letter-spacing: -4px;}  
-}*/*/
-@media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 992px) and (max-width: 1199px) {
-    /* Medium screen, retina */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     /*Medium screen*/
     .slide-caption .caption-content h4
     {font-size: 225%;}
     {line-height: 50%;}
     {font-weight: 900;}
     {letter-spacing: -4px;}
-   
+ }  
 
-}
-@media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 1200px)  {
-    
+@media (min-width: 950px) and (orientation: landscape) {
     .slide-caption .caption-content h4
-    {font-size: 250%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;}
-
-
-}
-    @media only screen and (min-resolution: 2dppx) and (min-width: 950px) and (max-width: 1250px) and (orientation: landscape) {
-    .slide-caption .caption-content h4
-    {font-size: 250%;}
+    {font-size: 225%;}
     {line-height: 50%;}
     {font-weight: 900;}
     {letter-spacing: -4px;} 
 
     }
-    /* Medium screen, retina */
-   
-
-/*.flex-container {
-    flex-direction: column;
-    display: flex;
-    flex-shrink: 0;
-    padding: 0px;
-}*/
+@media (min-width: 1200px)  {
+        .slide-caption .caption-content h4
+        {font-size: 200%;}
+    }
   
-.footer-usdoe h4 {    /*t/to keep footer at bottom*/
-    
-}
 .slide-caption .caption-content h5 { 
     display: block;
-    /*float: left;*/
-    margin-top: .5em;
+    margin-top: .1em;
     margin-left: 1em;
-  /*  margin-bottom: 1.5em;*/
     position: absolute;
     font-family: 'Roboto', sans-serif;
-    font-size: 100%;
+    font-size: 80%;
     color: #d1cfcf;
     flex: 0 1 auto; /*to keep footer at bottom*/
     padding: 5px;   /*to keep footer at bottom*/
-    text-align: left;
     letter-spacing: 1.50px;
     line-height: 1.25em;
     font-weight: 700;
@@ -785,80 +695,29 @@ span.sherry1  {
     {line-height: .1em;}
     {font-weight: 500;}
     {letter-spacing: -4px;} 
-   /* {margin-top: -5em;}*/
-    {margin-left: 1em;}
-   /* {margin-bottom: -5em;}*/ 
+    {margin-left: 1em;} 
     {flex: 0 1 auto;} /*to keep footer at bottom*/
     {padding: 0px;}   /*to keep footer at bottom*/
 }
 
 
-/*@media only screen and (min-resolution: 2dppx) and (max-width: 767px) {
-     Medium screen, retina 
-    .slide-caption .caption-content h5
-    {font-size: 70%;}
-    {margin-top: 15em;}
-    {margin-left: -10em;}
-    {margin-bottom: -50em;} 
-    {flex: 0 1 auto;} to keep footer at bottom
-    {padding: 0px;}   to keep footer at bottom 
-}*/
 .slide-caption .caption-content  h6  {
     display: block;
-    /*float: left;*/
-    margin-top: 3.25em;
-    margin-left: .5em;
+    margin-top: 8.00em;
+    margin-left: 1em;
     margin-bottom: .5em;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 235%;
+    font-size: 125%;
     color: #d2b48c;
-    /*flex: 0 1 auto; to keep footer at bottom
-    padding: 0px;   to keep footer at bottom*/
-    text-align: left;
     letter-spacing: 1.5px;
     line-height: 1.25em;
     font-weight: 700;
-    /*white-space: nowrap;
-    overflow: hidden;*/
    }
-   @media only screen /*(min-resolution: 2dppx)*/ and (max-width: 767px) {
+   @media (min-width: 1200px)  {
     .slide-caption .caption-content h6
-    {font-size: 125%;}
-
-  
+    {margin-top: 4em;}
    }
-   @media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 768px) and (max-width: 991px)  {
-    /* Small screen, non-retina */
-    .slide-caption .caption-content h6 
-    {font-size:175%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;}
-
-
-}
-   @media only screen  /*(min-resolution: 2dppx)*/ and (min-width: 992px) and (max-width: 1199px)  {
-    /* Small screen, non-retina */
-    .slide-caption .caption-content h6 
-    {font-size: 200%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;}
-   /* {margin-top: 2.50em}  */
-
-}
-@media only screen /*and (min-resolution: 2dppx)*/ and (min-width: 1200px)  {
-    
-    .slide-caption .caption-content h6
-    {font-size: 200%;}
-    {font-weight: 900;}
-    {line-height: 50%;}
-    {letter-spacing: -4px;}
-    {margin-bottom: 1.5em;}
-
-}
-/* The duplicate parts/slices */
 
 .sl-content-slice {
     overflow: hidden;
@@ -979,13 +838,13 @@ span.sherry1  {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
 }
-#about .sec-title:after {
+/*#about .sec-title:after {
     border-bottom: 1px solid #fff;
-}
+}*/
 #about .sec-title  h2 {
    display: block;
    text-align: center;
-   margin-top: .75em;
+   margin-top: .15em;
    text-transform: uppercase;
 
 }
