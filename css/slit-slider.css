@@ -170,8 +170,9 @@
 .bg-img-1 {
 	 max-width: 100%;
 	 height: 100%;
+
     /* height: 100%;*/ 
-     background-image: url("../img/slider/Girlmoneyjar.jpg");
+     background-image: url("../img/slider/Vivatbeach_sm.jpg");
      -webkit-background-size: contain;
      -o-background-size: contain;
      -moz-background-size: contain;
@@ -181,7 +182,7 @@
 
 @media only screen and (max-width: 767px) {
     /* Small screen, non-retina */
-    .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider/Vivatbeach_sm.jpg"); }
     {background-size: contain;}
     
 }
@@ -194,24 +195,24 @@
 
 @media only screen and (min-resolution: 2dppx) and (max-width: 767px)  {
     
-    .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider/Vivatbeach_sm.jpg"); }
     {background-size: contain;}
 }
 
 @media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 991px)  {
     
-    .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
     {background-size: contain;}
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px)  {
     
-    .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
     {background-size: contain;}
 }
 
 @media only screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
     
-    .bg-img-1 { background-image: url("../img/slider/Girlmoneyjar.jpg"); }
+    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
     {background-size: contain;}
 }
 
