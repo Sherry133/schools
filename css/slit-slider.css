@@ -17,12 +17,10 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*height: 100%;*/
 	height: 100%;
-	width: 100%;  
-} 
-    
-	 
+	width: 100%;
+}
+
 
 .bg-img .inner {
     padding-top: 63.35%;  /* height/width of image */
@@ -32,187 +30,48 @@
 
 /* Custom navigation arrows */
 
-.nav-arrows span {
-	position: absolute;
-	z-index: 2000;
-	top: 50%;
-	width: 40px;
-	height: 40px;
-	border: 8px solid rgba(150,150,150,0.4);
-	text-indent: -90000px;
-	margin-top: -40px;
-	cursor: pointer;
-	
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
 
-.nav-arrows span:hover {
-	border-color: rgba(150,150,150,0.9);
-}
-
-.nav-arrows span.nav-arrow-prev {
-	left: 5%;
-	border-right: none;
-	border-top: none;  
-}
-
-.nav-arrows span.nav-arrow-next {
-	right: 5%;
-	border-left: none;
-	border-bottom: none;   
-}
-
-#nav-arrows > a {
-  
-  color: #005da3;
-  display: block;
-  height: 60px;
-  line-height: 76px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 60px;
-  z-index: 20;
-  margin-top: -30px;
-
-    -webkit-transition: all 0.5s ease 0s;
-       -moz-transition: all 0.5s ease 0s;
-        -ms-transition: all 0.5s ease 0s;
-         -o-transition: all 0.5s ease 0s;
-            transition: all 0.5s ease 0s;
-}
-
-#nav-arrows > a.sl-prev {
-	left: 50px;
-}
-
-#nav-arrows > a.sl-next {
-	right: 50px;
-}
-
-#nav-arrows > a.sl-next:hover {
-	background-color: #005da3;
-	border-color: #005da3;
-	color: #fff;
-}
-#nav-arrows > a.sl-prev:hover {
-	background-color:#005da3;
-	border-color: #005da3;
-	color: #fff;
-}
 /* Custom navigation dots */
-
-.nav-dots {
-	text-align: center;
-	position: absolute;
-	bottom: 2%;
-	height: 30px;
-	width: 100%;
-	left: 0;
-	z-index: 1000;
-   
-}
-
-.nav-dots span {
-	display: inline-block;
-	position: relative;
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	margin: 3px;
-	background: #000;
-	background: rgba(255,215,0,0.4);
-	cursor: pointer;
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(255,215,0,0.1);
-}
-
-.nav-dots span {
-	background: rgba(0,35,102,0.1);
-	margin: 6px;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	box-shadow: 
-		0 1px 1px rgba(255,0,0,0.4), 
-		inset 0 1px 1px rgba(255,255,255,0.1),
-		0 0 0 4px rgba(0,163,71,0.8);
-}
-
-.nav-dots span.nav-dot-current,
-.nav-dots span:hover {
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(255,255,255,0.1),
-		0 0 0 5px rgba(255,0,0,0.5);
-}
-
-.nav-dots span.nav-dot-current:after {
-	content: "";
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	top: 3px;
-	left: 3px;
-	border-radius: 50%;
-	background: rgba(255,255,255,0.8);
-}
-
 
 
 .bg-img-1 {
-	 max-width: 100%;
-	 height: 100%;
+	/* max-width: 100%;
+	 height: 100%;*/
+     background-image: url("../img/slider/vivonswing_1200.jpg");
 
-    /* height: 100%;*/ 
-     background-image: url("../img/slider/Vivatbeach_sm.jpg");
-     -webkit-background-size: contain;
+    /* -webkit-background-size: contain;
      -o-background-size: contain;
-     -moz-background-size: contain;
-     background-size: cover; 
+     -moz-background-size: contain;*/
+    /* background-size: cover;*/
 
 }
-
-@media only screen and (max-width: 767px) {
-    /* Small screen, non-retina */
-    .bg-img-1 { background-image: url("../img/slider/Vivatbeach_sm.jpg"); }
-    {background-size: contain;}
-    
-}
-/*@media only screen and (min-resolution: 2dppx) and (max-width: 480) {
+/*@media (max-width: 480) {
     /* Small screen, retina */
- /*   .bg-img-1 { background-image: url("../img/slider/Girlwithmoneyjar_sm1.jpg"); }
-    {background-size: contain;}
-    
-}*/
+  /* .bg-img-1
+   {background-image: url("../img/slider/Vivatbeach_sm.jpg"); }*/
+    /*{background-size: cover;}*/
+/*}*/
 
-@media only screen and (min-resolution: 2dppx) and (max-width: 767px)  {
-    
-    .bg-img-1 { background-image: url("../img/slider/Vivatbeach_sm.jpg"); }
+@media (max-width: 767px)  {
+
+    .bg-img-1 { background-image: url("../img/slider/vivonswing.jpg"); }
     {background-size: contain;}
 }
 
-@media only screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 991px)  {
-    
-    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
+@media (min-width: 768px) and (max-width: 991px)  {
+
+    .bg-img-1 { background-image: url("../img/slider/vivonswing.jpg"); }
     {background-size: contain;}
 }
-@media only screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px)  {
-    
-    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+    .bg-img-1 { background-image: url("../img/slider/vivonswing_sh.jpg"); }
     {background-size: contain;}
 }
 
-@media only screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
-    
-    .bg-img-1 { background-image: url("../img/slider/Vivatbeach.jpg"); }
+@media (min-width: 1200px)  {
+
+    .bg-img-1 { background-image: url("../img/slider/vivonswing_sh.jpg"); }
     {background-size: contain;}
 }
 
