@@ -568,7 +568,7 @@ nav ul li:nth-last-child(1)  {
    
     vertical-align: top;
     display: table-cell;
-    background: rgba(42,70,104,.5);
+   /* background: rgba(42,70,104,.5);*/
     position: relative;
    /* z-index: 999;*/
   
