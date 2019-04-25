@@ -310,17 +310,17 @@ main > section {
     text-align: center;
     color: #D2B48C;
     font-weight: 500;
-    height: 100%;
+    height: auto;
     width: 100%;
-    top:0;
+    top: 0;
 }
-/*.sec-title h2 {
-    color: #fff;
+/*#service .sec-title h2 {
+    color: #D2B48C;
     display: inline;
     height: 100%;
     position: absolute;
     text-align: center;
-    top: 0;
+    top: -10wm;
     width: 100%;
     z-index: 11;
 }*/
@@ -838,7 +838,7 @@ span.sherry1  {
    
     font-family: 'Roboto', sans-serif;
     position: relative;
-    font-size: 175%;
+    font-size: 125%;
     color: #d2b48c;
    /* flex: 0 1 auto;*/ /*to keep footer at bottom*/
    /* padding: 0px;*/   /*to keep footer at bottom*/
@@ -1096,6 +1096,7 @@ span.sherry1  {
 }
 #about .welcome-block h3 {
     margin: 35px 10px 65px;
+    margin-bottom: 55px;
 
 }
 #about .welcome-block img {
@@ -1112,14 +1113,19 @@ span.sherry1  {
     margin-right: 20px;
     line-height: 1.5em;
     color: #fff;
-     font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-size: 16px;
    
 }
 
+#about .message-body img {
+    margin-top: -23px;
+}
+
 #about .summary-statement p {
-    color: cornflowerblue;
+    color: #D2B48C;
     line-height: 1.25em;
+  /*  margin-top: -25px;*/
 }
 
 #gettingstarted .fa-ul li i {
