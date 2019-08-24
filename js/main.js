@@ -13,13 +13,13 @@ function showOverlay() {
     $('.overlay').show()
 }
 
-setTimeout(showOverlay, 3000)
+setTimeout(showOverlay, 2000)
 
 // })
 function removeOverlay() {
     $('.overlay').remove()
 }
-setTimeout(removeOverlay, 15000)
+setTimeout(removeOverlay, 10000)
 
 /* ========================================================================= */
 /*  Welcome Section Slider

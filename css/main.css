@@ -432,6 +432,7 @@ main > section {
 
 .overlay{
  position: absolute;
+  bottom: 0; 
   width:80%;
   height: 80%;
   /* background-color: red; */
@@ -441,12 +442,24 @@ main > section {
   display: none; 
    z-index: 99;   
 } 
-.overlay-content {
-    font-family: "Roboto",sans-serif;
-    font-size: 1.5rem;
-    align-content: center;
-
+@media (min-resolution: 2dppx) and (max-width: 768px)  {
+    .overlay 
+    /* {width: 80%;}
+    {height: 80%;} */
+    /* {bottom: 0;} */
+{background-image: url("../img/slider/Blog_overlay_sm.jpg");}
+{background-repeat: no-repeat;}
 } 
+@media (max-width: 768px)  {
+    .overlay 
+    /* {width: 80%;}
+    {height: 80%;} */
+    /* {bottom: 0;} */
+{background-image: url("../img/slider/Blog_overlay_sm.jpg");}
+{background-repeat: no-repeat;}
+} 
+
+
 /**
 /*	Header
 /* ==========================================*/
