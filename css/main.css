@@ -12,7 +12,7 @@
     /*height: 100%; */ /*to keep footer at bottom*/
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: #fff; 
     font-family: 'Open+Sans', serif;
     line-height: normal;
     font-size: 16px;
@@ -424,6 +424,29 @@ main > section {
     0%{box-shadow: inset 0px 0px 0px #2E2E2E;}
     100%{box-shadow: inset 60px 0px 0px #2E2E2E;}
 }
+/* overlay */
+++++++++++++++++++++++++++++++++++++++++++*/
+.wrapper {
+  position: relative;
+}
+
+.overlay{
+ position: absolute;
+  width:80%;
+  height: 80%;
+  /* background-color: red; */
+  background-image: url("../img/slider/Blog_overlay2.jpg"); 
+  background-repeat: no-repeat; 
+  color: #fff;
+  display: none; 
+   z-index: 99;   
+} 
+.overlay-content {
+    font-family: "Roboto",sans-serif;
+    font-size: 1.5rem;
+    align-content: center;
+
+} 
 /**
 /*	Header
 /* ==========================================*/
@@ -466,8 +489,7 @@ main > section {
 .navbar-default .navbar-toggle:hover  {
     background-color: lightblue;
 }
-    
-    
+       
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
@@ -487,8 +509,9 @@ main > section {
 	color: #0f96e0;  
 }
 .navbar-default  {
-  background-color: #fff;
+  background-color:#fff;
   overflow: hidden;
+  /* z-index: 99; */
 }
     
 .navbar-default .navbar-nav>li>a  {
@@ -511,6 +534,7 @@ nav ul li:nth-last-child(1)  {
     padding: -25px;
   
 }
+/*++++++++++++++++++++++++++++++++++++++++
 
  /*=========================================
 	Home Slider
@@ -570,13 +594,13 @@ nav ul li:nth-last-child(1)  {
     display: table-cell;
     background: rgba(42,70,104,.5);
     position: relative;
-   /* z-index: 999;*/
+    /* z-index: 0; */
   
    /* #2A4668;*/
 }
-span.sherry  {
+ span.sherry  {
     color: #d2b48c;
-}
+} 
 span.sherry1  {
     color: green;
 }
@@ -1049,10 +1073,10 @@ span.sherry1  {
     #about
     {background-color: #000;}
 }
-#about .overlay {
+  #about .overlay1 {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
-}
+}   
 /*#about .sec-title:after {
     border-bottom: 1px solid #fff;
 }*/
@@ -1378,10 +1402,10 @@ ul.external li a:hover {
 color:#fff;
 }
 
-#testimonials .overlay {
+ #testimonials .overlay1 {
     background-color: rgba(15,155,224, 0.78);
     padding: 70px 0 40px;
-}
+}  
 .testimonial-item {
     margin: 0 auto;
     padding-bottom: 50px;
@@ -1564,10 +1588,10 @@ color:#fff;
     #social
     {background-color: #252525}
 }
-#social .overlay {
+  #social .overlay1 {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
-}
+}  
 .social-button {
     margin: 0;
     padding: 0;

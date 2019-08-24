@@ -7,6 +7,19 @@ jQuery(window).load(function () {
     $("#preloader").fadeOut("slow");
 
 });
+// $(document).ready(function () {
+
+function showOverlay() {
+    $('.overlay').show()
+}
+
+setTimeout(showOverlay, 3000)
+
+// })
+function removeOverlay() {
+    $('.overlay').remove()
+}
+setTimeout(removeOverlay, 15000)
 
 /* ========================================================================= */
 /*  Welcome Section Slider
