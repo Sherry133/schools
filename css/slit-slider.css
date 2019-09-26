@@ -1,7 +1,7 @@
 .sl-slide, .sl-slides-wrapper, .sl-slide-inner {
 	position: absolute;
- 	/* min-width: 100%;
-	min-height:100%;   */
+   /*  min-width: 100%;
+    min-height:100%;   */  
 	top: 0;
 	left:0;
 
@@ -10,20 +10,29 @@
 }		
 
 .sl-slider-wrapper {
-/* 	min-width: 100%;
-	min-height: 100%;  */
-	overflow: hidden;
 	position: relative;
+	/* height: 500px;
+	width: 100%; */
+	min-height: 100%;  
+	overflow: hidden;
+	
 }
 
-.bg-img{
+.bg-img {
 	background-position: center center; 
 	background-repeat: no-repeat;
-	/* background-size: cover;  */
+	background-size: cover  !important;
+	--webkit-background-size: cover !important;
 /* 	min-height:50vh;
 	min-width: 100%; */
 
 
+}
+.bg-img-1:before {
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 
 
@@ -43,31 +52,50 @@
 
 .bg-img-1 { 
 	
-      background: url("../img/slider/Tulips_are_Here.mp4");   
-	  background: url("../img/slider/Tulips_are_Here.webm" );  
-    /*  -webkit-background-size: cover;  
+    /*   background-image: url("./img/slider/Tulips_are_Here.mp4");   
+	  background-image: url("./img/slider/Tulips_are_Here.webm"); 
+	  background-image: url("./img/slider/Tulips_are_Here.jpg"); 
+      -webkit-background-size: cover;  
      -o-background-size: cover;
-     -moz-background-size: cover; */
-     /* background-size: cover;  */
+     -moz-background-size: cover; 
+     background-image: cover;   */    
+	
 	 position: absolute;
-	 top: 80%;
+	 top: 70%;
 	 left: 50%;
-	 transform: translate(-50%, -50%); 
-	/*  min-width: 100%;
-	 min-height: 50vh; */
-
-
+	 min-width: 100%;
+	 min-height: auto;  
+	 width: auto;
+	 height: auto; 
+	 z-index: -100;
+	 --webkit-transform: translate(-50%, -50%);
+	 --ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);  
  } 
+
+ @media only screen and (max-width: 767px) {
+	bg-img-1{
+		max-height: auto;
+		background-color: gray;
+		background-image: url("./Tulips_are_Here.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-size: cover;
+	}
+
+
+}
 /*@media (max-width: 480) {
     /* Small screen, retina */
   /* .bg-img-1
    {background-image: url("../img/slider/Vivatbeach_sm.jpg"); }*/
     /*{background-size: cover;}*/
 /*}*/
-
+/* 
 @media (max-width: 767px)  {
 
-    .bg-img-1 { background: url("../img/slider/Tulips_are_Here.mp4"); }
+    .bg-img-1 { background url("../img/slider/Tulips_are_Here.mp4"); }
     {background-size: cover;}
 }
 
@@ -84,9 +112,9 @@
 
 @media (min-width: 1200px)  {
 
-    .bg-img-1 { background: url("../img/slider/Tulips_are_Here.mp4"); }
-     {background-size: cover;} 
-}
+    .bg-img-1 { background: url("https://coverr.co/videos/Tulips%20are%20Here--91d053de-fb7b-483a-8da9-5829f500d354");}
+      {background-size: cover;}    
+} */
 
 
 /* Animations for content elements */
