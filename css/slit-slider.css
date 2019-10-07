@@ -1,47 +1,31 @@
 .sl-slide, .sl-slides-wrapper, .sl-slide-inner {
 	position: absolute;
-   /*  min-width: 100%;
-    min-height:100%;   */  
+	width: 100%;
+	height: 100%;
 	top: 0;
-	left:0;
-
-   
-	
-}		
+	left: 0;
+}
 
 .sl-slider-wrapper {
-	position: relative;
-	/* height: 500px;
-	width: 100%; */
-	min-height: 100%;  
+	width: 100%;
+	height: 600px;
 	overflow: hidden;
-	
+	position: relative;
 }
 
-.bg-img {
-	background-position: center center; 
+.bg-img{
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover  !important;
-	--webkit-background-size: cover !important;
-/* 	min-height:50vh;
-	min-width: 100%; */
-
-
-}
-.bg-img-1:before {
-	content:'';
-	display: inline-block;
-	vertical-align: middle;
+	background-size: cover;
 	height: 100%;
+	width: 100%;
 }
 
 
 .bg-img .inner {
     padding-top: 63.35%;  /* height/width of image */
-    display:block;
-	/* margin-bottom: 100px; */
-   /*  min-height: 100%; */
-	
+    display: block;
+    height: 0;
 }
 
 /* Custom navigation arrows */
@@ -50,40 +34,15 @@
 /* Custom navigation dots */
 
 
-.bg-img-1 { 
-	
-    /*   background-image: url("./img/slider/Tulips_are_Here.mp4");   
-	  background-image: url("./img/slider/Tulips_are_Here.webm"); 
-	  background-image: url("./img/slider/Tulips_are_Here.jpg"); 
-      -webkit-background-size: cover;  
-     -o-background-size: cover;
-     -moz-background-size: cover; 
-     background-image: cover;   */    
-	
-	 position: absolute;
-	 top: 70%;
-	 left: 50%;
-	 min-width: 100%;
-	 min-height: auto;  
-	 width: auto;
-	 height: auto; 
-	 z-index: -100;
-	 --webkit-transform: translate(-50%, -50%);
-	 --ms-transform: translate(-50%, -50%);
-	 transform: translate(-50%, -50%);  
- } 
+.bg-img-1 {
+	/* max-width: 100%;
+	 height: 100%;*/
+     background-image: url("../img/slider/Halloween_sm_2107.jpg");
 
- @media only screen and (max-width: 767px) {
-	bg-img-1{
-		max-height: auto;
-		background-color: gray;
-		background-image: url("./Tulips_are_Here.jpg");
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-position: 0% 0%;
-		background-size: cover;
-	}
-
+     -webkit-background-size: contain;
+     -o-background-size: contain;
+     -moz-background-size: contain;
+     background-size: cover;
 
 }
 /*@media (max-width: 480) {
@@ -92,29 +51,29 @@
    {background-image: url("../img/slider/Vivatbeach_sm.jpg"); }*/
     /*{background-size: cover;}*/
 /*}*/
-/* 
+
 @media (max-width: 767px)  {
 
-    .bg-img-1 { background url("../img/slider/Tulips_are_Here.mp4"); }
-    {background-size: cover;}
+    .bg-img-1 { background-image: url("../img/slider/Halloween_sm_2017.jpg"); }
+    {background-size: contain;}
 }
 
 @media (min-width: 768px) and (max-width: 991px)  {
 
-    .bg-img-1 { background: url("../img/slider/Tulips_are_Here.mp4"); }
-    {background-size: cover;}
+    .bg-img-1 { background-image: url("../img/slider/Halloween_sm_2017.jpg"); }
+    {background-size: contain;}
 }
 @media (min-width: 992px) and (max-width: 1199px)  {
 
-    .bg-img-1 { background: url("../img/slider/Tulips_are_Here.mp4"); }
-    {background-size: cover;}
+    .bg-img-1 { background-image: url("../img/slider/Halloween_sm_2017.jpg"); }
+    {background-size: contain;}
 }
 
 @media (min-width: 1200px)  {
 
-    .bg-img-1 { background: url("https://coverr.co/videos/Tulips%20are%20Here--91d053de-fb7b-483a-8da9-5829f500d354");}
-      {background-size: cover;}    
-} */
+    .bg-img-1 { background-image: url("../img/slider/Halloween_2017.jpg"); }
+    {background-size: contain;}
+}
 
 
 /* Animations for content elements */
