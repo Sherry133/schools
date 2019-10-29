@@ -2,16 +2,12 @@
 .sl-slides-wrapper,
 .sl-slide-inner {
   position: absolute;
-  /*  min-width: 100%;
-    min-height:100%;   */
   top: 0;
   left: 0;
 }
 
 .sl-slider-wrapper {
   position: relative;
-  /* height: 500px;
-	width: 100%; */
   min-height: 100%;
   overflow: hidden;
 }
@@ -21,10 +17,8 @@
   background-repeat: no-repeat;
   background-size: cover !important;
   --webkit-background-size: cover !important;
-  /* 	min-height:50vh;
-	min-width: 100%; */
 }
-.bg-img-1:before {
+.bg-img-1::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -34,8 +28,6 @@
 .bg-img .inner {
   padding-top: 63.35%; /* height/width of image */
   display: block;
-  /* margin-bottom: 100px; */
-  /*  min-height: 100%; */
 }
 
 /* Custom navigation arrows */
@@ -43,20 +35,19 @@
 /* Custom navigation dots */
 
 .bg-img-1 {
-  background-image: url("./img/slider/Halloween_sm_2017");
-  background-image: cover;
+  background-image: url("../img/slider/thanksgiving-header.jpg");
+
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-  background-image: cover;
 
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 60%;
   min-width: 100%;
   min-height: auto;
   width: auto;
-  height: auto;
+  height: 100%;
   z-index: -100;
   --webkit-transform: translate(-50%, -50%);
   --ms-transform: translate(-50%, -50%);
@@ -67,57 +58,57 @@
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("./Halloween_sm_2017.jpg");
+    background-image: url("../img/slider/thanksgiving-header.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
     background-size: cover;
   }
 }
-@media (max-width: 480) {
+/* @media (max-width: 480) {
   /* Small screen, retina */
-  .bg-img-1 {
+/* .bg-img-1 {
     background-image: url("./img/slider/Halloween_sm_2017.jpg");
   }
    {
     background-size: cover;
   }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .bg-img-1 {
     background: url("./img/slider/Halloween_sm_2017.jpg");
   }
    {
     background-size: cover;
   }
-}
+} */
 
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 1280px) {
   .bg-img-1 {
     background: url("./img/slider/Halloween_2017.jpg");
   }
    {
     background-size: cover;
   }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
+}  */
+/* @media (min-width: 992px) and (max-width: 1199px) {
   .bg-img-1 {
     background: url("./img/slider/Halloween_2017.jpg");
   }
    {
     background-size: cover;
   }
-}
+} */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .bg-img-1 {
     background: url("./img/slider/Halloween_2017.jpg");
   }
    {
     background-size: cover;
   }
-}
+}  */
 
 /* Animations for content elements */
 

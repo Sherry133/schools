@@ -34,6 +34,14 @@
 
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133864493-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133864493-1');
+    </script>
 
     <title>School Savings&trade;</title>
     <!-- Meta Description -->
@@ -51,7 +59,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="apple-touch-icon"
         href='https://www.schoolsavings.com/LinkClick.aspx?fileticket=nY9rJpHYao8%3d&tabid=114&mid=618'>
-    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="shortcut icon" href="./favicon.png" />
 
 </head>
 
@@ -146,16 +154,16 @@
                     data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
                     <!-- <div class="bg-img bg-img-1 img-responsive" loop muted autoplay playsinline max-width="100%" height="auto"> </div>
-                        <source src="./img/slider/Halloween_2017.jpg" type="image" min-width="100%" min-height="auto">
-                        <source src="./img/slider/Halloween_2017.jpg" type="image" min-width="100%" min-height="auto">
+                        <source src="./img/slider/Halloween_2017.jpg" min-width="100%" min-height="auto">
+                        <source src="./img/slider/Halloween_2017.jpg" min-width="100%" min-height="auto">
                     </div>  -->
 
                     <video class="bg-img bg-img-1" loop muted autoplay playsinline
-                        poster="./img/slider/Halloween_2017.jpg">
-                        <source src="./img/slider/Halloween_2017.jpg" type="video/mp4" min-width="100%"
-                            min-height="auto">
+                        poster="./img/slider/thanksgiving-header.jpg " min-width ="100%" min-height="auto"> 
+                        <!-- <source src="./img/slider/thanksgiving-header.jpg" type="video/mp4" min-width="100%"
+                            min-height="auto"> -->
                         <source src="./img/slider/Halloween_2017.jpg" type="video/webm" min-width="100%"
-                            min-height="auto">
+                            min-height="auto"> 
                     </video> 
 
                   
@@ -163,8 +171,8 @@
                     <div class="slide-caption">
                         <div class="caption-content">
                             <br>
-                            <div class="intro">
-                                <h2 class="intro">DON'T BE SCARED <br>TO <span class="sherry"> SAVE!</span>
+                             <div class="intro"> 
+                                <h2 class="intro">BE PREPARED... <br>SAVE <span class="sherry"> NOW!</span>
 
                                 </h2>
                                 <div class="row">
@@ -187,7 +195,7 @@
                                     </div>
                                 </div>
 
-                            </div>
+                             </div> 
 
 
     </section>
@@ -637,7 +645,7 @@
                     </div>
 
                     <div class="col-md-7 contact-form wow animated fadeInLeft">
-                        <form id="contactform" action="https://formspree.io/support@schoolsavings.com" method="POST">
+                        <form id="#contactform" action="https://formspree.io/support@schoolsavings.com" method="POST">
                             <div class="input-field">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name...">
                             </div>
@@ -658,13 +666,14 @@
                                     value="https://sherry133.github.io/schools/Thanks.html" />
                             </div>
                             <div class="form-reset">
-                                <input type="button" class="btn-gray btn-border btn-effect" onclick="myFunction()"
-                                    value="Reset Form"></div>
+                                <input type="button" class="btn-gray btn-border btn-effect" onclick= "myFunction()"
+                                    value= "Reset Form"></div>
                             <button type="submit" id="submit" class="btn btn-contact btn-effect">Send</button>
                         </form>
                     </div>
-                    <script>function myFunction() {
-                            document.getElementById("contactform").reset();
+                    <script>
+                    function myFunction() {
+                            document.getElementById("#contactform").reset();
                         }
                     </script>
 
