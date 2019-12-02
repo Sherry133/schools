@@ -30,12 +30,9 @@
   display: block;
 }
 
-/* Custom navigation arrows */
-
-/* Custom navigation dots */
-
+/* iPads 7.9", 9.7" and 10.5" */
 .bg-img-1 {
-  background-image: url("../img/slider/thanksgiving-header.jpg");
+  background-image: url("../img/slider/Christmas2017_1920.jpg");
 
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -43,7 +40,7 @@
 
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   min-width: 100%;
   min-height: auto;
   width: auto;
@@ -54,44 +51,60 @@
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("../img/slider/thanksgiving-header.jpg");
+    background-image: url("../img/slider/Christmas2017_1920.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
     background-size: cover;
   }
 }
-/* @media (max-width: 480) {
+@media (max-width: 480px) {
   /* Small screen, retina */
-/* .bg-img-1 {
-    background-image: url("./img/slider/Halloween_sm_2017.jpg");
+  .bg-img-1 {
+    background-image: url("../img/slider/Happyholidays_x.jpg");
+
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide-caption .caption-content h6 {
+    display: none;
+    /* font-size: 100%; */
+    /* margin-top: 22.75em; */
+    /* margin-left: 8.75em;  */
+  }
+  .no-bullet li {
+    display: none;
+  }
+  ‘ .btn-blue {
+    margin-top: 20em;
+  }
+}
+
+/* 
+@media (max-width: 767px) {
+  .bg-img-1 {
+    background: url("../img/slider/thanksgiving-header.jpg");
   }
    {
     background-size: cover;
   }
 } */
 
-/* @media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .bg-img-1 {
-    background: url("./img/slider/Halloween_sm_2017.jpg");
+    background-image: url("../img/slider/Christmas2017_1920.jpg");
   }
-   {
-    background-size: cover;
-  }
-} */
 
-/* @media (min-width: 768px) and (max-width: 1280px) {
-  .bg-img-1 {
-    background: url("./img/slider/Halloween_2017.jpg");
+  .slide-caption .caption-content h4 {
+    display: none;
   }
-   {
-    background-size: cover;
-  }
-}  */
+}
 /* @media (min-width: 992px) and (max-width: 1199px) {
   .bg-img-1 {
     background: url("./img/slider/Halloween_2017.jpg");
@@ -101,14 +114,24 @@
   }
 } */
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .bg-img-1 {
-    background: url("./img/slider/Halloween_2017.jpg");
+    background-image: url("../img/slider/snowfall_s.jpg");
   }
-   {
-    background-size: cover;
+
+  /* .slide-caption .caption-content h4 {
+    display: none;
+  } */
+}
+@media (min-width: 1366px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/snowfall_s.jpg");
   }
-}  */
+}
+
+/* .slide-caption .caption-content h4 {
+    display: none;
+  } */
 
 /* Animations for content elements */
 
