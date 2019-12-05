@@ -32,7 +32,7 @@
 
 /* iPads 7.9", 9.7" and 10.5" */
 .bg-img-1 {
-  background-image: url("../img/slider/Christmas2017_1920.jpg");
+  background-image: url("../img/slider/Happyholidays_sm.jpg");
 
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -50,88 +50,100 @@
   --ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+@media (max-width: 480px) {
+  /* Small screen, retina */
+  .bg-img-1 {
+    background-image: url("../img/slider/Happyholidays_x.jpg");
+    top: 55%;
+    left: 55%;
+    transform: translate(-55%, -50%);
+  }
+
+  .slide-caption .caption-content h6 {
+    display: none;
+  }
+  .no-bullet li {
+    display: none;
+  }
+}
 
 @media (max-width: 767px) {
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("../img/slider/Christmas2017_1920.jpg");
+    background-image: url("../img/slider/Happyholidays_x.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
     background-size: cover;
   }
 }
-@media (max-width: 480px) {
-  /* Small screen, retina */
+
+/* older 9.7-inch ipad */
+@media (min-width: 768px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url("../img/slider/Happyholidays_x.jpg");
+    background-image: url("../img/slider/Happyholidays_sm.jpg");
 
     top: 55%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-  }
-
-  .slide-caption .caption-content h6 {
-    display: none;
-    /* font-size: 100%; */
-    /* margin-top: 22.75em; */
-    /* margin-left: 8.75em;  */
+    left: 55%;
+    transform: translate(-55%, -50%);
   }
   .no-bullet li {
     display: none;
   }
-  ‘ .btn-blue {
-    margin-top: 20em;
-  }
-}
-
-/* 
-@media (max-width: 767px) {
-  .bg-img-1 {
-    background: url("../img/slider/thanksgiving-header.jpg");
-  }
-   {
-    background-size: cover;
-  }
-} */
-
-@media (min-width: 768px) and (max-width: 1280px) {
-  .bg-img-1 {
-    background-image: url("../img/slider/Christmas2017_1920.jpg");
-  }
-
-  .slide-caption .caption-content h4 {
+  .slide-caption .caption-content h6 {
     display: none;
   }
 }
-/* @media (min-width: 992px) and (max-width: 1199px) {
+/* iPad 9.7" Sherry, 10.5, 12.5 horizontal */
+@media (min-width: 800px) and (max-width: 1199px) {
   .bg-img-1 {
-    background: url("./img/slider/Halloween_2017.jpg");
+    background-image: url("../img/slider/Happyholidays_sm.jpg");
   }
-   {
-    background-size: cover;
+  .no-bullet li {
+    display: none;
   }
-} */
-
+  .slide-caption .caption-content h6 {
+    margin-top: 15em;
+  }
+}
 @media (min-width: 1200px) {
   .bg-img-1 {
     background-image: url("../img/slider/snowfall_s.jpg");
   }
 
-  /* .slide-caption .caption-content h4 {
-    display: none;
+  /* .slide-caption .caption-content h6 {
+    margin-top: 28em;
   } */
-}
-@media (min-width: 1366px) {
-  .bg-img-1 {
-    background-image: url("../img/slider/snowfall_s.jpg");
+  .no-bullet li {
+    display: none;
   }
 }
 
-/* .slide-caption .caption-content h4 {
-    display: none;
+@media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/snowfall_s.jpg");
+  }
+
+  /* .slide-caption .caption-content h6 {
+    margin-top: 38em;
   } */
+  .no-bullet li {
+    display: none;
+  }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/snowfall_s.jpg");
+  }
+
+  /* .slide-caption .caption-content h6 {
+    margin-top: 38em;
+  } */
+  .no-bullet li {
+    display: none;
+  }
+}
 
 /* Animations for content elements */
 
