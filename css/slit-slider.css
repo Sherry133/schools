@@ -32,7 +32,7 @@
 
 /* iPads 7.9", 9.7" and 10.5" */
 .bg-img-1 {
-  background-image: url("../img/slider/Happyholidays_sm.jpg");
+  background-image: url("../img/slider/rat_final_sm.jpg");
 
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -53,7 +53,7 @@
 @media (max-width: 480px) {
   /* Small screen, retina */
   .bg-img-1 {
-    background-image: url("../img/slider/Happyholidays_x.jpg");
+    background-image: url("../img/slider/pendant.jpg");
     top: 55%;
     left: 55%;
     transform: translate(-55%, -50%);
@@ -71,7 +71,7 @@
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("../img/slider/Happyholidays_x.jpg");
+    background-image: url("../img/slider/rat_final_sm.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -82,11 +82,11 @@
 /* older 9.7-inch ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url("../img/slider/Happyholidays_sm.jpg");
+    background-image: url("../img/slider/rat_final_sm.jpg");
 
-    top: 55%;
-    left: 55%;
-    transform: translate(-55%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .no-bullet li {
     display: none;
@@ -98,9 +98,9 @@
 /* iPad 9.7" Sherry, 10.5, 12.5 horizontal */
 @media (min-width: 800px) and (max-width: 1199px) {
   .bg-img-1 {
-    background-image: url("../img/slider/Happyholidays_sm.jpg");
+    background-image: url("../img/slider/rat_final_xsm.jpg");
   }
-  .no-bullet li {
+  .no-bullet1 {
     display: none;
   }
   .slide-caption .caption-content h6 {
@@ -109,7 +109,7 @@
 }
 @media (min-width: 1200px) {
   .bg-img-1 {
-    background-image: url("../img/slider/snowfall_s.jpg");
+    background-image: url("../img/slider/rat_final.jpg");
   }
 
   /* .slide-caption .caption-content h6 {
@@ -122,7 +122,7 @@
 
 @media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
   .bg-img-1 {
-    background-image: url("../img/slider/snowfall_s.jpg");
+    background-image: url("../img/slider/rat_final.jpg");
   }
 
   /* .slide-caption .caption-content h6 {
@@ -134,7 +134,7 @@
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
   .bg-img-1 {
-    background-image: url("../img/slider/snowfall_s.jpg");
+    background-image: url("../img/slider/rat_final.jpg");
   }
 
   /* .slide-caption .caption-content h6 {
