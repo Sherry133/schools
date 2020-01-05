@@ -143,9 +143,9 @@ font-weight: bold;
 /* ***For Desktops*** */
 .btn-blue {
     /*float: left;*/
-    position: absolute;
+    position: relative;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    top: 1em;
+    top: 12em;
     left: .25em;
     padding: 10px 25px;
     color: #FFF;
@@ -645,7 +645,7 @@ nav ul li:nth-last-child(1)  {
  .no-bullet1 {
     display: flex;
     position: relative;
-    top: 30em;
+    top: 40em;
     color: #c7e2df;
     font-size: 80%;
     margin: 0 auto;
@@ -661,7 +661,7 @@ nav ul li:nth-last-child(1)  {
 @media (max-width: 1024px){
   .no-bullet1 .text-piped
 /* {position: absolute;} */
-{left: 60px;} 
+{left-margin: 40px;} 
 }
 @media (max-width: 1366px){
   .no-bullet1 .text-piped
@@ -683,7 +683,7 @@ nav ul li:nth-last-child(1)  {
 #home-footer   {
     /* display: flex;  */
     position: relative;
-    bottom: -30rem;
+    bottom: -43rem;
     /* left: 5rem;  */
     width: 100%;
     /* height: 170px;  */
