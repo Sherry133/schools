@@ -712,7 +712,7 @@ nav ul li:nth-last-child(1)  {
 #shrewd h2 {
    position: absolute;
    top: 0;
-   left: 1em;
+   left: .5em;
    color: #c7e2df;
    font-size: 3.5em;
   
