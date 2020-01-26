@@ -18,6 +18,13 @@ body {
     align-items: center;
     color: black;
 }
+@media (min-width: 480px) {
+    .hero
+    {position: relative;}
+    {min-width: 50px;}
+    {padding-left: 150px;}
+}
+
 #body {
     /*height: 100%; */ /*to keep footer at bottom*/
     /* padding: 0; */
@@ -87,11 +94,14 @@ h1 {
 }
 @media (max-width: 480px) {
     h1
-    {font-size: 75px;}
+    {font-size: 60px;}
     }
+h7 {
+    font-size: 2rem;
+    color: #7f7f7f;
+}
 
-h5, h6,
-.h1, .h3, .h4, .h5, .h6 {
+.h1, .h3, h4, .h5, .h6  .h7 {
    
     color: #252525;
 }   
