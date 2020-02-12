@@ -1,0 +1,304 @@
+.sl-slide,
+.sl-slides-wrapper,
+.sl-slide-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sl-slider-wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  --webkit-background-size: cover !important;
+}
+.bg-img-1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.bg-img .inner {
+  padding-top: 63.35%; /* height/width of image */
+  display: block;
+}
+
+/* iPads 7.9", 9.7" and 10.5" */
+.bg-img-1 {
+  background-image: url("../img/slider/SpringBreak_480.jpg");
+
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: auto;
+  width: auto;
+  height: 100%;
+  z-index: -100;
+  --webkit-transform: translate(-50%, -50%);
+  --ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 480px) {
+  /* Small screen, retina */
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_480.jpg");
+
+    top: 55%;
+    left: 55%;
+    transform: translate(-55%, -55%);
+  }
+
+  .slide-caption .caption-content h6 {
+    display: none;
+  }
+  .no-bullet li {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  bg-img-1 {
+    max-height: auto;
+    background-color: gray;
+    background-image: url("../img/slider/SpringBreak_768.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-size: cover;
+  }
+}
+
+/* older 9.7-inch ipad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_922.jpg");
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .no-bullet li {
+    display: none;
+  }
+  .slide-caption .caption-content h6 {
+    display: none;
+  }
+}
+/* iPad 9.7" Sherry, 10.5, 12.5 horizontal */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_922.jpg");
+  }
+  .no-bullet1 {
+    display: none;
+  }
+  .slide-caption .caption-content h6 {
+    margin-top: 15em;
+  }
+}
+@media (min-width: 1200px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_1200.jpg");
+  }
+
+  .slide-caption .caption-content h6 {
+    margin-top: 28em;
+  }
+  .no-bullet li {
+    display: none;
+  }
+}
+
+@media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_1520.jpg");
+  }
+
+  .slide-caption .caption-content h6 {
+    margin-top: 38em;
+  }
+  .no-bullet li {
+    display: none;
+  }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
+  .bg-img-1 {
+    background-image: url("../img/slider/SpringBreak_1520.jpg");
+  }
+
+  .slide-caption .caption-content h6 {
+    margin-top: 38em;
+  }
+  .no-bullet li {
+    display: none;
+  }
+}
+
+/* Animations for content elements */
+
+.sl-trans-elems .caption-content h2 {
+  -webkit-animation: moveUp 1s ease-in-out both;
+  -moz-animation: moveUp 1s ease-in-out both;
+  -o-animation: moveUp 1s ease-in-out both;
+  -ms-animation: moveUp 1s ease-in-out both;
+  animation: moveUp 1s ease-in-out both;
+}
+.sl-trans-elems .caption-content span,
+.sl-trans-elems .caption-content a {
+  -webkit-animation: fadeIn 0.5s linear 0.5s both;
+  -moz-animation: fadeIn 0.5s linear 0.5s both;
+  -o-animation: fadeIn 0.5s linear 0.5s both;
+  -ms-animation: fadeIn 0.5s linear 0.5s both;
+  animation: fadeIn 0.5s linear 0.5s both;
+}
+
+.sl-trans-back-elems .caption-content h2 {
+  -webkit-animation: fadeOut 1s ease-in-out both;
+  -moz-animation: fadeOut 1s ease-in-out both;
+  -o-animation: fadeOut 1s ease-in-out both;
+  -ms-animation: fadeOut 1s ease-in-out both;
+  animation: fadeOut 1s ease-in-out both;
+}
+.sl-trans-back-elems .caption-content span,
+.sl-trans-back-elems .caption-content a {
+  -webkit-animation: fadeOut 1s linear both;
+  -moz-animation: fadeOut 1s linear both;
+  -o-animation: fadeOut 1s linear both;
+  -ms-animation: fadeOut 1s linear both;
+  animation: fadeOut 1s linear both;
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+@-moz-keyframes moveUp {
+  0% {
+    -moz-transform: translateY(40px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+  }
+}
+@-o-keyframes moveUp {
+  0% {
+    -o-transform: translateY(40px);
+  }
+  100% {
+    -o-transform: translateY(0px);
+  }
+}
+@-ms-keyframes moveUp {
+  0% {
+    -ms-transform: translateY(40px);
+  }
+  100% {
+    -ms-transform: translateY(0px);
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
