@@ -32,7 +32,7 @@
 
 /* iPads 7.9", 9.7" and 10.5" */
 .bg-img-1 {
-  background-image: url("../img/slider/rat_final_sm.jpg");
+  background-image: url("../img/slider/SpringBreak_480.jpg");
 
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -53,10 +53,11 @@
 @media (max-width: 480px) {
   /* Small screen, retina */
   .bg-img-1 {
-    background-image: url("../img/slider/pendant.jpg");
+    background-image: url("../img/slider/SpringBreak_480.jpg");
+
     top: 55%;
     left: 55%;
-    transform: translate(-55%, -50%);
+    transform: translate(-55%, -55%);
   }
 
   .slide-caption .caption-content h6 {
@@ -71,7 +72,7 @@
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("../img/slider/rat_final_sm.jpg");
+    background-image: url("../img/slider/SpringBreak_768.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -82,7 +83,7 @@
 /* older 9.7-inch ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url("../img/slider/rat_final_sm.jpg");
+    background-image: url("../img/slider/SpringBreak_922.jpg");
 
     top: 50%;
     left: 50%;
@@ -98,7 +99,7 @@
 /* iPad 9.7" Sherry, 10.5, 12.5 horizontal */
 @media (min-width: 800px) and (max-width: 1199px) {
   .bg-img-1 {
-    background-image: url("../img/slider/rat_final_xsm.jpg");
+    background-image: url("../img/slider/SpringBreak_922.jpg");
   }
   .no-bullet1 {
     display: none;
@@ -109,12 +110,12 @@
 }
 @media (min-width: 1200px) {
   .bg-img-1 {
-    background-image: url("../img/slider/rat_final.jpg");
+    background-image: url("../img/slider/SpringBreak_1200.jpg");
   }
 
-  /* .slide-caption .caption-content h6 {
+  .slide-caption .caption-content h6 {
     margin-top: 28em;
-  } */
+  }
   .no-bullet li {
     display: none;
   }
@@ -122,24 +123,24 @@
 
 @media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
   .bg-img-1 {
-    background-image: url("../img/slider/rat_final.jpg");
+    background-image: url("../img/slider/SpringBreak_1520.jpg");
   }
 
-  /* .slide-caption .caption-content h6 {
+  .slide-caption .caption-content h6 {
     margin-top: 38em;
-  } */
+  }
   .no-bullet li {
     display: none;
   }
 }
 @media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
   .bg-img-1 {
-    background-image: url("../img/slider/rat_final.jpg");
+    background-image: url("../img/slider/SpringBreak_1520.jpg");
   }
 
-  /* .slide-caption .caption-content h6 {
+  .slide-caption .caption-content h6 {
     margin-top: 38em;
-  } */
+  }
   .no-bullet li {
     display: none;
   }
