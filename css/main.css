@@ -714,29 +714,37 @@ nav ul li:nth-last-child(1)  {
    position: absolute;
    display: block; 
    font-family: roboto, sans-serif;
-   top: 2em;
+   top: 1.5em;
    margin-left: 4.25em;
    color: #c7e2df;
    font-size: 250%; 
    letter-spacing: 1.5px;
 } 
-
-    @media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  #shrewd
+  {font-size: 6em;} 
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
     #shrewd 
-    {font-size: 6em}
-    {margin-left: 9.7em;}
+    /* {position: relative;}
+    {display: block;} */
+    {font-size: 6em;}
+    /* {margin-left: 5.7em;}
+    {margin-top: 4rem;} */
    
     }  
-        @media (min-width: 1200px) {
-    #shrewd 
-    {left: 3.5em;}
-   
- 
+@media (min-width: 1200px) and (max-width: 1500px){
+   #shrewd 
+    
+    {font-size: 7.5em;}
+    /* {left: 5.7em;}
+    {margin: 0 auto;}   */
     }
-        @media (min-width: 1365px) {
+        @media (min-width: 1566px) {
     #shrewd 
-    {left: 3.5em;}
-    {font-size: 350%;}
+    /* {top: }
+    {left: 9.5em;}  */
+    {font-size: 6em;}
     }
    
  span.sherry  {
