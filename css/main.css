@@ -715,10 +715,11 @@ nav ul li:nth-last-child(1)  {
    display: block; 
    font-family: roboto, sans-serif;
    top: 1.5em;
-   margin-left: 4.25em;
+   margin-left: 5em;
    color: #c7e2df;
    font-size: 250%; 
    letter-spacing: 1.5px;
+   line-height: 1em;
 } 
 @media (min-width: 768px) and (max-width: 1024px) {
   #shrewd
@@ -736,7 +737,7 @@ nav ul li:nth-last-child(1)  {
 @media (min-width: 1200px) and (max-width: 1500px){
    #shrewd 
     
-    {font-size: 7.5em;}
+    {font-size: 6em;}
     /* {left: 5.7em;}
     {margin: 0 auto;}   */
     }
