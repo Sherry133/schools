@@ -32,7 +32,7 @@
 
 /* iPads 7.9", 9.7" and 10.5" */
 .bg-img-1 {
-  background-image: url("../img/slider/SpringBreak_480.jpg");
+  background-image: url("../img/slider/SpringBreak_1510_2.jpg");
 
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -53,11 +53,11 @@
 @media (max-width: 480px) {
   /* Small screen, retina */
   .bg-img-1 {
-    background-image: url("../img/slider/SpringBreak_480.jpg");
+    background-image: url("../img/slider/SpringBreak_480_2.jpg");
 
-    top: 55%;
-    left: 55%;
-    transform: translate(-55%, -55%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .slide-caption .caption-content h6 {
@@ -72,7 +72,7 @@
   bg-img-1 {
     max-height: auto;
     background-color: gray;
-    background-image: url("../img/slider/SpringBreak_768.jpg");
+    background-image: url("../img/slider/SpringBreak_1510_2.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -83,7 +83,7 @@
 /* older 9.7-inch ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url("../img/slider/SpringBreak_922.jpg");
+    background-image: url("../img/slider/SpringBreak_1510_2.jpg");
 
     top: 50%;
     left: 50%;
@@ -99,7 +99,7 @@
 /* iPad 9.7" Sherry, 10.5, 12.5 horizontal */
 @media (min-width: 800px) and (max-width: 1199px) {
   .bg-img-1 {
-    background-image: url("../img/slider/SpringBreak_922.jpg");
+    background-image: url("../img/slider/SpringBreak_1510_2.jpg");
   }
   .no-bullet1 {
     display: none;
@@ -110,7 +110,7 @@
 }
 @media (min-width: 1200px) {
   .bg-img-1 {
-    background-image: url("../img/slider/SpringBreak_1200.jpg");
+    background-image: url("../img/slider/SpringBreak_1510_2.jpg");
   }
 
   .slide-caption .caption-content h6 {
