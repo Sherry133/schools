@@ -110,7 +110,7 @@
 }
 @media (min-width: 1200px) {
   .bg-img-1 {
-    background-image: url("../img/slider/viv_sm_umbrella.JPG");
+    background-image: url("../img/slider/viv_sm_umbrella.jpg");
   }
   /* .slide-caption .caption-content h2 {
     font-size: 450%;
@@ -130,7 +130,7 @@
 
 @media only screen and (min-resolution: 2dppx) and (min-width: 1364px) {
   .bg-img-1 {
-    background-image: url("../img/slider/viv_sm_umbrella.JPG");
+    background-image: url("../img/slider/viv_sm_umbrella.jpg");
   .slide-caption .caption-content h6 {
     margin-top: 38em;
   }
