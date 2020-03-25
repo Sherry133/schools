@@ -109,6 +109,19 @@ h6,
 #service h3 {
   color: #0f96e0;
 }
+.container {
+  display: grid;
+  grid-auto-columns: repeat(auto-fit, minmax(auto, 1fr));
+  grid-gap: 1em;
+}
+
+@media (max-width: 414px) {
+  .container {
+    /* grid-auto-columns: repeat(auto-fit, minmax(20%, 1fr)); */
+    grid-columns: span 12;
+    grid-gap: 2em;
+  }
+}
 
 .getting-started h2 {
   color: darkred;
@@ -123,9 +136,59 @@ h6,
 
 .getting-started h3 {
   color: #aa1406;
+  font-weight: bold;
 }
 .getting-started529 h3 {
   color: #aa1406;
+  font-weight: bold;
+}
+.message-body1 > div {
+  display: grid;
+  grid-auto-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
+
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(0, 50, 144);
+  border-radius: 5px;
+  background-color: rgba(233, 171, 88, 0.2);
+  padding: 2.75em;
+  /* margin-bottom: -30px; */
+  color: #252525;
+}
+
+@media (max-width: 482px) {
+  .message-body1 > div {
+    display: grid;
+    grid-auto-columns: repeat(12, auto-fit, 1fr);
+    grid-gap: 10p;
+    margin-top: -5em;
+    border: transparent;
+
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+  .getting-started {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .getting-started529 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+.lead {
+  color: green;
+  font-weight: 500;
+}
+.flyer {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2em;
+}
+@media (max-width: 480px) {
+  .flyer {
+    margin: -12.5em auto;
+    /* padding: -3em; */
+  }
 }
 
 .btn {
@@ -2350,33 +2413,4 @@ Tablet Design for logo of a width of 980x1280*/
 .wrapper1 {
   max-width: 940px;
   margin: 0 auto;
-}
-
-.message-body1 > div {
-  margin-top: -50px;
-  border: 2px solid rgb(0, 50, 144);
-  border-radius: 5px;
-  background-color: rgba(233, 171, 88, 0.2);
-  padding: 1em;
-  color: #252525;
-}
-
-/* @media (max-width: 767px) {
-    .message-body1 > div
-
-} */
-
-.message-body1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.getting-started {
-  grid-column: 1;
-  grid-row: 1;
-}
-.getting-started529 {
-  grid-column: 2;
-  grid-row: 1;
 }
