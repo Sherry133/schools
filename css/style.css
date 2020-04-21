@@ -1,0 +1,120 @@
+:root {
+    --yellow: #ffc600;
+    --black: black;
+}
+
+html,
+body {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: "Roboto", "Open-sans";
+    color: #777;
+}
+
+@media (min-width: 768px) {
+    h1,
+    h2 {
+        font-size: 235%;
+    }
+}
+
+h2 {}
+
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+
+#page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+    grid-template-rows: minmax(auto-fit, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    grid-template-areas: "header header" "nav nav" "footer footer" "main main";
+    grid-gap: 10px;
+}
+
+#page div {
+    background: lightslategray;
+    padding: 10px;
+}
+
+
+/* #page div::nth-child(even) {
+  background: #777;
+}
+#page div::nth-child(odd) {
+  background: #777;
+} */
+
+#page .header {
+    grid-area: header;
+    background-color: #fff;
+}
+
+#page .nav {
+    grid-area: nav;
+    background-color: rgba(42, 110, 87, 0.61);
+}
+
+#page .main {
+    grid-area: main;
+    background-color: rgba(42, 110, 87, 0.61);
+}
+
+#page .footer {
+    grid-area: footer;
+    background-color: rgba(42, 110, 87, 0.61);
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin: 0;
+    /* object-fit: fill; */
+}
+
+.nested p {
+    border: 2px solid #fff;
+    padding: 20px;
+    /* margin: 0 auto; */
+}
+
+@media (max-width: 760px) {
+    .nested {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        width: 106%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.list-group {
+    margin-top: -1em;
+    list-style: none;
+}
+
+@media (max-width: 760px) {
+    .list-group {
+        text-align: left;
+        list-style-type: circle;
+    }
+}
