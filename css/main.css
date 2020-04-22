@@ -1650,7 +1650,7 @@ Footer
 }
 
 .container-footer {
-    background: goldenrod;
+    background: #d2b48c;
     opacity: .7;
 }
 
@@ -1747,11 +1747,13 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     color: red; 
 }
 
-#section-a .content-wrap p {
+#section-a .content-text p {
     columns: 1;
     padding-top: 1em;
     text-align: center;
     color: #646262;
+    padding-bottom: 20px;
+   
 }
 
 #section-a .content-title {
@@ -1779,14 +1781,14 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #showcase .btn {
-        margin-left: 39em; 
+        margin-left: 40em; 
         align-items: center;
         vertical-align: center;
         margin-top: -8.5em;
 
     }
     #section-a .content-title {
-        margin-top: 5em;
+        margin-top: 2em;
     }
     #section-a .content-text {
         columns: 2;
@@ -1802,95 +1804,14 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
       grid-column: 2 / 4;
     }
 
-    /* MEDIA QUERY FOR 1024PX TO 1111PX */
-     /* @media (min-width: 1024px) and (max-width: 1113px) {
-        #showcase .btn {
-            margin-left: 10em;
-        }
-        } */
+}
      
 
-    /* #section-a {
-        margin-top: -4em;
-        padding-top: 0;
-        margin-bottom: 0em;
-        padding-bottom: 0em;
-    }
-
-    #section-a,
-    .content-title {
-        margin-bottom: 0em;
-        padding-top: 0;
-        padding-bottom: 0em;
-        /* color: rgb(81, 100, 112); */
-        /* color: red;
-    } */
-
-    /* #showcase {
-        min-height: 68vh;
-    }
-
-    #showcase .bg-image {
-        height: 100%;
-    } */ 
-
-  
-/* 
-    #section-a {
  
-        padding-top: 0;
-        margin-bottom: -4em;
-        width: 100%;
-    }
+   
 
-    #section-a,
-    .content-title {
-        margin: 0;
-        padding: 0;
-        color: rgb(81, 100, 112);
-    }
+   
 
-    #section-a .content-text p {
-        padding-top: 0;
-        margin: 0 auto;
-    } */
-
-    /* #section-a .content-wrap {
-        margin-top: 2em;
-        /* width: 100%; */
-        /* background: #aabcc3; */
-        /* margin-bottom: 0;
-    }
-} */ 
-
-/* MEDIA QUERY FOR 1366px to 1520px */
-
- /* @media (min-width: 1365px) and (max-width: 1520px) {
-    #showcase .btn {
-        margin-left: 10rem;
-    }
-    }
-  */
- 
-/* 
-    #showcase .bg-image {
-        height: 100%;
-    }
-
-    #section-a .content-text p {
-        padding-top: .5em;
-    }
-
-    #showcase h1 {
-        font-size: 350%;
-        margin-top: 1em;
-    }
-
-    #showcase h2 {
-        font-size: 300%;
-        margin-top: 1em;
-    }
-} */
 
 /*============================================================
 Responsive Styles
