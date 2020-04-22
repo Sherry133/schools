@@ -18,10 +18,11 @@
 }
 
 #body #facts {
-    background-color: darkgray;
+    background-color: #fff;
     color: #252525;
     font-family: "Roboto", serif;
 }
+
 /* ============================ */
 
 figure,
@@ -32,13 +33,13 @@ address {
 
 p {
     font-size: 100%;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-family: "Open Sans", serif;
 }
 
 @media (max-width: 767px) {
     p {
-        font-size: 100%;
+        font-size: 80%;
     }
 }
 
@@ -49,6 +50,9 @@ iframe {
 a {
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
 }
 
 a,
@@ -70,6 +74,7 @@ h6,
 .h6 {
     color: #252525;
 }
+
 /*Terms of Use*/
 
 .title {
@@ -98,6 +103,7 @@ h6,
     color: #818181;
     padding-left: 40px;
 }
+
 /*End of Terms of Use*/
 
 #service h3 {
@@ -106,7 +112,7 @@ h6,
 
 .container-footer {
     display: grid;
-    grid-auto-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-auto-columns: (auto-fit, minmax(auto, 1fr));
     grid-gap: 1em;
 }
 
@@ -157,6 +163,7 @@ h6,
     position: relative;
     text-transform: uppercase;
 }
+
 /* ***For Desktops*** */
 
 .btn-blue {
@@ -182,7 +189,7 @@ h6,
     .btn-blue {
         top: 14.5em;
         margin-left: 11px;
-        /* background: url(../img/slider/arrowsright.png) no-repeat right top, yellow; */
+
     }
 }
 
@@ -192,6 +199,7 @@ h6,
         margin-left: 11px;
     }
 }
+
 /* older iPad 9.7-inch */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -224,6 +232,7 @@ h6,
 .bg-blue {
     background-color: #0058a3;
 }
+
 /* for small screen */
 
 .btn-start {
@@ -256,6 +265,7 @@ h6,
         padding: 10px 15px;
     }
 }
+
 /* Sweep To Right */
 
 .btn-effect {
@@ -354,6 +364,7 @@ h6,
         font-size: 150%;
         text-align: center;
     }
+
     .sec-title.white h2 {
         color: #fff;
         font-size: 200%;
@@ -389,6 +400,7 @@ h6,
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*	Preloader
 /* ==========================================*/
 
@@ -399,6 +411,7 @@ h6,
     height: 100%;
     z-index: 9999;
 }
+
 /*Battery*/
 
 .loder-box {
@@ -441,6 +454,7 @@ h6,
         -webkit-box-shadow: inset 0px 0px 0px #2e2e2e;
         box-shadow: inset 0px 0px 0px #2e2e2e;
     }
+
     100% {
         -webkit-box-shadow: inset 60px 0px 0px #2e2e2e;
         box-shadow: inset 60px 0px 0px #2e2e2e;
@@ -452,17 +466,20 @@ h6,
         -webkit-box-shadow: inset 0px 0px 0px #2e2e2e;
         box-shadow: inset 0px 0px 0px #2e2e2e;
     }
+
     100% {
         -webkit-box-shadow: inset 60px 0px 0px #2e2e2e;
         box-shadow: inset 60px 0px 0px #2e2e2e;
     }
 }
+
 /* overlay */
 /* ++++++++++++++++++++++++++++++++++++++++++ */
 
 .wrapper {
     position: relative;
 }
+
 /* ==========================================*/
 
 #navigation {
@@ -492,6 +509,7 @@ h6,
     border-color: cornflowerblue;
     border-width: 2px;
 }
+
 /* =====added by M======= */
 
 .navbar-default:not(.animated-header) {
@@ -506,6 +524,7 @@ h6,
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
+
 /* ====Added by M===== */
 
 .navbar-default .navbar-brand {
@@ -514,6 +533,7 @@ h6,
     padding: 1px 0 0 0;
     overflow: hidden;
 }
+
 /* <!-- end callout header for blog menu --> */
 
 .navbar-default {
@@ -525,7 +545,7 @@ h6,
 .navbar-default .navbar-nav>li>a {
     font-family: "Roboto", sans-serif;
     color: #005da3;
-    font-size: 100%;
+    font-size: 80%;
     letter-spacing: 0px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -535,11 +555,11 @@ h6,
 nav ul li:nth-last-child(1) {
     display: inline-block;
     background: #A1B5BC;
-
-     font-weight: 500;
+    font-weight: 500;
     font-size: 100%;
     border-radius: 8px;
     padding: -10px;
+    margin: 0;
     /* border: solid #6a1d11 1px; */
 }
 
@@ -563,6 +583,7 @@ Home Slider
     top: 0;
     left: 0;
 }
+
 /* Slide wrapper and slides */
 
 .sl-slide,
@@ -578,6 +599,7 @@ Home Slider
 .sl-slide {
     z-index: 0;
 }
+
 /* For Desktops */
 
 span .sherry {
@@ -607,6 +629,7 @@ span .sherry2 {
 span .sherry1:hover {
     color: black;
 }
+
 /* The duplicate parts/slices */
 
 .sl-content-slice {
@@ -623,6 +646,7 @@ span .sherry1:hover {
     backface-visibility: hidden;
     opacity: 1;
 }
+
 /* Horizontal slice */
 
 .sl-slide-horizontal .sl-content-slice {
@@ -645,6 +669,7 @@ span .sherry1:hover {
     top: 50%;
     padding: 0px 200px 200px 200px;
 }
+
 /* Vertical slice */
 
 .sl-slide-vertical .sl-content-slice {
@@ -667,6 +692,7 @@ span .sherry1:hover {
     left: 50%;
     padding: 200px 200px 200px 0px;
 }
+
 /* Content wrapper */
 /* Width and height is set dynamically */
 
@@ -678,6 +704,7 @@ span .sherry1:hover {
     width: 100%;
     height: 100%;
 }
+
 /* Project laughtbox setup */
 
 .fancybox-item.fancybox-close {
@@ -701,6 +728,7 @@ span .sherry1:hover {
     width: 50px;
     left: 0;
 }
+
 /*=================================================================
 About
 ==================================================================*/
@@ -764,8 +792,13 @@ About
     font-weight: 500;
 }
 
+/* #about.sec-title h2 {
+    margin-top: -10em;
+    padding-top: 0;
+} */
+
 #about .recent-works h3 {
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 @media (max-width: 767px) {
@@ -820,6 +853,7 @@ About
     color: #d2b48c;
     line-height: 1.25em;
     font-weight: 500;
+    font-size: 1em;
     /*  margin-top: -25px;*/
 }
 
@@ -854,6 +888,7 @@ About
     margin-left: 135px;
     line-height: 1.5em;
 }
+
 /*
 =================================================================
 Services
@@ -913,6 +948,7 @@ Services
     color: #d2b48c;
     line-height: 1em;
 }
+
 /*=================================================================
 Portfolio
 ==================================================================*/
@@ -973,7 +1009,7 @@ figcaption .mask {
 
 figcaption.mask h4 {
     margin: 0;
-    color:#fff;
+    color: #fff;
     font-size: 80%;
     padding-top: 10px;
 }
@@ -1071,6 +1107,7 @@ ul .external li a:hover {
 .fancybox-title-inside-wrap {
     padding-top: 0;
 }
+
 /*=================================================================
 Testimonials
 ==================================================================*/
@@ -1150,6 +1187,7 @@ Testimonials
     margin: 40px 0 30px;
     text-transform: uppercase;
 }
+
 /*PRICING SECTION*/
 
 @media (max-width: 767px) {
@@ -1255,6 +1293,7 @@ Testimonials
     color: red;
     font-weight: 100;
 }
+
 /*=================================================================
 Price end
 ==================================================================*/
@@ -1307,6 +1346,7 @@ Price end
     color: #008ecc;
     border: 2px solid #008ecc;
 }
+
 /*=================================================================
 Contact
 ==================================================================*/
@@ -1410,6 +1450,7 @@ textarea.form-control {
     margin-left: 24px;
     color: #d2b48c;
 }
+
 /* =====by M========= */
 /* .input-field label.error {
 color: red;
@@ -1419,30 +1460,31 @@ font-weight: 400;
 } */
 
 .form-control::-webkit-input-placeholder,
- ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     opacity: 0.65;
     color: inherit;
 }
 
 .form-control:-moz-placeholder,
- :-moz-placeholder {
+:-moz-placeholder {
     /* Firefox 18- */
     opacity: 0.65;
     color: inherit;
 }
 
 .form-control::-moz-placeholder,
- ::-moz-placeholder {
+::-moz-placeholder {
     /* Firefox 19+ */
     opacity: 0.65;
     color: inherit;
 }
 
 .form-control:-ms-input-placeholder,
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     opacity: 0.65;
     color: inherit;
 }
+
 /* .msg-success,
 .msg-error {
 color: #777;
@@ -1463,6 +1505,7 @@ THANK YOU MESSAGE
     margin: 30px;
     line-height: 100%;
 }
+
 /*============================================================
 Footer
 ==============================================================*/
@@ -1527,6 +1570,7 @@ Footer
         font-size: 70%;
         margin-right: 80px;
     }
+
     .footer-content {
         width: auto;
     }
@@ -1617,94 +1661,23 @@ Footer
 .footer-social ul li {
     color: #fff;
 }
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAIN-SS.CSS FOR FACE MASK HOME PAGE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  */
 
- :root {
-    --primary-color: #273321;
-    --secondary-color: #66ad43;
-    --ff: 'Roboto', sans-serif;
-    --fw: 700;
-}
-
-#showcase body {
-    /* Permalink - use to edit and share this gradient: 
-https://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
-    background: #cedce7;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* IE6-9 */
-    margin: 1em;
-    padding: 1em;
-    font-size: 1em;
-    font-family: var(--ff);
-    line-height: 1.5;
-    text-align: center;
-}
 
 #showcase img {
     display: block;
     width: 100%;
-    height: auto;
-}
-
-h1,
-h2,
-#showcase h2 {
-    margin: 0;
-    padding: 1em 0;
-    color: #fff;
-}
-
-#showcase h1 {
-    margin-top: -1em;
-    padding-bottom: 3em;
-}
-
-#showcase p {
-    margin: 0;
-    padding: 1em 0;
-}
-
-#showcase .btn {
-    display: inline-block;
-    background: #deefff;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #deefff 0%, #98bede 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    color: #374f5e;
-    text-decoration: none;
-    padding: .5em .5em;
-    border: none;
-    margin: .75em 0;
-    border-radius: 8px;
-}
-
-#showcase .btn:hover {
-    background: #ececec;
-    color: #333;
-}
-/* ?*HEADER SHOWCASE */
-
-#showcase {
-    height: 300px;
-    max-height: 600vh;
-    width: 100%;
-    color: #fff;
-    text-align: center;
+    height: 100%;
+    min-height: 55vh;
+    min-width: 100vw;
 }
 
 #showcase .bg-image {
+
     position: absolute;
     background-image: url("/img/slider/face-masks.jpg");
     background-position: center;
@@ -1712,230 +1685,218 @@ h2,
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    margin-top: -3em;
-    /* min-height: 100%; */
+    margin-top: 0;
+    /* min-height: 100vh;  */
+    /* max-height:100vw; */
     z-index: -2;
     opacity: .6;
 }
 
 #showcase h1 {
-    padding-top: .5em;
-    padding-bottom: 0;
+    font-size: 200%;
+    padding-top: 1em;
+    padding-bottom: 6em;
     margin-top: .5em;
     color: #fff;
 }
-/* #showcase .content-wrap {
-padding: 2.0em 1.5em;
-} */
+
+
+#showcase .btn {
+    display: inline-block;
+    background: #deefff;
+    /*Oldbrowsers*/
+    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
+    /*FF3.6-15*/
+    background: -webkit-linear-gradient(top, #deefff 0%, #98bede 100%);
+    /*Chrome10-25,Safari5.1-6*/
+    background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
+    /*W3C,IE10+,FF16+,Chrome26+,Opera12+,Safari7+*/
+    color: #374f5e;
+    text-decoration: none;
+    padding: .5em .5em;
+    border: none;
+    margin: 0 auto;
+    margin-left: 10em;
+    margin-top: -10em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#showcase .btn:hover {
+     background: #ececec; 
+    color: #333;
+}
 
 #section-a {
-    color: #deefff;
-    background: #cedce7;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* IE6-9 */
-    /* background: #ececec; */
+    background: #fff;
     color: rgb(81, 100, 112);
     margin: 0 auto;
+    margin-bottom: 0;
+
 }
 
 #section-a,
 .content-title {
-    /* display: flex;
-flex-wrap: wrap; */
-    margin-top: -15em;
-    /* padding-top: -15.5em; */
+    margin-top: 3em;
     padding-bottom: 0;
     text-align: center;
-    color: #272727;
+    color: red; 
 }
 
-#section-a .content-text {
+#section-a .content-wrap p {
     columns: 1;
-    /* column-gap: 2em; */
-    padding: 0em;
+    padding-top: 1em;
     text-align: center;
-}
-
-#section-a .content-text p {
-    margin: 0 auto;
-    margin-bottom: -3em;
+    color: #646262;
 }
 
 #section-a .content-title {
     grid-column: 2 / 4;
+  
 }
 
-#section-a .content-wrap {
-    margin-top: 21em;
-    /* width: 100%; */
-    /* background: #aabcc3; */
-    margin-bottom: 0;
-}
-/* MEDIA QUERY FOR  CELLS */
-/* @media (max-width: 480px) {
-#section-a .content-title {
-margin-top: -7em;
-}
-} */
+
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
 
 @media (min-width: 700px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em))1fr;
-    }
-    #showcase .bg-image {
-        display: block;
+ 
+
+    #showcase img {
         width: 100%;
-        /* height: 450px; */
-        height: 100%;
+        height: auto;
+          max-height: 100vh; 
+         max-width: 100vw;  
+         object-fit: cover;   
     }
-    #section-a {
-        color: #deefff;
-        background: #cedce7;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        /* IE6-9 */
+
+    /* #showcase .bg-image {
+         display: block;
+        width: 100%;
+        height: auto; 
+    } */
+
+    #showcase h1 {
+        font-size: 250%;
+        padding-top: 2em;
+    }
+
+    #showcase .btn {
+        margin-left: 39em; 
+        align-items: center;
+        vertical-align: center;
+        margin-top: -8.5em;
+
+    }
+    #section-a .content-title {
+        margin-top: 3em;
     }
     #section-a .content-text {
         columns: 2;
-        column-gap: 2em;
-        padding-bottom: 1.5em;
+        column-gap: 1em;
+        padding-bottom: 1em;
     }
+
     #section-a .content-text p {
-        padding-top: 0em;
+        padding-top: 0;
     }
-    #section-a .content-title,
-    .content-wrap,
-    .content-text,
-    p {
-        grid-column: 2 / 4;
+
+    #section-a  {
+      grid-column: 2 / 4;
     }
+
     /* MEDIA QUERY FOR 1024PX TO 1111PX */
-    @media (min-width: 1024px) and (max-width: 1113px) {
-        #section-a .content-wrap p {
-            margin-top: 20em;
+     @media (min-width: 1024px) and (max-width: 1113px) {
+        #showcase .btn {
+            margin-left: 10em;
         }
-    }
-    #section-a {
+        }
+     
+
+    /* #section-a {
         margin-top: -4em;
         padding-top: 0;
         margin-bottom: 0em;
         padding-bottom: 0em;
     }
+
     #section-a,
     .content-title {
         margin-bottom: 0em;
         padding-top: 0;
         padding-bottom: 0em;
-        color: rgb(81, 100, 112);
-    }
-    #showcase {
+        /* color: rgb(81, 100, 112); */
+        /* color: red;
+    } */
+
+    /* #showcase {
         min-height: 68vh;
     }
+
     #showcase .bg-image {
         height: 100%;
-    }
-    /* Content-text is Web & (paagraph only). Content-wrap is showcase text AND title. */
-    @media (min-width: 1112px) and (max-width: 1360px) {
-        #section-a {
-            margin-top: 9em;
-            color: #deefff;
-            background: #cedce7;
-            /* Old browsers */
-            background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            /* IE6-9 */
-            height: 100%;
-        }
-    }
-    .content-wrap h1 {
-        margin-top: .5em;
-        padding-bottom: 3em;
-        font-size: 250%;
-        color: rgb(81, 100, 112);
-    }
-    .content-wrap h2 {
-        font-size: 200%;
-    }
-    #showcase .bg-image {
-        height: 100%;
-        /* width: 100%; */
-    }
+    } */ 
+
+  
+/* 
     #section-a {
-        /* margin-top: 27em; */
+ 
         padding-top: 0;
         margin-bottom: -4em;
         width: 100%;
     }
+
     #section-a,
     .content-title {
         margin: 0;
         padding: 0;
         color: rgb(81, 100, 112);
     }
+
     #section-a .content-text p {
         padding-top: 0;
         margin: 0 auto;
-    }
-    /* #section-a .content-wrap p {
-margin-top: 0em;
-} */
-    #section-a .content-wrap {
+    } */
+
+    /* #section-a .content-wrap {
         margin-top: 2em;
         /* width: 100%; */
         /* background: #aabcc3; */
-        margin-bottom: 0;
+        /* margin-bottom: 0;
     }
-}
+} */ */
+
 /* MEDIA QUERY FOR 1366px to 1520px */
 
-@media (min-width: 1365px) and (max-width: 1520px) {
-    #section-a {
-        color: #deefff;
-        background: #cedce7;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        /* IE6-9 */
-        margin-top: 14em;
-        color: #272727;
-        /* background: white; */
+ @media (min-width: 1365px) and (max-width: 1520px) {
+    #showcase .btn {
+        margin-left: 10rem;
     }
+    }
+ 
+ 
+/* 
     #showcase .bg-image {
         height: 100%;
     }
+
     #section-a .content-text p {
         padding-top: .5em;
     }
+
     #showcase h1 {
         font-size: 350%;
         margin-top: 1em;
     }
+
     #showcase h2 {
         font-size: 300%;
         margin-top: 1em;
     }
-}
+} */
+
 /*============================================================
 Responsive Styles
 ============================================================*/
@@ -1947,54 +1908,67 @@ For Small Desktop
     body {
         font-size: 100%;
     }
+
     /*about*/
     #about .welcome-block img {
         margin-bottom: 30px;
     }
+
     /* portfolio */
     figcaption.mask {
         bottom: -151px;
     }
+
     .testimonial-item>div:after {
         bottom: -40px;
     }
 }
+
 /*============================================================
 Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
+
     /* home slider  */
     /* about */
     .recent-works {
         margin-bottom: 50px;
     }
+
     .service-item {
         margin-bottom: 50px;
     }
+
     /* portfolio */
     .portfolio-item {
         width: 48%;
     }
+
     /* testimonial */
     .testimonial-item {
         width: 100%;
     }
+
     .testimonial-item {
         width: 80%;
     }
+
     .testimonial-item>div:after {
         bottom: -35px;
     }
+
     /* price */
     .price-table {
         margin-bottom: 50px;
     }
+
     /* contact form */
     .contact-form {
         margin-bottom: 50px;
     }
 }
+
 /*==================================
 Tablet Design for logo of a width of 980x1280*/
 
@@ -2003,172 +1977,212 @@ Tablet Design for logo of a width of 980x1280*/
         font-size: 100%;
     }
 }
+
 /*============================================================
-Mobile (Portrait) Design for a width of 320px
+Mobile (Portrait) Design for a width of 767px
 ==============================================================*/
 
 @media (max-width: 767px) {
     body {
         font-size: 80%;
     }
+
     .parallax {
         background-position: centet tip !important;
     }
+
     /*navigation*/
     .navbar-default .navbar-toggle {
         border: 2px solid darkblue;
         border-radius: 8px;
         border-width: medium;
     }
+
     /*  nav-dots*/
     .nav-dots {
         bottom: 2%;
         padding: 3px;
     }
+
     /* slider */
     body {
         font-size: 80%;
     }
+
     /* about */
     .recent-works {
         margin-bottom: 85px;
     }
+
     #about h3 {
         margin: 20 0 35px !important;
     }
+
     #about .owl-buttons {
         margin-top: 20px;
     }
+
     #about .message-body {
         margin-bottom: 45px;
     }
+
     #about .welcome-block img {
         margin: 0 25px 15px 0;
     }
+
     /* service */
     .service-item {
         width: 100%;
     }
+
     .service-icon i {
         display: inline-block;
         vertical-align: middle;
         -webkit-transform: rotate(-48deg);
         transform: rotate(-48deg);
     }
+
     /*portfolio*/
     .portfolio-item {
         margin: 0 auto 10px;
         width: 280px;
     }
+
     figcaption.mask h4 {
         margin: 0;
         color: #fff;
         font-size: 40%;
     }
+
     /* lightbox */
     .fancybox-title h3 {
         font-size: 80%;
     }
+
     .fancybox-title p {
         font-size: 80%;
     }
+
     /* testimonial */
     .testimonial-item {
         width: 95%;
     }
+
     .testimonial-item>div:before,
     .testimonial-item>div:after {
         background-image: none;
     }
+
     .testimonial-item>div>span {
         margin: 30px 0 20px;
     }
+
     /* price */
     .price-table {
         margin-bottom: 50px;
     }
+
     /* follow us */
     .social-button li:nth-child(2) {
         margin: 0 25px;
     }
+
     .social-button li a {
         height: 65px;
         line-height: 71px;
         width: 65px;
     }
+
     /* contact form */
     .contact-form {
         margin-bottom: 50px;
     }
+
     /* footer */
     .footer-content {
         width: 100%;
     }
+
     .footer-social ul li {
         margin: 0 7px;
     }
 }
+
 /*============================================================
 Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
 @media (min-width: 480px) and (max-width: 767px) {
+
     /* .caption-content h2
 {font-size: 225%;}*/
     .sec-title h2:after {
         left: 38%;
     }
+
     /*  nav-dots */
     .nav-dots {
         bottom: 1%;
     }
+
     /* home slider */
     body p {
         font-size: 80%;
     }
+
     /*about*/
     #about .welcome-block h3 {
         margin: 0 0 35px;
     }
+
     /* service */
     .service-item {
         margin: 0 auto 50px;
         width: 55%;
     }
+
     /* portfolio */
     .portfolio-item {
         width: 48%;
     }
+
     figcaption.mask h4 {
         margin: 0;
         color: #fff;
         font-size: 40%;
-      
+
     }
+
     /* testimonial */
     .testimonial-item {
         width: 80%;
     }
+
     .testimonial-item>div:before {
         bottom: 160px;
     }
+
     /* social */
     .social-button li:nth-child(2) {
         margin: 0 50px;
     }
+
     .social-button li a {
         height: 90px;
         line-height: 96px;
         width: 90px;
     }
+
     /* price */
     .price-table {
         margin-bottom: 50px;
     }
+
     /* contact form */
     .contact-form {
         margin-bottom: 50px;
     }
+
     /* footer */
     .footer-content {
         width: 380px;
@@ -2178,6 +2192,8 @@ Mobile (Landscape) Design for a width of 480px
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .wrapper1 {
+}
+
+.wrapper1 {
     max-width: 940px;
     margin: 0 auto;
