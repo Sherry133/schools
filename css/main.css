@@ -1778,7 +1778,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
    .content-wrap h1 {
         font-size: 350%;
         padding-top: 1.5em;
-        color: blue;
+        color: #fff;
     }
 
     #showcase .btn {
@@ -1836,7 +1836,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 #showcase h1 {
         font-size: 450%;
         padding-top: 2em;
-        color: red;
+        color: #fff;
     }
     
     #showcase .btn {
@@ -1891,7 +1891,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         font-size: 450%;
         padding-top: 1.5em;
         font-weight: 500;
-        color: green;
+        color: #fff;
     }
 
     #showcase .btn {
