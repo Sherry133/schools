@@ -1741,7 +1741,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
 #section-a,
 .content-title {
-    margin-top: 3em;
+    margin-top: 1em;
     padding-bottom: 0;
     text-align: center;
     color: red; 
@@ -1777,18 +1777,19 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
    .content-wrap h1 {
         font-size: 350%;
-        padding-top: 2em;
+        padding-top: 1.5em;
+        color: blue;
     }
 
     #showcase .btn {
-        margin-left: 40em; 
+        margin-left: 35em; 
         align-items: center;
         vertical-align: center;
-        margin-top: -8.5em;
+        margin-top: -30.5em;
 
     }
     #section-a .content-title {
-        margin-top: 2em;
+        margin-top: -5em;
     }
     #section-a .content-text {
         columns: 2;
@@ -1834,8 +1835,8 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     
 #showcase h1 {
         font-size: 450%;
-        padding-top: 3em;
-        color: #fff;
+        padding-top: 2em;
+        color: red;
     }
     
     #showcase .btn {
@@ -1888,8 +1889,9 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
  #showcase h1 {
         font-size: 450%;
-        padding-top: 3em;
-        color: #fff;
+        padding-top: 1.5em;
+        font-weight: 500;
+        color: green;
     }
 
     #showcase .btn {
