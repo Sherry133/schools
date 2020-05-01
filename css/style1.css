@@ -1,15 +1,16 @@
-    
     @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,600&family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;1,400&display=swap");
-    
+
     :root {
         --black: #272727;
         --fw: bold;
     }
+
     *,
     *:before,
     *:after {
         box-sizing: inherit;
     }
+
     body {
         /* border-box box model allows us to add padding and border to our elements without increasing their size */
         box-sizing: border-box;
@@ -20,14 +21,14 @@
         color: var(--black);
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
     }
-    
+
     body {
         background-image: linear-gradient(110deg, beige, #75a5c5);
         background-size: cover;
         min-height: calc(100vh - 100px);
         margin: 40px;
     }
-    
+
     h1 {
         text-align: center;
         font-family: "Crimson-text", sans-serif;
@@ -35,15 +36,15 @@
         color: #1e73b3;
         font-size: 300%;
     }
-    
+
     h2 {
         text-align: center;
         font-family: "Crimson-text";
         font-weight: 300;
-        color:rgb(47, 79, 79);
-    font-size: 250%;
+        color: rgb(47, 79, 79);
+        font-size: 250%;
     }
-    
+
     h3,
     h4 {
         position: relative;
@@ -55,7 +56,7 @@
         font-size: 175%;
         color: red;
     }
-    
+
     h5 {
         position: relative;
         margin-top: -1.5em;
@@ -65,37 +66,37 @@
         font-size: 150%;
         color: rgb(47, 79, 79);
     }
-   
+
     /* Each item in our grid will contain numbers */
-    .container,
-    .item-nested, 
+    /* .container, */
+    .item-nested,
     .header,
     .getting-started,
     .getting-started529,
     .footer {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
-  grid-template-rows: minmax(auto-fit, 1fr);
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 6px;
-  align-items: center;
-  justify-content: center;
-  grid-template-areas: "header header" "item-nested item-nested" "getting-started529"  "getting-started529" "footer footer";
-  grid-gap: 10px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-    
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+        grid-template-rows: minmax(auto-fit, 1fr);
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        /* grid-template-areas: "header header" "item-nested item-nested" "getting-started529"  "getting-started529" "footer footer"; */
+        grid-gap: 10px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+
     .footer p {
         padding-bottom: 10px;
         padding-left: 80px;
         padding-top: 1px;
         color: red;
     }
-    
+
     .item-nested p {
         color: rgb(47, 79, 79);
         font-size: 125%;
@@ -103,8 +104,8 @@
         text-align-last: left;
         padding: 0;
     }
-    
-    /* .container {
+
+    .container {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
@@ -112,39 +113,39 @@
         max-width: 100%;
         margin: 0 auto;
         align-items: center;
-    } */
-    
+    }
+
     .header {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         order: 1;
     }
-    
+
     .footer h2 {
         grid-column: 1 / 12;
         grid-row: -1;
         color: red;
     }
-    
+
     .item-photo {
         display: grid;
         grid-column: 1 / 6;
-        grid-row: 3 / 5; 
-         align-items: left;
+        grid-row: 3 / 5;
+        align-items: left;
         justify-content: left;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
-    
+
     .getting-started {
         grid-column: 1 / 2;
-      
+
     }
-    
+
     .getting-started529 {
         grid-column: 1 / 2;
 
     }
-    
+
     .item-nested {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -152,7 +153,7 @@
         width: 100%;
         margin: 0;
     }
-    
+
     .item-nested p {
         border: 2px solid black;
         padding: 10px;
@@ -160,44 +161,52 @@
         justify-items: center;
         align-items: center;
     }
-    
+
     span.number {
         background-image: linear-gradient(110deg, beige, #1e73b3);
         font-size: 120%;
         font-weight: var(--fw);
     }
-    
+
     @media (max-width: 760px) {
         body {
-          background-image: none;  
+            background-image: none;
         }
+
         body {
             background-color: #ececec;
         }
+
         .item-photo {
-          width: 60%;
-           margin-left: .5em;
-          margin-right: .5em; 
+            width: 60%;
+            margin-left: .5em;
+            margin-right: .5em;
         }
+
         .item-nested {
             grid-template-columns: 1fr;
-             width: 100%; 
+            width: 100%;
             font-size: 75%;
         }
+
         .item-nested p {
             padding: 5px;
             margin: 5px;
         }
+
         h1 {
             font-size: 225%;
         }
+
         h2 {
             font-size: 200%;
         }
+
         h4 {
             font-size: 150%;
         }
+
         h5 {
-         font-size: 125%;
+            font-size: 125%;
         }
-        }        
+    }
