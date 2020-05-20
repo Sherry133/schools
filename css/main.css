@@ -1,3 +1,17 @@
+:root {
+    --fs1: 425%;
+    --fs2: 225%;
+    --fs3: 175%;
+    --fs2-480: 150%;
+    --fs3-480: 138%;
+    --fsbody: 1.125em;
+    --fsbody-sm: 1em;
+    --fsbody-lg: 1.25em;
+    --fsbody-xlg: 2em;
+    --color-btext: #252525;
+    --color-blue: #005da3;
+}
+
 *,
 *::before,
 *::after {
@@ -9,8 +23,8 @@
     position: relative;
     margin: 0;
     background-color: #fff;
-    font-family: "Open+Sans", serif;
-    line-height: normal;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5em;
     font-size: 16px;
     letter-spacing: normal;
     color: #252525;
@@ -20,7 +34,7 @@
 #body #facts {
     background-color: #fff;
     color: #252525;
-    font-family: "Roboto", serif;
+    font-family: "Crimson-text", sans-serif;
 }
 
 /* ============================ */
@@ -32,9 +46,7 @@ address {
 }
 
 p {
-    font-size: 100%;
-    line-height: 1.5em;
-    font-family: "Open Sans", serif;
+    font-size: 1em;
 }
 
 @media (max-width: 767px) {
@@ -64,15 +76,39 @@ a:focus,
     color: #0088cc;
 }
 
-h1,
-h5,
-h6,
-.h1,
+.h2,
 .h3,
 .h4,
 .h5,
 .h6 {
     color: #252525;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+.sec-title h2 {
+    /* display: flex; */
+    font-size: var(--fs2);
+    margin-top: 0em;
+    text-align: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: var(--fs3);
+}
+
+@media (max-width: 480px) {
+    .sec-title h2 {
+        font-size: var(--fs2-480);
+    }
+
+    h3 {
+        font-size: var(--fs3-480);
+    }
 }
 
 /*Terms of Use*/
@@ -116,7 +152,7 @@ h6,
     grid-gap: 1em;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .container-footer {
         /* grid-auto-columns: repeat(auto-fit, minmax(20%, 1fr)); */
         grid-columns: span 12;
@@ -126,7 +162,7 @@ h6,
 
 .lead {
     position: relative;
-    font-family: "Crimson-text", Open-sans;
+    font-family: "Crimson-text", sans-serif;
     color: green;
     font-weight: 500;
     font-size: 2em;
@@ -143,17 +179,6 @@ h6,
         font-size: 2em;
         line-height: 1em;
         left: -0.5em;
-    }
-}
-
-@media (min-width: 1024px) {
-    .btn-start {
-        top: 2em;
-        font-size: 3em;
-        padding: 10px 15px;
-        line-height: 1em;
-        padding: 0;
-        left: -2em;
     }
 }
 
@@ -221,10 +246,12 @@ h6,
     }
 }
 
+
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
     font-size: 0.7em;
+    font-weight: 500;
     padding: 10px 30px;
     margin-bottom: 20px;
 }
@@ -232,8 +259,6 @@ h6,
 .bg-blue {
     background-color: #0058a3;
 }
-
-/* for small screen */
 
 .btn-start {
     position: relative;
@@ -250,6 +275,7 @@ h6,
     width: 100%;
 }
 
+/* for small screen */
 @media (min-width: 768px) {
     .btn-start {
         top: 2em;
@@ -261,8 +287,11 @@ h6,
 @media (min-width: 1024px) {
     .btn-start {
         top: 2em;
-        font-size: 1em;
+        font-size: 3em;
         padding: 10px 15px;
+        line-height: 1em;
+        padding: 0;
+        left: -2em;
     }
 }
 
@@ -340,12 +369,12 @@ h6,
 
 .sec-title {
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .sec-title h2 {
     display: block;
-    font-family: "Roboto", sans-serif;
-    font-size: 250%;
+    /* font-family: "Roboto", sans-serif; */
     letter-spacing: 10px;
     margin: 70px 0 30px;
     padding-bottom: 0px;
@@ -354,36 +383,7 @@ h6,
     text-align: center;
     color: #d2b48c;
     font-weight: 500;
-    height: auto;
     width: 100%;
-    top: 0;
-}
-
-@media (max-width: 767px) {
-    .sec-title h2 {
-        font-size: 150%;
-        text-align: center;
-    }
-
-    .sec-title.white h2 {
-        color: #fff;
-        font-size: 200%;
-    }
-}
-
-@media (max-width: 767px) {
-    .sec-title.white h2 {
-        font-size: 150%;
-    }
-}
-
-.sec-title h2:after {
-    content: "";
-    display: block;
-    left: 45%;
-    bottom: 0;
-    position: absolute;
-    width: 115px;
 }
 
 .sec-title.white h2:after {
@@ -404,72 +404,87 @@ h6,
 /*	Preloader
 /* ==========================================*/
 
-#preloader {
-    background-color: #fff;
+.preloader {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Battery*/
-
-.loder-box {
-    background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 1px;
-    height: 100px;
-    left: 50%;
-    margin-left: -64px;
-    margin-top: -50px;
+.preloader .loader {
     position: absolute;
     top: 50%;
-    width: 128px;
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: white;
 }
 
-.battery {
-    width: 60px;
-    height: 25px;
-    top: 35%;
-    border: 2px #5584dd solid;
-    border-radius: 2px;
-    position: relative;
-    -webkit-animation: charge 5s linear infinite;
-    animation: charge 5s linear infinite;
-    margin: 0 auto;
-}
-
-.battery:after {
-    background-color: #0099cc;
-    border-radius: 0 1px 1px 0;
-    content: "";
-    height: 10px;
+.preloader .loader .dot {
     position: absolute;
-    right: -5px;
-    top: 7px;
-    width: 3px;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    background: #ff6f00;
+    border-radius: 50%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: dot 2.8s infinite;
+    animation: dot 2.8s infinite;
 }
 
-@-webkit-keyframes charge {
-    0% {
-        -webkit-box-shadow: inset 0px 0px 0px #2e2e2e;
-        box-shadow: inset 0px 0px 0px #2e2e2e;
-    }
+.preloader .loader .dots {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    -webkit-animation: dots 2.8s infinite;
+    animation: dots 2.8s infinite;
+}
 
-    100% {
-        -webkit-box-shadow: inset 60px 0px 0px #2e2e2e;
-        box-shadow: inset 60px 0px 0px #2e2e2e;
+.preloader .loader .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background: #ff6f00;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
     }
 }
 
-@keyframes charge {
-    0% {
-        -webkit-box-shadow: inset 0px 0px 0px #2e2e2e;
-        box-shadow: inset 0px 0px 0px #2e2e2e;
+@keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
     }
+}
 
-    100% {
-        -webkit-box-shadow: inset 60px 0px 0px #2e2e2e;
-        box-shadow: inset 60px 0px 0px #2e2e2e;
+@-webkit-keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+}
+
+@keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
     }
 }
 
@@ -492,7 +507,7 @@ h6,
 }
 
 #navigation a:focus {
-    color: #d2b48c;
+    color: green;
 }
 
 #navigation.animated-header {
@@ -518,7 +533,7 @@ h6,
 }
 
 .navbar-default .navbar-toggle:hover {
-    background-color: lightblue;
+    background-color: rgba(27, 74, 92, 0.678);
 }
 
 .navbar-default .navbar-toggle:focus {
@@ -616,13 +631,13 @@ span .sherry2 {
 
 .sherry1 {
     color: green;
-    font-family: "Crimson-text", Open-sans;
+    font-family: "Crimson-text", sans-serif;
     font-size: 1.5em;
 }
 
 @media (max-width: 480px) {
     .sherry1 {
-        font-size: 1em;
+        font-size: 1rem;
     }
 }
 
@@ -735,41 +750,32 @@ About
 
 #about {
     background-image: url(../img/slider/banner.jpg);
-    padding: 0;
+    background-color: #000;
+
 }
 
-@media screen and (max-width: 767px) {
-    #about {
-        background-color: #000;
+@media (max-width: 480px) {
+    #about .message-body {
+        margin-left: 1.5em;
     }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #about {
-        background-color: #000;
+    #about .overlay1 {
+        background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
+        padding: 100px 0 120px;
     }
-}
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    #about {
-        background-color: #000;
+    #about h2 {
+        display: flex;
+        text-align: center;
+        margin-top: 0;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: center;
     }
-}
-
-#about .overlay1 {
-    background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
-    padding: 100px 0 120px;
-}
-
-#about .sec-title h2 {
-    display: block;
-    text-align: center;
-    margin-top: 0.15em;
-    text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
-    #about .sec-title h2 {
+    #about h2 {
         margin-top: 0.1em;
     }
 }
@@ -779,7 +785,7 @@ About
     font-weight: 300;
     margin: 55px 10px 25px;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
 }
 
 #about .fa-ul li i {
@@ -787,15 +793,10 @@ About
 }
 
 #about .recent-works p {
-    font-size: 1em;
-    letter-spacing: 1.5px;
-    font-weight: 500;
+    font-size: var(--fsbody);
+    /* letter-spacing: 1.5px; */
+    font-weight: 400;
 }
-
-/* #about.sec-title h2 {
-    margin-top: -10em;
-    padding-top: 0;
-} */
 
 #about .recent-works h3 {
     margin-top: 45px;
@@ -811,26 +812,18 @@ About
     margin: 0px;
     margin-left: 15px;
     margin-top: 5px;
-    line-height: 1.5em;
+    font-size: var(--fsbody);
     color: #fff;
 }
 
 #about .work-item .fa-ul p {
-    font-size: 1em;
-    font-family: "Roboto", Open-Sans;
+    font-size: var(--fsbody);
+    font-family: "Roboto", sans-serif;
 }
 
 #about .welcome-block h3 {
     margin: 35px 10px 65px;
     margin-bottom: 55px;
-}
-
-#about .welcome-block img {
-    /* border: 1px solid #fff;*/
-    border-radius: none;
-    margin-right: 35px;
-    max-width: 125px;
-    margin-top: 7px;
 }
 
 #about .message-body {
@@ -839,22 +832,15 @@ About
     margin-right: 20px;
     line-height: 1.5em;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
     letter-spacing: 1.5px;
     font-weight: 300;
-}
-
-#about .message-body img {
-    margin-top: -23px;
+    font-size: var(--fsbody);
 }
 
 #about .summary-statement p {
     color: #d2b48c;
-    line-height: 1.25em;
     font-weight: 500;
-    font-size: 1em;
-    /*  margin-top: -25px;*/
+    font-size: var(--fsbody);
 }
 
 #gettingstarted .fa-ul li i {
@@ -877,16 +863,10 @@ About
     padding: 0 50px;
 }
 
-.welcome-message img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    float: left;
-}
-
 .welcome-message p {
     margin-left: 135px;
     line-height: 1.5em;
+    font-size: var(--fsbody);
 }
 
 /*
@@ -894,33 +874,15 @@ About
 Services
 ==================================================================*/
 
-@media (max-width: 767px) {
-    #service {
-        background-color: #252525;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    #service {
-        background-color: #252525;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    #service {
-        background-color: #252525;
-    }
-}
-
 .service-icon {
     border: 3px solid;
     display: inline-block;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     line-height: 101px;
     color: #d2b48c;
-    -webkit-transform: rotate(47deg);
-    transform: rotate(47deg);
+    -webkit-transform: rotate(48deg);
+    transform: rotate(48deg);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -933,11 +895,27 @@ Services
 
 .service-icon i {
     display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
-    -webkit-transform: rotate(-48deg);
-    transform: rotate(-48deg);
+    /* text-align: center; */
+    /* vertical-align: middle; */
+
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: rotate(-47deg);
+    transform: rotate(-47deg);
 }
+
+@media (max-width: 480px) {
+    .service-icon i {
+        -webkit-transform: rotate(48deg);
+        transform: rotate(-48deg);
+        /* align-items: center;
+        justify-items: center;  */
+        padding-left: 19px;
+        padding-top: -20px;
+
+    }
+}
+
 
 .service-item h3 {
     text-transform: uppercase;
@@ -946,7 +924,8 @@ Services
 
 .service-item p {
     color: #d2b48c;
-    line-height: 1em;
+    letter-spacing: 1px;
+    font-size: var(--fsbody);
 }
 
 /*=================================================================
@@ -965,18 +944,12 @@ Portfolio
 }
 
 #portfolio .sec-title h2 {
-    font-size: 250%;
+    /* font-size: 250%; */
     margin: 0px 0 30px;
     padding-bottom: 10px;
     position: relative;
     text-transform: uppercase;
     color: #d2b48c;
-}
-
-@media (max-width: 767px) {
-    .sec-title h2 {
-        font-size: 150%;
-    }
 }
 
 .portfolio-item {
@@ -1004,14 +977,14 @@ figcaption .mask {
 
 .portfolio-item:hover figcaption.mask {
     bottom: 0;
-    background-color: rgba(129, 129, 129, 0.9);
+    background-color: blue;
 }
 
 figcaption.mask h4 {
     margin: 0;
     color: #fff;
     font-size: 80%;
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 ul.external {
@@ -1063,19 +1036,6 @@ ul .external li a {
     transition: all 0.5s ease 0s;
 }
 
-ul .external1 li a {
-    background-color: transparent;
-    color: #005da3;
-    font-size: 60%;
-    display: block;
-    padding: 10px 18px 13px;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -ms-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-
 ul .external li a:hover {
     background-color: #5584dd;
     color: #fff;
@@ -1112,10 +1072,8 @@ ul .external li a:hover {
 Testimonials
 ==================================================================*/
 
-#testimonials {
-    background-image: url(../img/parallax/testimonial.jpg);
-    padding: 0;
-    color: #fff;
+#testimonials h2 {
+    margin-top: -1.5em;
 }
 
 #testimonials .clearfix h3 {
@@ -1127,12 +1085,20 @@ Testimonials
     padding: 70px 0 40px;
 }
 
-.testimonial-item {
+.testimonial-item p {
     margin: 0 auto;
     padding-bottom: 50px;
     width: 64%;
-    letter-spacing: 1.5px;
+    font-size: var(--fsbody);
     font-weight: 400;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .testimonial-item p {
+        font-size: var(--fsbody);
+
+    }
 }
 
 .testimonial-item img {
@@ -1146,6 +1112,7 @@ Testimonials
 .testimonial-item>div {
     line-height: 30px;
     position: relative;
+    color: #ff6f00;
 }
 
 .testimonial-item>div:before {
@@ -1168,8 +1135,8 @@ Testimonials
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
-    bottom: -50px;
-    height: 33px;
+    bottom: -30px;
+    height: 44px;
     position: absolute;
     right: 0;
     width: 45px;
@@ -1189,23 +1156,8 @@ Testimonials
 }
 
 /*PRICING SECTION*/
-
-@media (max-width: 767px) {
-    #price {
-        background-color: #252525;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    #price {
-        background-color: #252525;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    #price {
-        background-color: #252525;
-    }
+#price {
+    background-color: #252525;
 }
 
 .price-table {
@@ -1299,8 +1251,13 @@ Price end
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    /* background-image: url(../img/slider/banner.jpg); */
     padding: 0;
+}
+
+#social p {
+    color: #fff;
+    font-size: var(--fsbody);
 }
 
 @media (max-width: 767px) {
@@ -1310,7 +1267,8 @@ Price end
 }
 
 #social .overlay1 {
-    background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
+    /* background: url("../img/slide_bg.png") repeat scroll 0 0 transparent; */
+    background-color: rgba(15, 155, 224, 0.78);
     padding: 100px 0 120px;
 }
 
@@ -1350,6 +1308,7 @@ Price end
 /*=================================================================
 Contact
 ==================================================================*/
+
 
 @media (max-width: 767px) {
     #contact {
@@ -1407,10 +1366,12 @@ textarea.form-control {
 }
 
 .btn-gray {
-    -webkit-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    padding: 5px 10px;
+    -webkit-box-shadow: 0 -1px 0 rgba(13, 37, 117, 0.25);
+    box-shadow: 0 -1px 0 rgba(13, 37, 117, 0.25);
+    padding: 10px 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
+    font-weight: 500;
     color: #5584dd;
     font-size: 0.8em;
 }
@@ -1427,6 +1388,12 @@ textarea.form-control {
     border-radius: 8px;
 }
 
+@media (max-width: 480px) {
+    .btn-contact {
+        margin-bottom: 1em;
+    }
+}
+
 .contact-details h3 {
     border-bottom: 1px solid #fff;
     font-weight: 900;
@@ -1438,6 +1405,7 @@ textarea.form-control {
 .contact-details p {
     line-height: 30px;
     color: #5584dd;
+    font-size: var(--fsbody);
 }
 
 .contact-details p i {
@@ -1485,11 +1453,6 @@ font-weight: 400;
     color: inherit;
 }
 
-/* .msg-success,
-.msg-error {
-color: #777;
-display: none;
-} */
 /*
 THANK YOU MESSAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++=*/
@@ -1511,27 +1474,27 @@ Footer
 ==============================================================*/
 
 #footer {
-    background-color: grey;
+    background-color: #252525;
     padding: 70px 0;
     color: #fff;
+
 }
 
-.footer-content h2 {
-    color: #fff;
-    font-size: 200%;
-    position: relative;
+.sec-title .footer-content h2 {
+    display: flex;
+    flex-wrap: none;
+    width: 32vw;
+    padding-top: 1em;
     text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-    .footer-content h2 {
-        font-size: 150%;
-    }
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.footer-content {
-    width: 390px;
-    margin: 0 auto;
+.footer-content>p {
+    color: #fff;
 }
 
 .footer-content>div {
@@ -1550,7 +1513,14 @@ Footer
     text-decoration: underline;
 }
 
-.subscribe .form-control {
+@media (max-width: 767px) {
+    .footer-content {
+        font-size: var(--fsbody);
+
+    }
+}
+
+/* .subscribe .form-control {
     position: relative;
 }
 
@@ -1563,26 +1533,9 @@ Footer
     .subscribe-form {
         margin-right: 120px;
     }
-}
+} */
 
-@media (max-width: 767px) {
-    .footer-content {
-        font-size: 70%;
-        margin-right: 80px;
-    }
-
-    .footer-content {
-        width: auto;
-    }
-}
-
-@media (max-width: 767px) {
-    #footer-content h2 {
-        font-size: 150%;
-    }
-}
-
-.subscribe.form-control {
+/* .subscribe.form-control {
     background-color: grey;
     border: 1px solid #7f7f7f;
 }
@@ -1590,8 +1543,8 @@ Footer
 .subscribe.form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
+} */
+/* 
 .submit-icon {
     background-color: #7f7f7f;
     border: 0 none;
@@ -1612,98 +1565,149 @@ Footer
     transform: translateX(0);
     -webkit-transition: all 0.3s ease 0.2s;
     transition: all 0.3s ease 0.2s;
-}
-
+} */
+/* 
 .submit-icon:hover .fa-paper-plane {
     position: relative;
     top: -37px;
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
+} */
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin: 40px 300px;
+    background-color: blue;
 }
 
-.footer-content .footer-social {
-    margin: 40px 0 35px;
-    background: blue;
+@media (max-width: 480px) {
+    .footer-social {
+        /* margin: 20px 150px; */
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 }
 
 .footer-social ul {
-    list-style: outside none none;
+    /* list-style: outside none none; */
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .footer-social ul li {
+    /* put icons horizontally and spaced properly */
     display: inline-block;
     margin: 0 10px;
 }
 
+
 .footer-social ul li a {
     color: #fff;
-    display: block;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
+    height: auto;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-social ul li a:hover {
     color: #0088cc;
 }
 
-.container-footer {
-    background: #d2b48c;
-    opacity: .7;
-}
-
-.footer-content>p {
+.copyright {
+    margin: 0 auto;
+    font-size: var(--fsbody-sm);
     color: #fff;
+    text-align: center;
 }
 
-.footer-social ul li {
-    color: #fff;
+.regulations ul {
+    line-height: 2em;
+    align-content: center;
+    align-items: center;
+    height: 5em;
+    margin: 0 auto;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.regulations ul li {
+
+    list-style: none;
+    margin: 0 auto;
+    margin-left: 260px;
+}
+
+@media (max-width: 480px) {
+    .regulations ul {
+        margin-left: -10em;
+    }
+}
+
+.ssl-logo {
+    display: flex;
+    margin-bottom: 2em;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.ssl-logo img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 480px) {
+    .ssl-logo img {
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAIN-SS.CSS FOR FACE MASK HOME PAGE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  */
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+#showcase {
+    width: 100vh;
+    height: 100vh;
+}
 
 #showcase img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
     min-width: 100vw;
 }
+
 
 #showcase .bg-image {
 
     position: absolute;
-    background-image: url("/img/slider/face-masks.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
     margin-top: 0;
-    /* min-height: 100vh;  */
-    /* max-height:100vw; */
     z-index: -2;
     opacity: .6;
 }
 
 .content-wrap h1 {
+    display: inline-block;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    font-size: 200%;
+    font-size: var(--fs1);
+    font-weight: 500;
     padding-top: 1em;
-    padding-bottom: 6em;
-    margin-top: .5em;
+    padding-bottom: 3.15em;
+    margin-top: 0;
     color: #fff;
 }
 
-
-#showcase .btn {
-    display: inline-block;
+.showcase-btn {
+    display: inline-flex;
     background: #deefff;
     /*Oldbrowsers*/
     background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
@@ -1716,9 +1720,12 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     text-decoration: none;
     padding: .5em .5em;
     border: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 0 auto;
-    margin-left: 10em;
-    margin-top: -10em;
+    margin-top: -5em;
+    margin-left: 30em;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1726,24 +1733,30 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     -o-border-radius: 8px;
 }
 
-#showcase .btn:hover {
+.showcase-btn:hover {
     background: #ececec;
     color: #333;
 }
 
 #section-a {
-    background: #fff;
+    display: grid;
+    columns: 2;
+    background-color: #fff;
     color: rgb(81, 100, 112);
-    margin: 0 auto;
+    margin-top: -8em;
     margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 150px;
 
 }
 
-#section-a,
-.content-title {
-    margin-top: 1em;
+#section-a .content-title {
+    margin-top: .25em;
     padding-bottom: 0;
     text-align: center;
+    font-family: "Open sans", sans-serif;
+    font-weight: 500;
     color: red;
 }
 
@@ -1751,61 +1764,73 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     columns: 1;
     padding-top: 1em;
     text-align: center;
-    color: #646262;
+    color: var(--color-blue);
     padding-bottom: 20px;
 
 }
 
-#section-a .content-title {
+#section-a .content-text {
     grid-column: 2 / 4;
+    columns: 2;
+
 
 }
 
 
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
 
-@media (min-width: 700px) {
-
-
-    #showcase img {
+@media (max-width: 480px) {
+    #showcase {
         width: 100%;
-        height: auto;
-        max-height: 100vh;
-        max-width: 100vw;
-        object-fit: cover;
+        height: 90vh;
+    }
+
+    #showcase .bg-image {
+        min-height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0em;
     }
 
     .content-wrap h1 {
-        font-size: 350%;
-        padding-top: 1.5em;
-        color: #fff;
+        font-size: var(--fs2);
+        margin-top: 3em;
     }
 
-    #showcase .btn {
-        margin-left: 35em;
+    .showcase-btn {
+        /* margin-left: 35em; */
         align-items: center;
         vertical-align: center;
-        margin-top: -30.5em;
-
-    }
-
-    #section-a .content-title {
-        margin-top: -2em;
+        margin-top: -35.5em;
+        margin-left: 16em;
     }
 
     #section-a .content-text {
-        columns: 2;
-        column-gap: 1em;
+        columns: 1;
+        column-gap: 0;
         padding-bottom: 1em;
     }
 
     #section-a .content-text p {
         padding-top: 0;
+        margin-top: 0em;
+        columns: 1;
+        font-size: var(--fsbody);
+
     }
 
     #section-a {
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
+        height: 220px;
     }
+
+    #section-a .content-title {
+        margin-top: 0em;
+
+    }
+
+    /* ******************************** */
+
 
 }
 
@@ -1824,7 +1849,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     #showcase .bg-image {
 
         position: absolute;
-        background-image: url("/img/slider/face-masks1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1834,33 +1858,30 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     }
 
-
-
-    #showcase h1 {
+    .content-wrapper h1 {
         font-size: 450%;
         padding-top: 2em;
         color: #fff;
     }
 
-    #showcase .btn {
-        margin-left: 40em;
+    .showcase-btn {
+        margin-left: 30em;
         align-items: center;
         vertical-align: center;
-        margin-top: -38.5em;
+        margin-top: -28.5em;
         padding: 10px;
-
     }
 
     #section-a,
     .content-title {
 
         margin-top: -9.50em;
-        font-size: 1.95em;
+        font-size: var(--fs3-480);
         color: red;
-
     }
 
     #section-a .content-text p {
+        columns: 2;
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -1882,7 +1903,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     #showcase .bg-image {
 
         position: absolute;
-        background-image: url("/img/slider/face-masks1.jpg");
+        /* background-image: url("/img/slider/face-masks1.jpg"); */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1893,25 +1914,24 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     }
 
-    #showcase h1 {
+    .content-wrap h1 {
         font-size: 450%;
         padding-top: 1.5em;
         font-weight: 500;
         color: #fff;
     }
 
-    #showcase .btn {
+    .showcase-btn {
         margin-left: 40em;
         align-items: center;
         vertical-align: center;
-        margin-top: -38.5em;
+        margin-top: -28.5em;
         padding: 10px;
 
     }
 
     #section-a .content-title {
         margin-top: 2em;
-        font-size: 1.95em;
     }
 
     #section-a .content-text {
@@ -1931,13 +1951,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 }
 
 
-
-
-
-
-
-
-
 /*============================================================
 Responsive Styles
 ============================================================*/
@@ -1946,9 +1959,9 @@ For Small Desktop
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
-    body {
-        font-size: 100%;
-    }
+    /* body {
+                font-size: 100%;
+            } */
 
     /*about*/
     #about .welcome-block img {
@@ -1964,6 +1977,8 @@ For Small Desktop
         bottom: -40px;
     }
 }
+
+
 
 /*============================================================
 Tablet (Portrait) Design for a width of 768px
@@ -1991,9 +2006,9 @@ Tablet (Portrait) Design for a width of 768px
         width: 100%;
     }
 
-    .testimonial-item {
+    /* .testimonial-item {
         width: 80%;
-    }
+    }  */
 
     .testimonial-item>div:after {
         bottom: -35px;
@@ -2014,9 +2029,9 @@ Tablet (Portrait) Design for a width of 768px
 Tablet Design for logo of a width of 980x1280*/
 
 @media (min-width: 980px) and (max-width: 1280px) {
-    body {
-        font-size: 100%;
-    }
+    /* body {
+                font-size: 100%;
+            } */
 }
 
 /*============================================================
@@ -2149,11 +2164,11 @@ Mobile (Portrait) Design for a width of 767px
     }
 }
 
-/*============================================================
+/* ============================================================
 Mobile (Landscape) Design for a width of 480px
-==============================================================*/
+============================================================== */
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
 
     /* .caption-content h2
 {font-size: 225%;}*/
@@ -2228,13 +2243,15 @@ Mobile (Landscape) Design for a width of 480px
     .footer-content {
         width: 380px;
     }
-}
 
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+    /* } */
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
-.wrapper1 {
-    max-width: 940px;
-    margin: 0 auto;
+    .wrapper1 {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+}

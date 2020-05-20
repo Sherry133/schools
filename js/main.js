@@ -2,8 +2,8 @@
 /*	Preloader
 /* ========================================================================= */
 
-jQuery(window).load(function() {
-  $("#preloader").fadeOut("slow");
+jQuery(window).load(() => {
+  $(".preloader").fadeOut("slow");
 });
 // $(document).ready(function () {
 
@@ -23,43 +23,26 @@ setTimeout(removeOverlay, 10000);
 /*  Welcome Section Slider
 /* ========================================================================= */
 
-$(function() {
-  var Page = (function() {
+$(function () {
+  var Page = (function () {
     // var $navArrows = $('#nav-arrows'),
     //     $nav = $('#nav-dots > span'),
     (slitslider = $("#slider").slitslider({
-      onBeforeChange: function(slide, pos) {
+      onBeforeChange: function (slide, pos) {
         // $nav.removeClass('nav-dot-current');
         // $nav.eq(pos).addClass('nav-dot-current');
       }
     })),
-      (init = function() {
-        initEvents();
-      }),
-      (initEvents = function() {
-        // add navigation events
-        // $navArrows.children(':last').on('click', function () {
-        //     slitslider.next();
-        //     return false;
-        // });
-        //             $navArrows.children( ':first' ).on( 'click', function() {
-        //                 slitslider.previous();
-        //                 return false;
-        //             } );
-        // $nav.each(function (i) {
-        //     $(this).on('click', function (event) {
-        //         var $dot = $(this);
-        //         if (!slitslider.isActive()) {
-        //             $nav.removeClass('nav-dot-current');
-        //             $dot.addClass('nav-dot-current');
-        //         }
-        //         slitslider.jump(i + 1);
-        //         return false;
-        //     });
-        // });
-      });
+    (init = function () {
+      initEvents();
+    }),
+    (initEvents = function () {
+      // add navigation events
+    });
 
-    return { init: init };
+    return {
+      init: init
+    };
   })();
 
   Page.init();
@@ -79,21 +62,35 @@ jQuery("#nav").singlePageNav({
   easing: "easeInOutExpo"
 });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 400) {
     $("#navigation").removeClass("animated-header");
   } else {
     $("#navigation").addClass("animated-header");
   }
 });
-$(".navbar-collapse a").click(function() {
+
+
+// const menuBtn = document.querySelector('.menu-btn');
+// let menuOpen = false;
+// menuBtn.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     menuBtn.classList.add('open')
+//     menuOpen = true;
+//   } else {
+//     menuBtn.classList.remove('open');
+//     menuOpen = false;
+//   }
+// });
+$(".navbar-collapse a").click(function () {
   $(".navbar-collapse").collapse("hide");
 
   function slideFix() {}
 
   slideFix();
 });
-/* ========================================================================= */
+/*===
+=== === === === === === === === === === === === === === === === === === === === === === === = * /
 /*	Fix Slider Height
 /* ========================================================================= */
 
@@ -109,12 +106,12 @@ $("#home-slider, #slider, .sl-slider, .sl-content-wrapper").css(
 
 $(".site-content").css("padding-top", headerHeight);
 
-$(window).resize(function() {
+$(window).resize(function () {
   "use strict",
-    $("#home-slider, #slider, .sl-slider, .sl-content-wrapper").css(
-      "height",
-      slideHeight
-    );
+  $("#home-slider, #slider, .sl-slider, .sl-content-wrapper").css(
+    "height",
+    slideHeight
+  );
   $(".site-content").css("padding-top", headerHeight);
 });
 
@@ -156,32 +153,6 @@ belowMastheadArrow();
 $(window).resize(belowMastheadArrow);
 });
 */
-const hero = document.querySelector(".hero");
-const text = hero.querySelector("h1");
-const walk = 500; // 500px
-
-function shadow(e) {
-  const { offsetWidth: width, offsetHeight: height } = hero;
-  let { offsetX: x, offsetY: y } = e;
-
-  if (this !== e.target) {
-    x = x + e.target.offsetLeft;
-    y = y + e.target.offsetTop;
-  }
-
-  const xWalk = Math.round((x / width) * walk - walk / 2);
-  const yWalk = Math.round((y / height) * walk - walk / 2);
-
-  text.style.textShadow = `
-      ${xWalk}px ${yWalk}px 0 rgba(255,0,255,0.7),
-      ${xWalk * -1}px ${yWalk}px 0 rgba(0,255,255,0.7),
-      ${yWalk}px ${xWalk * -1}px 0 rgba(0,255,0,0.7),
-      ${yWalk * -1}px ${xWalk}px 0 rgba(0,0,255,0.7)
-    `;
-}
-
-hero.addEventListener("mousemove", shadow);
-
 $("#works, #testimonial").owlCarousel({
   navigation: true,
   pagination: false,
@@ -208,7 +179,7 @@ $(".fancybox").fancybox({
 
   closeClick: true,
 
-  beforeShow: function() {
+  beforeShow: function () {
     this.title = $(this.element).attr("title");
     this.title =
       "<h3>" +
@@ -216,9 +187,9 @@ $(".fancybox").fancybox({
       "</h3>" +
       "<p>" +
       $(this.element)
-        .parents(".portfolio-item")
-        .find("img")
-        .attr("alt") +
+      .parents(".portfolio-item")
+      .find("img")
+      .attr("alt") +
       "</p>";
   },
 

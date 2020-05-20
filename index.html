@@ -23,7 +23,7 @@
     <!-- bootstrap.min -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
 
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -72,14 +72,18 @@
 </head>
 
 <body id="body">
-
     <!-- preloader -->
-    <!-- <div id="preloader">
-        <div class="loder-box">
-            <div class="battery"></div>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div> -->
-    <!-- end preloader -->
+    </div>
+    <!-- /preloader -->
 
     <!-- Fixed Navigation
         ==================================== -->
@@ -117,8 +121,7 @@
                     <li><a href="#service"><span>Service</span></a></li>
                     <li><a href="#testimonials"><span>Testimonials</span></a></li>
                     <li><a href="#contact"><span>Contact</span></a></li>
-                    <!-- <li><a href="https://saveforamerica.org" class="external"><span class='sherry'>Blog <i style="font-size:80%;">*</i></span> </a>
-                    </li> -->
+
                     <li>
                         <a href="https://saveforamerica.org" class="external">
                             <class='sherry'>Blog<i style="font-size:80%;">*</i>
@@ -148,7 +151,7 @@
             <h1>Doing Their Part...</h1>
 
 
-            <a href="Start.htm" class="#showcase btn">Learn More
+            <a href="Start.htm" class="showcase-btn">Learn More
             </a>
         </div>
 
@@ -159,10 +162,10 @@
         <div class="content-wrap">
             <h2 class="content-title">School Savings Deposits are FDIC Insured</h2>
             <div class="content-text">
-                <p>Cloud Banking | ACH Processing | <br>On-Demand Reporting <br><br> Member, Federal Reserve Bank | <br>
+                <p>Cloud Banking | ACH Processing | <br>On-Demand Reporting <br><br>
+                    Member, Federal Reserve Bank | <br>
                     U.S. Department of Education Approved</p>
             </div>
-
         </div>
     </section>
 
@@ -178,101 +181,105 @@
                 <div class="row">
 
                     <!--  <div class="col-xs-12"> -->
-                    <div class="sec-title">
-                        <h2 class="wow animated bounceInLeft align=center">ABOUT US</h2>
+                    <div class="sec-title wow animated bounceInLeft align=center">
+                        <h2>ABOUT US</h2>
                         <!-- <h2> ABOUT US</h2> -->
 
-
-                        <div class="col-md-4 wow animated bounceInLeft">
-                            <div class="recent-works">
-                                <h3>SCHOOL SAVINGS&trade; HIGHLIGHTS</h3>
-                                <div id="works">
-                                    <div class="work-item">
-                                        <ul class="fa-ul">
-                                            <li><i class="fa-li fa fa-apple"></i>
-                                                <p>More than 3,500,000 students in 7000+ schools have learned to
-                                                    save through School Savings&trade;.</p>
-                                            </li>
-                                            <li><i class="fa-li fa fa-apple"></i>
-
-                                                <p>School Savings&trade; is the ONLY school banking program ever
-                                                    approved by the U.S. Department of Education. </p>
-                                            </li>
-
-                                            <li><i class="fa-li fa fa-apple"></i>
-
-                                                <p>We are best known for our unique ability to eliminate "manual
-                                                    posting" of student deposits. </p>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    </div>
 
 
-                                    <div class="work-item">
-                                        <ul class="fa-ul">
-                                            <li><i class="fa-li fa fa-apple"></i>
+                    <div class="col-md-4 wow animated bounceInLeft">
+                        <div class="recent-works">
+                            <h3>SCHOOL SAVINGS&trade; HIGHLIGHTS</h3>
+                            <div id="works">
+                                <div class="work-item">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-apple"></i>
+                                            <p>More than 3,500,000 students in 7000+ schools have learned to
+                                                save through School Savings&trade;.</p>
+                                        </li>
+                                        <li><i class="fa-li fa fa-apple"></i>
 
-                                                <p> In the early 1980s we created the first computerized version of
-                                                    School Savings using MS-Dos and Apple IIe computers. </p>
-                                            </li>
-                                            <li><i class="fa-li fa fa-apple"></i>
-                                                <p>In 1985 School Savings&trade; was approved as a national
-                                                    education model by the U.S. Department of Education. </p>
-                                            </li>
-                                            <li><i class="fa-li fa fa-apple"></i>
-                                                <p>In 1995 School Savings became SCHOOLSAVINGS.COM by accepting its
-                                                    first deposits in the "cloud."
-                                                </p>
-                                            </li>
-                                        </ul>
+                                            <p>School Savings&trade; is the ONLY school banking program ever
+                                                approved by the U.S. Department of Education. </p>
+                                        </li>
 
-                                    </div>
-                                    <div class="work-item">
-                                        <ul class="fa-ul">
-                                            <li><i class="fa-li fa fa-apple"></i>
-                                                <p> We built the School Savings brand upon four core values that
-                                                    motivate our company and shape our lives. They represent the
-                                                    most important principles of our corporate culture and of the
-                                                    people who work
-                                                    at School Savings. <br><br>These core values are: (1) Provide
-                                                    Value (2) Innovate (3) Ensure Superior Quality and Service and
-                                                    (4) Invest with our Partners.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <li><i class="fa-li fa fa-apple"></i>
+
+                                            <p>We are best known for our unique ability to eliminate "manual
+                                                posting" of student deposits. </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="work-item">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-apple"></i>
+
+                                            <p> In the early 1980s we created the first computerized version of
+                                                School Savings using MS-Dos and Apple IIe computers. </p>
+                                        </li>
+                                        <li><i class="fa-li fa fa-apple"></i>
+                                            <p>In 1985 School Savings&trade; was approved as a national
+                                                education model by the U.S. Department of Education. </p>
+                                        </li>
+                                        <li><i class="fa-li fa fa-apple"></i>
+                                            <p>In 1995 School Savings became SCHOOLSAVINGS.COM by accepting its
+                                                first deposits in the "cloud."
+                                            </p>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="work-item">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-apple"></i>
+                                            <p> We built the School Savings brand upon four core values that
+                                                motivate our company and shape our lives. They represent the
+                                                most important principles of our corporate culture and of the
+                                                people who work
+                                                at School Savings. <br><br>These core values are: (1) Provide
+                                                Value (2) Innovate (3) Ensure Superior Quality and Service and
+                                                (4) Invest with our Partners.
+                                            </p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
-                        <!-- Welcome Section -->
-                        <div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
-                            <div class="welcome-block">
-                                <h3>What is School Savings&trade;?</h3>
-                                <div class="message-body">
-                                    <!--  <img src="img/slider/schoolsavings.eps.trans.110x42.png" class="pull-left" alt="Logo"> -->
-                                    <div class="summary-statement">
-                                        <p>School Savings&trade; is a social enterprise that teaches children to
-                                            save by accepting their saving deposits AT SCHOOL. It is also a
-                                            processor for the Federal Reserve Bank.
-                                    </div> Its goal is to re-instill the savings ethic in youth. A secure,
-                                    cloud-based deposit system collects student (and faculty) deposits, manages
-                                    saving operations and credits the accounts DIRECTLY through the
-                                    Federal Reserve Bank.<br><br> School Savings includes an Online Savings Register
-                                    and an animated Budgeting app that helps students develop money management
-                                    skills. An integrated student incentives system keeps students
-                                    motivated to save FREQUENTLY.<br><br> School Savings is a powerful tool that
-                                    enables financial institutions and schools to develop meaningful relationships
-                                    with families and increase financial literacy in their
-                                    communities. </p>
-                                </div>
+                    <!-- Welcome Section -->
+                    <div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
+                        <div class="welcome-block">
+                            <h3>What is School Savings&trade;?</h3>
+                            <div class="message-body">
+                                <!--  <img src="img/slider/schoolsavings.eps.trans.110x42.png" class="pull-left" alt="Logo"> -->
+                                <div class="summary-statement">
+                                    <p>School Savings&trade; is a social enterprise that teaches children to
+                                        save by accepting their saving deposits AT SCHOOL. It is also a
+                                        processor for the Federal Reserve Bank and has been evaluated and approved by
+                                        the U.S. Department of Education for public and private schools. <br></Br>
+
+                                </div> Its goal is to re-instill the savings ethic in youth. A secure,
+                                cloud-based deposit system collects student (and faculty) deposits, manages
+                                saving operations and credits the accounts DIRECTLY through the
+                                Federal Reserve Bank.<br><br> School Savings includes an Online Savings Register
+                                and an animated Budgeting app that helps students develop money management
+                                skills. An integrated student incentives system keeps students
+                                motivated to save FREQUENTLY.<br><br> School Savings is a powerful tool that
+                                enables financial institutions and schools to develop meaningful relationships
+                                with families and increase financial literacy in their
+                                communities. </p>
                             </div>
-                            <a href="facts.html" class="btn btn-border btn-effect">Learn More</a>
                         </div>
+                        <a href="facts.html" class="btn btn-border btn-effect">Learn More</a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         </div>
         <!-- </section> -->
@@ -285,8 +292,8 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="sec-title text-center">
-                        <h2 class="wow animated bounceInLeft">Digital Deposit Service</h2>
+                    <div class="sec-title wow animated bounceInLeft text-center">
+                        <h2>Digital Deposit Service</h2>
                         <h3>School Savings&trade; Keys to Success</h3>
                     </div>
 
@@ -295,8 +302,8 @@
                             <div class="service-icon">
                                 <i class="fa fa-bank fa-3x"></i>
                             </div>
-                            <h3>Electronic Posting</h3>
-                            <p>Eliminate hand posting of student deposits and save teller time. </p><br>
+                            <h3>Digital Posting</h3>
+                            <p>Eliminate manual posting of student deposits and save teller time. </p><br>
                         </div>
                     </div>
 
@@ -454,10 +461,8 @@
                     <div class="row ">
 
                         <div class="col-xs-12 ">
-                            <div class="sec-title text-center ">
-                                <h2 class="wow animated bounceInLeft ">TESTIMONIALS</h2>
-
-
+                            <div class="sec-title wow animated bounceInLeft text-center ">
+                                <h2>TESTIMONIALS</h2>
                             </div>
 
                             <!-- <div id="testimonial " class=" wow animated fadeInUp "> -->
@@ -510,10 +515,9 @@
             <div class="container ">
                 <div class="row ">
 
-                    <div class="sec-title text-center wow animated fadeInDown ">
+                    <div class="sec-title text-center wow animated fadeInDown">
                         <h2>Pricing</h2>
-                        <h3>
-                            3 Implementation Choices</h3>
+                        <h3>3 Implementation Choices</h3>
                     </div>
 
                     <div class="col-md-4 wow animated fadeInUp ">
@@ -576,7 +580,7 @@
         <!-- end Price section -->
 
         <!-- Social section -->
-        <section id="social " class="parallax ">
+        <section id="social">
             <div class="overlay1 ">
                 <div class="container ">
                     <div class="row ">
@@ -636,14 +640,15 @@
                                     value="https://sherry133.github.io/schools/Thanks.html" />
                             </div>
                             <div class="form-reset">
-                                <input type="button" class="btn-gray btn-border btn-effect" onclick="myFunction()"
-                                    value="Reset Form"></div>
+                                <input type="button" class="btn-gray btn-effect" onclick="resetBtn()"
+                                    value="Reset Form">
+                            </div>
                             <button type="submit" id="submit" class="btn btn-contact btn-effect">Send</button>
                         </form>
                     </div>
                     <script>
-                        function myFunction() {
-                            document.getElementById("contactform").reset();
+                        function resetBtn() {
+                            document.querySelector("#contactform").reset();
                         }
                     </script>
 
@@ -671,55 +676,65 @@
 		FOOTER
 		=============================*/ -->
 
-        <footer id="footer ">
-            <div class="container-footer ">
-                <div class="row text-center ">
-                    <div class="footer-content ">
-                        <div class="wow animated fadeInDown ">
-                            <h2>STAY IN TOUCH</h2>
-                            <p>We're Available 24/7! support@schoolsavings.com</p>
+        <section id="Footer">
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="sec-title text-center wow animated fadeInDown">
+                        <h2>STAY IN TOUCH</h2>
+                        <div class="footer-content">
+                            <p>We're Available 24/7 |
+                                support@schoolsavings.com</p>
                         </div>
+                    </div>
 
-                        <!-- Footer Social -->
-                        <div class="footer-social ">
-                            <ul>
-                                <li class="wow animated zoomIn "><a
-                                        href="https://www.facebook.com/Schoolsavingscom-1670778489800555/ "><i
-                                            class="fa fa-facebook fa-3x "></i></a></li>
-                                <li class="wow animated zoomIn " data-wow-delay="0.3s "><a
-                                        href="https://twitter.com/schoolsavings "><i
-                                            class="fa fa-twitter fa-3x "></i></a>
-                                </li>
+                    <!-- Footer Social -->
+
+                    <div class="footer-social ">
+                        <ul>
+                            <li class="wow animated zoomIn ">
+                                <a href="https://www.facebook.com/Schoolsavingscom-1670778489800555/ "><i
+                                        class="fa fa-facebook fa-3x "></i></a></li>
+                            <li class="wow animated zoomIn " data-wow-delay="0.3s "><a
+                                    href="https://twitter.com/schoolsavings "><i class="fa fa-twitter fa-3x "></i></a>
+                            </li>
 
 
-                                <li class="wow animated zoomIn " data-wow-delay=".9s "><a
-                                        href="https://www.youtube.com/c/schoolsavings "><i
-                                            class="fa fa-youtube fa-3x "></i></a></li>
-                            </ul>
-                        </div>
+                            <li class="wow animated zoomIn " data-wow-delay=".9s "><a
+                                    href="https://www.youtube.com/c/schoolsavings "><i
+                                        class="fa fa-youtube fa-3x "></i></a></li>
+                        </ul>
 
+                    </div>
+                    <div class="copyright">
                         <p>Copyright &copy; 2020 School Savings&trade;
                             <scan>All Rights Reserved</scan>
                         </p>
-                        <div class="regulations ">
-                            <div class="col-md-12 ">
-                                <ul class="list-inline ">
-                                    <li><a href="TermsNew.htm "> Terms of Use</a></li>
-                                    <li><a href="Privacy.htm ">Privacy Policy</a></li><br><br>
-                                    <!-- <a href="# ">
-                                    <img src="img/ssl-valid-en-M.jpg " alt="Logo ">
-                                </a><br> -->
-                                    <brGeoTrust Logo><br>
-                                        <a href="# "></a>
-                                        <img src="img/rapid.jpg " alt="RapidSSL Logo ">
-                                        </a>
-                                </ul>
+
+                    </div>
+                    <div class="regulations ">
+                        <!-- <div class="col-md-12"> -->
+
+                        <ul>
+                            <li><a href="TermsNew.htm "> Terms of Use</a></li>
+                            <li><a href="Privacy.htm ">Privacy Policy</a></li><br><br>
+                            <br><br>
+                        </ul>
+
+                        <!-- </div> -->
+                        <div class="ssl-logo">
+                            <div class="ssl-logo img">
+                                <a href="#">
+                                    <img src="img/rapid.jpg" alt="RapidSSL Logo">
+                                </a>
                             </div>
                         </div>
+                        <!-- </div> -->
+                        <!-- </div> -->
                     </div>
                 </div>
-            </div>
-        </footer>
+
+        </section>
 
 
         <!-- Essential jQuery Plugins
