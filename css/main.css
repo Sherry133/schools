@@ -1669,26 +1669,29 @@ Footer
 MAIN-SS.CSS FOR FACE MASK HOME PAGE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-#showcase {
+/* #showcase {
     width: 100vw;
     height: 100vh;
-}
+} */
+
 
 #showcase img {
-    position: relative;
-    display: flex;
-    min-height: 100vh;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     min-width: 100vw;
 }
-
 
 #showcase .bg-image {
 
     position: absolute;
+    background-image: url("/img/slider/face-masks.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0;
+    width: 100%;
+    height: auto;
     z-index: -2;
     opacity: .6;
 }
@@ -1707,7 +1710,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 }
 
 .showcase-btn {
-    display: inline-flex;
+    display: inline-block;
     background: #deefff;
     /*Oldbrowsers*/
     background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
@@ -1720,12 +1723,9 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     text-decoration: none;
     padding: .5em .5em;
     border: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin: 0 auto;
-    margin-top: -5em;
-    margin-left: 30em;
+    margin-left: 10em;
+    margin-top: -10em;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1837,26 +1837,28 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
 @media (min-width: 1366px) {
-    #showcase {
+    /* #showcase {
         width: 100vw;
         height: 100vh;
-    }
+    } */
 
     #showcase img {
-        position: relative;
-        display: flex;
-        min-height: 100vh;
-        min-width: 100vw;
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        max-width: 100vw;
+        object-fit: cover;
     }
 
 
     #showcase .bg-image {
 
-        position: absolute;
+        background-image: url("/img/slider/face-masks1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 0;
+        width: 100%;
+        height: auto;
         z-index: -2;
         opacity: .6;
     }
@@ -1882,17 +1884,17 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     } */
     /* ***********************end of original */
-    .content-wrapper h1 {
+    .content-wrap h1 {
         font-size: 450%;
         padding-top: 2em;
         color: #fff;
     }
 
     .showcase-btn {
-        margin-left: 30em;
+        margin-left: 40em;
         align-items: center;
         vertical-align: center;
-        margin-top: -28.5em;
+        margin-top: -38.5em;
         padding: 10px;
     }
 
@@ -1917,31 +1919,22 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
 @media (min-width: 1680px) {
 
-    /* #showcase img {
+    #showcase img {
         width: 100%;
         height: auto;
         max-height: 100vh;
         max-width: 100vw;
         object-fit: cover;
-    } */
-    #showcase {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #showcase img {
-        position: relative;
-        display: flex;
-        min-height: 100vh;
-        min-width: 100vw;
     }
 
     #showcase .bg-image {
-        position: absolute;
+        background-image: url("/img/slider/face-masks1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 0;
+        width: 100%;
+        height: auto;
+        margin-top: -3em;
         z-index: -2;
         opacity: .6;
     }
@@ -1970,7 +1963,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-left: 40em;
         align-items: center;
         vertical-align: center;
-        margin-top: -28.5em;
+        margin-top: -38.5em;
         padding: 10px;
 
     }
