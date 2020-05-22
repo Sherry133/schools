@@ -1071,6 +1071,13 @@ ul .external li a:hover {
 /*=================================================================
 Testimonials
 ==================================================================*/
+#testimonials {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
 
 #testimonials h2 {
     margin-top: -1.5em;
@@ -1088,18 +1095,13 @@ Testimonials
 .testimonial-item p {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 64%;
+    width: 68%;
     font-size: var(--fsbody);
     font-weight: 400;
     color: #fff;
 }
 
-@media (max-width: 480px) {
-    .testimonial-item p {
-        font-size: var(--fsbody);
 
-    }
-}
 
 .testimonial-item img {
     border: 3px solid #fff;
@@ -1155,9 +1157,38 @@ Testimonials
     text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+    .testimonial-item {
+        font-size: var(--fsbody);
+        width: 80%;
+        text-align: center;
+    }
+
+    #testimonials .clearfix h3 {
+
+        text-align: center;
+    }
+}
+
 /*PRICING SECTION*/
 #price {
-    background-color: #252525;
+    /* background-color: #252525; */
+
+    background-image: url(../img/slider/banner.jpg);
+    background-color: #000;
+}
+
+@media (max-width: 480px) {
+    #price {
+        background-image: url(../img/slider/banner.jpg);
+        background-color: #000;
+    }
+
+    #price .overlay1 {
+        background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
+        padding: 100px 0 120px;
+    }
+
 }
 
 .price-table {
@@ -1267,7 +1298,6 @@ Price end
 }
 
 #social .overlay1 {
-    /* background: url("../img/slide_bg.png") repeat scroll 0 0 transparent; */
     background-color: rgba(15, 155, 224, 0.78);
     padding: 100px 0 120px;
 }
@@ -1477,6 +1507,14 @@ Footer
     background-color: #252525;
     padding: 70px 0;
     color: #fff;
+}
+
+@media (max-width: 480px) {
+    #footer {
+        background: #000;
+        background-color: rgba(15, 155, 224, 0.78);
+        padding: 100px 0 120px;
+    }
 
 }
 
@@ -1670,30 +1708,33 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #showcase {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 }
 
+
 #showcase img {
-    position: relative;
-    display: flex;
-    min-height: 100vh;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     min-width: 100vw;
 }
-
 
 #showcase .bg-image {
 
     position: absolute;
+    background-image: url("/img/slider/face-masks.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0;
+    width: 100%;
+    height: auto;
     z-index: -2;
     opacity: .6;
 }
 
-.content-wrap h1 {
+.content-wrapper h1 {
     display: inline-block;
     width: 100vw;
     font-family: "Roboto", sans-serif;
@@ -1707,7 +1748,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 }
 
 .showcase-btn {
-    display: inline-flex;
+    display: inline-block;
     background: #deefff;
     /*Oldbrowsers*/
     background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
@@ -1720,12 +1761,9 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     text-decoration: none;
     padding: .5em .5em;
     border: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin: 0 auto;
-    margin-top: -5em;
-    margin-left: 30em;
+    margin-left: 10em;
+    margin-top: -10em;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1782,52 +1820,61 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 @media (max-width: 480px) {
     #showcase {
         width: 100%;
-        height: 90vh;
+        height: 85vh;
+
+    }
+
+    #showcase img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 80%;
+        min-width: 80vw;
     }
 
     #showcase .bg-image {
-        min-height: 100vh;
-        width: 100vw;
-        top: 0;
-        left: 0em;
+        width: 100%;
+        height: auto;
+        /* top: 8em;
+        left: 0; */
     }
 
-    .content-wrap h1 {
-        font-size: var(--fs2);
-        margin-top: 3em;
+    .content-wrapper h1 {
+        font-size: 225%;
+        margin-top: 1em;
     }
 
-    .showcase-btn {
-        /* margin-left: 35em; */
+    .content-wrapper .showcase-btn {
+        margin-left: 5em;
         align-items: center;
         vertical-align: center;
-        margin-top: -35.5em;
-        margin-left: 16em;
+        margin-top: -30.5em;
+    }
+
+    #section-a {
+        grid-column: 1 / 3;
+        height: 45px;
+    }
+
+    #section-a .content-title {
+        margin-top: -7em;
     }
 
     #section-a .content-text {
         columns: 1;
         column-gap: 0;
-        padding-bottom: 1em;
+        padding-bottom: -5em;
     }
 
     #section-a .content-text p {
-        padding-top: 0;
-        margin-top: 0em;
+        padding-top: 0em;
+        margin-top: 0;
         columns: 1;
-        font-size: var(--fsbody);
+        font-size: var(--fsbodysm);
 
     }
 
-    #section-a {
-        grid-column: 1 / 3;
-        height: 220px;
-    }
 
-    #section-a .content-title {
-        margin-top: 0em;
-
-    }
 
     /* ******************************** */
 
@@ -1837,6 +1884,10 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
 @media (min-width: 1366px) {
+    /* #showcase {
+        width: 100vw;
+        height: 100vh;
+    } */
 
     #showcase img {
         width: 100%;
@@ -1846,9 +1897,10 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         object-fit: cover;
     }
 
+
     #showcase .bg-image {
 
-        position: absolute;
+        /* background-image: url("/img/slider/face-masks1.jpg"); */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1858,6 +1910,27 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     }
 
+    /* *****************************start of original */
+    /* #showcase img {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        max-width: 100vw;
+        object-fit: cover;
+    } */
+
+    /* #showcase .bg-image {
+
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        z-index: -2;
+        opacity: .6;
+    } */
+    /* ***********************end of original */
     .content-wrapper h1 {
         font-size: 450%;
         padding-top: 2em;
@@ -1865,10 +1938,10 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     .showcase-btn {
-        margin-left: 30em;
+        margin-left: 40em;
         align-items: center;
         vertical-align: center;
-        margin-top: -28.5em;
+        margin-top: -38.5em;
         padding: 10px;
     }
 
@@ -1892,6 +1965,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /* +++++++++++++++++++++++++++ */
 
 @media (min-width: 1680px) {
+
     #showcase img {
         width: 100%;
         height: auto;
@@ -1901,8 +1975,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #showcase .bg-image {
-
-        position: absolute;
         /* background-image: url("/img/slider/face-masks1.jpg"); */
         background-position: center;
         background-size: cover;
@@ -1914,7 +1986,20 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     }
 
-    .content-wrap h1 {
+    /* #showcase .bg-image {
+
+        position: absolute;
+        /* background-image: url("/img/slider/face-masks1.jpg"); */
+    /* background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+    /* width: 100%;
+        height: auto;
+        margin-top: -3em;
+        z-index: -2;
+        opacity: .6; */
+    /* } */
+    .content-wrapper h1 {
         font-size: 450%;
         padding-top: 1.5em;
         font-weight: 500;
@@ -1925,7 +2010,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-left: 40em;
         align-items: center;
         vertical-align: center;
-        margin-top: -28.5em;
+        margin-top: -38.5em;
         padding: 10px;
 
     }
@@ -2210,13 +2295,13 @@ Mobile (Landscape) Design for a width of 480px
     }
 
     /* testimonial */
-    .testimonial-item {
+    /* .testimonial-item {
         width: 80%;
-    }
+    } */
 
-    .testimonial-item>div:before {
+    /* .testimonial-item>div:before {
         bottom: 160px;
-    }
+    }  */
 
     /* social */
     .social-button li:nth-child(2) {
