@@ -1789,7 +1789,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         width: 100%;
         height: auto;
         max-height: 80%;
-        min-width: 100vw;
+        min-width: 80vw;
     }
 
     #showcase .bg-image {
@@ -1818,7 +1818,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #section-a .content-title {
-        margin-top: -7em;
+        margin-top: -9em;
     }
 
     #section-a .content-text {
