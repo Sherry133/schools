@@ -1129,6 +1129,10 @@ Testimonials
     .testimonial-item {
         width: 95%;
     }
+
+    .testimonial-item p {
+        font-size: var(--fsbody-sm);
+    }
 }
 
 .testimonial-item img {
@@ -1891,7 +1895,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #section-a .content-title {
-        margin-top: -10em;
+        margin-top: -9em;
     }
 
     #section-a .content-text {
