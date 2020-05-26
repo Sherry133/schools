@@ -1187,10 +1187,10 @@ Testimonials
     text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1040px) {
     .testimonial-item {
         font-size: var(--fsbody);
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
 
@@ -1923,7 +1923,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #section-a .content-title {
-        margin-top: -8em;
+        margin-top: -9em;
     }
 
     #section-a .content-text {
