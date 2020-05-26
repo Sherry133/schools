@@ -1126,7 +1126,7 @@ Testimonials
 }
 
 @media (max-width: 480px) {
-    .testimonial-item p {
+    .testimonial-item {
         width: 100%;
     }
 }
@@ -1145,7 +1145,7 @@ Testimonials
     color: #ff6f00;
 }
 
-.testimonial-item>div:before {
+/* .testimonial-item>div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 5em;
@@ -1159,9 +1159,9 @@ Testimonials
     .testimonial-item>div:before {
         background-image: none;
     }
-}
+} */
 
-.testimonial-item>div:after {
+/* .testimonial-item>div:after {
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
@@ -1176,14 +1176,13 @@ Testimonials
     .testimonial-item>div:after {
         background-image: none;
     }
-}
+} */
 
 .testimonial-item>div>span {
     display: inline-block;
     font-weight: 500;
     margin: 40px 0 30px;
     text-transform: uppercase;
-    color: #ff6f00;
 }
 
 /*PRICING SECTION*/
@@ -1346,6 +1345,7 @@ Price end
 
 .social-button li {
     display: inline-block;
+    color: red;
 }
 
 .social-button li:nth-child(2) {
@@ -1356,7 +1356,7 @@ Price end
 .social-button li a {
     border: 2px solid #fff;
     border-radius: 50%;
-    color: red;
+    color: #ff6f00;
     display: inline-block;
     height: 90px;
     line-height: 96px;
@@ -1387,8 +1387,13 @@ Price end
         justify-content: space-between;
         align-items: center;
         margin-left: 2em;
-
+        color: red;
     }
+
+    .social-button li a {
+        color: red;
+    }
+
 }
 
 /*=================================================================
@@ -2124,8 +2129,8 @@ Tablet (Portrait) Design for a width of 768px
         width: 100%;
     }
 
-    /* .testimonial-item p {
-        width: 100%;
+    /* .testimonial-item {
+        width: 80%;
     }  */
 
     .testimonial-item>div:after {
