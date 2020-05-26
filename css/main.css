@@ -1098,15 +1098,9 @@ ul .external li a:hover {
 Testimonials
 ==================================================================*/
 #testimonials {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#testimonials h2 {
-    margin-top: -1.5em;
+    background-image: url(../img/parallax/testimonial.jpg);
+    padding: 0;
+    color: #fff;
 }
 
 #testimonials .clearfix h3 {
@@ -1118,16 +1112,13 @@ Testimonials
     padding: 70px 0 40px;
 }
 
-.testimonial-item p {
+.testimonial-item {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 68%;
-    font-size: var(--fsbody);
+    width: 64%;
+    letter-spacing: 1.5px;
     font-weight: 400;
-    color: #fff;
 }
-
-
 
 .testimonial-item img {
     border: 3px solid #fff;
@@ -1140,7 +1131,6 @@ Testimonials
 .testimonial-item>div {
     line-height: 30px;
     position: relative;
-    color: #ff6f00;
 }
 
 .testimonial-item>div:before {
@@ -1148,16 +1138,12 @@ Testimonials
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
-    left: 5em;
+    left: -35px;
     position: absolute;
     width: 45px;
 }
 
 @media (max-width: 676px) {
-    .testimonials .overlay1 {
-        background-color: rgba(15, 155, 224, 0.78);
-    }
-
     .testimonial-item>div:before {
         background-image: none;
     }
@@ -1167,10 +1153,10 @@ Testimonials
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
-    bottom: 3em;
-    height: 44px;
+    bottom: -50px;
+    height: 33px;
     position: absolute;
-    right: 5em;
+    right: 0;
     width: 45px;
 }
 
@@ -1185,24 +1171,6 @@ Testimonials
     font-weight: 500;
     margin: 40px 0 30px;
     text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-
-    .testimonial-item p {
-        /* display: block; */
-        font-size: var(--fsbody);
-        width: 100%;
-        /* justify-content: center;
-        align-items: center;
-        text-align: center; */
-
-    }
-
-    #testimonials .clearfix h3 {
-
-        text-align: center;
-    }
 }
 
 /*PRICING SECTION*/
