@@ -1105,6 +1105,7 @@ Testimonials
 
 #testimonials .clearfix h3 {
     color: #fff;
+
 }
 
 #testimonials .overlay1 {
@@ -1115,9 +1116,19 @@ Testimonials
 .testimonial-item {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 90%;
+    width: 68%;
     letter-spacing: 1.5px;
     font-weight: 400;
+}
+
+.testimonial-item p {
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .testimonial-item {
+        width: 100%;
+    }
 }
 
 .testimonial-item img {
@@ -1131,14 +1142,15 @@ Testimonials
 .testimonial-item>div {
     line-height: 30px;
     position: relative;
+    color: #ff6f00;
 }
 
 .testimonial-item>div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
-    bottom: 127px;
+    bottom: 5em;
     height: 33px;
-    left: -35px;
+    left: -3em;
     position: absolute;
     width: 45px;
 }
