@@ -1145,39 +1145,6 @@ Testimonials
     color: #ff6f00;
 }
 
-/* .testimonial-item>div:before {
-    background-image: url("../img/icons/quotes.png");
-    background-repeat: no-repeat;
-    bottom: 5em;
-    height: 33px;
-    left: -3em;
-    position: absolute;
-    width: 45px;
-}
-
-@media (max-width: 676px) {
-    .testimonial-item>div:before {
-        background-image: none;
-    }
-} */
-
-/* .testimonial-item>div:after {
-    background-image: url("../img/icons/quotes.png");
-    background-position: -58px 0;
-    background-repeat: no-repeat;
-    bottom: -50px;
-    height: 33px;
-    position: absolute;
-    right: 0;
-    width: 45px;
-}
-
-@media (max-width: 676px) {
-    .testimonial-item>div:after {
-        background-image: none;
-    }
-} */
-
 .testimonial-item>div>span {
     display: inline-block;
     font-weight: 500;
@@ -1198,8 +1165,6 @@ Testimonials
 
 @media (max-width: 480px) {
     #price {
-        /* background-image: url(../img/slider/banner.jpg); */
-        /* background-image: url(../img/slider/banner.jpg); */
         background-image: none;
         background-color: #000;
     }
@@ -1387,7 +1352,7 @@ Price end
         justify-content: space-between;
         align-items: center;
         margin-left: 2em;
-        color: red;
+        color: #ff6f00;
     }
 
     .social-button li a {
