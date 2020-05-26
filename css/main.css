@@ -1148,7 +1148,7 @@ Testimonials
 .testimonial-item>div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
-    bottom: 7em;
+    bottom: 5em;
     height: 33px;
     left: -3em;
     position: absolute;
@@ -1356,7 +1356,7 @@ Price end
 .social-button li a {
     border: 2px solid #fff;
     border-radius: 50%;
-    color: #ff6f00;
+    color: red;
     display: inline-block;
     height: 90px;
     line-height: 96px;
