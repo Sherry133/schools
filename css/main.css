@@ -1189,14 +1189,13 @@ Testimonials
 
 @media (max-width: 480px) {
 
-    .testimonial-item p,
-    h3 {
-        display: block;
+    .testimonial-item p {
+        /* display: block; */
         font-size: var(--fsbody);
         width: 100%;
-        justify-content: center;
+        /* justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; */
 
     }
 
