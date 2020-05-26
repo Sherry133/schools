@@ -1187,11 +1187,17 @@ Testimonials
     text-transform: uppercase;
 }
 
-@media (max-width: 1040px) {
-    .testimonial-item {
+@media (max-width: 480px) {
+
+    .testimonial-item p,
+    h3 {
+        display: block;
         font-size: var(--fsbody);
         width: 100%;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+
     }
 
     #testimonials .clearfix h3 {
@@ -1340,6 +1346,7 @@ Price end
 #social p {
     color: #fff;
     font-size: var(--fsbody);
+    z-index: 5;
 }
 
 #social .overlay1 {
@@ -1354,6 +1361,7 @@ Price end
     padding: 0;
     list-style: none;
     text-align: center;
+
 }
 
 .social-button li {
@@ -1361,18 +1369,21 @@ Price end
 }
 
 .social-button li:nth-child(2) {
-    margin: 0 5px;
-    vertical-align: center;
+    margin: 0 1em;
+
 }
 
 .social-button li a {
     border: 2px solid #fff;
     border-radius: 50%;
-    color: #fff;
-    display: block;
+    color: #ff6f00;
+    display: inline-block;
     height: 90px;
     line-height: 96px;
     width: 90px;
+    /* margin-inline-start: 3em; */
+    justify-content: center;
+    align-items: center;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
@@ -1390,6 +1401,13 @@ Price end
 
     #social .overlay1 {
         background-color: rgba(15, 155, 224, 0.78);
+    }
+
+    .social-button li {
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2em;
+
     }
 }
 
@@ -1838,7 +1856,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     padding: .5em .5em;
     border: none;
     margin: 0 auto;
-    margin-left: 15em;
+    margin-left: 18em;
     margin-top: -10em;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -1914,7 +1932,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     .showcase-btn {
-        margin-left: 3em;
+        margin-left: 7em;
     }
 
     #section-a {
@@ -1923,7 +1941,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #section-a .content-title {
-        margin-top: -9em;
+        margin-top: -10em;
     }
 
     #section-a .content-text {
