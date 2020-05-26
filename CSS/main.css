@@ -1071,13 +1071,6 @@ ul .external li a:hover {
 /*=================================================================
 Testimonials
 ==================================================================*/
-#testimonials {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-}
 
 #testimonials h2 {
     margin-top: -1.5em;
@@ -1095,13 +1088,18 @@ Testimonials
 .testimonial-item p {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 68%;
+    width: 64%;
     font-size: var(--fsbody);
     font-weight: 400;
     color: #fff;
 }
 
+@media (max-width: 480px) {
+    .testimonial-item p {
+        font-size: var(--fsbody);
 
+    }
+}
 
 .testimonial-item img {
     border: 3px solid #fff;
@@ -1157,38 +1155,9 @@ Testimonials
     text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
-    .testimonial-item {
-        font-size: var(--fsbody);
-        width: 80%;
-        text-align: center;
-    }
-
-    #testimonials .clearfix h3 {
-
-        text-align: center;
-    }
-}
-
 /*PRICING SECTION*/
 #price {
-    /* background-color: #252525; */
-
-    background-image: url(../img/slider/banner.jpg);
-    background-color: #000;
-}
-
-@media (max-width: 480px) {
-    #price {
-        background-image: url(../img/slider/banner.jpg);
-        background-color: #000;
-    }
-
-    #price .overlay1 {
-        background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
-        padding: 100px 0 120px;
-    }
-
+    background-color: #252525;
 }
 
 .price-table {
@@ -1298,6 +1267,7 @@ Price end
 }
 
 #social .overlay1 {
+    /* background: url("../img/slide_bg.png") repeat scroll 0 0 transparent; */
     background-color: rgba(15, 155, 224, 0.78);
     padding: 100px 0 120px;
 }
@@ -1507,14 +1477,6 @@ Footer
     background-color: #252525;
     padding: 70px 0;
     color: #fff;
-}
-
-@media (max-width: 480px) {
-    #footer {
-        background: #000;
-        background-color: rgba(15, 155, 224, 0.78);
-        padding: 100px 0 120px;
-    }
 
 }
 
@@ -1724,7 +1686,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 #showcase .bg-image {
 
     position: absolute;
-    background-image: url("/img/slider/face-masks.jpg");
+    /* background-image: url("/img/slider/face-masks.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2295,13 +2257,13 @@ Mobile (Landscape) Design for a width of 480px
     }
 
     /* testimonial */
-    /* .testimonial-item {
+    .testimonial-item {
         width: 80%;
-    } */
+    }
 
-    /* .testimonial-item>div:before {
+    .testimonial-item>div:before {
         bottom: 160px;
-    }  */
+    }
 
     /* social */
     .social-button li:nth-child(2) {
