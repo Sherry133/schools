@@ -19,18 +19,16 @@ body {
 h1,
 h2 {
     font-family: "Roboto", "Open-sans";
-    color: #777;
+    color: #272727;
 }
 
 @media (min-width: 768px) {
+
     h1,
     h2 {
         font-size: 235%;
     }
 }
-
-h2 {}
-
 
 /*
   WAT IS THIS?!
@@ -45,7 +43,7 @@ h2 {}
     max-width: 100%;
     margin: 0 auto;
     align-items: center;
-    grid-template-areas: "header header" "nav nav" "footer footer" "main main";
+    grid-template-areas: "header header""nav nav""footer footer""main main";
     grid-gap: 10px;
 }
 
@@ -53,14 +51,6 @@ h2 {}
     background: lightslategray;
     padding: 10px;
 }
-
-
-/* #page div::nth-child(even) {
-  background: #777;
-}
-#page div::nth-child(odd) {
-  background: #777;
-} */
 
 #page .header {
     grid-area: header;
