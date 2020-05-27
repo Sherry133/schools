@@ -1,3 +1,4 @@
+/* Facts file */
 :root {
     --yellow: #ffc600;
     --black: black;
@@ -59,7 +60,7 @@ h2 {
 
 #page .nav {
     grid-area: nav;
-    background-color: rgba(42, 110, 87, 0.61);
+    background-color: rgba(42, 110, 87, 0.62);
 }
 
 #page .main {
