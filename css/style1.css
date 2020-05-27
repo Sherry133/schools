@@ -18,7 +18,7 @@
     color: var(--black);
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
     letter-spacing: normal;
-    margin: 40px;
+    margin: 41px;
 
 }
 
@@ -114,6 +114,7 @@ h5 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .getting-started {
@@ -230,7 +231,7 @@ span.number {
 
     @media (min-width: 1111px) {
         .body {
-            min-width: 100vw;
+            max-width: 100%;
             min-width: 100%;
 
         }
@@ -244,6 +245,10 @@ span.number {
             padding: 5px;
             margin: 5px;
             font-size: 100%;
+        }
+
+        .item-photo {
+            max-width: 100%;
         }
 
         .h1 {
