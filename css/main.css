@@ -1935,7 +1935,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
 /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 
     #showcase img {
         width: 100%;
@@ -2007,7 +2007,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
     #section-a .content-text {
         columns: 2;
-        column-gap: 0;
+        column-gap: 1em;
         padding-bottom: -5em;
     }
 
@@ -2015,7 +2015,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         padding-top: 0em;
         margin-top: 0;
         columns: 1;
-        font-size: var(--fsbodysm);
+        font-size: var(--fsbody);
 
     }
 }
@@ -2087,7 +2087,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         padding-top: 0em;
         margin-top: 0;
         columns: 1;
-        font-size: var(--fsbodysm);
+        font-size: var(--fsbody-lg);
 
     }
 
@@ -2097,6 +2097,15 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /*============================================================
 Responsive Styles
 ============================================================*/
+
+/* For large desktops  */
+
+@media (min-width: 1600px) {
+    #body {
+        font-size: var(--fsbody-lg);
+    }
+}
+
 /*============================================================
 For Small Desktop
 ==============================================================*/
