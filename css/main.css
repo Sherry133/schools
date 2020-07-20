@@ -82,7 +82,7 @@ a:focus,
 .h5,
 .h6 {
     color: #252525;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Crimson Text", sans-serif;
 }
 
 h1 {
@@ -90,7 +90,7 @@ h1 {
 }
 
 .sec-title h2 {
-    /* display: flex; */
+    font-family: "Open Sans", sans-serif;
     font-size: var(--fs2);
     margin-top: 0em;
     text-align: center;
@@ -113,7 +113,6 @@ h3 {
 
 /*Terms of Use*/
 
-
 .title {
     font-size: 120%;
     color: #5584dd;
@@ -124,7 +123,6 @@ h3 {
     margin: 40px 40px;
     font-size: 100%;
     color: #818181;
-
 }
 
 #accordion h3 {
@@ -150,14 +148,14 @@ h3 {
 
 .container-footer {
     display: grid;
-    grid-auto-columns: (auto-fit, minmax(auto, 1fr));
+    grid-auto-columns: (auto-fit, minmax(200px, 1fr));
     grid-gap: 1em;
 }
 
 @media (max-width: 480px) {
     .container-footer {
         /* grid-auto-columns: repeat(auto-fit, minmax(20%, 1fr)); */
-        grid-columns: span 12;
+        grid-column: span 12;
         grid-gap: 2em;
     }
 }
@@ -216,7 +214,6 @@ h3 {
     .btn-blue {
         top: 14.5em;
         margin-left: 11px;
-
     }
 }
 
@@ -248,7 +245,6 @@ h3 {
     }
 }
 
-
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
@@ -278,6 +274,7 @@ h3 {
 }
 
 /* for small screen */
+
 @media (min-width: 768px) {
     .btn-start {
         top: 2em;
@@ -426,7 +423,7 @@ h3 {
     width: 142px;
     height: 40px;
     margin: -20px 0 0 -71px;
-    background: white;
+    background: transparent;
 }
 
 .preloader .loader .dot {
@@ -435,12 +432,12 @@ h3 {
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #ff6f00;
+    background: red;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation: dot 2.8s infinite;
-    animation: dot 2.8s infinite;
+    -webkit-animation: dot 3.8s infinite;
+    animation: dot 3.8s infinite;
 }
 
 .preloader .loader .dots {
@@ -453,12 +450,11 @@ h3 {
 }
 
 .preloader .loader .dots span {
-    display: block;
-    float: left;
+    display: inline-block;
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #ff6f00;
+    background: var(--color-blue);
     border-radius: 50%;
 }
 
@@ -537,7 +533,6 @@ h3 {
 .navbar-default .navbar-toggle:hover {
     background-color: rgba(27, 74, 92, 0.678);
 }
-
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
@@ -579,6 +574,11 @@ nav ul li:nth-last-child(1) {
     margin: 0;
     /* border: solid #6a1d11 1px; */
 }
+nav ul li:nth-last-child(1):hover {
+    background: #659b8a;
+    transition-delay: .5s;
+}
+
 
 Home Slider
 /* ================================================================== */
@@ -823,12 +823,12 @@ About
     margin: 0px;
     margin-left: 15px;
     margin-top: 5px;
-    font-size: var(--fsbody);
+    font-size: var(--fsbody-sm);
     color: #fff;
 }
 
 #about .work-item .fa-ul p {
-    font-size: var(--fsbody);
+    font-size: var(--fsbody-sm);
     font-family: "Roboto", sans-serif;
 }
 
@@ -845,13 +845,13 @@ About
     color: #fff;
     letter-spacing: 1.5px;
     font-weight: 300;
-    font-size: var(--fsbody);
+    font-size: var(--fsbody-sm);
 }
 
 #about .summary-statement p {
     color: #d2b48c;
     font-weight: 500;
-    font-size: var(--fsbody);
+    font-size: var(--fsbody-sm);
 }
 
 #gettingstarted .fa-ul li i {
@@ -884,6 +884,7 @@ About
 =================================================================
 Services
 ==================================================================*/
+
 #service {
     background-image: url(../img/slider/banner.jpg);
     /* background-color: #000; */
@@ -899,7 +900,11 @@ Services
         background-color: #000;
     }
 }
-
+/* .service-item:hover .service-icon {
+    text-transform: lowercase;
+    color: green;
+    
+} */
 .service-icon {
     border: 3px solid;
     display: inline-block;
@@ -917,13 +922,13 @@ Services
     border: 3px solid #5584dd;
     margin-bottom: 20px;
     color: #5584dd;
+
 }
 
 .service-icon i {
     display: inline-block;
     /* text-align: center; */
     /* vertical-align: middle; */
-
     align-items: center;
     justify-content: center;
     -webkit-transform: rotate(-47deg);
@@ -942,19 +947,21 @@ Services
 }
 
 .service-item h3 {
-    text-transform: uppercase;
+    /* text-transform: lowercase; */
     color: #5584dd;
+
 }
 
 .service-item p {
     color: #d2b48c;
     letter-spacing: 1px;
-    font-size: var(--fsbody);
+    font-size: var(--fsbody-sm);
 }
 
 /*=================================================================
 Portfolio
 ==================================================================*/
+
 #portfolio {
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
@@ -997,6 +1004,7 @@ figcaption .mask {
     width: 100%;
     text-align: left;
     -webkit-transition: all 0.4s ease 0s;
+    backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -1099,6 +1107,7 @@ ul .external li a:hover {
 /*=================================================================
 Testimonials
 ==================================================================*/
+
 #testimonials {
     background-image: url(../img/parallax/testimonial.jpg);
     padding: 0;
@@ -1111,7 +1120,6 @@ Testimonials
 
 #testimonials .clearfix h3 {
     color: #fff;
-
 }
 
 #testimonials .overlay1 {
@@ -1128,7 +1136,9 @@ Testimonials
 }
 
 .testimonial-item p {
+    font-family: Crimson Text, sans serif;
     color: #fff;
+    font-size: var(--fsbody);
 }
 
 @media (max-width: 480px) {
@@ -1163,6 +1173,7 @@ Testimonials
 }
 
 /*PRICING SECTION*/
+
 #price {
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
@@ -1304,10 +1315,8 @@ Price end
 }
 
 #social .overlay1 {
-
     background-color: rgba(15, 155, 224, 0.78);
     padding: 100px 0 120px;
-
 }
 
 .social-button {
@@ -1315,7 +1324,6 @@ Price end
     padding: 0;
     list-style: none;
     text-align: center;
-
 }
 
 .social-button li {
@@ -1325,7 +1333,6 @@ Price end
 
 .social-button li:nth-child(2) {
     margin: 0 1em;
-
 }
 
 .social-button li a {
@@ -1368,7 +1375,6 @@ Price end
     .social-button li a {
         color: red;
     }
-
 }
 
 /*=================================================================
@@ -1540,12 +1546,12 @@ THANK YOU MESSAGE
 /*============================================================
 Footer
 ==============================================================*/
-
 /* #footer {
     background-color: #252525;
     padding: 70px 0;
     color: #fff;
 } */
+
 #footer {
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
@@ -1564,12 +1570,9 @@ Footer
     }
 
     #footer .overlay1 {
-
         background-color: rgba(15, 155, 224, 0.78);
         padding: 100px 0 120px;
-
     }
-
 }
 
 .sec-title .footer-content h2 {
@@ -1608,7 +1611,6 @@ Footer
 @media (max-width: 767px) {
     .footer-content {
         font-size: var(--fsbody);
-
     }
 }
 
@@ -1626,7 +1628,6 @@ Footer
         margin-right: 120px;
     }
 } */
-
 /* .subscribe.form-control {
     background-color: grey;
     border: 1px solid #7f7f7f;
@@ -1693,7 +1694,6 @@ Footer
     margin: 0 10px;
 }
 
-
 .footer-social ul li a {
     color: #fff;
     -webkit-transition: all 0.2s ease 0s;
@@ -1724,7 +1724,6 @@ Footer
 }
 
 .regulations ul li {
-
     list-style: none;
     margin: 0 auto;
     margin-left: 260px;
@@ -1746,7 +1745,6 @@ Footer
 .ssl-logo img {
     width: 100%;
     height: auto;
-
 }
 
 @media (max-width: 480px) {
@@ -1755,7 +1753,6 @@ Footer
         padding-bottom: 2em;
     }
 }
-
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAIN-SS.CSS FOR FACE MASK HOME PAGE
@@ -1766,17 +1763,15 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     height: 100vh;
 }
 
-
 #showcase img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     min-height: 100%;
     min-width: 100vw;
 }
 
 #showcase .bg-image {
-
     position: absolute;
     background-image: url("/img/slider/face-masks.jpg");
     background-position: center;
@@ -1785,7 +1780,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     width: 100%;
     height: auto;
     z-index: -2;
-    opacity: .6;
+    opacity: .8;
 }
 
 .content-wrapper h1 {
@@ -1798,7 +1793,11 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     padding-top: 1em;
     padding-bottom: 3.15em;
     margin-top: 0;
-    color: #fff;
+    background: #deefff;
+    background: linear-gradient(to left, #deefff 0%, #98bede 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .showcase-btn {
@@ -1832,37 +1831,41 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
 #section-a {
     display: grid;
-    columns: 2;
-    background-color: #fff;
+    columns: 1;
+    background-color: #eddfdf;
     color: rgb(81, 100, 112);
-    margin-top: -8em;
+    padding-top: .5em;
     margin-bottom: 0;
     padding-bottom: 0;
     width: 100%;
-    height: 150px;
-
+    height: 50px;
+    margin-top: -7.5em;
 }
 
 #section-a .content-title {
-    margin-top: .25em;
     padding-bottom: 0;
+    font-size: 2.5em;
     text-align: center;
-    font-family: "Open sans", sans-serif;
+    font-family: Crimson Text, sans serif;
     font-weight: 500;
-    color: red;
-}
-
-#section-a .content-text p {
-    columns: 1;
-    padding-top: 1em;
-    text-align: center;
-    color: var(--color-blue);
-    padding-bottom: 20px;
+    color: rgb(186, 10, 10);
 }
 
 #section-a .content-text {
+    display: grid;
     grid-column: 2 / 4;
     columns: 2;
+}
+
+#section-a .content-text p {
+    font-family: Crimson Text, sans serif;
+    font-size: 1.25em;
+    columns: 2;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    color: var(--color-blue);
+    padding-bottom: 20px;
 }
 
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
@@ -1888,11 +1891,12 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
     .content-wrapper h1 {
         font-size: 225%;
-        margin-top: -.25em;
+        margin-top: .5em;
     }
 
     .showcase-btn {
         margin-left: 7em;
+        margin-top: -3em;
     }
 
     #section-a {
@@ -1901,7 +1905,8 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #section-a .content-title {
-        margin-top: -8em;
+        margin-top: -5.5em;
+        font-size: 225%;
     }
 
     #section-a .content-text {
@@ -1915,16 +1920,25 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-top: 0;
         columns: 1;
         font-size: var(--fsbodysm);
-
     }
 }
 
 /* MEDIA QUERY FOR 1024+ DISPLAYS */
+
 @media (min-width: 1024px) {
+    #showcase img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        min-width: 80vw;
+    }
+
     #section-a {
         grid-column: 2/ 4;
         height: 150px;
         columns: 2;
+        /* margin-top: -5em; */
     }
 
     #section-a .content-title {
@@ -1932,11 +1946,9 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 }
 
-
 /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
 @media (min-width: 1367px) {
-
     #showcase img {
         width: 100%;
         height: auto;
@@ -1945,9 +1957,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         object-fit: cover;
     }
 
-
     #showcase .bg-image {
-
         /* background-image: url("/img/slider/face-masks1.jpg"); */
         background-position: center;
         background-size: cover;
@@ -1974,7 +1984,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
     #section-a,
     .content-title {
-
         margin-top: -9.50em;
         font-size: var(--fs3-480);
         color: red;
@@ -1990,6 +1999,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /* ++++++++++++++++++++++++++++ */
 /* MINIMUM WIDTH 1440PX */
 /* +++++++++++++++++++++++++++ */
+
 @media (min-width: 1439px) {
     #section-a {
         grid-column: 2/4;
@@ -2004,11 +2014,10 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-top: 1em;
     }
 
-
     #section-a .content-text {
         columns: 2;
         column-gap: 1em;
-        padding-bottom: -5em;
+        padding-bottom: 0;
     }
 
     #section-a .content-text p {
@@ -2016,7 +2025,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-top: 0;
         columns: 1;
         font-size: var(--fsbody);
-
     }
 }
 
@@ -2025,7 +2033,6 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 /* +++++++++++++++++++++++++++ */
 
 @media (min-width: 1600px) {
-
     #showcase img {
         width: 100%;
         height: auto;
@@ -2046,21 +2053,19 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         opacity: .6;
     }
 
-
     .content-wrapper h1 {
         font-size: 450%;
         padding-top: 1.5em;
         font-weight: 500;
-        color: #fff;
+        background: linear-gradient(to left, #deefff 0%, #98bede 100%);
     }
 
     .showcase-btn {
         margin-left: 40em;
         align-items: center;
-        vertical-align: center;
+        /* vertical-align: center; */
         margin-top: -38.5em;
         padding: 10px;
-
     }
 
     #section-a {
@@ -2076,11 +2081,10 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-top: 1em;
     }
 
-
     #section-a .content-text {
         columns: 2;
         column-gap: 0;
-        padding-bottom: -5em;
+        padding-bottom: 0;
     }
 
     #section-a .content-text p {
@@ -2088,16 +2092,12 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         margin-top: 0;
         columns: 1;
         font-size: var(--fsbody-lg);
-
     }
-
 }
-
 
 /*============================================================
 Responsive Styles
 ============================================================*/
-
 /* For large desktops  */
 
 @media (min-width: 1600px) {
@@ -2111,10 +2111,10 @@ For Small Desktop
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
+
     /* body {
                 font-size: 100%;
             } */
-
     /*about*/
     #about .welcome-block img {
         margin-bottom: 30px;
@@ -2129,8 +2129,6 @@ For Small Desktop
         bottom: -40px;
     }
 }
-
-
 
 /*============================================================
 Tablet (Portrait) Design for a width of 768px
@@ -2161,7 +2159,6 @@ Tablet (Portrait) Design for a width of 768px
     /* .testimonial-item {
         width: 80%;
     }  */
-
     .testimonial-item>div:after {
         bottom: -35px;
     }
@@ -2196,7 +2193,7 @@ Mobile (Portrait) Design for a width of 767px
     }
 
     .parallax {
-        background-position: centet tip !important;
+        background-position: center top !important;
     }
 
     /*navigation*/
@@ -2204,12 +2201,6 @@ Mobile (Portrait) Design for a width of 767px
         border: 2px solid darkblue;
         border-radius: 8px;
         border-width: medium;
-    }
-
-    /*  nav-dots*/
-    .nav-dots {
-        bottom: 2%;
-        padding: 3px;
     }
 
     /* slider */
@@ -2358,18 +2349,7 @@ Mobile (Landscape) Design for a width of 480px
         margin: 0;
         color: #fff;
         font-size: 40%;
-
     }
-
-    /* testimonial */
-    /* .testimonial-item {
-        width: 80%;
-    } */
-
-    /* .testimonial-item>div:before {
-        bottom: 160px;
-    }  */
-
     /* social */
     .social-button li:nth-child(2) {
         margin: 0 50px;
