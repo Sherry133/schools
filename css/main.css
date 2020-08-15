@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --fs1: 425%;
     --fs2: 225%;
@@ -148,7 +154,7 @@ h3 {
 
 .container-footer {
     display: grid;
-    grid-auto-columns: (auto-fit, minmax(200px, 1fr));
+    grid-auto-columns: (auto-fit, minmax(auto, 1fr));
     grid-gap: 1em;
 }
 
@@ -423,7 +429,7 @@ h3 {
     width: 142px;
     height: 40px;
     margin: -20px 0 0 -71px;
-    background: transparent;
+    background: white;
 }
 
 .preloader .loader .dot {
@@ -432,12 +438,12 @@ h3 {
     height: 16px;
     top: 12px;
     left: 15px;
-    background: red;
+    background: blue;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation: dot 3.8s infinite;
-    animation: dot 3.8s infinite;
+    -webkit-animation: dot 2.8s infinite;
+    animation: dot 2.8s infinite;
 }
 
 .preloader .loader .dots {
@@ -450,11 +456,12 @@ h3 {
 }
 
 .preloader .loader .dots span {
-    display: inline-block;
+    display: inline-flex;
+    /* float: left; */
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: var(--color-blue);
+    background: red;
     border-radius: 50%;
 }
 
@@ -496,16 +503,19 @@ h3 {
 /* ==========================================*/
 
 #navigation {
+    /* width: 60%; */
+    margin-left: auto;
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
 }
 
 #navigation a:hover {
-    color: red;
+    background-color: #ececec;
+    color: #66AB9E;
 }
 
 #navigation a:focus {
-    color: green;
+    color: red;
 }
 
 #navigation.animated-header {
@@ -531,7 +541,8 @@ h3 {
 }
 
 .navbar-default .navbar-toggle:hover {
-    background-color: rgba(27, 74, 92, 0.678);
+    background-color: #ee8fab;
+
 }
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
@@ -539,7 +550,7 @@ h3 {
 
 /* ====Added by M===== */
 
-.navbar-default .navbar-brand {
+.navbar-default {
     height: auto;
     margin: 0 0 0 15px;
     padding: 1px 0 0 0;
@@ -549,9 +560,9 @@ h3 {
 /* <!-- end callout header for blog menu --> */
 
 .navbar-default {
-    background-color: #fff;
+    background-color: #f0ead6;
     overflow: hidden;
-    /* z-index: 99; */
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -564,23 +575,21 @@ h3 {
     text-transform: uppercase;
 }
 
-nav ul li:nth-last-child(1) {
+nav>ul>li:nth-last-child(1) {
     display: inline-block;
-    background: #A1B5BC;
-    font-weight: 500;
+    background: red;
+    font-weight: 900;
     font-size: 100%;
-    border-radius: 8px;
-    padding: -10px;
-    margin: 0;
-    /* border: solid #6a1d11 1px; */
-}
-nav ul li:nth-last-child(1):hover {
-    background: #659b8a;
-    transition-delay: .5s;
+    border-radius: 50%;
 }
 
+nav>ul>li:nth-last-child(2) {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 100%;
+}
 
-Home Slider
+/* Home Slider */
 /* ================================================================== */
 
 #home-slider {
@@ -759,11 +768,6 @@ About
     #about .message-body {
         margin-left: 1.5em;
     }
-
-    /* #about .overlay1 {
-        background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
-        padding: 100px 0 120px;
-    } */
     @media (max-width: 1024px) {
         #about {
             background-image: none;
@@ -1004,8 +1008,8 @@ figcaption .mask {
     width: 100%;
     text-align: left;
     -webkit-transition: all 0.4s ease 0s;
-    backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     transition: all 0.4s ease 0s;
@@ -1014,6 +1018,7 @@ figcaption .mask {
 .portfolio-item:hover figcaption.mask {
     bottom: 0;
     background-color: blue;
+    font-size: 125%;
 }
 
 figcaption.mask h4 {
@@ -1021,6 +1026,7 @@ figcaption.mask h4 {
     color: #fff;
     font-size: 80%;
     padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 ul.external {
@@ -1035,28 +1041,6 @@ ul.external {
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
-}
-
-ul.external1 {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: -47px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-ul .external li {
-    display: inline-block;
-}
-
-ul .external1 li {
-    display: inline-block;
 }
 
 ul .external li a {
@@ -1178,11 +1162,9 @@ Testimonials
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
 }
-
-/* #price .overlay1 {
-    background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
-    padding: 100px 0 120px;
-} */
+.price-table h3 {
+    color: red;
+}
 
 @media (max-width: 480px) {
     #price {
@@ -1213,6 +1195,7 @@ Testimonials
 .price-table h3 {
     font-weight: 500;
     font-size: 2em;
+
 }
 
 .price-table.featured {
@@ -1275,21 +1258,25 @@ Testimonials
 .price-table ul li a {
     display: block;
     text-transform: uppercase;
+    color: #fff;
+
 }
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
     background-color: #005da3;
+
 }
 
-.price-table.featured ul li:last-child a,
-.price-table ul li:last-child:hover a {
+/* .price-table.featured ul li:last-child a, */
+/* .price-table ul li:last-child:hover a {
     color: #fff;
-}
+} */
 
-.price-table.featured ul li:nth-child(2) a .price-table ul li:last-child:hover a {
+.price-table.featured ul li:nth-child(2) a,
+.price-table ul li:last-child:hover a {
     color: red;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 @media (max-width: 676px) {}
@@ -1492,14 +1479,6 @@ textarea.form-control {
     margin-left: 24px;
     color: #d2b48c;
 }
-
-/* =====by M========= */
-/* .input-field label.error {
-color: red;
-display: block;
-font-size: 13px;
-font-weight: 400;
-} */
 
 .form-control::-webkit-input-placeholder,
 ::-webkit-input-placeholder {
@@ -1757,23 +1736,24 @@ Footer
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAIN-SS.CSS FOR FACE MASK HOME PAGE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
 #showcase {
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    text-align: center;
 }
 
 #showcase img {
     display: block;
     width: 100%;
     height: 100vh;
-    min-height: 100%;
+    min-height: 100vh;
     min-width: 100vw;
 }
 
 #showcase .bg-image {
     position: absolute;
-    background-image: url("/img/slider/face-masks.jpg");
+    /* background-image: url("/img/slider/face-masks.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1785,144 +1765,122 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 
 .content-wrapper h1 {
     display: inline-block;
-    width: 100vw;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    font-size: var(--fs1);
+    font-size: 400%;
     font-weight: 500;
     padding-top: 1em;
     padding-bottom: 3.15em;
-    margin-top: 0;
     background: #deefff;
     background: linear-gradient(to left, #deefff 0%, #98bede 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .showcase-btn {
-    display: inline-block;
-    background: #deefff;
-    /*Oldbrowsers*/
-    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
-    /*FF3.6-15*/
-    background: -webkit-linear-gradient(top, #deefff 0%, #98bede 100%);
-    /*Chrome10-25,Safari5.1-6*/
-    background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
-    /*W3C,IE10+,FF16+,Chrome26+,Opera12+,Safari7+*/
+    width: 7.0em;
+    height: 1.75em;
+    background: #98bede;
     color: #374f5e;
     text-decoration: none;
     padding: .5em .5em;
     border: none;
-    margin: 0 auto;
-    margin-left: 18em;
-    margin-top: -10em;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
 
-.showcase-btn:hover {
-    background: #ececec;
+a.showcase-btn:hover {
+    background: lightseagreen;
     color: #333;
 }
 
 #section-a {
     display: grid;
-    columns: 1;
-    background-color: #eddfdf;
-    color: rgb(81, 100, 112);
-    padding-top: .5em;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    width: 100%;
-    height: 50px;
-    margin-top: -7.5em;
-}
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 
+    /* height: 20vh; */
+}
 #section-a .content-title {
-    padding-bottom: 0;
+
     font-size: 2.5em;
-    text-align: center;
     font-family: Crimson Text, sans serif;
     font-weight: 500;
-    color: rgb(186, 10, 10);
-}
-
-#section-a .content-text {
-    display: grid;
-    grid-column: 2 / 4;
-    columns: 2;
-}
-
-#section-a .content-text p {
-    font-family: Crimson Text, sans serif;
-    font-size: 1.25em;
-    columns: 2;
-    margin-top: 0;
-    padding-top: 0;
+    /* color: rgb(186, 10, 10); */
+    color: #d8d8d8;
     text-align: center;
-    color: var(--color-blue);
-    padding-bottom: 20px;
+    /* margin: 0 auto; */
 }
-
+#section-a .content-text h6 {
+    display: grid;
+    font-size: 1em;
+    padding-top: 5px;
+    text-align: center;
+    /* color: var(--color-blue); */
+    color: cornflowerblue;
+}
+#section-a .content-text2 {
+    display: grid;
+    text-align: center;
+    /* color: var(--color-btext); */
+    margin-top: -8px;
+    color: #d8d8d8;
+    margin-bottom: 1em;
+}
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
 
-@media (max-width: 482px) {
+@media (max-width: 699px) {
     #showcase {
-        width: 100%;
-        height: 85vh;
+        width: 100vw;
+        max-height: 60vh;
     }
 
+    #showcase img {
+        object-fit: cover;
+    }
+
+    #showcase .bg-image {
+        max-width: 100%;
+    }
+
+    .content-wrapper h1 {
+        font-size: 250%;
+        margin-top: 1.75em;
+    }
+
+    a.showcase-btn {
+
+        margin-left: -10em;
+        width: 30%;
+    }
+
+    #section-a .content-title {
+        font-size: 175%;
+        max-width: 100%;
+        padding: 0 1em;
+    }
+
+    #section-a .content-text p {
+        columns: 1;
+        padding: 0;
+        margin: 2px;
+        min-width: 95%;
+        line-height: 1.25em;
+
+    }
+
+}
+/* media query for 766 screens */
+@media (min-width: 766px) {
     #showcase img {
         display: block;
         width: 100%;
         height: auto;
-        max-height: 80%;
-        min-width: 80vw;
-    }
-
-    #showcase .bg-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .content-wrapper h1 {
-        font-size: 225%;
-        margin-top: .5em;
-    }
-
-    .showcase-btn {
-        margin-left: 7em;
-        margin-top: -3em;
-    }
-
-    #section-a {
-        grid-column: 1 / 3;
-        height: 45px;
-    }
-
-    #section-a .content-title {
-        margin-top: -5.5em;
-        font-size: 225%;
-    }
-
-    #section-a .content-text {
-        columns: 1;
-        column-gap: 0;
-        padding-bottom: -5em;
-    }
-
-    #section-a .content-text p {
-        padding-top: 0em;
-        margin-top: 0;
-        columns: 1;
-        font-size: var(--fsbodysm);
+        max-height: 60vh;
+        min-width: 100vw;
+        object-fit: cover;
     }
 }
-
 /* MEDIA QUERY FOR 1024+ DISPLAYS */
 
 @media (min-width: 1024px) {
@@ -1938,17 +1896,23 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         grid-column: 2/ 4;
         height: 150px;
         columns: 2;
-        /* margin-top: -5em; */
+        margin-top: -5em;
     }
 
     #section-a .content-title {
         margin-top: 0;
     }
+    #section-a .content-text h6 {
+        margin-top: 0;
+        line-height: 1.25em;
+        padding-top: 0;
+        padding-bottom: -5px;
+    }
 }
 
 /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
-@media (min-width: 1367px) {
+@media (min-width: 1366px) {
     #showcase img {
         width: 100%;
         height: auto;
@@ -1958,7 +1922,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     #showcase .bg-image {
-        /* background-image: url("/img/slider/face-masks1.jpg"); */
+
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1969,9 +1933,9 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     }
 
     .content-wrapper h1 {
-        font-size: 450%;
+        font-size: 550%;
         padding-top: 2em;
-        color: #fff;
+
     }
 
     .showcase-btn {
@@ -1982,17 +1946,19 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         padding: 10px;
     }
 
+
     #section-a,
     .content-title {
         margin-top: -9.50em;
         font-size: var(--fs3-480);
         color: red;
+
     }
 
-    #section-a .content-text p {
+    #section-a .content-text h6 {
         columns: 2;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 10px;
     }
 }
 
@@ -2017,7 +1983,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     #section-a .content-text {
         columns: 2;
         column-gap: 1em;
-        padding-bottom: 0;
+        padding-bottom: -5em;
     }
 
     #section-a .content-text p {
@@ -2057,13 +2023,13 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
         font-size: 450%;
         padding-top: 1.5em;
         font-weight: 500;
-        background: linear-gradient(to left, #deefff 0%, #98bede 100%);
+        color: #deefff;
     }
 
-    .showcase-btn {
+    a.showcase-btn {
         margin-left: 40em;
         align-items: center;
-        /* vertical-align: center; */
+        vertical-align: center;
         margin-top: -38.5em;
         padding: 10px;
     }
@@ -2084,7 +2050,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     #section-a .content-text {
         columns: 2;
         column-gap: 0;
-        padding-bottom: 0;
+        padding-bottom: -5em;
     }
 
     #section-a .content-text p {
@@ -2193,7 +2159,7 @@ Mobile (Portrait) Design for a width of 767px
     }
 
     .parallax {
-        background-position: center top !important;
+        background-position: centet tip !important;
     }
 
     /*navigation*/
@@ -2350,6 +2316,14 @@ Mobile (Landscape) Design for a width of 480px
         color: #fff;
         font-size: 40%;
     }
+
+    /* testimonial */
+    /* .testimonial-item {
+        width: 80%;
+    } */
+    /* .testimonial-item>div:before {
+        bottom: 160px;
+    }  */
     /* social */
     .social-button li:nth-child(2) {
         margin: 0 50px;
@@ -2386,4 +2360,6 @@ Mobile (Landscape) Design for a width of 480px
         max-width: 940px;
         margin: 0 auto;
     }
+
+
 }
