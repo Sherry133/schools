@@ -544,6 +544,7 @@ h3 {
     background-color: #ee8fab;
 
 }
+
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
@@ -560,7 +561,7 @@ h3 {
 /* <!-- end callout header for blog menu --> */
 
 .navbar-default {
-    background-color: #f0ead6;
+    background-color: #ececec;
     overflow: hidden;
 
 }
@@ -768,6 +769,7 @@ About
     #about .message-body {
         margin-left: 1.5em;
     }
+
     @media (max-width: 1024px) {
         #about {
             background-image: none;
@@ -904,6 +906,7 @@ Services
         background-color: #000;
     }
 }
+
 /* .service-item:hover .service-icon {
     text-transform: lowercase;
     color: green;
@@ -1162,6 +1165,7 @@ Testimonials
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
 }
+
 .price-table h3 {
     color: red;
 }
@@ -1801,6 +1805,7 @@ a.showcase-btn:hover {
 
     /* height: 20vh; */
 }
+
 #section-a .content-title {
 
     font-size: 2.5em;
@@ -1811,6 +1816,7 @@ a.showcase-btn:hover {
     text-align: center;
     /* margin: 0 auto; */
 }
+
 #section-a .content-text h6 {
     display: grid;
     font-size: 1em;
@@ -1819,6 +1825,7 @@ a.showcase-btn:hover {
     /* color: var(--color-blue); */
     color: cornflowerblue;
 }
+
 #section-a .content-text2 {
     display: grid;
     text-align: center;
@@ -1827,6 +1834,7 @@ a.showcase-btn:hover {
     color: #d8d8d8;
     margin-bottom: 1em;
 }
+
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
 
 @media (max-width: 699px) {
@@ -1870,6 +1878,7 @@ a.showcase-btn:hover {
     }
 
 }
+
 /* media query for 766 screens */
 @media (min-width: 766px) {
     #showcase img {
@@ -1881,6 +1890,7 @@ a.showcase-btn:hover {
         object-fit: cover;
     }
 }
+
 /* MEDIA QUERY FOR 1024+ DISPLAYS */
 
 @media (min-width: 1024px) {
@@ -1902,6 +1912,7 @@ a.showcase-btn:hover {
     #section-a .content-title {
         margin-top: 0;
     }
+
     #section-a .content-text h6 {
         margin-top: 0;
         line-height: 1.25em;
