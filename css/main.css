@@ -1824,6 +1824,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     font-family: Crimson Text, sans serif;
     font-weight: 500;
     color: #d8d8d8;
+    margin-top: .75em !important;
 
 
 
@@ -1839,7 +1840,7 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     justify-content: center;
     align-items: center;
     color: #d8d8d8;
-    margin-top: .5em !important;
+    margin-top: .75em !important;
     /* margin-top: 2em !important; */
 }
 #section-a .content-text2 {
