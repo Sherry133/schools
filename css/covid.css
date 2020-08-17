@@ -156,27 +156,26 @@
 
                 }
 
-                @media (min-width: 1023px) and (max-width: 1113px) {
+                @media (min-width: 700px) and (max-width: 1113px) {
                     .item-header h1 {
                         font-size: 3.5em;
                         width: 100vw;
+                        margin-top: 0em;
                         margin-left: -1em;
                         text-align: left;
 
                     }
                     .item-header h2 {
-                        display: flex;
-                        flex-wrap: nowrap;
-                        font-size: 2.25em;
+                        font-size: 2.5em;
+                        width: 80%;
+                        margin-top: 1.25em;
+                        margin-left: -1.25em;
                         text-align: left;
-                        margin-top: -1.5em;
-                        width: 100%;
-                        margin-left: -1.5em;
                     }
                     .covid-procedures p {
                         /* display: flex; */
                         margin-top: 1em;
-                        margin-left: 6em;
+                        margin-left: 5.8em;
                         min-width: 75vw;
                         text-align: left;
                         font-size: 1.5em;

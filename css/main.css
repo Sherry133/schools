@@ -503,7 +503,6 @@ h3 {
 /* ==========================================*/
 
 #navigation {
-    /* width: 60%; */
     margin-left: auto;
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
@@ -531,6 +530,7 @@ h3 {
     border-radius: 8px;
     border-color: cornflowerblue;
     border-width: 2px;
+
 }
 
 /* =====added by M======= */
@@ -544,7 +544,6 @@ h3 {
     background-color: #ee8fab;
 
 }
-
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
@@ -552,21 +551,22 @@ h3 {
 /* ====Added by M===== */
 
 .navbar-default {
-    height: auto;
     margin: 0 0 0 15px;
     padding: 1px 0 0 0;
     overflow: hidden;
 }
-
 /* <!-- end callout header for blog menu --> */
 
 .navbar-default {
     background-color: #ececec;
     overflow: hidden;
-
+}
+.navbar-default ul {
+    min-width: 120%;
 }
 
 .navbar-default .navbar-nav>li>a {
+    display: block;
     font-family: "Roboto", sans-serif;
     color: #005da3;
     font-size: 80%;
@@ -574,8 +574,9 @@ h3 {
     text-transform: uppercase;
     font-weight: bolder;
     text-transform: uppercase;
-}
 
+
+}
 nav>ul>li:nth-last-child(1) {
     display: inline-block;
     background: red;
@@ -588,7 +589,10 @@ nav>ul>li:nth-last-child(2) {
     display: inline-block;
     font-weight: 900;
     font-size: 100%;
+
 }
+
+
 
 /* Home Slider */
 /* ================================================================== */
@@ -769,7 +773,6 @@ About
     #about .message-body {
         margin-left: 1.5em;
     }
-
     @media (max-width: 1024px) {
         #about {
             background-image: none;
@@ -906,7 +909,6 @@ Services
         background-color: #000;
     }
 }
-
 /* .service-item:hover .service-icon {
     text-transform: lowercase;
     color: green;
@@ -1165,7 +1167,6 @@ Testimonials
     background-image: url(../img/slider/banner.jpg);
     background-color: #000;
 }
-
 .price-table h3 {
     color: red;
 }
@@ -1743,14 +1744,14 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
 #showcase {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 75vh;
     text-align: center;
 }
 
 #showcase img {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: auto;
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -1782,62 +1783,84 @@ MAIN-SS.CSS FOR FACE MASK HOME PAGE
     -webkit-text-fill-color: transparent;
 }
 
-.showcase-btn {
+.content-wrapper .saving-button {
     width: 7.0em;
     height: 1.75em;
     background: #98bede;
-    color: #374f5e;
+    /* color: #374f5e; */
+    color: #fff;
     text-decoration: none;
-    padding: .5em .5em;
+    margin-left: 22em;
+    margin-top: 0;
+    text-align: center;
+    /* justify-content: center; */
     border: none;
     border-radius: 8px;
 }
 
-a.showcase-btn:hover {
+.content-wrapper .saving-button:hover {
     background: lightseagreen;
     color: #333;
 }
 
 #section-a {
     display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 1fr));
+    grid-template-rows: repeat(12, minmax(auto, 1fr));
     background-color: #0cbaba;
     background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-
-    /* height: 20vh; */
+    max-width: 100%;
+    height: 25vh;
 }
-
-#section-a .content-title {
-
-    font-size: 2.5em;
+.content-wrap {
+    display: grid;
+    grid-column: 1/13;
+    grid-row: 1/1;
+    margin-top: -1em;
+    /* align-items: center; */
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 1em;
     font-family: Crimson Text, sans serif;
     font-weight: 500;
-    /* color: rgb(186, 10, 10); */
     color: #d8d8d8;
-    text-align: center;
-    /* margin: 0 auto; */
-}
 
-#section-a .content-text h6 {
+
+
+}
+#section-a .content-text {
     display: grid;
-    font-size: 1em;
-    padding-top: 5px;
+    grid-column: 2/5;
+    grid-row: 2/4;
+    width: 80%;
     text-align: center;
-    /* color: var(--color-blue); */
-    color: cornflowerblue;
+    height: 5vh;
+    font-size: 1.75em;
+    justify-content: center;
+    align-items: center;
+    color: #d8d8d8;
+    margin-top: .5em !important;
+    /* margin-top: 2em !important; */
 }
-
 #section-a .content-text2 {
     display: grid;
+    grid-column: 9/13;
+    grid-row: 3/4;
+    width: 80%;
     text-align: center;
-    /* color: var(--color-btext); */
-    margin-top: -8px;
+    height: 5vh;
+    font-size: 1.75em;
+    justify-content: center;
+    align-items: center;
     color: #d8d8d8;
-    margin-bottom: 1em;
-}
+    margin-top: .5em !important;
+    margin-left: -.5em;
+    /* margin-top: 2em !important; */
 
+}
 /* MEDIA QUERY FOR MIN-WIDTH 700PX */
 
-@media (max-width: 699px) {
+@media (max-width: 766px) {
     #showcase {
         width: 100vw;
         max-height: 60vh;
@@ -1849,38 +1872,71 @@ a.showcase-btn:hover {
 
     #showcase .bg-image {
         max-width: 100%;
+        height: auto;
     }
 
-    .content-wrapper h1 {
-        font-size: 250%;
-        margin-top: 1.75em;
+    .content-wrapper {
+        font-size: 70%;
+        margin-top: 3em;
+        color: red;
     }
 
-    a.showcase-btn {
-
-        margin-left: -10em;
-        width: 30%;
+    .content-wrapper .saving-button {
+        margin-left: 2em;
+        margin-top: 1em;
+        width: 25%;
     }
 
-    #section-a .content-title {
-        font-size: 175%;
-        max-width: 100%;
-        padding: 0 1em;
+    #section-a {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(auto, 1fr));
+        grid-template-rows: repeat(12, minmax(auto, 1fr));
+        background-color: #0cbaba;
+        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
     }
 
-    #section-a .content-text p {
-        columns: 1;
-        padding: 0;
-        margin: 2px;
-        min-width: 95%;
-        line-height: 1.25em;
+    .content-wrap {
+        display: grid;
+        grid-column: 1/7;
+        /* grid-row: 1/1; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 125%;
+        font-family: Crimson Text, sans serif;
+        font-weight: 500;
+        margin-top: -1em;
+        color: #d8d8d8;
+        min-width: 100vw;
 
+    }
+    #section-a .content-text {
+        display: grid;
+        grid-column: 2/7;
+        grid-row: 4/7;
+        text-align: center;
+        font-size: 1.5em;
+        color: #d8d8d8;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #section-a .content-text2 {
+        display: grid;
+        grid-column: 8/13;
+        grid-row: 4/7;
+        text-align: center;
+        font-size: 1.5em;
+        color: #d8d8d8;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: .5em; */
     }
 
 }
-
 /* media query for 766 screens */
-@media (min-width: 766px) {
+@media (min-width: 767px) and (max-width: 991px) {
     #showcase img {
         display: block;
         width: 100%;
@@ -1889,488 +1945,642 @@ a.showcase-btn:hover {
         min-width: 100vw;
         object-fit: cover;
     }
-}
+    .content-wrapper h1 {
+        margin-top: 2.75em;
+    }
+    .content-wrap h2 {
 
+        display: grid;
+        grid-column: 1/13;
+        grid-row: 1/1;
+        margin-top: -1.5em;
+        /* align-items: center; */
+        font-size: 1em;
+        font-family: Crimson Text, sans serif;
+        font-weight: 500;
+        padding-top: 1em;
+        color: #d8d8d8;
+        text-align: center;
+
+    }
+    #section-a .content-text {
+        display: grid;
+        grid-column: 1/7;
+        grid-row: 6/8;
+        text-align: center;
+        font-size: 2.5em;
+        color: #d8d8d8;
+        align-items: center;
+        justify-content: center;
+        /* height: 5%; */
+
+    }
+    #section-a .content-text2 {
+        display: grid;
+        grid-column: 9/13;
+        grid-row: 6/8;
+        text-align: center;
+        font-size: 2.5em;
+        color: #d8d8d8;
+        align-items: center;
+        justify-content: center;
+        /* height: 5%; */
+        /* margin-top: .5em; */
+    }
+
+}
 /* MEDIA QUERY FOR 1024+ DISPLAYS */
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #showcase img {
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
         max-height: 80vh;
-        min-width: 80vw;
-    }
-
-    #section-a {
-        grid-column: 2/ 4;
-        height: 150px;
-        columns: 2;
-        margin-top: -5em;
-    }
-
-    #section-a .content-title {
-        margin-top: 0;
-    }
-
-    #section-a .content-text h6 {
-        margin-top: 0;
-        line-height: 1.25em;
-        padding-top: 0;
-        padding-bottom: -5px;
-    }
-}
-
-/* MEDIA QUERY FOR 1350+ DISPLAYS */
-
-@media (min-width: 1366px) {
-    #showcase img {
-        width: 100%;
-        height: auto;
-        max-height: 100vh;
-        max-width: 100vw;
-        object-fit: cover;
-    }
-
-    #showcase .bg-image {
-
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-        z-index: -2;
-        opacity: .6;
-    }
-
-    .content-wrapper h1 {
-        font-size: 550%;
-        padding-top: 2em;
-
-    }
-
-    .showcase-btn {
-        margin-left: 40em;
-        align-items: center;
-        vertical-align: center;
-        margin-top: -38.5em;
-        padding: 10px;
-    }
+        /* min-width: 80vw;
+    } */
 
 
-    #section-a,
-    .content-title {
-        margin-top: -9.50em;
-        font-size: var(--fs3-480);
-        color: red;
+        .content-wrap h2 {
+
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 4/5;
+            margin-top: -1.5em;
+            justify-items: center;
+            text-align: center;
+            align-items: center;
+            font-size: 2.5em;
+            font-family: Crimson Text, sans serif;
+            font-weight: 500;
+            padding-top: 2em;
+            color: #d8d8d8;
+
+
+        }
+        #section-a .content-text {
+            display: grid;
+            grid-column: 1/7;
+            grid-row: 6/9;
+            text-align: center;
+            font-size: 2.5em;
+            color: #d8d8d8;
+            align-items: center;
+            justify-content: center;
+            height: 5vh;
+            width: 80%;
+
+        }
+        #section-a .content-text2 {
+            display: grid;
+            grid-column: 9/13;
+            grid-row: 6/9;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            color: #d8d8d8;
+            width: 80%;
+            height: 5vh;
+            /* margin-top: .5em; */
+        }
+        .content-wrapper .saving-button {
+            margin-top: 2em;
+            margin-left: 20em;
+        }
 
     }
 
-    #section-a .content-text h6 {
-        columns: 2;
-        margin-bottom: 0;
-        padding-bottom: 10px;
-    }
-}
+    /* MEDIA QUERY FOR 1350+ DISPLAYS */
 
-/* ++++++++++++++++++++++++++++ */
-/* MINIMUM WIDTH 1440PX */
-/* +++++++++++++++++++++++++++ */
+    @media (min-width: 1200px) {
+        #showcase {
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+            text-align: center;
+        }
 
-@media (min-width: 1439px) {
-    #section-a {
-        grid-column: 2/4;
-        margin-top: -8em;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: 100%;
-        height: 200px;
-    }
+        #showcase img {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
 
-    #section-a .content-title {
-        margin-top: 1em;
-    }
+        #showcase .bg-image {
+            position: absolute;
+            /* background-image: url("/img/slider/face-masks.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+            z-index: -2;
+            opacity: .8;
+        }
 
-    #section-a .content-text {
-        columns: 2;
-        column-gap: 1em;
-        padding-bottom: -5em;
-    }
+        .content-wrapper h1 {
+            display: inline-block;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            font-size: 400%;
+            font-weight: 500;
+            padding-top: 1em;
+            padding-bottom: 3.15em;
+            background: #deefff;
+            background: linear-gradient(to left, #deefff 0%, #98bede 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-    #section-a .content-text p {
-        padding-top: 0em;
-        margin-top: 0;
-        columns: 1;
-        font-size: var(--fsbody);
-    }
-}
+        .content-wrapper .saving-button {
+            width: 7.0em;
+            height: 1.75em;
+            background: #98bede;
+            color: #374f5e;
+            text-decoration: none;
+            margin-left: 26em;
+            margin-top: 5em;
+            text-align: center;
+            justify-content: center;
+            border: none;
+            border-radius: 8px;
+        }
 
-/* ++++++++++++++++++++++++++++ */
-/* MINIMUM WIDTH 1600PX */
-/* +++++++++++++++++++++++++++ */
+        .content-wrapper .saving-button:hover {
+            background: lightseagreen;
+            color: #333;
+        }
 
-@media (min-width: 1600px) {
-    #showcase img {
-        width: 100%;
-        height: auto;
-        max-height: 100vh;
-        max-width: 100vw;
-        object-fit: cover;
-    }
+        #section-a {
+            display: grid;
+            grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
+            grid-template-rows: 15px auto;
+            background-color: #0cbaba;
+            background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+        }
+        .content-wrap h2 {
+            display: grid;
+            grid-column: 4/10;
+            grid-row: 1/1;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-size: 3em;
+            font-family: Crimson Text, sans serif;
+            font-weight: 500;
+            padding-top: .5em;
+            color: #d8d8d8;
+            text-align: center;
 
-    #showcase .bg-image {
-        /* background-image: url("/img/slider/face-masks1.jpg"); */
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-        margin-top: -3em;
-        z-index: -2;
-        opacity: .6;
-    }
+        }
+        #section-a .content-text {
+            display: grid;
+            grid-column: 1/7;
+            grid-row: 6/9;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            color: #d8d8d8;
 
-    .content-wrapper h1 {
-        font-size: 450%;
-        padding-top: 1.5em;
-        font-weight: 500;
-        color: #deefff;
-    }
 
-    a.showcase-btn {
-        margin-left: 40em;
-        align-items: center;
-        vertical-align: center;
-        margin-top: -38.5em;
-        padding: 10px;
-    }
+        }
+        #section-a .content-text2 {
+            display: grid;
+            grid-column: 9/13;
+            grid-row: 6/9;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            color: #d8d8d8;
 
-    #section-a {
-        grid-column: 2/4;
-        margin-top: -8em;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: 100%;
-        height: 200px;
-    }
+            /* margin-top: .5em; */
+        }
+        /* ++++++++++++++++++++++++++++ */
+        /* MINIMUM WIDTH 1440PX */
+        /* +++++++++++++++++++++++++++ */
 
-    #section-a .content-title {
-        margin-top: 1em;
-    }
+        @media (min-width: 1439px) and (max-width: 1680px) {
+            #section-a {
+                display: grid;
+                grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
+                grid-template-rows: 15px auto;
+                background-color: #0cbaba;
+                background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+            }
+            .content-wrap h2 {
+                display: grid;
+                grid-column: 1/13;
+                grid-row: 1/1;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 3em;
+                font-family: Crimson Text, sans serif;
+                font-weight: 500;
+                padding-top: .5em;
+                color: #d8d8d8;
 
-    #section-a .content-text {
-        columns: 2;
-        column-gap: 0;
-        padding-bottom: -5em;
-    }
+            }
 
-    #section-a .content-text p {
-        padding-top: 0em;
-        margin-top: 0;
-        columns: 1;
-        font-size: var(--fsbody-lg);
-    }
-}
+            #section-a .content-text {
+                display: grid;
+                grid-column: 1/7;
+                grid-row: 6/9;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5em;
+                color: #d8d8d8;
 
-/*============================================================
-Responsive Styles
-============================================================*/
-/* For large desktops  */
 
-@media (min-width: 1600px) {
-    #body {
-        font-size: var(--fsbody-lg);
-    }
-}
+            }
+            #section-a .content-text2 {
+                display: grid;
+                grid-column: 9/13;
+                grid-row: 6/9;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 2.5em;
+                color: #d8d8d8;
+                /* padding-top: .5em; */
 
-/*============================================================
+                /* margin-top: .5em; */
+            }
+        }
+
+        /* ++++++++++++++++++++++++++++ */
+        /* MINIMUM WIDTH 1600PX */
+        /* +++++++++++++++++++++++++++ */
+
+        @media (min-width: 1681px) {
+            #showcase img {
+                width: 100%;
+                height: auto;
+                max-height: 100vh;
+                max-width: 100vw;
+                object-fit: cover;
+            }
+
+            #showcase .bg-image {
+                background-image: url("/img/slider/face-masks1.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: auto;
+                margin-top: -3em;
+                z-index: -2;
+                opacity: .8;
+            }
+
+            .content-wrapper h1 {
+                font-size: 650%;
+                padding-top: 1.5em;
+                font-weight: 500;
+                color: #deefff;
+            }
+
+            .content-wrapper .saving-button {
+                width: 7.0em;
+                height: 1.75em;
+                background: #98bede;
+                color: #374f5e;
+                text-decoration: none;
+                margin-left: 43em;
+                margin-top: 5em;
+                text-align: center;
+                justify-content: center;
+                border: none;
+                border-radius: 8px;
+            }
+
+            .content-wrap h2 {
+                display: grid;
+                grid-column: 1/13;
+                grid-row: 1/1;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 4em;
+                font-family: Crimson Text, sans serif;
+                font-weight: 500;
+                padding-top: .5em;
+                color: #d8d8d8;
+
+
+            }
+            #section-a .content-text {
+                display: grid;
+                grid-column: 1/7;
+                grid-row: 7/9;
+                text-align: center;
+                font-size: 2.5em;
+                color: #d8d8d8;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 5vh;
+
+            }
+            #section-a .content-text2 {
+                display: grid;
+                grid-column: 9/13;
+                grid-row: 7/9;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5em;
+                color: #d8d8d8;
+                width: 80%;
+                height: 5vh;
+
+                /* margin-top: .5em; */
+            }
+        }
+
+        /*/============================================================Responsive Styles============================================================*/
+        /* For large desktops  */
+
+        @media (min-width: 1600px) {
+            #body {
+                font-size: var(--fsbody-lg);
+            }
+        }
+
+        /*============================================================
 For Small Desktop
 ==============================================================*/
 
-@media (min-width: 980px) and (max-width: 1150px) {
+        @media (min-width: 980px) and (max-width: 1150px) {
 
-    /* body {
-                font-size: 100%;
-            } */
-    /*about*/
-    #about .welcome-block img {
-        margin-bottom: 30px;
-    }
 
-    /* portfolio */
-    figcaption.mask {
-        bottom: -151px;
-    }
+            #about .welcome-block img {
+                margin-bottom: 30px;
+            }
 
-    .testimonial-item>div:after {
-        bottom: -40px;
-    }
-}
+            /* portfolio */
+            .figcaption.mask {
+                bottom: -151px;
+            }
 
-/*============================================================
+            .testimonial-item>div:after {
+                bottom: -40px;
+            }
+        }
+
+        /*============================================================
 Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 
-@media (min-width: 768px) and (max-width: 979px) {
+        @media (min-width: 768px) and (max-width: 979px) {
 
-    /* home slider  */
-    /* about */
-    .recent-works {
-        margin-bottom: 50px;
-    }
+            /* home slider  */
+            /* about */
+            .recent-works {
+                margin-bottom: 50px;
+            }
 
-    .service-item {
-        margin-bottom: 50px;
-    }
+            .service-item {
+                margin-bottom: 50px;
+            }
 
-    /* portfolio */
-    .portfolio-item {
-        width: 48%;
-    }
+            /* portfolio */
+            .portfolio-item {
+                width: 48%;
+            }
 
-    /* testimonial */
-    .testimonial-item {
-        width: 100%;
-    }
+            /* testimonial */
+            .testimonial-item {
+                width: 100%;
+            }
 
-    /* .testimonial-item {
-        width: 80%;
-    }  */
-    .testimonial-item>div:after {
-        bottom: -35px;
-    }
+            .testimonial-item>div:after {
+                bottom: -35px;
+            }
 
-    /* price */
-    .price-table {
-        margin-bottom: 50px;
-    }
+            /* price */
+            .price-table {
+                margin-bottom: 50px;
+            }
 
-    /* contact form */
-    .contact-form {
-        margin-bottom: 50px;
-    }
-}
+            /* contact form */
+            .contact-form {
+                margin-bottom: 50px;
+            }
+        }
 
-/*==================================
+        /*==================================
 Tablet Design for logo of a width of 980x1280*/
 
-@media (min-width: 980px) and (max-width: 1280px) {
-    /* body {
-                font-size: 100%;
-            } */
-}
-
-/*============================================================
+        /*============================================================
 Mobile (Portrait) Design for a width of 767px
 ==============================================================*/
 
-@media (max-width: 767px) {
-    body {
-        font-size: 80%;
-    }
+        @media (max-width: 767px) {
+            body {
+                font-size: 80%;
+            }
 
-    .parallax {
-        background-position: centet tip !important;
-    }
+            .parallax {
+                background-position: centet tip !important;
+            }
 
-    /*navigation*/
-    .navbar-default .navbar-toggle {
-        border: 2px solid darkblue;
-        border-radius: 8px;
-        border-width: medium;
-    }
+            /*navigation*/
+            .navbar-default .navbar-toggle {
+                border: 2px solid darkblue;
+                border-radius: 8px;
+                border-width: medium;
+            }
 
-    /* slider */
-    body {
-        font-size: 80%;
-    }
+            /* slider */
+            body {
+                font-size: 80%;
+            }
 
-    /* about */
-    .recent-works {
-        margin-bottom: 85px;
-    }
+            /* about */
+            .recent-works {
+                margin-bottom: 85px;
+            }
 
-    #about h3 {
-        margin: 20 0 35px !important;
-    }
+            #about h3 {
+                margin: 20 0 35px !important;
+            }
 
-    #about .owl-buttons {
-        margin-top: 20px;
-    }
+            #about .owl-buttons {
+                margin-top: 20px;
+            }
 
-    #about .message-body {
-        margin-bottom: 45px;
-    }
+            #about .message-body {
+                margin-bottom: 45px;
+            }
 
-    #about .welcome-block img {
-        margin: 0 25px 15px 0;
-    }
+            #about .welcome-block img {
+                margin: 0 25px 15px 0;
+            }
 
-    /* service */
-    .service-item {
-        width: 100%;
-    }
+            /* service */
+            .service-item {
+                width: 100%;
+            }
 
-    .service-icon i {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: rotate(-48deg);
-        transform: rotate(-48deg);
-    }
+            .service-icon i {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: rotate(-48deg);
+                transform: rotate(-48deg);
+            }
 
-    /*portfolio*/
-    .portfolio-item {
-        margin: 0 auto 10px;
-        width: 280px;
-    }
+            /*portfolio*/
+            .portfolio-item {
+                margin: 0 auto 10px;
+                width: 280px;
+            }
 
-    figcaption.mask h4 {
-        margin: 0;
-        color: #fff;
-        font-size: 40%;
-    }
+            .figcaption.mask h4 {
+                margin: 0;
+                color: #fff;
+                font-size: 40%;
+            }
 
-    /* lightbox */
-    .fancybox-title h3 {
-        font-size: 80%;
-    }
+            /* lightbox */
+            .fancybox-title h3 {
+                font-size: 80%;
+            }
 
-    .fancybox-title p {
-        font-size: 80%;
-    }
+            .fancybox-title p {
+                font-size: 80%;
+            }
 
-    /* testimonial */
-    .testimonial-item {
-        width: 95%;
-    }
+            /* testimonial */
+            .testimonial-item {
+                width: 95%;
+            }
 
-    .testimonial-item>div:before,
-    .testimonial-item>div:after {
-        background-image: none;
-    }
+            .testimonial-item>div:before,
+            .testimonial-item>div:after {
+                background-image: none;
+            }
 
-    .testimonial-item>div>span {
-        margin: 30px 0 20px;
-    }
+            .testimonial-item>div>span {
+                margin: 30px 0 20px;
+            }
 
-    /* price */
-    .price-table {
-        margin-bottom: 50px;
-    }
+            /* price */
+            .price-table {
+                margin-bottom: 50px;
+            }
 
-    /* follow us */
-    .social-button li:nth-child(2) {
-        margin: 0 25px;
-    }
+            /* follow us */
+            .social-button li:nth-child(2) {
+                margin: 0 25px;
+            }
 
-    .social-button li a {
-        height: 65px;
-        line-height: 71px;
-        width: 65px;
-    }
+            .social-button li a {
+                height: 65px;
+                line-height: 71px;
+                width: 65px;
+            }
 
-    /* contact form */
-    .contact-form {
-        margin-bottom: 50px;
-    }
+            /* contact form */
+            .contact-form {
+                margin-bottom: 50px;
+            }
 
-    /* footer */
-    .footer-content {
-        width: 100%;
-    }
+            /* footer */
+            .footer-content {
+                width: 100%;
+            }
 
-    .footer-social ul li {
-        margin: 0 7px;
-    }
-}
+            .footer-social ul li {
+                margin: 0 7px;
+            }
+        }
 
-/* ============================================================
+        /* ============================================================
 Mobile (Landscape) Design for a width of 480px
 ============================================================== */
 
-@media (max-width: 767px) {
+        @media (max-width: 767px) {
 
-    /* .caption-content h2
+            /* .caption-content h2
 {font-size: 225%;}*/
-    .sec-title h2:after {
-        left: 38%;
-    }
+            .sec-title h2:after {
+                left: 38%;
+            }
 
-    /*  nav-dots */
-    .nav-dots {
-        bottom: 1%;
-    }
+            /*  nav-dots */
+            .nav-dots {
+                bottom: 1%;
+            }
 
-    /* home slider */
-    body p {
-        font-size: 80%;
-    }
+            /* home slider */
+            body p {
+                font-size: 80%;
+            }
 
-    /*about*/
-    #about .welcome-block h3 {
-        margin: 0 0 35px;
-    }
+            /*about*/
+            #about .welcome-block h3 {
+                margin: 0 0 35px;
+            }
 
-    /* service */
-    .service-item {
-        margin: 0 auto 50px;
-        width: 55%;
-    }
+            /* service */
+            .service-item {
+                margin: 0 auto 50px;
+                width: 55%;
+            }
 
-    /* portfolio */
-    .portfolio-item {
-        width: 48%;
-    }
+            /* portfolio */
+            .portfolio-item {
+                width: 48%;
+            }
 
-    figcaption.mask h4 {
-        margin: 0;
-        color: #fff;
-        font-size: 40%;
-    }
+            .figcaption.mask h4 {
+                margin: 0;
+                color: #fff;
+                font-size: 40%;
+            }
 
-    /* testimonial */
-    /* .testimonial-item {
-        width: 80%;
-    } */
-    /* .testimonial-item>div:before {
-        bottom: 160px;
-    }  */
-    /* social */
-    .social-button li:nth-child(2) {
-        margin: 0 50px;
-    }
+            /* social */
+            .social-button li:nth-child(2) {
+                margin: 0 50px;
+            }
 
-    .social-button li a {
-        height: 90px;
-        line-height: 96px;
-        width: 90px;
-    }
+            .social-button li a {
+                height: 90px;
+                line-height: 96px;
+                width: 90px;
+            }
 
-    /* price */
-    .price-table {
-        margin-bottom: 50px;
-    }
+            /* price */
+            .price-table {
+                margin-bottom: 50px;
+            }
 
-    /* contact form */
-    .contact-form {
-        margin-bottom: 50px;
-    }
+            /* contact form */
+            .contact-form {
+                margin-bottom: 50px;
+            }
 
-    /* footer */
-    .footer-content {
-        width: 380px;
-    }
+            /* footer */
+            .footer-content {
+                width: 380px;
+            }
 
-    /* } */
-    * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
+            /* } */
+            * {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
 
-    .wrapper1 {
-        max-width: 940px;
-        margin: 0 auto;
-    }
-
-
-}
+            .wrapper1 {
+                max-width: 940px;
+                margin: 0 auto;
+            }
+        }
