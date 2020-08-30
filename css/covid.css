@@ -6,6 +6,11 @@
                     box-sizing: border-box;
                 }
 
+
+                a {
+                    color: red;
+                }
+
                 :root {
                     --black: #272727;
                     --fw: bold;
@@ -14,225 +19,377 @@
                 body {
                     position: relative;
                     font-family: "Open-sans", sans-serif;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #7ee8fa;
-                    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-                    overflow-wrap: hidden;
-
+                    width: (min(1000px, calc(70% + 100px)));
+                    height: auto;
 
                 }
+
+                p {
+                    font-size: 1em;
+                    line-height: 1.4em;
+                }
+
+                h3 {
+                    font-size: max(1.4rem, 1.4vw);
+                    z-index: 2;
+                }
+
                 .container-logo,
-                .container-header,
-                .item-header {
+                .container,
+                .item-header,
+                .item-photo,
+                .coin-pouches,
+                .online-only,
+                .schools-in-session,
+                .deposit-receipts,
+                .btn,
+                .footer {
                     display: grid;
                     border: 5px solid rgba(0, 0, 0, 0.03);
-                    border-radius: 5px;
+                    border-radius: .25em;
                 }
-                .container-logo,
-                .item-photo,
-                .item-header,
-                .container-header {
+
+                .container {
                     display: grid;
                     grid-gap: 10px;
-                    grid-template-columns: repeat(12, minmax(auto, 1fr));
-                    grid-auto-rows: repeat(12, minmax(auto, 1fr));
+                    grid-template-columns: repeat(12, minmax(80px, 1fr));
+                    grid-template-rows: repeat(12, 20px);
+                    background: #000;
+                    padding: .75em;
+                    max-width: 100%;
+                    height: auto;
+
                 }
 
                 .item-header {
-                    display: grid;
-                    grid-template-columns: repeat(12, minmax(auto, 1fr));
-                    grid-row: 1/6;
-                    margin-top: 7em;
+                    font-family: "Crimson-text", sans-serif;
+                    font-weight: 500;
+                    grid-column: 1/5;
+                    width: 100%;
+
+
                 }
 
                 .item-header h1 {
-                    display: flex;
-                    flex: 1;
-                    grid-template-columns: repeat(12, minmax(auto, 1fr));
-                    font-family: "Crimson-text", sans-serif;
-                    font-weight: 500;
-                    color: rgb(56, 172, 172);
-                    font-size: 400%;
-                    min-width: 100vw;
-                    grid-column: 3/10;
-                    margin-top: -2em;
-                    padding-bottom: 15px;
-                }
 
-                .item-header h2 {
-                    font-size: 225%;
-                    color: #272727;
-                    margin-top: -2em;
-                    grid-column: 3/7;
-                    line-height: 1em;
-                    font-family: "Crimson-text", sans-serif;
+                    background: linear-gradient(to left, #deefff 0%, #98bede 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 145%;
+                    text-align: center;
+                    margin-left: -1.55rem;
 
                 }
-                .sherry {
-                    color: rgb(56, 172, 172);
+
+                .online-only {
+                    grid-column: 1/10;
+                    grid-row: 3/4;
                 }
-                /* Each item in our grid will contain numbers */
+
+                .online-only h3 {
+                    color: orangered;
+                    margin-bottom: .25em;
+                    margin-top: 2.5em;
+                }
+
+                .online-only p {
+
+                    color: white;
+                    width: 50vw;
+                    font-size: 1em;
+                    line-height: 1.25;
+                }
+
+                .schools-in-session {
+                    grid-column: 1/10;
+                    grid-row: 8/12;
+                    width: 70vw;
+                }
+
+                .schools-in-session h3 {
+                    color: red;
+                    margin-top: 5.5em;
+                    margin-bottom: .25em;
+                }
+
+                .schools-in-session p {
+                    width: 80%;
+                    color: white;
+                    font-size: 1em;
+                }
+
+                .deposit-receipts {
+                    grid-column: 1/10;
+                    grid-row: 34/37;
+                }
+
+                .deposit-receipts h3 {
+                    color: red;
+                    margin-bottom: .25em;
+                    margin-top: 1em;
+                }
+
+                .deposit-receipts p {
+                    width: 50vw;
+                    color: white;
+                    width: 40%;
+                }
+
+                .footer {
+                    display: none;
+                }
+
+                .btn {
+                    display: none;
+                }
+
+                .item-photo {
+                    grid-column: 3/6;
+                    grid-row: 5/6;
+
+                }
+
                 .item-photo img {
-                    display: grid;
-                    min-height: 100vh;
-                    margin-top: -13em;
-                    grid-template-columns: repeat(12, minmax(auto, 1fr));
-                    grid-column: 8/12;
-                    grid-template-rows: auto;
-                    margin-right: -3px;
-                    max-width: 100%;
-                    overflow: hidden;
+                    width: 33vw;
+                    height: 20vh;
                     opacity: .8;
+                    /* margin-left: .25em; */
+                    overflow: hidden;
                 }
 
-                .covid-procedures p {
-                    display: block;
-                    font-family: "Open-sans", sans-serif;
-                    margin-left: 13em;
-                    color: #272727;
-                    max-width: 32%;
-                    font-size: 1.05em;
-                    margin-top: -25em;
-                }
-                .covid-procedures h6 {
-                    margin-left: 13em;
-                    font-size: 1.05em;
-                    color: rgb(56, 172, 172);
-                }
-                .coin-pouches {
-                    margin-left: 13em;
-                    position: relative;
-                    margin-bottom: 30px;
-                    max-width: 60%
-                }
-                /* ********************************
-    ******************************** */
+                /* ********************************/
+                @media (min-width: 767px) and (max-width: 1199px) {
 
-
-                @media (max-width: 699px) {
-                    body {
-                        max-width: 100%;
+                    .container {
+                        display: grid;
+                        grid-gap: 10px;
+                        grid-template-columns: repeat(12, minmax(60px, 1fr));
+                        grid-template-rows: repeat(12, 20px);
+                        background: #000;
+                        padding: .5em;
+                        height: 100vh;
                     }
+
+                    .item-header {
+                        display: grid;
+                        grid-template-columns: repeat(12, minmax(60px, 1fr));
+                    }
+
                     .item-header h1 {
-                        font-size: 3em;
-                        width: 100vw;
-                        margin-left: -1.15em;
-                        text-align: left;
+                        font-size: 200%;
+                        text-align: center;
+                        justify-content: center;
+                        grid-column: 4/13;
+                        grid-row: 1/1;
+                        align-items: center;
+                        margin-left: 2em;
+                    }
+
+                    .online-only {
+                        display: grid;
+                        grid-row: 4/5;
+                    }
+
+                    .online-only p {
+                        width: 45%;
+                        margin-top: 2em;
+                        grid-row: 9/10;
+                    }
+
+                    .schools-in-session {
+                        display: grid;
+                        grid-row: 10/15;
+                    }
+
+                    .schools-in-session p {
+                        width: 45%;
+                        grid-row: 5/14;
+                    }
+
+                    .schools-in-session h3 {
+                        margin-top: 2.5em;
+                    }
+
+                    .deposit-receipts {
+                        display: grid;
+                        grid-row: 14/18;
 
                     }
-                    .item-header h2 {
-                        display: flex;
-                        flex-wrap: wrap;
-                        font-size: 2.25em;
-                        text-align: left;
-                        margin-top: -1.5em;
-                        width: 100vw;
-                        margin-left: -1.5em;
 
+                    .deposit-receipts h3 {
+                        margin-bottom: 0em;
                     }
-                    .covid-procedures p {
 
-                        margin-top: -1em;
-                        margin-left: 1em;
-                        min-width: 85%;
-                        text-align: left;
-                        margin-bottom: 15px;
+                    .deposit-receipts p {
+                        width: 50%;
+                        grid-row: 2/10;
+                        /* margin-top: -8em; */
                     }
-                    .covid-procedures h6 {
-                        margin-left: 1em;
-                        font-size: 1em;
+
+
+
+                    .item-photo {
+                        display: grid;
+                        grid-column: 6/9;
                     }
+
                     .item-photo img {
-                        max-width: 100%;
-                        min-height: 4vh;
-                        grid-column: 10/12;
-                        margin-top: -16em;
-                    }
-                    .coin-pouches {
-                        width: 40%;
-                        margin-left: 6em;
+                        width: 40vw;
+                        height: 50vh;
                     }
 
+                    .footer {
+                        display: none;
+                    }
                 }
 
-                @media (min-width: 700px) and (max-width: 1113px) {
-                    .item-header h1 {
-                        font-size: 3.5em;
+                @media (min-width: 1200px) and (max-width: 1366px) {
+                    .container {
+                        display: grid;
+                        grid-gap: 10px;
+                        grid-template-columns: repeat(12, minmax(80px, 1fr));
+                        grid-template-rows: repeat(12, 20px);
+                        background: #000;
+                        padding: 2em;
+                        height: 100%;
                         width: 100vw;
+                    }
+
+                    .item-header {
+                        display: grid;
+                        grid-template-columns: repeat(12, minmax(80px, 1fr));
+                    }
+
+                    .item-header h1 {
+                        margin-left: 3em;
+                        text-align: center;
+                        justify-content: center;
+                        grid-column: 3/13;
+                        grid-row: 1/1;
+                        align-items: center;
+                        font-size: 275%;
+                    }
+
+                    .online-only p {
+                        width: 60%;
+                    }
+
+                    .online-only h3 {
+                        display: grid;
+                        margin-top: 5em;
+                    }
+
+                    .schools-in-session p {
+                        width: 60%;
+                        /* line-height: 1.5em; */
+                    }
+
+                    .schools-in-session h3 {
+                        margin-top: 4.5em;
+                        font-size: 1.5rem;
+                    }
+
+                    .deposit-receipts {
+                        width: 55%;
+                        grid-row: 12/15;
+                    }
+
+                    .deposit-receipts h3 {
+                        font-size: 1.4rem;
+                        margin-top: 6.5em;
+                    }
+
+                    .deposit-receipts p {
+                        width: 90%;
+                        height: 5vh;
+                        /* margin-top: 3.5em; */
+                        /* line-height: 1.5em;
+                        font-size: 1em; */
+                    }
+
+                    .item-photo {
+                        display: grid;
+                        grid-column: 6/9;
+                    }
+
+                    .item-photo img {
+                        width: 40vw;
+                        height: 45vh;
+                    }
+                    .item-photo {
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
+                        border-radius: 90% 70%;
+                        width: 30vw;
+                        height: 40vw;
+                        margin-left: 60%;
+
+                    }
+
+                    .item-photo img {
+                        position: relative;
+                        max-width: 100%;
+                        width: 50vh;
+                        height: auto;
+                        left: .75em;
+                        top: 8em;
+                        border-radius: 50%;
+
+                    }
+
+                    .footer {
+                        display: grid;
+                        grid-column: 1/1;
+                        grid-row: 20/25;
+                        background: none;
+                        /* margin-top: -4.5em; */
+                        height: 8vh;
+                        margin-left: -.20em;
+                    }
+
+                    .footer p {
+                        position: absolute;
+                        display: none;
+                        margin-top: 3em;
+                        width: 60vw;
+                        height: 5.25em;
+                        background: #ececec;
+                        color: #272727;
+                    }
+
+                    .btn {
+                        position: absolute;
+                        height: 40px;
+                        display: grid;
+                        color: red;
+                        grid-column: 1/1;
+                        grid-row: 1/1;
                         margin-top: 0em;
                         margin-left: -1em;
-                        text-align: left;
-
-                    }
-                    .item-header h2 {
-                        font-size: 2.5em;
-                        width: 80%;
-                        margin-top: -1em;
-                        margin-left: -1.25em;
-                        text-align: left;
-                    }
-                    .covid-procedures p {
-                        /* display: flex; */
-                        margin-top: 1em;
-                        margin-left: 5.8em;
-                        min-width: 75vw;
-                        text-align: left;
-                        font-size: 1.5em;
-                    }
-                    .covid-procedures h6 {
-                        margin-left: 4.5em;
-                        font-size: 2em;
-                    }
-                    .item-photo img {
-                        max-width: 100%;
-                        min-height: 4vh;
-                        grid-column: 10/12;
-                    }
-                    .coin-pouches {
-                        width: 40%;
-                        margin-left: 9em;
-                    }
-                }
-                @media (min-width: 1113px) and (max-width: 1200px) {
-                    .item-photo img {
-                        max-width: 60vw;
-                        max-height: 50vh;
-                        display: flex;
-                    }
-                    .covid-procedures p {
-                        margin-top: -38em;
-                        margin-left: 8.5em;
-                    }
-                    .covid-procedures h6 {
-                        margin-left: 7em;
-                        font-size: 2em;
-                    }
-                }
-                @media (min-width: 1300px) {
-                    .item-header h2 {
-                        grid-column: 3/10;
-                        font-size: 300%;
-                        margin-top: -1em;
-                    }
-                    .coin-pouches {
-                        width: 40%;
+                        padding: .5rem 1rem;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        font-size: 1em;
+                        border: 2px solid #272727;
+                        opacity: 1;
+                        background: #21b4e2;
+                        background: linear-gradient(to right, #b7deed 24%, #71ceef 78%, #21b4e2 100%, #b7deed 100%, #21b4e2 101%);
+                        animation-name: btn;
+                        animation-duration: .05s;
+                        animation-fill-mode: forwards;
+                        transition-property: transform;
+                        transition-duration: .05s;
                     }
 
-                    .covid-procedures p {
-                        margin-top: 0em;
-                        margin-left: 7em;
-                        font-size: 2em;
-                        grid-column: 3/12;
-                        min-width: 70%;
+                    .btn:hover {
+                        background: #272727;
+                        transform: rotateY(360deg);
                     }
-                    .covid-procedures h6 {
-                        margin-left: 7em;
-                        font-size: 2em;
-                    }
-                    .item-photo img {
-                        max-width: 100%;
-                        min-height: 4vh;
-                        grid-column: 10/12;
+
+                }
+
+                @media (min-width: 1365px) {
+                    .footer p {
+                        background: #ececec;
                     }
                 }
