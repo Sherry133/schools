@@ -1882,8 +1882,8 @@ main {
         width: 30%;
     }
     .btn-covid {
-        margin-top: 2em;
-        margin-left: 58em;
+        margin-top: 0em;
+        margin-left: 51em;
     }
 
     .content-text {
@@ -1949,7 +1949,7 @@ main {
     .btn-covid {
         position: relative;
         margin-left: -33.5em;
-        top: 1.75em; 
+        top: 0em;
         font-size: 1em;
         width: 120px;
         height: 30px;
@@ -1976,7 +1976,7 @@ main {
 /* MINIMUM WIDTH 1365PX */
 /* +++++++++++++++++++++++++++ */
 
-@media (min-width: 1485px)  {
+@media (min-width: 1485px) {
     #sidebar {
         margin-top: 5em;
         padding-left: 2em;
@@ -2003,7 +2003,7 @@ main {
         align-self: center;
         padding-top: 8px
     }
-  
+
     .content-text {
         position: absolute;
         font-size: 2em;
@@ -2024,7 +2024,7 @@ main {
         line-height: 1.5em;
         text-align: center;
     }
-  
+
     @media (min-width: 1442px) and (max-width: 1685px) {
         /* #container-covid {
             height: 87%;
