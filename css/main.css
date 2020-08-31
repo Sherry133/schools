@@ -515,7 +515,7 @@ h3 {
 }
 
 #navigation a:focus {
-    color: red;
+    color: #ececec;
 }
 
 #navigation.animated-header {
@@ -555,11 +555,16 @@ h3 {
     padding: 1px 0 0 0;
     overflow: hidden;
 }
+@media (max-width: 480px) {
+    .sslogo {
+        margin-left: 15px;
+    }
+}
 
 /* <!-- end callout header for blog menu --> */
 
 .navbar-default {
-    background-color: #ececec;
+    background-color: #fff;
     overflow: hidden;
 }
 /* //add by Sher to add btn-covid button */
@@ -2025,313 +2030,298 @@ main {
         text-align: center;
     }
 
-    @media (min-width: 1442px) and (max-width: 1685px) {
-        /* #container-covid {
-            height: 87%;
-            width: 60%
-        }
-        main {
-            margin-top: -5em;
-            margin-left: -18em;
-        }
-        .open h {
-            font-size: 3.5em;
-            width: 25%;
-            margin-left: 35.75em;
-            margin-top: 0em;
-        } */
-    }
+}
 
 
 
 
-    /* ++++++++++++++++++++++++++++ */
-    /* MINIMUM WIDTH 1600PX */
-    /* +++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++ */
+/* MINIMUM WIDTH 1600PX */
+/* +++++++++++++++++++++++++++ */
 
-    /* @media (min-width: 1681px) {
+/* @media (min-width: 1681px) {
     .open h1 {
         color: green;
     } */
 
 
-    /*/============================================================Responsive Styles============================================================*/
-    /* For large desktops  */
-    /* 
+/*/============================================================Responsive Styles============================================================*/
+/* For large desktops  */
+/* 
 @media (min-width: 1600px) {
     /* #body {
         font-size: var(--fsbody-lg);
     } */
-    /* } */
+/* } */
 
-    /*============================================================
+/*============================================================
 For Small Desktop
 ==============================================================*/
 
-    @media (min-width: 980px) and (max-width: 1150px) {
+@media (min-width: 980px) and (max-width: 1150px) {
 
 
-        #about .welcome-block img {
-            margin-bottom: 30px;
-        }
-
-        /* portfolio */
-        .figcaption.mask {
-            bottom: -151px;
-        }
-
-        .testimonial-item>div:after {
-            bottom: -40px;
-        }
+    #about .welcome-block img {
+        margin-bottom: 30px;
     }
 
-    /*============================================================
+    /* portfolio */
+    .figcaption.mask {
+        bottom: -151px;
+    }
+
+    .testimonial-item>div:after {
+        bottom: -40px;
+    }
+}
+
+/*============================================================
 Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 
-    @media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
 
-        /* home slider  */
-        /* about */
-        .recent-works {
-            margin-bottom: 50px;
-        }
-
-        .service-item {
-            margin-bottom: 50px;
-        }
-
-        /* portfolio */
-        .portfolio-item {
-            width: 48%;
-        }
-
-        /* testimonial */
-        .testimonial-item {
-            width: 100%;
-        }
-
-        .testimonial-item>div:after {
-            bottom: -35px;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
+    /* home slider  */
+    /* about */
+    .recent-works {
+        margin-bottom: 50px;
     }
 
-    /*==================================
+    .service-item {
+        margin-bottom: 50px;
+    }
+
+    /* portfolio */
+    .portfolio-item {
+        width: 48%;
+    }
+
+    /* testimonial */
+    .testimonial-item {
+        width: 100%;
+    }
+
+    .testimonial-item>div:after {
+        bottom: -35px;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+}
+
+/*==================================
 Tablet Design for logo of a width of 980x1280*/
 
-    /*============================================================
+/*============================================================
 Mobile (Portrait) Design for a width of 767px
 ==============================================================*/
 
-    @media (max-width: 767px) {
-        body {
-            font-size: 80%;
-        }
-
-        .parallax {
-            background-position: centet tip !important;
-        }
-
-        /*navigation*/
-        .navbar-default .navbar-toggle {
-            border: 2px solid darkblue;
-            border-radius: 8px;
-            border-width: medium;
-        }
-
-        /* slider */
-        body {
-            font-size: 80%;
-        }
-
-        /* about */
-        .recent-works {
-            margin-bottom: 85px;
-        }
-
-        #about h3 {
-            margin: 20 0 35px !important;
-        }
-
-        #about .owl-buttons {
-            margin-top: 20px;
-        }
-
-        #about .message-body {
-            margin-bottom: 45px;
-        }
-
-        #about .welcome-block img {
-            margin: 0 25px 15px 0;
-        }
-
-        /* service */
-        .service-item {
-            width: 100%;
-        }
-
-        .service-icon i {
-            display: inline-block;
-            vertical-align: middle;
-            -webkit-transform: rotate(-48deg);
-            transform: rotate(-48deg);
-        }
-
-        /*portfolio*/
-        .portfolio-item {
-            margin: 0 auto 10px;
-            width: 280px;
-        }
-
-        .figcaption.mask h4 {
-            margin: 0;
-            color: #fff;
-            font-size: 40%;
-        }
-
-        /* lightbox */
-        .fancybox-title h3 {
-            font-size: 80%;
-        }
-
-        .fancybox-title p {
-            font-size: 80%;
-        }
-
-        /* testimonial */
-        .testimonial-item {
-            width: 95%;
-        }
-
-        .testimonial-item>div:before,
-        .testimonial-item>div:after {
-            background-image: none;
-        }
-
-        .testimonial-item>div>span {
-            margin: 30px 0 20px;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* follow us */
-        .social-button li:nth-child(2) {
-            margin: 0 25px;
-        }
-
-        .social-button li a {
-            height: 65px;
-            line-height: 71px;
-            width: 65px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
-
-        /* footer */
-        .footer-content {
-            width: 100%;
-        }
-
-        .footer-social ul li {
-            margin: 0 7px;
-        }
+@media (max-width: 767px) {
+    body {
+        font-size: 80%;
     }
 
-    /* ============================================================
+    .parallax {
+        background-position: centet tip !important;
+    }
+
+    /*navigation*/
+    .navbar-default .navbar-toggle {
+        border: 2px solid darkblue;
+        border-radius: 8px;
+        border-width: medium;
+    }
+
+    /* slider */
+    body {
+        font-size: 80%;
+    }
+
+    /* about */
+    .recent-works {
+        margin-bottom: 85px;
+    }
+
+    #about h3 {
+        margin: 20 0 35px !important;
+    }
+
+    #about .owl-buttons {
+        margin-top: 20px;
+    }
+
+    #about .message-body {
+        margin-bottom: 45px;
+    }
+
+    #about .welcome-block img {
+        margin: 0 25px 15px 0;
+    }
+
+    /* service */
+    .service-item {
+        width: 100%;
+    }
+
+    .service-icon i {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: rotate(-48deg);
+        transform: rotate(-48deg);
+    }
+
+    /*portfolio*/
+    .portfolio-item {
+        margin: 0 auto 10px;
+        width: 280px;
+    }
+
+    .figcaption.mask h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 40%;
+    }
+
+    /* lightbox */
+    .fancybox-title h3 {
+        font-size: 80%;
+    }
+
+    .fancybox-title p {
+        font-size: 80%;
+    }
+
+    /* testimonial */
+    .testimonial-item {
+        width: 95%;
+    }
+
+    .testimonial-item>div:before,
+    .testimonial-item>div:after {
+        background-image: none;
+    }
+
+    .testimonial-item>div>span {
+        margin: 30px 0 20px;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* follow us */
+    .social-button li:nth-child(2) {
+        margin: 0 25px;
+    }
+
+    .social-button li a {
+        height: 65px;
+        line-height: 71px;
+        width: 65px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-social ul li {
+        margin: 0 7px;
+    }
+}
+
+/* ============================================================
 Mobile (Landscape) Design for a width of 480px
 ============================================================== */
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
 
-        /* .caption-content h2
+    /* .caption-content h2
 {font-size: 225%;}*/
-        .sec-title h2:after {
-            left: 38%;
-        }
-
-        /*  nav-dots */
-        .nav-dots {
-            bottom: 1%;
-        }
-
-        /* home slider */
-        body p {
-            font-size: 80%;
-        }
-
-        /*about*/
-        #about .welcome-block h3 {
-            margin: 0 0 35px;
-        }
-
-        /* service */
-        .service-item {
-            margin: 0 auto 50px;
-            width: 55%;
-        }
-
-        /* portfolio */
-        .portfolio-item {
-            width: 48%;
-        }
-
-        .figcaption.mask h4 {
-            margin: 0;
-            color: #fff;
-            font-size: 40%;
-        }
-
-        /* social */
-        .social-button li:nth-child(2) {
-            margin: 0 50px;
-        }
-
-        .social-button li a {
-            height: 90px;
-            line-height: 96px;
-            width: 90px;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
-
-        /* footer */
-        .footer-content {
-            width: 380px;
-        }
-
-        /* } */
-        * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .wrapper1 {
-            max-width: 940px;
-            margin: 0 auto;
-        }
-
+    .sec-title h2:after {
+        left: 38%;
     }
+
+    /*  nav-dots */
+    .nav-dots {
+        bottom: 1%;
+    }
+
+    /* home slider */
+    body p {
+        font-size: 80%;
+    }
+
+    /*about*/
+    #about .welcome-block h3 {
+        margin: 0 0 35px;
+    }
+
+    /* service */
+    .service-item {
+        margin: 0 auto 50px;
+        width: 55%;
+    }
+
+    /* portfolio */
+    .portfolio-item {
+        width: 48%;
+    }
+
+    .figcaption.mask h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 40%;
+    }
+
+    /* social */
+    .social-button li:nth-child(2) {
+        margin: 0 50px;
+    }
+
+    .social-button li a {
+        height: 90px;
+        line-height: 96px;
+        width: 90px;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer-content {
+        width: 380px;
+    }
+
+    /* } */
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .wrapper1 {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+}
