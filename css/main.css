@@ -1954,7 +1954,7 @@ main {
     .btn-covid {
         position: relative;
         margin-left: -33.5em;
-        top: 0em;
+        top: 1em;
         font-size: 1em;
         width: 120px;
         height: 30px;
@@ -1965,14 +1965,15 @@ main {
         text-align: center;
         justify-content: center;
         font-size: 1.25em;
-        margin-top: -13.5em;
+        margin-top: -11.5em;
         margin-left: 26.25em;
+       
     }
     .content-text2 {
         position: absolute;
         font-size: 1em;
         text-align: center;
-        margin-top: -15em;
+        margin-top: -13em;
         margin-left: 32.25em;
     }
 

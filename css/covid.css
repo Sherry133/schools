@@ -279,6 +279,7 @@
                     .online-only h3 {
                         display: grid;
                         margin-top: 5em;
+                        font-size: 1.4rem;
                     }
 
                     .schools-in-session p {
@@ -288,7 +289,7 @@
 
                     .schools-in-session h3 {
                         margin-top: 4.5em;
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                     }
 
                     .deposit-receipts {
