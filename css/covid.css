@@ -227,8 +227,6 @@
                         /* margin-top: -8em; */
                     }
 
-
-
                     .item-photo {
                         display: grid;
                         grid-column: 6/9;
@@ -244,7 +242,7 @@
                     }
                 }
 
-                @media (min-width: 1200px) and (max-width: 1366px) {
+                @media (min-width: 1200px) and (max-width: 1680px) {
                     .container {
                         display: grid;
                         grid-gap: 10px;
@@ -388,8 +386,46 @@
 
                 }
 
-                @media (min-width: 1365px) {
-                    .footer p {
-                        background: #ececec;
+                @media (min-width: 1681px) {
+
+
+                    .item-header h1 {
+                        margin-top: 0em;
+                        min-width: 100vw;
+                        font-size: 250%;
+
+                        text-align: center;
+                    }
+                    .item-photo img {
+                        margin-left: 36em;
+                        height: 60vh;
+                    }
+                    .online-only h3 {
+                        font-size: 2em;
+                    }
+                    .online-only p {
+                        font-size: 1.5em;
+                    }
+                    .schools-in-session h3 {
+                        font-size: 2em;
+                    }
+                    .schools-in-session p {
+                        font-size: 1.5em;
+                    }
+                    .deposit-receipts h3 {
+                        font-size: 2em;
+                    }
+                    .deposit-receipts p {
+                        font-size: 1.5em;
+                    }
+
+                    .schools-in-session p {
+                        width: 55%;
+                    }
+                    .online-only p {
+                        width: 55%;
+                    }
+                    .footer {
+                        display: none:
                     }
                 }
