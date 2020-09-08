@@ -1,84 +1,56 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,600&display=swap"
-            rel="stylesheet">
-        <!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/covid.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
 
-        <link rel="stylesheet" href="css/covid.css" />
+<body>
 
-        <title>covid</title>
-    </head>
-
-    <body>
-        <div class="container-logo">
-
-            <h1 class="navbar-brand brand-centered">
-                <a href="https://www.schoolsavings.com/">
-                    <img src="img/slider/schoolsavings.eps.trans.150x57.png" alt="Logo" />
-                </a>
-            </h1>
+    <div class="container">
+        <header>Corona Virus School Banking Guidelines</header>
+        <main>
+            <h3>Online Only Schools</h3>
+            <h6>Students should be encouraged to drop their deposits at their local branch on designated Bank
+                Days. Coordinators will retrieve and record them at School Savings.</h6>
+            <h3>In-Session-Schools</h3>
+            <h6>School Savings recommends banks provide student-labeled coin pouches for transport of deposit
+                funds to school. Deposit coin pouches can be stored in school safe for pickup by School Savings
+                personnel.</h6>
+            <h3>Deposit Receipts</h3>
+            <h6>Parents: To receive receipts, register at www.schoolsavings com. Click <i>Sign-Up!</i></h6>
+        </main>
+        <div id="sidebar">
+            <img class="photo" src="./img/slider/face-masks_472.jpg" />
         </div>
 
-        <div class="container">
-            <div class="item-header">
-                <h1>Corona Virus School Banking Guidance
-                </h1>
-            </div>
+        <div class="footer">
+            <a href="#footer" class="btn">Read More</a>
+            <!-- <h3>Deposit Processing</h3> -->
+            <p>The student funds should be deposited in the regular School Savings CLEARING account and
+                recorded at <a href="https://www.schoolsavings.com" class="external">
+                    School Savings <style="color:blue;">
+                        </style> </a> in order to maintain contest eligibility.<br>
 
-            <!-- </div> -->
-
-            <div class=" online-only">
-                <h3>Online Only Schools</h3>
-                <p> Students should be encouraged to drop their deposits at their local branch on designated Bank Days. Coordinators will retrieve and record them at School Savings.</p>
-            </div>
-            <div class="schools-in-session">
-                <h3>Schools in Session</h3>
-
-                <p>School Savings recommends banks provide student-labeled coin pouches for transport of deposit funds to school. Deposit coin pouches can be stored in school safe for pickup by School Savings personnel.</p>
-
-            </div>
-
-            <div class="deposit-receipts">
-                <h3>What About Receipts?</h3>
-
-                <p>To receive receipts, register at www.schoolsavings com. Click <i>Sign-Up!</i> </p>
-            </div>
-            <div class="footer">
-                <a href="#footer" class="btn">Read More</a>
-                <!-- <h3>Deposit Processing</h3> -->
-                <p>The student funds should be deposited in the regular School Savings CLEARING account and
-                    recorded at <a href="https://www.schoolsavings.com" class="external">
-                        School Savings <style="color:blue;">
-                            </style> </a> in order to maintain contest eligibility.<br>
-
-                    School Savings will electronically credit the students’ accounts and apply incentive
-                    Points as usual. Questions: 888-787-7728.</p>
-            </div>
-
-            <div class="item-photo">
-                <img src="img/slider/face-masks_472.jpg" alt="masked children" />
-            </div>
-      
-            <!-- <div class="coin-pouches">
-                <img src="img/slider/coin-pouches.jpg" />
-            </div> -->
+                School Savings will electronically credit the students’ accounts and apply incentive
+                Points as usual. Questions: 888-787-7728.</p>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".btn").click(function () {
-                    $(".footer p").slideToggle("slow");
 
-                });
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $(".footer p").slideToggle("slow");
+
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 
-</div>
+</html>
