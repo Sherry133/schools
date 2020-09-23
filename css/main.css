@@ -563,12 +563,12 @@ h3 {
     overflow: hidden;
 }
 @media (max-width: 768px) {
-   .sslogo{
-       margin-left: .5em;
-   }
+    .sslogo {
+        margin-left: .5em;
+    }
 }
 .navbar-default {
-    background: #ececec;
+    background: #fff;
     overflow: hidden;
 
 }
@@ -609,12 +609,12 @@ nav>ul>li:nth-last-child(2) {
 }
 @media (max-width: 769px) {
     nav>ul>li:nth-last-child(2) {
-       margin-right: 0;
-       transition: none;
-}
-nav>ul>li:nth-last-child(1) {
-    background: #fff;
-}
+        margin-right: 0;
+        transition: none;
+    }
+    nav>ul>li:nth-last-child(1) {
+        background: #fff;
+    }
 }
 
 
@@ -1751,7 +1751,7 @@ Footer
     padding-bottom: 1em;
     pointer-events: none;
     cursor: default;
-  
+
 }
 
 .ssl-logo img {
@@ -1778,7 +1778,7 @@ Footer
 
 }
 main {
-    background-color: #f0dddd;
+    background-color: #fff;
     text-align: left;
     align-items: left;
     justify-content: left;
@@ -1823,18 +1823,19 @@ main {
 
 .btn-covid {
     position: relative;
-    /* font-size: 12px; */
-    width: 120px;
+    width: 100px;
     height: 37px;
-    left: 4.25em;
+    left: 5.75em;
     margin-top: 0em;
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 12px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
     border: 1px solid #52C7B4;
     box-sizing: border-box;
     border-radius: 8px;
+    line-height: 1em;
     /* color: red; */
     transition: background 5s, color 2s;
 
@@ -1896,10 +1897,10 @@ main {
 }
 
 #about .summary-statement p {
-    font-size:   var(--fsbody-lg);
+    font-size: var(--fsbody-lg);
 }
 #about .work-item {
-    font-size:   var(--fsbody-lg);
+    font-size: var(--fsbody-lg);
 }
 .testimonial-item .clearfix p {
     font-size: 1.50em;
@@ -1944,8 +1945,10 @@ main {
         width: 30%;
     }
     .btn-covid {
-        margin-top: 2em;
-        margin-left: 51em;
+        margin-top: 1em;
+        margin-left: 68.25em;
+        z-index: 10;
+        
     }
 
     .content-text {
@@ -1972,7 +1975,12 @@ main {
 
 @media (min-width: 1200px) {
     #container-covid {
+        width: 100vw;
         height: 100vh;
+        max-width: 100%;
+    }
+    #sidebar {
+        /* margin-top: -5em; */
     }
 
     #sidebar img {
@@ -2004,14 +2012,14 @@ main {
     }
     .open p {
         font-size: 1.75em;
-        margin-top: -1.5em;
-        margin-left: -15.75em;
+        margin-top: -.75em;
+        margin-left: -15.5em;
         width: 90%;
         /* color: red; */
     }
     .btn-covid {
         position: relative;
-        margin-left: -31.75em;
+        margin-left: -42em;
         top: 1.75em;
         height: 3em;
     }
@@ -2019,7 +2027,7 @@ main {
         position: relative;
         text-align: center;
         font-size: 1em;
-        margin-top: -19em;
+        margin-top: -20em;
         margin-left: 4em;
     }
     .content-text2 {
@@ -2067,11 +2075,11 @@ main {
         height: 50px;
         font-size: 1.35em;
         /* margin: 0 auto; */
-        margin-left: -24.5em;
+        margin-left: -26em;
     }
     .mobile {
         display: block;
-    } 
+    }
     .sslogo {
         margin-left: -1.5em;
     }
@@ -2087,8 +2095,8 @@ main {
     btn-covid {
         height: 60px;
     }
-  
-  
+
+
 }
 
 
@@ -2102,7 +2110,7 @@ main {
     } */
 
 
- /* //RESPONSIVE SIZES */
+/* //RESPONSIVE SIZES */
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
