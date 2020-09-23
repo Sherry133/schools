@@ -499,6 +499,7 @@ h3 {
 
 .wrapper {
     position: relative;
+
 }
 
 /* ==========================================*/
@@ -507,18 +508,25 @@ h3 {
     /* margin-left: auto; */
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
+
+    overflow-y: no-scroll;
 }
 
 #navigation a:hover {
-    background-color: #ececec;
-    color: #66AB9E;
+    /* text-decoration: underline solid 3px black; */
+    /* background: #ececec; */
+    flex-grow: 2;
+    /* color: #66AB9E; */
+    color: red;
+    transition: 1s ease-in;
 }
 
 #navigation a:focus {
-    color: #ececec;
+    color: #02816a;
 }
 
 #navigation.animated-header {
+    /* justify-content: space-between;  */
     padding: 20px 0;
     overflow: hidden;
 }
@@ -531,7 +539,6 @@ h3 {
     border-radius: 8px;
     border-color: cornflowerblue;
     border-width: 2px;
-
 }
 
 /* =====added by M======= */
@@ -555,17 +562,15 @@ h3 {
     padding: 1px 0 0 0;
     overflow: hidden;
 }
-@media (max-width: 480px) {
-    .sslogo {
-        margin-left: 15px;
-    }
+@media (max-width: 768px) {
+   .sslogo{
+       margin-left: .5em;
+   }
 }
-
-/* <!-- end callout header for blog menu --> */
-
 .navbar-default {
-    background-color: #fff;
+    background: #ececec;
     overflow: hidden;
+
 }
 /* //add by Sher to add btn-covid button */
 .navbar-default ul {
@@ -581,19 +586,35 @@ h3 {
     font-weight: bolder;
     text-transform: uppercase;
 }
+
 nav>ul>li:nth-last-child(1) {
-    display: inline-block;
+    display: flex;
     background: red;
     font-weight: 900;
     font-size: 100%;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: background 5s, color 2s;
+    overflow: hidden;
+}
+nav>ul>li:nth-last-child(1):hover {
+    background: transparent;
+    transition: background 2s, color var(--color-btext) 2s;
 }
 
 nav>ul>li:nth-last-child(2) {
-    display: inline-block;
-    font-weight: 900;
-    font-size: 100%;
-
+    display: flex;
+    margin-right: 2.5em;
+    transition: 2s ease-in;
+}
+@media (max-width: 769px) {
+    nav>ul>li:nth-last-child(2) {
+       margin-right: 0;
+       transition: none;
+}
+nav>ul>li:nth-last-child(1) {
+    background: #fff;
+}
 }
 
 
@@ -1534,11 +1555,6 @@ THANK YOU MESSAGE
 /*============================================================
 Footer
 ==============================================================*/
-/* #footer {
-    background-color: #252525;
-    padding: 70px 0;
-    color: #fff;
-} */
 
 #footer {
     background-image: url(../img/slider/banner.jpg);
@@ -1733,6 +1749,9 @@ Footer
     margin-bottom: 2em;
     margin: 0 auto;
     padding-bottom: 1em;
+    pointer-events: none;
+    cursor: default;
+  
 }
 
 .ssl-logo img {
@@ -1754,15 +1773,17 @@ Footer
 #container-covid {
     position: absolute;
     width: 100vw;
+    height: 100vh;
     max-width: 100%;
-    height: 100%;
+
 }
 main {
-    background: none;
+    background-color: #f0dddd;
     text-align: left;
     align-items: left;
     justify-content: left;
-    margin-left: 6em;
+    margin-left: 7em;
+    margin-top: 1em;
 }
 .open h1 {
     display: flex;
@@ -1786,11 +1807,11 @@ main {
     width: 75%;
     line-height: 1.25em;
     letter-spacing: 1.75px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .open p {
-    margin-top: 0em;
+    margin-top: -.75em;
     font-size: 1em;
     margin-left: 4.25em;
     width: 55%;
@@ -1802,18 +1823,25 @@ main {
 
 .btn-covid {
     position: relative;
+    /* font-size: 12px; */
     width: 120px;
-    height: 30px;
+    height: 37px;
     left: 4.25em;
-    top: 1.5em;
+    margin-top: 0em;
     justify-content: center;
     text-align: center;
     align-items: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
-    border: 1px solid #000;
+    border: 1px solid #52C7B4;
     box-sizing: border-box;
     border-radius: 8px;
-    color: #000;
+    /* color: red; */
+    transition: background 5s, color 2s;
+
+}
+.btn-covid:hover {
+    background: transparent;
+
 }
 #sidebar {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
@@ -1826,7 +1854,7 @@ main {
     width: 20vh;
     height: auto;
     left: .25em;
-    top: -13em;
+    top: -11em;
     border-radius: 50%;
 }
 
@@ -1843,12 +1871,12 @@ main {
     /* position: relative; */
     font-size: 1em;
     color: #272727;
-    padding: 0 10px;
+    padding: -10px 5px;
     text-align: center;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
-    line-height: 1.25em;
+    line-height: .95em;
 
 }
 .content-title {
@@ -1860,10 +1888,39 @@ main {
     padding-bottom: .5em;
 
 }
+.mobile {
+    display: none;
+}
+.sslogo {
+    margin-left: .5em;
+}
+
+#about .summary-statement p {
+    font-size:   var(--fsbody-lg);
+}
+#about .work-item {
+    font-size:   var(--fsbody-lg);
+}
+.testimonial-item .clearfix p {
+    font-size: 1.50em;
+}
+/* //ipads retina 768 x 1024 */
+
+@media (min-width: 500px) {
+    main {
+        margin-top: 5em;
+        margin-left: 12em;
+    }
+    #sidebar {
+        margin-top: 2em;
+    }
+}
+
 /* //ipads mini(7.9), 9.7, pro10.5 */
-@media (min-width: 767px) and (max-width: 1199px) {
+
+@media (min-width: 769px) and (max-width: 1199px) {
     #container-covid {
-        height: 87%;
+        height: 100vh;
     }
     main {
         margin-top: -5em;
@@ -1887,7 +1944,7 @@ main {
         width: 30%;
     }
     .btn-covid {
-        margin-top: 0em;
+        margin-top: 2em;
         margin-left: 51em;
     }
 
@@ -1906,75 +1963,72 @@ main {
         max-width: 100%;
         height: auto;
     }
+    .mobile {
+        display: block;
+    }
 }
 
 /* //media query for 1200 + displays */
 
 @media (min-width: 1200px) {
     #container-covid {
-        width: 100%;
-        max-height: 100%;
-
+        height: 100vh;
     }
 
     #sidebar img {
-        margin-top: -7.5em;
+        margin-top: -6.5em;
         width: 29vw;
         max-width: 100%;
         height: auto;
-        padding-left: 4.25em;
+        padding-left: 1.25em;
     }
     main {
         margin-top: 3em;
-        margin-left: 62em;
+        margin-left: 58em;
         min-width: 50%;
     }
     .open h1 {
-        font-size: 4em;
-        margin-left: -7.5em;
+        font-size: 5em;
+        margin-left: -5.5em;
         line-height: 1;
-        min-width: 67%;
+        min-width: 100%;
         color: #9C816C;
 
     }
     .open h3 {
         position: relative;
         font-size: 2em;
-        margin-left: -15em;
+        margin-left: -13.75em;
         margin-top: .25em;
         width: 90%;
     }
     .open p {
         font-size: 1.75em;
-        margin-top: .25em;
-        margin-left: -16.75em;
+        margin-top: -1.5em;
+        margin-left: -15.75em;
         width: 90%;
         /* color: red; */
     }
     .btn-covid {
         position: relative;
-        margin-left: -33.5em;
-        top: 1em;
-        font-size: 1em;
-        width: 120px;
-        height: 30px;
-        padding: 3px;
+        margin-left: -31.75em;
+        top: 1.75em;
+        height: 3em;
     }
     .content-text {
-        position: absolute;
+        position: relative;
         text-align: center;
-        justify-content: center;
-        font-size: 1.25em;
-        margin-top: -11.5em;
-        margin-left: 26.25em;
-       
+        font-size: 1em;
+        margin-top: -19em;
+        margin-left: 4em;
     }
     .content-text2 {
-        position: absolute;
         font-size: 1em;
         text-align: center;
-        margin-top: -13em;
-        margin-left: 32.25em;
+        margin-left: 17em;
+    }
+    .mobile {
+        display: block;
     }
 
 }
@@ -1982,58 +2036,60 @@ main {
 /* MINIMUM WIDTH 1365PX */
 /* +++++++++++++++++++++++++++ */
 
-@media (min-width: 1485px) {
+@media (min-width: 1365px) {
     #sidebar {
-        margin-top: 5em;
+        margin-top: 3em;
         padding-left: 2em;
 
     }
     #sidebar img {
-        margin-top: -19em;
+        /* padding-left: 6em; */
     }
-    main {
-        margin-top: 3em;
-        margin-left: 58em;
-        min-width: 50%;
-    }
-    .open {
-        margin-left: 15em;
-    }
-    .btn-covid {
-        position: relative;
-        margin-left: -13.5em;
-        font-size: 1.5em;
-        width: 170px;
-        height: 50px;
-        justify-self: center;
-        align-self: center;
-        padding-top: 8px
-    }
-
     .content-text {
-        position: absolute;
         font-size: 2em;
-        margin-top: -5em;
-        margin-left: 13em;
+        margin-top: -8em;
         line-height: 1.5em;
         text-align: center;
     }
     .content-text2 {
-        position: absolute;
         font-size: 2em;
 
-        margin-left: 12em;
-        margin-top: -3.5em;
+        margin-left: 5em;
+        /* margin-top: -2em; */
     }
     .content-title {
         margin-left: -3.5em;
         line-height: 1.5em;
         text-align: center;
     }
+    .btn-covid {
+        width: 150px;
+        height: 50px;
+        font-size: 1.35em;
+        /* margin: 0 auto; */
+        margin-left: -24.5em;
+    }
+    .mobile {
+        display: block;
+    } 
+    .sslogo {
+        margin-left: -1.5em;
+    }
 
 }
-
-
+@media (min-width: 1599px) {
+    .content-text {
+        margin-top: -10em;
+    }
+    main {
+        margin-left: 63em;
+    }
+    btn-covid {
+        height: 60px;
+    }
+  
+  
+}
 
 
 /* ++++++++++++++++++++++++++++ */
@@ -2046,18 +2102,7 @@ main {
     } */
 
 
-/*/============================================================Responsive Styles============================================================*/
-/* For large desktops  */
-/* 
-@media (min-width: 1600px) {
-    /* #body {
-        font-size: var(--fsbody-lg);
-    } */
-/* } */
-
-/*============================================================
-For Small Desktop
-==============================================================*/
+ /* //RESPONSIVE SIZES */
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
