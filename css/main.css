@@ -2074,7 +2074,7 @@ main {
     }
     .open p {
         font-size: 1.75em;
-        margin-top: -1.5em;
+        margin-top: -.5em;
         margin-left: -15.5em;
         width: 90%;
         /* color: red; */
@@ -2112,7 +2112,8 @@ main {
         font-size: 1.25em;
     }
     #about .work-item {
-        font-size: 1.0em;;
+        font-size: 1.0em;
+        ;
     }
     .testimonial-item .clearfix p {
         font-size: 1.50em;
@@ -2160,7 +2161,7 @@ main {
         width: 150px;
         height: 50px;
         font-size: 1.35em;
-      margin-top: 1.5em;
+        margin-top: 1.5em;
         margin-left: -25em
     }
     .mobile {
