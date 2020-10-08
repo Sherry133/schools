@@ -513,7 +513,7 @@ h3 {
 
 #navigation a:hover {
     flex-grow: 2;
-    color: red;
+    color: #EB6F0D;
     transition: 1s ease-in;
 }
 
@@ -610,7 +610,7 @@ h3 {
 
 .navbar-default .navbar-nav>li>a {
     font-family: "Roboto", sans-serif;
-    color: #005da3;
+    /* color: #005da3; */
     font-size: 95%;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -620,7 +620,7 @@ h3 {
 
 nav>ul>li:nth-last-child(1) {
     display: flex;
-    background: red;
+    background: #EB6F0D;
     font-weight: 900;
     font-size: 100%;
     border-radius: 50%;
@@ -649,6 +649,9 @@ nav>ul>li:nth-last-child(2) {
     }
     nav>ul>li:nth-last-child(1) {
         background: #fff;
+    }
+    nav>ul>li:nth-last-child(1):hover {
+        background: none;
     }
 }
 
@@ -1062,6 +1065,7 @@ Portfolio
 }
 
 .portfolio-item {
+    position: relative;
     cursor: pointer;
     margin: 0 1% 1% 0;
     overflow: hidden;
@@ -1069,7 +1073,36 @@ Portfolio
     width: 32%;
 }
 
-figcaption .mask {
+.project-wrapper .doe {
+    width: 100%;
+}
+.portfolio-item p {
+    object-fit: contain;
+}
+.doe-description {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 35%;
+    right: 0;
+    top: 63%;
+    font-size: 2rem;
+    width: 40%;
+    color: blue;
+}
+@media (max-width: 480px) {
+    .doe-description {
+        top: 55%;
+        font-size: 1.25rem;
+        line-height: 1em;
+    }
+    ul .external {
+        display: none;
+    }
+
+
+}
+figcaption.mask {
     background-color: rgba(240, 230, 140, 0.69);
     bottom: -166px;
     color: #fff;
@@ -1127,8 +1160,9 @@ ul .external li a {
 }
 
 ul .external li a:hover {
-    background-color: #5584dd;
+    /* background-color: #5584dd; */
     color: #fff;
+    background-color: orange;
     font-size: 70%;
 }
 
@@ -1152,6 +1186,7 @@ ul .external li a:hover {
 .fancybox-title p {
     color: #818181;
     line-height: 1.2em;
+    color: red;
 }
 
 .fancybox-title-inside-wrap {
@@ -1165,7 +1200,6 @@ Testimonials
 #testimonials {
     background-image: url(../img/parallax/testimonial.jpg);
     padding: 0;
-    color: #fff;
 }
 
 #testimonials h2 {
@@ -1191,7 +1225,7 @@ Testimonials
 
 .testimonial-item p {
     font-family: Crimson Text, sans serif;
-    color: #fff;
+    color: #ececec;
     font-size: var(--fsbody);
 }
 
@@ -1217,6 +1251,7 @@ Testimonials
     line-height: 30px;
     position: relative;
     color: #ff6f00;
+    font-weight: bold;
 }
 
 .testimonial-item>div>span {
@@ -1813,32 +1848,39 @@ Footer
 #container-covid {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     max-width: 100%;
 
 }
 main {
-    background-color: #fff;
+    display: grid;
+    grid-template-columns: minmax(9em, 98%) 1fr;
+    margin-top: -2em;
+    margin-left: 58.5em;
+    /* min-width: 50%; */
+    z-index: 10000;
+    background-color: none;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     align-items: left;
     justify-content: left;
-    margin-left: 7em;
+    margin-left: 1em;
     margin-top: 1em;
 }
 .open h1 {
     display: flex;
     width: 60%;
     margin-left: 2.75em;
-    margin-top: 0em;
+    margin-top: -.5em;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5em;
-    line-height: 1.25em;
+    line-height: 1em;
     text-align: left;
     letter-spacing: 0.03em;
-    color: #9C816C;
+    /* color: #9C816C; */
+    color: black;
 
 }
 .open h3 {
@@ -1850,6 +1892,7 @@ main {
     line-height: 1.25em;
     letter-spacing: 1.75px;
     font-weight: 400;
+    color: #272727;
 
 }
 
@@ -1859,68 +1902,73 @@ main {
     font-size: 1em;
     margin-left: 4.25em;
     width: 55%;
-    line-height: 1.25em;
+    line-height: 1.40em;
     letter-spacing: 1.75px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1.5em;
 
 }
 
-.btn-covid {
+.btn-covid a {
+    display: flex;
     position: relative;
-    width: 100px;
-    height: 37px;
-    left: 5.25em;
+    width: 8em;
+    height: 3em;
+    padding: 6px 8px;
+    left: 8.25em;
     margin-top: 0em;
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-size: 13px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
-    border: 1px solid #52C7B4;
-    box-sizing: border-box;
+    font-size: 8px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #272727;
     border-radius: 8px;
     line-height: 1em;
-    /* color: red; */
-    transition: background 5s, color 2s;
+    color: #fff;
+    transition: background 5s;
 
 }
-.btn-covid:hover {
+.btn-covid a:hover {
     background: transparent;
 
 }
 /* //This is the turquoise bubble. */
-#sidebar {
+/* #sidebar {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #52C7B4;
-    border-radius: 90% 10%;
-}
+b} */
 
 #sidebar img {
     position: relative;
     max-width: 100%;
-    width: 20vh;
+    width: 95vw;
     height: auto;
     left: .25em;
-    top: -11em;
+    top: -10em;
     border-radius: 50%;
+    z-index: -100;
+    padding-left: 1.6em;
+    background: rgba(211, 99, 7, 0.65);
+    background-blend-mode: overlay;
 }
+/* #footer {
+    background: none;
+} */
 
 .content-text {
-    /* position: relative; */
+    position: relative;
     font-size: 1em;
     color: #272727;
     text-align: center;
-    margin-top: -8em;
+    margin-top: -10em;
     letter-spacing: 1px;
-    /* margin: left; */
-    /* line-height: 1em; */
+    line-height: .95em;
 }
 .content-text2 {
     /* position: relative; */
     font-size: 1em;
-    color: #272727;
-    padding: -10px 5px;
-    text-align: center;
+    font-weight: 700;
+    color: #E86702;
+    padding: 0 5px;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
@@ -1968,10 +2016,25 @@ main {
     .mobile {
         display: block;
     }
-    /* .content-text {
-        margin-top: 6em
-    } */
-
+    .btn-covid a {
+        display: flex;
+        position: relative;
+        width: 8em;
+        height: 3em;
+        padding: 6px 8px;
+        left: 8.25em;
+        margin-top: 0em;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 8px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #272727;
+        box-sizing: border-box;
+        border-radius: 8px;
+        line-height: 1em;
+        color: #fff;
+        transition: background 5s;
+    }
 }
 
 /* //ipads mini(7.9), 9.7, pro10.5 */
@@ -1982,55 +2045,66 @@ main {
         height: 100vh;
     }
     main {
-        margin-top: 3em;
-        margin-left: -25em;
+        margin-top: 0em;
+        margin-left: -32em;
     }
     .open h1 {
         margin-top: .5em;
         margin-left: 22em;
-        width: 20%;
+        width: 30%;
         color: #9C816C;
-        /* color: green; */
         font-size: 2.5em
     }
     .open h3 {
-        margin-top: 7em;
+        margin-top: 4.75em;
         margin-left: 36.5em;
-        width: 100%;
+        width: 90%;
         font-size: 1.5em;
+        color: black;
     }
     .open p {
         margin-top: 1em;
-        margin-left: 37em;
-        font-size: 1.5em;
-        width: 30%;
+        margin-left: 31.5em;
+        font-size: 1.75em;
+        width: 40%;
+        line-height: 1em;
+        font-weight: 500;
+        color: #272727;
     }
-    .btn-covid {
-        margin-top: 1em;
-        margin-left: 63.15em;
-        z-index: 10;
+    .btn-covid a {
+        margin-left: 47em;
+        height: 3em;
+        width: 8em;
+        font-size: 1em;
     }
+    /* #footer {
+        background: rgba(211, 99, 7, 0.65);
+    } */
 
     .content-text {
-        font-size: 1.25em;
-        margin-top: -7em;
+        font-size: 1.75em;
+        margin-top: -8em;
+        font-weight: 400;
+        background-color: #ffffff;
+        justify-content: center;
+        text-align: center;
     }
     .content-text2 {
-        font-size: 1.25em;
-        color: red;
-    }
-    #sidebar {
-        top: 3em;
-        border-radius: 90% 10%;
+        font-size: 1.75em;
+        justify-content: center;
+        text-align: center;
+      color: #272727;
+      background-color: #ffffff;
     }
 
     #sidebar img {
-        margin-top: -17em;
-        margin-left: 3em;
-        width: 35vw;
+        margin-top: -14em;
+        margin-left: 1em;
+        width: 95vw;
         max-width: 100%;
-        height: 35vh;
+        height: auto;
         border-radius: 50% 50%;
+       
     }
     .mobile {
         display: block;
@@ -2042,68 +2116,101 @@ main {
 @media (min-width: 1200px) {
     #container-covid {
         width: 100vw;
-        height: 100vh;
+        height: auto;
         max-width: 100%;
     }
+    #sidebar {
+        display: grid;
+        place-items: center;
+    }
+
     #sidebar img {
-        margin-top: -10.5em;
-        width: 25vw;
+        display: grid;
+        margin-top: -30.5em;
+        width: 85%;
         max-width: 100%;
         height: auto;
-        padding-left: 3.25em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        margin-left: 0em;
+        padding-left: 3em;
+        z-index: -100;
+        background: rgba(211, 99, 7, 0.85);
+        background-blend-mode: overlay;
     }
     main {
-        margin-top: 3em;
-        margin-left: 58em;
-        min-width: 50%;
+        display: grid;
+        grid-template-columns: minmax(42em, 60%) 1fr;
+        grid-template-rows: repeat(12, 50px)1fr;
+        margin-top: 4.5em;
+        margin-left: 56.5em;
+        z-index: 100;
     }
+
     .open h1 {
+        margin-top: .15em;
         font-size: 5em;
         margin-left: -5.5em;
-        line-height: 1;
+        line-height: .85em;
         min-width: 100%;
+        margin-bottom: .25em;
         color: #9C816C;
 
     }
     .open h3 {
         position: relative;
-        font-size: 2em;
-        margin-left: -13.55em;
+        font-size: 1.75em;
+        margin-left: -15.55em;
         margin-top: .25em;
         width: 90%;
+
     }
     .open p {
-        font-size: 1.75em;
+        font-size: 1.50em;
         margin-top: -.5em;
-        margin-left: -15.5em;
+        margin-left: -18em;
         width: 90%;
+        line-height: 1.05em;
         /* color: red; */
     }
-    .btn-covid {
+    .btn-covid a {
+        display: grid;
         position: relative;
-        margin-left: -32.5em;
-        top: -1.5em;
-        height: 3.5em;
-        width: 9em;
+        margin-left: -35em;
+
+        height: 3em;
+        width: 8em;
         font-size: 1em;
+        /* z-index: 2000; */
     }
+
     .content-text {
         position: relative;
-        text-align: center;
+        text-align: left;
         font-size: 1em;
-        margin-top: -10em;
-        margin-left: 7.5em;
+        margin-top: -25em;
+        margin-left: 17.5em;
         line-height: 1.3em;
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: bold;
     }
     .content-text2 {
         font-size: 1em;
-        text-align: center;
-        margin-left: 14.25em;
+        text-align: left;
+        margin-left: 19.25em;
         line-height: 1.3em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #ececec;
 
     }
     .content-title {
-        margin-left: -11.25em;
+        margin-left: 2.25em;
+        color: #ececec;
+        text-align: left;
+        letter-spacing: 2px;
     }
     .mobile {
         display: block;
@@ -2118,51 +2225,70 @@ main {
     .testimonial-item .clearfix p {
         font-size: 1.50em;
     }
-
 }
 /* ++++++++++++++++++++++++++++ */
 /* MINIMUM WIDTH 1365PX */
 /* +++++++++++++++++++++++++++ */
 
 @media (min-width: 1365px) {
-    #sidebar {
-        margin-top: 3em;
-        padding-left: 3.5em;
-    }
+
+
     #sidebar img {
-        margin-top: -19em;
-        width: 30%;
-        padding-left: 0em;
+        display: grid;
+        margin-top: -28.5em;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding-left: 7.25em;
+        z-index: -100;
+        background: rgba(211, 99, 7, 0.65);
+        background-blend-mode: overlay;
     }
     main {
+        display: grid;
+        grid-template-columns: minmax(42em, 60%) 1fr;
+        grid-template-rows: repeat(12, 50px)1fr;
         margin-left: 62em;
+    }
+    .open {
+        display: grid;
+        grid-row: 2/9;
+    
+    }
+    .open h1 {
+        margin-top: 0em;
+    }
+    .open p {
+        font-size: 1.75em;
+        margin-left: -15.5em;
+        font-weight: 500;
+    }
+    .btn-covid a {
+        width: 130px;
+        height: 55px;
+        padding: 6px 8px;
+        font-size: .85em;
+        margin-top: 3em;
+        margin-left: -39.5em;
     }
 
 
     .content-text {
-        font-size: 2em;
-        margin-top: -6em;
+        font-size: 1.5em;
+        margin-top: -15em;
         line-height: 1.5em;
-        margin-left: 5em;
+        margin-left: 12em;
     }
     .content-text2 {
-        font-size: 2em;
-        margin-left: 5em;
+        font-size: 1.5em;
+        margin-left: 16em;
 
     }
     .content-title {
-        margin-left: -1em;
-        line-height: 1.5em;
+        margin-left: -15em;
         text-align: center;
-
-
-    }
-    .btn-covid {
-        width: 150px;
-        height: 50px;
-        font-size: 1.35em;
-        margin-top: 1.5em;
-        margin-left: -25em
     }
     .mobile {
         display: block;
@@ -2175,21 +2301,34 @@ main {
 
 @media (min-width: 1599px) {
     .content-text {
-        margin-top: -11em;
+        margin-top: -16em;
         margin-left: 11em;
     }
     .content-text2 {
         margin-left: 17.5em;
     }
     main {
-        margin-left: 63em;
+        display: grid;
+        grid-template-columns: minmax(42em, 60%) 1fr;
+        margin-left: 66em;
     }
-    .btn-covid {
-        height: 60px;
+    .btn-covid a {
+        height: 4em;
+        color: #ececec;
+        margin-left: -39.5em;
     }
     #sidebar img {
-        margin-top: -11em;
-        padding-left: 0em;
+        margin-top: -28.5em;
+        /* width: 85%; */
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding-left: 7.25em;
+        z-index: -100;
+        background: rgba(211, 99, 7, 0.65);
+        background-blend-mode: overlay;
     }
     .content-title {
         margin-left: -11em;
@@ -2200,8 +2339,15 @@ main {
 /* +++++++++++++++++++++++++++ */
 
 @media (min-width: 1679px) {
+    #sidebar img {
+        margin-top: -30em;
+    }
     main {
+        display: grid;
+        grid-template-rows: repeat(12, 50px)1fr;
         margin-left: 67em;
+        grid-row: 5/11;
+    
     }
     .content-text {
         margin-left: 12.25em;
@@ -2297,17 +2443,19 @@ Mobile (Portrait) Design for a width of 767px
     .navbar-default .navbar-toggle {
         border: 2px solid darkblue;
         border-radius: 8px;
-        border-width: medium;
+
     }
 
     /* slider */
-    body {
+    /* body {
         font-size: 80%;
-    }
+    } */
 
     /* about */
     .recent-works {
         margin-bottom: 85px;
+        ;
+        font-size: .85em;
     }
 
     #about h3 {
@@ -2325,6 +2473,9 @@ Mobile (Portrait) Design for a width of 767px
     #about .welcome-block img {
         margin: 0 25px 15px 0;
     }
+    #about .summary-statement {
+        font-size: .85em;
+    }
 
     /* service */
     .service-item {
@@ -2339,10 +2490,10 @@ Mobile (Portrait) Design for a width of 767px
     }
 
     /*portfolio*/
-    .portfolio-item {
+    /* .portfolio-item {
         margin: 0 auto 10px;
         width: 280px;
-    }
+    } */
 
     .figcaption.mask h4 {
         margin: 0;
@@ -2362,6 +2513,7 @@ Mobile (Portrait) Design for a width of 767px
     /* testimonial */
     .testimonial-item {
         width: 95%;
+        font-size: .85em;
     }
 
     .testimonial-item>div:before,
@@ -2417,9 +2569,9 @@ Mobile (Landscape) Design for a width of 480px
     }
 
     /*  nav-dots */
-    .nav-dots {
+    /* .nav-dots {
         bottom: 1%;
-    }
+    } */
 
     /* home slider */
     body p {
@@ -2481,7 +2633,8 @@ Mobile (Landscape) Design for a width of 480px
     }
 
     .wrapper1 {
-        max-width: 940px;
+        /* max-width: 940px; */
+        max-width: 100%;
         margin: 0 auto;
     }
 
