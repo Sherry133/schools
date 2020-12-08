@@ -4,7 +4,15 @@
 
 :root {
     --primary-color: #3a4052;
-
+    --font-size: 1rem;
+    --fh1: 4.5rem;
+    --fh1-med: 3.75rem;
+    --fh1-lg: 3.5rem;
+    --fh1-xlg: 8em;
+    --fh2: 2.0rem;
+    --fh3: 1.7rem;
+    --fh2-480: 1.75rem;
+    --fh3-480: 2.0rem;
 }
 
 * {
@@ -35,16 +43,16 @@ a {
 .headerh1 {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    font-size: 450%;
+    font-size: var(--fh1);
     line-height: 1.2;
     margin-bottom: .25em;
     letter-spacing: 3px;
 }
 
 .headerh2 {
-    letter-spacing: 2.0px;
+    letter-spacing: 1.75px;
     font-family: 'Varela', sans-serif;
-    font-weight: bold;
+    font-weight: 300;
     margin-bottom: 2.5px;
     color: red;
 }
@@ -80,7 +88,7 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #3a4052  url('./img/slider/railroad_snow.jpg') no-repeat center center/cover;
+    background: #3a4052 url('./img/slider/railroad_snow.jpg') no-repeat center center/cover;
 }
 
 /* //keep video centered */
@@ -102,7 +110,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  /*   z-index: 10; */
+    /*   z-index: 10; */
 }
 
 /* //overlay */
@@ -150,13 +158,18 @@ a {
 
 @media (max-width: 480px) {
     .headerh1 {
-        font-size: 250%;
+        font-size: var(--fh1-med);
+    }
+
+    .headerh2 {
+        font-size: var(--fh2);
+        font-weight: 300;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .headerh1 {
-        font-size: 300%;
+        font-size: var(--fh1-lg);
     }
 
     .headerh2 {
@@ -171,5 +184,11 @@ a {
     #showcase-video {
         padding-right: 3rem;
         padding-left: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headerh1 {
+        font-size: 6.5rem;
     }
 }
