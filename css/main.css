@@ -22,6 +22,7 @@
     --main-radius: 5px;
     --main-padding: 5px;
 }
+
 *,
 *::before,
 *::after {
@@ -510,7 +511,7 @@ h3 {
     /* margin-left: auto; */
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
-      /* overflow-y: no-scroll;  */
+    /* overflow-y: no-scroll;  */
 }
 
 #navigation a:hover {
@@ -551,9 +552,11 @@ h3 {
     background-color: #a3bddd;
 
 }
+
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
 }
+
 /* ====Added by M===== */
 .navbar-default .navbar-brand {
     height: auto;
@@ -561,11 +564,13 @@ h3 {
     padding: 5px 0 0 0;
     overflow: hidden;
 }
+
 @media (max-width: 768px) {
     .navbar img {
         margin-left: 25px;
         margin-top: -15px;
     }
+
     .navbar-header {
         height: 3.50em;
     }
@@ -597,6 +602,7 @@ nav>ul>li:nth-last-child(1) {
     transition: background 5s, color 2s;
     overflow: hidden;
 }
+
 nav>ul>li:nth-last-child(1):hover {
     background: rgb(185, 183, 183);
     transition: background 2s, color var(--color-btext) 2s;
@@ -612,9 +618,11 @@ nav>ul>li:nth-last-child(2) {
         margin-right: 0;
         transition: none;
     }
+
     nav>ul>li:nth-last-child(1) {
         background: #fff;
     }
+
     nav>ul>li:nth-last-child(1):hover {
         background: none;
     }
@@ -806,6 +814,7 @@ About
     #about .message-body {
         margin-left: 1.5em;
     }
+
     @media (max-width: 1024px) {
         #about {
             background-image: none;
@@ -897,6 +906,7 @@ About
     font-weight: 500;
     font-size: var(--fsbody-lg);
 }
+
 #about .mobile {
     font-size: var(--fsbody-lg);
     font-weight: 300;
@@ -948,6 +958,7 @@ Services
         display: none;
     }
 }
+
 /* .service-item:hover .service-icon {
     text-transform: lowercase;
     color: green;
@@ -995,6 +1006,7 @@ Services
         padding-left: 19px;
         padding-top: -20px;
     }
+
     #service h2 {
         font-size: var(--sec-title-h2-480);
     }
@@ -1041,6 +1053,7 @@ Portfolio
     text-transform: uppercase;
     color: #d2b48c;
 }
+
 #portfolio h3 {
     line-height: 1.5em;
 }
@@ -1057,9 +1070,11 @@ Portfolio
 .project-wrapper .doe {
     width: 100%;
 }
+
 .portfolio-item p {
     object-fit: contain;
 }
+
 .doe-description {
     position: absolute;
     z-index: 999;
@@ -1070,18 +1085,21 @@ Portfolio
     width: 40%;
     color: #fff;
 }
+
 @media (max-width: 480px) {
     .doe-description {
         top: 55%;
         font-size: .5rem;
         line-height: 1em;
     }
+
     ul .external {
         display: none;
     }
 
 
 }
+
 figcaption.mask {
     /* background-color: rgba(240, 230, 140, 0.69); */
     bottom: -166px;
@@ -1164,6 +1182,7 @@ ul .external li a:hover {
     margin: 0 0 15px;
 
 }
+
 .fancybox p {
     color: #818181;
     line-height: 1.2em;
@@ -1181,6 +1200,7 @@ Testimonials
     background-image: url("../img/parallax/testimonial.jpg");
     padding: 0;
 }
+
 #testimonials .overlay1 {
     background-color: rgba(15, 155, 224, 0.85);
     padding: 100px 0 120px;
@@ -1190,6 +1210,7 @@ Testimonials
     font-weight: 900;
     font-size: var(--sec-title-h2-480);
 }
+
 .testimonial-content {
 
     position: relative;
@@ -1200,6 +1221,7 @@ Testimonials
     font-weight: 400;
 
 }
+
 /* **name of bank */
 .testimonial-content h3 {
     color: red;
@@ -1211,6 +1233,7 @@ Testimonials
     font-size: var(--fsbody-xlg);
 
 }
+
 /* **image */
 .testimonial-item img {
     border: 3px solid #fff;
@@ -1219,6 +1242,7 @@ Testimonials
     height: auto;
     max-width: 100px;
 }
+
 /* **name under image */
 .testimonial-item>div {
     line-height: 30px;
@@ -1233,13 +1257,16 @@ Testimonials
     .sec-title h2 {
         font-size: var(--sec-title-h2-480);
     }
-    #testimonials  {
+
+    #testimonials {
         background: rgba(15, 155, 224, 0.95);
     }
+
     .testimonial-item {
         width: 100%;
         /* background: rgba(15, 155, 224, 0.78); */
     }
+
     .testimonial-item h3 {
         font-size: var(--fs3-480);
     }
@@ -1257,6 +1284,7 @@ Testimonials
     background-image: url("../img/slider/banner.jpg");
     /* background-color: #141414; */
 }
+
 #price .overlay1 {
     background-color: rgba(0, 0, 0, 0.35);
     padding: 100px 0 120px;
@@ -1268,6 +1296,7 @@ Testimonials
         background-image: none;
         background: #000;
     }
+
     #price .overlay1 {
         background: transparent;
         padding: 100px 0 120px;
@@ -1377,10 +1406,12 @@ Price end
     background-image: url("../img/parallax/testimonial.jpg");
     padding: 0;
 }
+
 #social .overlay1 {
     background-color: rgba(15, 155, 224, 0.78);
     padding: 100px 0 120px;
 }
+
 #social h2 {
     font-size: var(--sec-title-h2-480);
 }
@@ -1391,6 +1422,7 @@ Price end
     font-weight: 400;
     /* z-index: 5; */
 }
+
 .social-button {
     margin: 0;
     padding: 0;
@@ -1459,7 +1491,7 @@ Contact
 }
 
 #contact .overlay1 {
-    background: url("../img/banner.jpg") repeat scroll 0 0 transparent;
+    background: url("../img/slider/banner.jpg") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
 }
 
@@ -1534,6 +1566,7 @@ textarea.form-control {
     background: url("../img/slider/arrowsright.png") no-repeat right top, #0058a3;
     border-radius: 8px;
 }
+
 /* 
 @media (max-width: 480px) {
     .btn-contact {
@@ -1618,7 +1651,7 @@ Footer
 }
 
 #footer .overlay1 {
-    background: url("../img/banner.jpg") repeat scroll 0 0 transparent;
+    background: url("../img/slider/banner.jpg") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
 }
 
@@ -1628,6 +1661,7 @@ Footer
         /* background-color: rgba(15, 155, 224, 0.78); */
         padding: 100px 0 120px;
     }
+
     #footer .parallax {
         display: none;
     }
@@ -1783,6 +1817,7 @@ Footer
     color: #fff;
     text-align: center;
 }
+
 .regulations a {
     color: #ececec;
     font-size: var(--fsbody-lg);
@@ -1837,9 +1872,11 @@ Footer
     #about .summary-statement p {
         font-size: var(--fsbody-lg);
     }
+
     #about .work-item {
         font-size: var(--fsbody-lg);
     }
+
     /* .testimonial-item .clearfix p {
         font-size: 1.50em;
     } */
@@ -1867,14 +1904,17 @@ Footer
         #about .summary-statement p {
             font-size: 1.25em;
         }
+
         #about .work-item {
             font-size: 1.0em;
             ;
         }
+
         /* .testimonial-item .clearfix p {
             font-size: 1.50em;
         } */
     }
+
     /* ++++++++++++++++++++++++++++ */
     /* MINIMUM WIDTH 1365PX */
     /* +++++++++++++++++++++++++++ */
@@ -1885,9 +1925,11 @@ Footer
             margin-left: -1.5em;
         }
     }
+
     /* //screens 1600+ pixels */
 
     @media (min-width: 1599px) {}
+
     /* ++++++++++++++++++++++++++++ */
     /* //MINIMUM WIDTH 1679PX */
     /* +++++++++++++++++++++++++++ */
@@ -2006,6 +2048,7 @@ Mobile (Portrait) Design for a width of 767px
         #about .welcome-block img {
             margin: 0 25px 15px 0;
         }
+
         #about .summary-statement {
             font-size: .85em;
         }
@@ -2101,6 +2144,7 @@ Mobile (Landscape) Design for a width of 480px
         .sec-title h2:after {
             left: 38%;
         }
+
         /* home slider */
         body p {
             font-size: 80%;
