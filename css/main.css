@@ -32,12 +32,12 @@
 body {
     position: relative;
     margin: 0;
-    background-color: rgba(15, 155, 224, 0.78);
+    padding: 0;
+    /* background-color:#fff; */
     font-family: "Roboto", sans-serif;
     line-height: 1.5em;
     font-size: 1rem;
     letter-spacing: normal;
-    /* color: #252525; */
     padding: 70px 0 0;
 }
 
@@ -510,11 +510,11 @@ h3 {
     /* margin-left: auto; */
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
-    /*   overflow-x: hidden;
-  --webkit-scrollbar: hidden: */
+      /* overflow-y: no-scroll;  */
 }
+
 #navigation a:hover {
-    /*    flex-grow: 2; */
+    flex-grow: 2;
     color: red;
     transition: 1s ease-in;
 }
@@ -525,7 +525,7 @@ h3 {
 
 #navigation.animated-header {
     /* justify-content: space-between;  */
-    padding: 20px 0;
+    padding: 20px 0px;
     overflow: hidden;
 }
 
@@ -538,6 +538,7 @@ h3 {
     border-color: cornflowerblue;
     border-width: 2px;
 }
+
 
 /* =====added by M======= */
 
@@ -554,86 +555,47 @@ h3 {
     background-color: darkblue;
 }
 /* ====Added by M===== */
-/* .navbar-default .navbar-brand {
+.navbar-default .navbar-brand {
     height: auto;
     margin: 0 0 0 15px;
     padding: 5px 0 0 0;
     overflow: hidden;
-} */
-.navbar {
-    height: auto;
-    margin: 0 0 0 15px;
-    padding: 3px 0 0 0;
-    /* overflow: hidden; */
 }
-
-@media (min-width: 767px) and (max-width: 1000px) {
-    .sslogo {
-        margin-left: .5em;
+@media (max-width: 768px) {
+    .navbar img {
+        margin-left: 25px;
+        margin-top: -15px;
     }
     .navbar-header {
-
-        display: inline-block;
+        height: 3.50em;
     }
-    .navbar-toggle {
-        display: block !important;
-    }
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    /* .navbar-nav {
-         float: none !important; 
-        display: inline-block;
-    } */
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-    .navbar-nav>li>a {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-.navbar-default {
-    background: #fff;
-    overflow: hidden;
-    -webkit-box-overflow: hidden;
-    -ms-flexbox-overflow: hidden;
-    -webkit-flex-overflow: hidden;
 }
 
 /* //add by Sher to add btn-covid button */
 .navbar-default ul {
-    min-width: 110%;
-
+    min-width: 120%;
 }
 
 .navbar-default .navbar-nav>li>a {
     font-family: "Roboto", sans-serif;
-    font-size: var(--fsbody);
-    /*    padding-bottom: 5px; */
+    height: 8em;
+    font-size: 110%;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bolder;
-    /* color: #272727; */
+    padding-top: 3.5em;
 }
 
+
 nav>ul>li:nth-last-child(1) {
-    display: inline-block;
+    display: flex;
+    background: transparent;
     font-weight: 900;
     font-size: 100%;
-    color: red;
-    text-align: center;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    /*     transition: background 5s, color 2s; */
-    /*  overflow: hidden; */
-
+    transition: background 5s, color 2s;
+    overflow: hidden;
 }
 nav>ul>li:nth-last-child(1):hover {
     background: rgb(185, 183, 183);
@@ -642,7 +604,7 @@ nav>ul>li:nth-last-child(1):hover {
 
 nav>ul>li:nth-last-child(2) {
     display: flex;
-    margin-right: 1.5em;
+    /* margin-right: 1.5em; */
 }
 
 @media (max-width: 769px) {
@@ -1023,7 +985,7 @@ Services
 }
 
 @media (max-width: 480px) {
-    
+
     .service-icon i {
         color: #d2b48c;
         -webkit-transform: rotate(48deg);
@@ -1146,7 +1108,7 @@ figcaption.mask {
     margin: 0;
     color: #fff;
     font-size: var(--fsbody-sm);
-    padding-top: 6px;
+    padding-top: 16px;
     padding-bottom: 6px;
 }
 
@@ -1195,19 +1157,17 @@ ul .external li a:hover {
 }
 
 .fancybox-title .fancybox-title-inside-wrap {
-    padding: 15px;
+    padding: 0;
 }
 
 .fancybox-title h3 {
     margin: 0 0 15px;
 
 }
-
 .fancybox p {
     color: #818181;
     line-height: 1.2em;
     font-size: var(--fsbody-sm);
-
 }
 
 .fancybox-title-inside-wrap {
@@ -1222,7 +1182,7 @@ Testimonials
     padding: 0;
 }
 #testimonials .overlay1 {
-    background-color: rgba(15, 155, 224, 0.35);
+    background-color: rgba(15, 155, 224, 0.85);
     padding: 100px 0 120px;
 }
 
@@ -1263,7 +1223,7 @@ Testimonials
 .testimonial-item>div {
     line-height: 30px;
     position: relative;
-    color: gray;
+    color: darkgray;
     font-weight: bold;
     font-size: var(--fsbody-lg);
 }
@@ -1272,6 +1232,9 @@ Testimonials
 @media (max-width: 480px) {
     .sec-title h2 {
         font-size: var(--sec-title-h2-480);
+    }
+    #testimonials  {
+        background: rgba(15, 155, 224, 0.95);
     }
     .testimonial-item {
         width: 100%;
@@ -1285,7 +1248,7 @@ Testimonials
         font-size: var(--fsbody-xlg);
         line-height: 1.3;
         letter-spacing: 2px;
-        text-align: center; 
+        text-align: center;
     }
 }
 
@@ -1300,15 +1263,15 @@ Testimonials
 }
 
 @media (max-width: 480px) {
-   
-#price {
+
+    #price {
         background-image: none;
-         background: #000 ;
-     } 
-#price .overlay1 {
-    background: transparent;
-    padding: 100px 0 120px;
-}
+        background: #000;
+    }
+    #price .overlay1 {
+        background: transparent;
+        padding: 100px 0 120px;
+    }
 }
 
 .price-table h3 {

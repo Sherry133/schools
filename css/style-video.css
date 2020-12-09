@@ -11,7 +11,7 @@
     --fh1-xlg: 8em;
     --fh2: 2.0rem;
     --fh3: 1.7rem;
-    --fh2-480: 1.75rem;
+    --fh2-480:1.75rem;
     --fh3-480: 2.0rem;
 }
 
@@ -88,7 +88,7 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #3a4052 url('./img/slider/railroad_snow.jpg') no-repeat center center/cover;
+    background: #3a4052  url('./img/slider/railroad_snow.jpg') no-repeat center center/cover;
 }
 
 /* //keep video centered */
@@ -110,7 +110,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*   z-index: 10; */
+  /*   z-index: 10; */
 }
 
 /* //overlay */
@@ -160,7 +160,6 @@ a {
     .headerh1 {
         font-size: var(--fh1-med);
     }
-
     .headerh2 {
         font-size: var(--fh2);
         font-weight: 300;
@@ -186,7 +185,6 @@ a {
         padding-left: 3rem;
     }
 }
-
 @media (min-width: 1024px) {
     .headerh1 {
         font-size: 6.5rem;
