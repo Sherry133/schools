@@ -584,7 +584,7 @@ h3 {
 .navbar-default .navbar-nav>li>a {
     font-family: "Roboto", sans-serif;
     height: 8em;
-    font-size: 110%;
+    font-size: 130%;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -815,27 +815,32 @@ About
         margin-left: 1.5em;
     }
 
-    @media (max-width: 1024px) {
-        #about {
-            background-image: none;
-            background-color: #000;
-        }
-
-        #about .overlay1 {
-            background-color: #000;
-        }
-    }
-
-    #about h2 {
-        display: flex;
-        text-align: center;
-        margin-top: 0;
-        text-transform: uppercase;
-        text-align: center;
-        justify-content: center;
-        font-size: var(--sec-title-h2-480);
-    }
 }
+
+@media (max-width: 1199px) {
+
+    #about {
+        background-image: none;
+        background: #000;
+    }
+
+    #about .overlay1 {
+        background: transparent;
+        padding: 100px 0 120px;
+    }
+
+}
+
+#about h2 {
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-size: var(--sec-title-h2-480);
+}
+
 
 @media (max-width: 767px) {
     #about h2 {
@@ -1290,7 +1295,7 @@ Testimonials
     padding: 100px 0 120px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1199px) {
 
     #price {
         background-image: none;
