@@ -525,7 +525,7 @@ h3 {
 }
 
 #navigation.animated-header {
-  
+
     /* justify-content: space-around; */
     padding: 20px 0px;
     overflow: hidden;
@@ -545,6 +545,7 @@ h3 {
 
 .container .navbar-header {
     height: 10px;
+    /* min-height: 8vh; */
 }
 
 /* =====added by M======= */
@@ -568,7 +569,7 @@ h3 {
 /* ====Added by M===== */
 .navbar-default img {
     height: auto;
-    top: -20px; 
+    top: -20px;
     margin: 0 0 0 15px;
     padding: 5px 0 0 0;
     overflow: hidden;
@@ -588,7 +589,7 @@ h3 {
 
 /* //add by Sher to add btn-covid button */
 .navbar-default ul {
-    min-width: 120%;
+    min-width: 140%;
 
 }
 
@@ -606,26 +607,18 @@ h3 {
 
 nav>ul>li:nth-last-child(1) {
     display: flex;
-    /* background: transparent; */
     font-weight: 900;
     font-size: 100%;
-    /* border-radius: 50%; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);*/
-    transition: background 5s, color 2s; 
+    transition: background 5s, color 2s;
     overflow: hidden;
 }
 
-/* nav>ul>li:nth-last-child(1):hover {
-    background: rgb(185, 183, 183);
-    transition: background 2s, color var(--color-btext) 2s;
-} */
-
 nav>ul>li:nth-last-child(2) {
     display: flex;
-    /* margin-right: 1.5em; */
+    margin-right: 1.5em; 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 737px){
     nav>ul>li:nth-last-child(2) {
         margin-right: 0;
         transition: none;
@@ -643,11 +636,13 @@ nav>ul>li:nth-last-child(2) {
         background: #222222;
         margin-top: 1em;
         height: 25%;
-        width: 100%;
+        font-size: 20%;
+        max-width: 100%;
         color: red !important;
         cursor: pointer;
-
     }
+   
+    
 }
 
 

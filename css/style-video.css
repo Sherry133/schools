@@ -204,7 +204,7 @@ a {
 
 @media (min-width: 981px) and (max-width: 1280px) {
     .headerh1 {
-        font-size: var(--fh1-xlg);
+        font-size: var(--fh1-lg);
     }
 
     .headerh2 {
@@ -218,15 +218,15 @@ a {
 
 @media (min-width: 1281px) and (max-width: 1680px) {
     .headerh1 {
-        font-size: var(--fh1-1600);
+        font-size: var(--fh1-xlg);
     }
 
     .headerh2 {
-        font-size: var(--fh2-1600);
+        font-size: var(--fh2-xlg);
     }
 
     .headerh4 {
-        font-size: var(--fh4-1600);
+        font-size: var(--fh4-xlg);
     }
 
     .headerh6 {
