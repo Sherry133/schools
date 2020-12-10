@@ -511,13 +511,13 @@ h3 {
     /* margin-left: auto; */
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
-    /* overflow-y: no-scroll;  */
+    overflow: hidden;
 }
 
 #navigation a:hover {
-    flex-grow: 2;
     color: red;
     transition: 1s ease-in;
+    /* cursor: pointer; */
 }
 
 #navigation a:focus {
@@ -525,7 +525,8 @@ h3 {
 }
 
 #navigation.animated-header {
-    /* justify-content: space-between;  */
+  
+    /* justify-content: space-around; */
     padding: 20px 0px;
     overflow: hidden;
 }
@@ -538,8 +539,13 @@ h3 {
     border-radius: 8px;
     border-color: cornflowerblue;
     border-width: 2px;
+    top: -4px;
+    right: 8px;
 }
 
+.container .navbar-header {
+    height: 10px;
+}
 
 /* =====added by M======= */
 
@@ -550,16 +556,19 @@ h3 {
 
 .navbar-default .navbar-toggle:hover {
     background-color: #a3bddd;
+    overflow: hidden;
 
 }
 
 .navbar-default .navbar-toggle:focus {
     background-color: darkblue;
+    overflow: hidden;
 }
 
 /* ====Added by M===== */
-.navbar-default .navbar-brand {
+.navbar-default img {
     height: auto;
+    top: -20px; 
     margin: 0 0 0 15px;
     padding: 5px 0 0 0;
     overflow: hidden;
@@ -573,58 +582,71 @@ h3 {
 
     .navbar-header {
         height: 3.50em;
+
     }
 }
 
 /* //add by Sher to add btn-covid button */
 .navbar-default ul {
     min-width: 120%;
+
 }
 
 .navbar-default .navbar-nav>li>a {
     font-family: "Roboto", sans-serif;
-    height: 8em;
+    /* height: 3em; */
     font-size: 130%;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bolder;
     padding-top: 3.5em;
+    overflow: hidden;
 }
 
 
 nav>ul>li:nth-last-child(1) {
     display: flex;
-    background: transparent;
+    /* background: transparent; */
     font-weight: 900;
     font-size: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     transition: background 5s, color 2s;
     overflow: hidden;
 }
 
-nav>ul>li:nth-last-child(1):hover {
+/* nav>ul>li:nth-last-child(1):hover {
     background: rgb(185, 183, 183);
     transition: background 2s, color var(--color-btext) 2s;
-}
+} */
 
 nav>ul>li:nth-last-child(2) {
     display: flex;
     /* margin-right: 1.5em; */
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     nav>ul>li:nth-last-child(2) {
         margin-right: 0;
         transition: none;
     }
 
     nav>ul>li:nth-last-child(1) {
-        background: #fff;
+        background: none;
     }
 
     nav>ul>li:nth-last-child(1):hover {
         background: none;
+    }
+
+    .navbar-collapse ul>li>a {
+        background: #222222;
+        margin-top: 1em;
+        height: 25%;
+        width: 100%;
+        color: red !important;
+        cursor: pointer;
+
     }
 }
 
@@ -1108,7 +1130,7 @@ Portfolio
 figcaption.mask {
     /* background-color: rgba(240, 230, 140, 0.69); */
     bottom: -166px;
-    color: fff;
+    color: #fff;
     padding: 25px;
     position: absolute;
     width: 100%;
