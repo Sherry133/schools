@@ -377,7 +377,7 @@ a {
         font-size: var(--fh4-med);
     }
 
-    .footer-video .headerh6 {
+    .footer-video h6 {
         padding-left: -2.75em;
         /* color: red; */
     }
