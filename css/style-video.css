@@ -316,14 +316,14 @@ a {
 
     .footer-video .headerh6 {
         width: 120%;
-        margin-left: -2.15em;
+        margin-left: -2.75em;
         font-size: var(--fh6-lg);
         color: #fff;
     }
 
     .footer-video ul {
         top: 44em;
-        margin-left: -2.55em;
+        margin-left: -2.75em;
         z-index: 1;
     }
 }
