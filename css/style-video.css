@@ -88,6 +88,7 @@ a {
     letter-spacing: 2px;
     font-weight: 400;
 
+
 }
 
 #showcase-video {
@@ -158,6 +159,7 @@ a {
     z-index: 10;
     letter-spacing: 2.25px;
     margin-left: .25em;
+
 
 }
 
@@ -237,8 +239,9 @@ a {
         font-size: var(--fh4);
     }
 
-    .footer-video h6 {
-        padding-left: -1em;
+    .footer-video .headerh6 {
+        padding-left: .45em;
+
 
     }
 }
@@ -310,7 +313,7 @@ a {
         background: rgba(0, 0, 0, .55) #03a9f4;
     }
 
-    .footer-video {
+    .footer-video .headerh6 {
         z-index: 2;
         margin-left: -2.75;
     }
