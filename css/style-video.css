@@ -362,7 +362,7 @@ a {
     .content-video h1 {
         font-size: var(--fh1-lg);
         line-height: 1.5em;
-        width: 135%;
+        min-width: 135%;
 
         /* color: limegreen */
     }
