@@ -1,6 +1,11 @@
 /* ========================================================================= */
-/*	Preloader
-/* ========================================================================= */
+// document.addEventListener("readystatechange", (event => {
+//   if (event.target.readystate === "complete") {
+//     initApp();
+//   }
+// }));
+/*	Preloader*/
+
 
 jQuery(window).load(() => {
   $(".preloader").fadeOut("slow");
@@ -69,8 +74,16 @@ $(window).scroll(function () {
     $("#navigation").addClass("animated-header");
   }
 });
-
-
+$(window).scroll(function () {
+  if ($(window).scrollTop() < 400) {
+    $("#navigation").css("background-color", "transparent");
+  }
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 400) {
+    $("#navigation").css("background-color", "white");
+  }
+});
 // const menuBtn = document.querySelector('.menu-btn');
 // let menuOpen = false;
 // menuBtn.addEventListener('click', () => {
