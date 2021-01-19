@@ -238,7 +238,7 @@ a {
     }
 
     .footer-video h6 {
-        padding-left: 0em;
+        padding-left: -1em;
 
     }
 }
