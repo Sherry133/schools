@@ -361,8 +361,9 @@ a {
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
     .content-video h1 {
         font-size: var(--fh1-lg);
-        /* line-height: 1em; */
-        width: 120%;
+        line-height: 1.5em;
+        width: 135%;
+
         /* color: limegreen */
     }
 
