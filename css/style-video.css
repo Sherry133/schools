@@ -3,7 +3,7 @@
 :root {
     /*     --primary-color: #3a4052; */
     --primary-color: palevioletred;
-    --fh1: 4.00rem;
+    --fh1: 4.25rem;
     --fh1-med: 4.25rem;
     --fh1-lg: 5.5rem;
     --fh1-xlg: 7rem;
@@ -56,7 +56,7 @@ a {
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     font-size: var(--fh1);
-    margin-top: 2em;
+    margin-top: 2.5em;
     line-height: .5;
     margin-bottom: .15em;
     letter-spacing: 3px;
