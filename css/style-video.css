@@ -243,7 +243,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
 
     .navbar-default {
         background-color: transparent;
@@ -255,7 +255,7 @@ a {
     }
 
     .navbar-default .navbar-toggle {
-        z-index: 4;
+        z-index: 14;
     }
 
     .navbar-collapse .collapse.in ul li::after {
