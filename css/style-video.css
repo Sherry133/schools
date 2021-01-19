@@ -335,7 +335,7 @@ a {
         .content-video .headerh1 {
             font-size: var(--fh1-med);
             line-height: .5em;
-            width: 70%;
+            width: 120%;
             margin-left: 0;
         }
 
