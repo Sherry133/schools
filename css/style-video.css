@@ -239,10 +239,8 @@ a {
         font-size: var(--fh4);
     }
 
-    .footer-video h6 {
+    .footer-video .headerh6 {
         padding-left: 1.25em;
-
-
     }
 }
 
