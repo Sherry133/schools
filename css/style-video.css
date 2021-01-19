@@ -350,7 +350,7 @@ a {
     }
 
     .footer-video h6 {
-        margin-left: 0;
+        margin-left: -2.75em;
 
     }
 
@@ -378,7 +378,7 @@ a {
     }
 
     .footer-video .headerh6 {
-        margin-left: -2.75em;
+        padding-left: -2.75em;
         /* color: red; */
     }
 }
