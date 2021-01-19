@@ -57,7 +57,8 @@ a {
     font-family: 'Poppins', sans-serif;
     font-size: var(--fh1);
     margin-top: 2.5em;
-    line-height: .5;
+    line-height: 1em;
+    width: 120%;
     margin-bottom: .15em;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -331,12 +332,13 @@ a {
         }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 767px) {
         .content-video .headerh1 {
             font-size: var(--fh1-med);
             line-height: 1em;
             width: 120%;
             margin-left: 0;
+
         }
 
         .content-video h2 {
@@ -365,7 +367,7 @@ a {
             font-size: var(--fh1-lg);
             line-height: 2.5em;
             width: 120%;
-
+            color: green;
             /* color: limegreen */
         }
 
