@@ -186,7 +186,7 @@ a {
 .social {
     position: absolute;
     z-index: 10;
-    top: 34.5em;
+    top: 37.5em;
     bottom: 20px;
     display: flex;
     justify-content: center;
@@ -361,7 +361,8 @@ a {
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
     .content-video h1 {
         font-size: var(--fh1-lg);
-        line-height: 1em;
+        /* line-height: 1em; */
+        width: 120%;
         /* color: limegreen */
     }
 
