@@ -334,7 +334,7 @@ a {
     @media (min-width: 769px) {
         .content-video .headerh1 {
             font-size: var(--fh1-med);
-            line-height: .5em;
+            line-height: 1em;
             width: 120%;
             margin-left: 0;
         }
@@ -364,7 +364,7 @@ a {
         .content-video h1 {
             font-size: var(--fh1-lg);
             line-height: 2.5em;
-            min-width: 120%;
+            width: 120%;
 
             /* color: limegreen */
         }
