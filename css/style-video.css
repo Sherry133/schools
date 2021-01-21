@@ -363,11 +363,13 @@ a {
     .content-video h1 {
         font-size: var(--fh1-lg);
         line-height: 1em;
+        width: 100%;
         /* color: limegreen */
     }
 
     .content-video h2 {
         font-size: var(--fh2-med);
+        width: 100%;
     }
 
     .content-video h4 {
@@ -375,7 +377,7 @@ a {
     }
 
     .footer-video .headerh6 {
-        margin-left: -2.75em;
+        margin-right: 0;
         /* color: red; */
     }
 }
