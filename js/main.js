@@ -80,7 +80,7 @@ $(window).scroll(function () {
   }
 });
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 400) {
+  if ($(window).scrollTop() > 100) {
     $("#navigation").css("background-color", "white");
   }
 });

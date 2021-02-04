@@ -48,6 +48,11 @@ body #facts {
     font-family: "Crimson-text", sans-serif;
 }
 
+/* 
+main .site-content {
+    padding-top: 0;
+} */
+
 /* ============================ */
 
 figure,
@@ -100,6 +105,7 @@ a:focus,
 
 h1 {
     font-family: "Roboto", sans-serif;
+    top: -.5em;
 }
 
 .sec-title h2 {
@@ -167,7 +173,6 @@ h3 {
 
 @media (max-width: 480px) {
     .container-footer {
-        /* grid-auto-columns: repeat(auto-fit, minmax(20%, 1fr)); */
         grid-column: span 12;
         grid-gap: 2em;
     }
@@ -180,7 +185,6 @@ h3 {
     font-weight: 500;
     font-size: 2em;
     line-height: 0.75em;
-    /* margin: 0 auto; */
     left: -1em;
     width: 100%;
 }
@@ -215,10 +219,9 @@ h3 {
     color: red;
     font-weight: bolder;
     letter-spacing: 1.2px;
-    /* margin-left: 3em; */
     margin-bottom: -1.5em;
     font-size: 0.8em;
-    background: url(../img/slider/arrowsright.png) no-repeat right top, yellow;
+    background: url("../img/slider/arrowsright.png") no-repeat right top, yellow;
     border-radius: 8px;
     z-index: 99;
 }
@@ -520,6 +523,7 @@ h3 {
 }
 
 #navigation a:hover {
+    border-bottom: 2px #fff solid;
     color: red;
     cursor: pointer;
 }
@@ -541,8 +545,12 @@ h3 {
 
 }
 
+.navbar {
+    height: 25px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: palevioletred;
+    background-color: goldenrod;
 }
 
 .navbar-default .navbar-toggle .icon-bar:hover {
@@ -567,11 +575,24 @@ h3 {
 }
 
 /* ====Added by M===== */
-img.navbar {
-    top: 0;
+.navbar .brand-centered h1 {
+    top: .5em;
     margin: -1em 0 0 15px;
     padding: 5px 0 0 0;
     overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .navbar-toggle {
+        background-color: transparent;
+        z-index: 20000;
+        margin-top: -4.25em;
+    }
+
+    .navbar .brand-centered h1 {
+        display: flex;
+        align-items: left;
+    }
 }
 
 @media (max-width: 768px) {
@@ -585,8 +606,7 @@ img.navbar {
     display: flex;
     width: 100%;
     max-width: 100%;
-    /* height: 16vh; */
-    justify-content: space-between;
+    0 justify-content: space-between;
     align-items: center;
     overflow: hidden;
 
@@ -595,6 +615,11 @@ img.navbar {
 .navbar-default {
     background-color: transparent;
     overflow: hidden;
+    z-index: 20000;
+}
+
+.navbar-toggle {
+    margin-top: -4em;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -865,68 +890,20 @@ About
     font-size: var(--sec-title-h2-480);
 }
 
-@media (max-width: 480px) {
-    #about .message-body {
-        margin-left: 1.5em;
-    }
-
-}
-
-@media (max-width: 1199px) {
-
-    #about {
-        background-image: none;
-        background: #000;
-    }
-
-    #about .overlay1 {
-        background: transparent;
-        padding: 100px 0 120px;
-    }
-
-}
-
-/* 
-#about h2 {
-    display: flex;
-    text-align: center;
-    margin-top: 0;
-    text-transform: uppercase;
-    text-align: center;
-    justify-content: center;
-    font-size: var(--sec-title-h2-480);
-} */
-
-
-@media (max-width: 767px) {
-    /* #about h2 {
-        margin-top: 0.1em;
-    } */
-
-    #about .fa-ul li i {
-        color: red;
-    }
-
-    #about .recent-works p {
-        font-size: var(--fsbody);
-        font-weight: 400;
-    }
-
-    #about .recent-works h3 {
-        margin-top: 45px;
-    }
-
-    #about .recent-works h3 {
-        margin-top: -30px;
-    }
-}
-
 #about .work-item {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0;
     margin-left: 1em;
     margin-top: .33em;
     font-size: var(--fsbody);
+    color: #fff;
+}
+
+#about .recent-works h3 {
+    display: flex;
+    margin: 3rem 0 1rem 3.5rem;
+    /* margin-bottom: 1rem; */
+    font-size: var(--fs3);
     color: #fff;
 }
 
@@ -937,8 +914,11 @@ About
 }
 
 #about .welcome-block h3 {
-    margin: 45px 0px 65px;
+    display: flex;
+    margin: 3rem 0 4rem;
     margin-bottom: 1.5em;
+    font-size: var(--fs3);
+    color: #fff;
 }
 
 #about .message-body {
@@ -969,6 +949,11 @@ About
     color: green;
 }
 
+#about .fa-ul li i {
+    color: red;
+    font-size: 1.5rem;
+}
+
 .owl-buttons {
     border: 2px solid #fff;
     display: inline-block;
@@ -993,6 +978,80 @@ About
     font-size: var(--fsbody);
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    #about {
+        margin-top: 0em;
+    }
+
+    #about .welcome-block h3 {
+        margin-top: -2rem;
+        color: #fff;
+    }
+
+    #about .message-body {
+        margin-left: 1.5em;
+    }
+
+    #about .summary-statement p {
+        margin-top: 0em;
+    }
+
+    #about .work-item .fa-ul {
+        margin-left: 1em;
+    }
+
+    #about .recent-works p {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #about .fa-ul li i {
+        color: red;
+    }
+
+    #about .recent-works p {
+        font-size: var(--fsbody);
+        font-weight: 400;
+        width: 70%;
+        letter-spacing: 3px;
+        line-height: 1.45em;
+    }
+
+    #about .welcome-block h3 {
+        padding-left: 1.5em;
+    }
+
+    #about .message-body {
+        width: 80%;
+        margin-left: 2em;
+        letter-spacing: 3px;
+        line-height: 1.45em;
+    }
+
+    #about .recent-works h3 {
+        margin-top: 45px;
+        margin-left: 1.5em;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    #about {
+        background-image: none;
+        background: #000;
+    }
+
+    #about .overlay1 {
+        background: transparent;
+        padding: 100px 0 120px;
+    }
+}
+
 /*
 =================================================================
 Services
@@ -1007,6 +1066,40 @@ Services
     font-size: var(--fs3);
 }
 
+@media (max-width: 480px) {
+
+    .service-icon i {
+        color: #d2b48c;
+        -webkit-transform: rotate(48deg);
+        transform: rotate(-48deg);
+        align-items: center;
+        justify-items: center;
+        padding-left: 19px;
+        padding-top: -20px;
+    }
+
+    #service h2 {
+        font-size: var(--fs2-480);
+        margin-top: -4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-icon i {
+        display: flex;
+        color: #d2b48c;
+        -webkit-transform: rotate(48deg);
+        transform: rotate(-48deg);
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        top: 50%;
+        /* padding-top: -16px; */
+    }
+
+
+}
+
 @media (max-width: 1024px) {
     #service {
         background-image: none;
@@ -1018,11 +1111,11 @@ Services
     }
 }
 
-/* .service-item:hover .service-icon {
+.service-item:hover .service-icon {
     text-transform: lowercase;
     color: green;
+}
 
-} */
 .service-icon {
     border: 3px solid;
     display: inline-block;
@@ -1052,23 +1145,6 @@ Services
     justify-content: center;
     -webkit-transform: rotate(-47deg);
     transform: rotate(-47deg);
-}
-
-@media (max-width: 480px) {
-
-    .service-icon i {
-        color: #d2b48c;
-        -webkit-transform: rotate(48deg);
-        transform: rotate(-48deg);
-        /* align-items: center;
-        justify-items: center;  */
-        padding-left: 19px;
-        padding-top: -20px;
-    }
-
-    #service h2 {
-        font-size: var(--fs2-480);
-    }
 }
 
 .service-item h3 {
@@ -1105,17 +1181,6 @@ Portfolio
     display: inline-block;
 }
 
-/* 
-#portfolio .sec-title h2 {
-    font-size: 250%; 
-    margin: 0px 0 30px;
-    padding-bottom: 10px;
-    position: relative;
-    text-transform: uppercase;
-    color: red;
-     color: #d2b48c; 
-}  */
-
 #portfolio h3 {
     line-height: 1.5em;
 }
@@ -1128,15 +1193,6 @@ Portfolio
     position: relative;
     width: 32%;
 }
-
-/* .portfolio-item .doe img {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    width: 100%;
-    min-height: 100%;
-
-} */
 
 .project-wrapper .doe {
     width: 100%;
@@ -1161,19 +1217,19 @@ Portfolio
     .doe-description {
         top: 55%;
         font-size: .5rem;
-        line-height: 1em;
-    }
-
-    ul .external {
+        line-height: .5em;
         display: none;
     }
 
-
+    */ ul .external {
+        margin-top: 4em;
+    }
 }
 
 figcaption.mask {
     /* background-color: rgba(240, 230, 140, 0.69); */
     bottom: -166px;
+    font-size: .25em;
     color: #fff;
     padding: 25px;
     position: absolute;
@@ -1190,7 +1246,8 @@ figcaption.mask {
 .portfolio-item:hover figcaption.mask {
     bottom: .1em;
     background-color: blue;
-    font-size: 125%;
+    font-size: 80%;
+
 }
 
 figcaption.mask {
@@ -1207,7 +1264,7 @@ ul.external {
     padding: 0;
     position: absolute;
     right: 0;
-    top: -47px;
+    top: 0;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -1238,6 +1295,7 @@ ul .external li a:hover {
 
 .portfolio-item:hover ul.external {
     top: 0;
+
 }
 
 .fancybox-skin {
@@ -1255,13 +1313,15 @@ ul .external li a:hover {
 }
 
 .fancybox p {
-    color: #818181;
+
+    color: #fff;
     line-height: 1.2em;
     font-size: var(--fsbody-sm);
 }
 
 .fancybox-title-inside-wrap {
     padding-top: 0;
+
 }
 
 /*=================================================================
@@ -1303,6 +1363,7 @@ Testimonials
 .testimonial-content p {
     font-family: Crimson Text, sans-serif;
     font-size: var(--fsbody-med);
+    color: #ececec;
 
 }
 
@@ -1328,15 +1389,19 @@ Testimonials
 @media (max-width: 480px) {
     .sec-title h2 {
         font-size: var(--fs2-480);
+        margin-top: -3em;
     }
 
     #testimonials {
         background: rgba(15, 155, 224, 0.95);
+        margin-bottom: -7em;
     }
 
-    .testimonial-item {
-        width: 100%;
-        /* background: rgba(15, 155, 224, 0.78); */
+    #testimonials p {
+        text-align: left;
+        width: 120%;
+        color: #fff;
+        font-size: var(--fsbody-med);
     }
 
     .testimonial-item h3 {
@@ -1348,6 +1413,22 @@ Testimonials
         line-height: 1.3;
         letter-spacing: 2px;
         text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        #testimonials p {
+            font-size: 1em;
+            color: #fff;
+            letter-spacing: 3px;
+            line-height: 1.25em;
+        }
+    }
+
+    @media (min-width: 991px) {
+        #testimonial p {
+            font-size: 1em;
+            color: red;
+        }
     }
 }
 
@@ -1383,6 +1464,16 @@ Testimonials
     color: red;
     font-size: var(--fsbody-xlg);
     font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    #price h3 {
+        font-size: 1.5rem;
+    }
+
+    #price h2 {
+        margin-top: 1em
+    }
 }
 
 .price-table {
@@ -1469,12 +1560,9 @@ Testimonials
     font-weight: 400;
 }
 
-
-
 /*=================================================================
 Price end
 ==================================================================*/
-
 
 /*=================================================================
 Contact
@@ -1488,6 +1576,13 @@ Contact
 #contact .overlay1 {
     background: url("../img/slider/banner.jpg") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
+}
+
+@media (max-width: 480px) {
+    #contact h2 {
+        margin-top: -1em;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -1542,7 +1637,7 @@ textarea.form-control {
 .btn-gray {
     -webkit-box-shadow: 0 -1px 0 rgba(13, 37, 117, 0.25);
     box-shadow: 0 -1px 0 rgba(13, 37, 117, 0.25);
-    padding: 8px 10px;
+    padding: 6px 8px;
     margin: 0 auto;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -1554,11 +1649,11 @@ textarea.form-control {
 .btn-contact {
     -webkit-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: #fff;
     margin: 0 auto;
-    margin-bottom: 130px;
-    font-size: var(--fsbody-med);
+    margin-bottom: 5px;
+    font-size: 95%;
     background: url("../img/slider/arrowsright.png") no-repeat right top, #0058a3;
     border-radius: 8px;
 }
@@ -1573,9 +1668,11 @@ textarea.form-control {
 
 .contact-details p {
     line-height: 30px;
-    color: #5584dd;
+    color: #fff;
+    /* color: #5584dd; */
     font-size: var(--fsbody-med);
     font-weight: 300;
+    margin-top: 0;
 }
 
 .contact-details p i {
@@ -1636,13 +1733,23 @@ Footer
 ==============================================================*/
 
 #footer {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url("../img/slider/banner.jpg");
     background-color: #141414;
 }
 
 #footer .overlay1 {
     background: url("../img/slider/banner.jpg") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
+}
+
+@media (max-width: 480px) {
+    .footer-content p {
+        font-size: var(--fsbody-med);
+        margin: 0 1em;
+        letter-spacing: 2px;
+        line-height: 1em;
+
+    }
 }
 
 @media (max-width: 1199px) {
@@ -1655,11 +1762,6 @@ Footer
     #footer .parallax {
         display: none;
     }
-
-    /*     #footer .overlay1 {
-    background-color: rgba(15, 155, 224, 0.78);
-    padding: 100px 0 120px;
-} */
 }
 
 .sec-title .footer-content h2 {
@@ -1679,6 +1781,7 @@ Footer
 .footer-content>p {
     color: #fff;
     font-size: var(--fsbody);
+    letter-spacing: 1px;
 
 }
 
@@ -1700,13 +1803,7 @@ Footer
     font-size: var(--fsbody);
 }
 
-@media (max-width: 480px) {
-    .footer-content p {
-        font-size: var(--fsbody-lg);
-        margin: 0 1em;
 
-    }
-}
 
 /* .subscribe .form-control {
     position: relative;
@@ -1864,277 +1961,278 @@ Footer
     #about .work-item {
         font-size: var(--fsbody-lg);
     }
+}
 
-    /* //ipads retina 768 x 1024 */
+/* //ipads retina 768 x 1024 */
 
-    /* //ipads mini(7.9), 9.7, pro10.5 */
+/* //ipads mini(7.9), 9.7, pro10.5 */
 
-    /* //media query for 1200 + displays */
+/* //media query for 1200 + displays */
 
-    @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 
-        #about .summary-statement p {
-            font-size: 1.25em;
-        }
+    #about .summary-statement p {
+        font-size: 1.25em;
+    }
 
-        #about .work-item {
-            font-size: 1.0em;
-        }
+    #about .work-item {
+        font-size: 1.0em;
+    }
 
-        /* .testimonial-item .clearfix p {
+    /* .testimonial-item .clearfix p {
             font-size: 1.50em;
         } */
+}
+
+/* ++++++++++++++++++++++++++++ */
+/* MINIMUM WIDTH 1365PX */
+/* +++++++++++++++++++++++++++ */
+
+@media (min-width: 1365px) {
+
+    .sslogo {
+        margin-left: -1.5em;
+    }
+}
+
+/* //screens 1600+ pixels */
+
+@media (min-width: 1599px) {}
+
+/* ++++++++++++++++++++++++++++ */
+/* //MINIMUM WIDTH 1679PX */
+/* +++++++++++++++++++++++++++ */
+
+@media (min-width: 1679px) {}
+
+
+
+/* //RESPONSIVE SIZES */
+
+@media (min-width: 980px) and (max-width: 1150px) {
+
+
+    #about .welcome-block img {
+        margin-bottom: 30px;
     }
 
-    /* ++++++++++++++++++++++++++++ */
-    /* MINIMUM WIDTH 1365PX */
-    /* +++++++++++++++++++++++++++ */
-
-    @media (min-width: 1365px) {
-
-        .sslogo {
-            margin-left: -1.5em;
-        }
+    /* portfolio */
+    .figcaption.mask {
+        bottom: -151px;
     }
 
-    /* //screens 1600+ pixels */
-
-    @media (min-width: 1599px) {}
-
-    /* ++++++++++++++++++++++++++++ */
-    /* //MINIMUM WIDTH 1679PX */
-    /* +++++++++++++++++++++++++++ */
-
-    @media (min-width: 1679px) {}
-
-
-
-    /* //RESPONSIVE SIZES */
-
-    @media (min-width: 980px) and (max-width: 1150px) {
-
-
-        #about .welcome-block img {
-            margin-bottom: 30px;
-        }
-
-        /* portfolio */
-        .figcaption.mask {
-            bottom: -151px;
-        }
-
-        .testimonial-item>div:after {
-            bottom: -40px;
-        }
+    .testimonial-item>div:after {
+        bottom: -40px;
     }
+}
 
-    /*============================================================
+/*============================================================
 Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 
-    @media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
 
-        /* home slider  */
-        /* about */
-        .recent-works {
-            margin-bottom: 1em;
-        }
-
-        .service-item {
-            margin-bottom: 50px;
-        }
-
-        /* portfolio */
-        .portfolio-item {
-            width: 48%;
-        }
-
-        .testimonial-item>div::after {
-            bottom: -35px;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
+    /* home slider  */
+    /* about */
+    .recent-works {
+        margin-bottom: 1em;
     }
 
-    /*==================================
+    .service-item {
+        margin-bottom: 50px;
+    }
+
+    /* portfolio */
+    .portfolio-item {
+        width: 48%;
+    }
+
+    .testimonial-item>div::after {
+        bottom: -35px;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+}
+
+/*==================================
 Tablet Design for logo of a width of 980x1280*/
 
-    /*============================================================
+/*============================================================
 Mobile (Portrait) Design for a width of 767px
 ==============================================================*/
 
-    @media (max-width: 768px) {
-        body {
-            font-size: 80%;
-        }
+@media (max-width: 768px) {
+    body {
+        font-size: 80%;
+    }
 
-        .parallax {
-            background-position: centet tip !important;
-        }
+    .parallax {
+        background-position: centet tip !important;
+    }
 
-        /*navigation*/
-        /* .navbar-default .navbar-toggle {
+    /*navigation*/
+    /* .navbar-default .navbar-toggle {
             border: 2px solid blue;
             border-radius: 8px;
 
         } */
-        /* about */
-        .recent-works {
-            margin-bottom: 85px;
-            ;
-            font-size: .85em;
-        }
+    /* about */
+    .recent-works {
+        margin-bottom: 85px;
 
-        #about h3 {
-            margin: 20 0 35px !important;
-        }
-
-        #about .owl-buttons {
-            margin-top: 20px;
-        }
-
-        #about .message-body {
-            margin-bottom: 45px;
-        }
-
-        #about .welcome-block img {
-            margin: 0 25px 15px 0;
-        }
-
-        #about .summary-statement {
-            font-size: .85em;
-        }
-
-        /* service */
-        .service-item {
-            width: 100%;
-        }
-
-        .service-icon i {
-            display: inline-block;
-            vertical-align: middle;
-            -webkit-transform: rotate(-48deg);
-            transform: rotate(-48deg);
-            color: #d2b48c;
-        }
-
-        .figcaption.mask h4 {
-            margin: 0;
-            color: #fff;
-            font-size: 40%;
-        }
-
-        /* lightbox */
-        .fancybox-title h3 {
-            font-size: 80%;
-        }
-
-        .fancybox-title p {
-            font-size: 80%;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* follow us */
-        .social-button li:nth-child(2) {
-            margin: 0 25px;
-        }
-
-        .social-button li a {
-            height: 65px;
-            line-height: 71px;
-            width: 65px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
-
-        /* footer */
-        .footer-content {
-            width: 100%;
-        }
-
-        .footer-social ul li {
-            margin: 0 7px;
-        }
+        font-size: .85em;
     }
 
-    /* ============================================================
+    #about h3 {
+        margin: 20 0 35px !important;
+    }
+
+    #about .owl-buttons {
+        margin-top: 20px;
+    }
+
+    #about .message-body {
+        margin-bottom: 45px;
+    }
+
+    #about .welcome-block img {
+        margin: 0 25px 15px 0;
+    }
+
+    #about .summary-statement {
+        font-size: .85em;
+    }
+
+    /* service */
+    .service-item {
+        width: 100%;
+    }
+
+    .service-icon i {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: rotate(-48deg);
+        transform: rotate(-48deg);
+        color: #d2b48c;
+    }
+
+    .figcaption.mask h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 40%;
+    }
+
+    /* lightbox */
+    .fancybox-title h3 {
+        font-size: 80%;
+    }
+
+    .fancybox-title p {
+        font-size: 80%;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* follow us */
+    .social-button li:nth-child(2) {
+        margin: 0 25px;
+    }
+
+    .social-button li a {
+        height: 65px;
+        line-height: 71px;
+        width: 65px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-social ul li {
+        margin: 0 7px;
+    }
+}
+
+/* ============================================================
 Mobile (Landscape) Design for a width of 480px
 ============================================================== */
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
 
-        /* .caption-content h2
+    /* .caption-content h2
 {font-size: 225%;}*/
-        .sec-title h2:after {
-            left: 38%;
-        }
-
-        /* home slider */
-        body p {
-            font-size: 80%;
-        }
-
-        /*about*/
-        #about .welcome-block h3 {
-            margin: 0 0 35px;
-        }
-
-        /* service */
-        .service-item {
-            margin: 0 auto 50px;
-            width: 55%;
-        }
-
-        /* portfolio */
-        .portfolio-item {
-            width: 48%;
-        }
-
-        .figcaption.mask h4 {
-            margin: 0;
-            color: #fff;
-            font-size: 40%;
-        }
-
-        /* social */
-        .social-button li:nth-child(2) {
-            margin: 0 50px;
-        }
-
-        .social-button li a {
-            height: 90px;
-            line-height: 96px;
-            width: 90px;
-        }
-
-        /* price */
-        .price-table {
-            margin-bottom: 50px;
-        }
-
-        /* contact form */
-        .contact-form {
-            margin-bottom: 50px;
-        }
-
-        /* footer */
-        .footer-content {
-            width: 380px;
-        }
-
+    .sec-title h2:after {
+        left: 38%;
     }
+
+    /* home slider */
+    body p {
+        font-size: 80%;
+    }
+
+    /*about*/
+    #about .welcome-block h3 {
+        margin: 0 0 35px;
+    }
+
+    /* service */
+    .service-item {
+        margin: 0 auto 50px;
+        width: 55%;
+    }
+
+    /* portfolio */
+    .portfolio-item {
+        width: 48%;
+    }
+
+    .figcaption.mask h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 40%;
+    }
+
+    /* social */
+    .social-button li:nth-child(2) {
+        margin: 0 50px;
+    }
+
+    .social-button li a {
+        height: 90px;
+        line-height: 96px;
+        width: 90px;
+    }
+
+    /* price */
+    .price-table {
+        margin-bottom: 50px;
+    }
+
+    /* contact form */
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer-content {
+        width: 380px;
+    }
+
+}
